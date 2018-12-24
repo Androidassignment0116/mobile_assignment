@@ -1,59 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\cgandroid\\Week 6 MVVM LiveData Solution\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "G:\\aa\\mobile_assignment\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "G:\\cgandroid\\Week 6 MVVM LiveData Solution\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "41",
-                        "endOffsets": "53"
-                    },
-                    "to": {
-                        "startLines": "2071",
-                        "startColumns": "4",
-                        "startOffsets": "126990",
-                        "endColumns": "41",
-                        "endOffsets": "127027"
-                    }
-                },
-                {
-                    "source": "G:\\cgandroid\\Week 6 MVVM LiveData Solution\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "2,1",
-                        "startColumns": "4,4",
-                        "startOffsets": "63,16",
-                        "endColumns": "52,46",
-                        "endOffsets": "111,58"
-                    },
-                    "to": {
-                        "startLines": "2248,2249",
-                        "startColumns": "4,4",
-                        "startOffsets": "137867,137920",
-                        "endColumns": "52,46",
-                        "endOffsets": "137915,137962"
-                    }
-                },
-                {
-                    "source": "G:\\cgandroid\\Week 6 MVVM LiveData Solution\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "192,193,194",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "9973,10019,10066",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "10014,10061,10112"
-                    }
-                },
                 {
                     "source": "C:\\Users\\hasee\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\77149771da1ed4140d4a228e3449851d\\res\\values\\values.xml",
                     "from": {
@@ -112,22 +61,20 @@
                     }
                 },
                 {
-                    "source": "G:\\cgandroid\\Week 6 MVVM LiveData Solution\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "G:\\aa\\mobile_assignment\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "7,19,14,21",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "276,747,596,839",
-                        "endLines": "12,19,17,21",
-                        "endColumns": "12,90,12,80",
-                        "endOffsets": "590,833,741,915"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "41",
+                        "endOffsets": "54"
                     },
                     "to": {
-                        "startLines": "2274,2280,2281,2285",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "140602,140921,141011,141161",
-                        "endLines": "2279,2280,2284,2285",
-                        "endColumns": "12,89,12,79",
-                        "endOffsets": "140916,141006,141156,141236"
+                        "startLines": "2071",
+                        "startColumns": "4",
+                        "startOffsets": "126990",
+                        "endColumns": "41",
+                        "endOffsets": "127027"
                     }
                 },
                 {
@@ -164,6 +111,59 @@
                         "endLines": "15,188,189,190,191,987,2015,2016,2017,2313,3702,3705,3708",
                         "endColumns": "51,60,61,61,63,24,58,56,53,12,12,12,12",
                         "endOffsets": "781,9780,9842,9904,9968,54293,123409,123466,123520,143101,233300,233426,233554"
+                    }
+                },
+                {
+                    "source": "G:\\aa\\mobile_assignment\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,1",
+                        "startColumns": "4,4",
+                        "startOffsets": "65,17",
+                        "endColumns": "52,46",
+                        "endOffsets": "113,59"
+                    },
+                    "to": {
+                        "startLines": "2248,2249",
+                        "startColumns": "4,4",
+                        "startOffsets": "137867,137920",
+                        "endColumns": "52,46",
+                        "endOffsets": "137915,137962"
+                    }
+                },
+                {
+                    "source": "G:\\aa\\mobile_assignment\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "7,19,14,21",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "283,766,610,860",
+                        "endLines": "12,19,17,21",
+                        "endColumns": "12,90,12,80",
+                        "endOffsets": "602,852,758,936"
+                    },
+                    "to": {
+                        "startLines": "2274,2280,2281,2285",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "140602,140921,141011,141161",
+                        "endLines": "2279,2280,2284,2285",
+                        "endColumns": "12,89,12,79",
+                        "endOffsets": "140916,141006,141156,141236"
+                    }
+                },
+                {
+                    "source": "G:\\aa\\mobile_assignment\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "192,193,194",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "9973,10019,10066",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "10014,10061,10112"
                     }
                 },
                 {

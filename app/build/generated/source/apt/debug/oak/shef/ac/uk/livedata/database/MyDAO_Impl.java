@@ -26,7 +26,7 @@ public class MyDAO_Impl implements MyDAO {
     this.__insertionAdapterOfPicinfoData = new EntityInsertionAdapter<PicinfoData>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`number`,`title`,`description`) VALUES (nullif(?, 0),?,?,?)";
+        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`number`,`title`,`description`,`image`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
@@ -42,6 +42,11 @@ public class MyDAO_Impl implements MyDAO {
           stmt.bindNull(4);
         } else {
           stmt.bindString(4, value.getDescription());
+        }
+        if (value.getImage() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindBlob(5, value.getImage());
         }
       }
     };
@@ -126,19 +131,21 @@ public class MyDAO_Impl implements MyDAO {
           final int _cursorIndexOfNumber = _cursor.getColumnIndexOrThrow("number");
           final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
           final int _cursorIndexOfDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfImage = _cursor.getColumnIndexOrThrow("image");
           final PicinfoData _result;
           if(_cursor.moveToFirst()) {
+            final int _tmpNumber;
+            _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
             final String _tmpTitle;
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            _result = new PicinfoData(_tmpTitle,_tmpDescription);
+            final byte[] _tmpImage;
+            _tmpImage = _cursor.getBlob(_cursorIndexOfImage);
+            _result = new PicinfoData(_tmpNumber,_tmpTitle,_tmpDescription,_tmpImage);
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             _result.setId(_tmpId);
-            final int _tmpNumber;
-            _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
-            _result.setNumber(_tmpNumber);
           } else {
             _result = null;
           }

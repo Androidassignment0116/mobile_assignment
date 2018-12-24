@@ -4,8 +4,10 @@
 
 package oak.shef.ac.uk.livedata.database;
 
+import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.media.Image;
 
 @Entity(tableName = "picinfo_database")
 public class PicinfoData {
@@ -16,13 +18,17 @@ public class PicinfoData {
     private String title;
     private String description;
 
+    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
+    private byte[] image;
 
 //    public PicinfoData(int number) {
 //        this.number= number;
 //    }
-    public PicinfoData(String title, String description){
+    public PicinfoData(int number, String title, String description, byte[] image){
+        this.number = number;
         this.description = description;
         this.title = title;
+        this.image = image;
     }
 
     @android.support.annotation.NonNull
@@ -57,4 +63,11 @@ public class PicinfoData {
         return description;
     }
 
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
 }

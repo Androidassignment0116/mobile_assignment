@@ -14,6 +14,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,14 +23,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 import oak.shef.ac.uk.livedata.database.PicinfoData;
@@ -36,47 +36,54 @@ import pl.aprilapps.easyphotopicker.DefaultCallback;
 import pl.aprilapps.easyphotopicker.EasyImage;
 
 public class MyView extends AppCompatActivity {
-
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2987;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 7829;
     LiveData<PicinfoData> stringToDisplay;
     private MyViewModel myViewModel;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView mRecyclerView;
     private Activity activity;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        activity= this;
         // Get a new or existing ViewModel from the ViewModelProvider.
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
         // Add an observer on the LiveData. The onChanged() method fires
         // when the observed data changes and the activity is
         // in the foreground.
-//        myViewModel.getNumberDataToDisplay().observe(this, new Observer<PicinfoData>(){
-//            @Override
-////            public void onChanged(@Nullable final PicinfoData newValue) {
-////                TextView tv= findViewById(R.id.textView);
-////                // if database is empty
-////                if (newValue==null)
-////                    tv.setText("click button");
-////                else
-////                    tv.setText(newValue.getTitle()+"");
-//            }});
+        myViewModel.getNumberDataToDisplay().observe(this, new Observer<PicinfoData>(){
+            @Override
+            public void onChanged(@Nullable final PicinfoData newValue) {
+                TextView tv= findViewById(R.id.textView);
+                ImageView iv = findViewById(R.id.iv_1);
+                // if database is empty
+                if (newValue==null)
+                    tv.setText("click button");
+                else
+                {
+                    tv.setText(newValue.getNumber()+""+newValue.getImage());
+                    Bitmap bitmap = BitmapFactory.decodeByteArray(newValue.getImage() , 0, newValue.getImage() .length);
+                    int x = bitmap.getWidth();
+                    int y = bitmap.getHeight();
+                    int[] intArray = new int[x * y];
+                    bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
+                    iv.setImageBitmap(bitmap);
+                }
 
-        activity= this;
+            }});
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.grid_recycler_view);
-        // set up the RecyclerView
-        int numberOfColumns = 4;
-        mRecyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
-        mAdapter= new MyAdapter(myViewModel.initPicinfo);
-        mRecyclerView.setAdapter(mAdapter);
+
         checkPermissions(getApplicationContext());
-
         initEasyImage();
+        // it generates a request to generate a new random number
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myViewModel.generateNewNumber();
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_camera);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +102,7 @@ public class MyView extends AppCompatActivity {
         });
 
     }
+
     private void initEasyImage() {
         EasyImage.configuration(this)
                 .setImagesFolderName("EasyImage sample")
@@ -151,6 +159,7 @@ public class MyView extends AppCompatActivity {
         }
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -164,7 +173,8 @@ public class MyView extends AppCompatActivity {
 
             @Override
             public void onImagesPicked(List<File> imageFiles, EasyImage.ImageSource source, int type) {
-                onPhotosReturned(imageFiles);
+//                onPhotosReturned(imageFiles);
+                myViewModel.sortpic(imageFiles);
             }
 
             @Override
@@ -176,31 +186,6 @@ public class MyView extends AppCompatActivity {
                 }
             }
         });
-    }
-
-
-    /**
-     * add to the grid
-     * @param returnedPhotos
-     */
-    private void onPhotosReturned(List<File> returnedPhotos) {
-        myViewModel.initPicinfo.addAll(getImageElements(returnedPhotos));
-        mAdapter.notifyDataSetChanged();
-        mRecyclerView.scrollToPosition(returnedPhotos.size() - 1);
-    }
-
-    /**
-     * given a list of photos, it creates a list of myElements
-     * @param returnedPhotos
-     * @return
-     */
-    private List<ImageElement> getImageElements(List<File> returnedPhotos) {
-        List<ImageElement> imageElementList= new ArrayList<>();
-        for (File file: returnedPhotos){
-            ImageElement element= new ImageElement(file);
-            imageElementList.add(element);
-        }
-        return imageElementList;
     }
 
     public Activity getActivity() {

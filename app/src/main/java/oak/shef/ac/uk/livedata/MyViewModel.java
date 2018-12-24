@@ -9,6 +9,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 
+import java.io.File;
 import java.util.List;
 
 import oak.shef.ac.uk.livedata.database.PicinfoData;
@@ -18,14 +19,14 @@ public class MyViewModel extends AndroidViewModel {
 
     LiveData<PicinfoData> numberDataToDisplay;
 
-    List<ImageElement> initPicinfo;
+
 
     public MyViewModel (Application application) {
         super(application);
         // creation and connection to the Repository
         mRepository = new MyRepository(application);
-        numberDataToDisplay = mRepository.getPicinfoData();
-        initPicinfo = mRepository.getMyPictureList();
+        numberDataToDisplay = mRepository.getNumberData();
+
     }
 
 
@@ -44,6 +45,10 @@ public class MyViewModel extends AndroidViewModel {
      * request by the UI to generate a new random number
      */
     public void generateNewNumber() {
-        mRepository.generateNewTitle();
+        mRepository.generateNewNumber();
+    }
+
+    public void sortpic(List<File> files){
+        mRepository.onPhotosReturned(files);
     }
 }
