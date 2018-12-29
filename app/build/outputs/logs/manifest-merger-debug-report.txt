@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\77149771da1ed4140d4a228e3449851d\AndroidManifest.xml:17:1-22:12
@@ -42,20 +42,20 @@ MERGED from [com.android.support:documentfile:28.0.0] C:\Users\hasee\.gradle\cac
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\bab5c00c04da71e6e80a0bcbd21ccab4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\ca045a537080c7d1eaf0bc05e02f4f59\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\timber-4.4.0.aar\1c8c39117c585af13db5cf07d571d0a4\AndroidManifest.xml:2:1-10:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
 	package
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:7:5-38
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-28:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:1-29:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:11-69
@@ -68,7 +68,7 @@ ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:10:5-81
 	android:name
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:10:22-78
 application
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:12:5-26:19
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:12:5-27:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:22:5-20
@@ -111,6 +111,10 @@ category#android.intent.category.LAUNCHER
 ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:27-74
+activity#oak.shef.ac.uk.livedata.ShowPicDetail
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:9-51
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:19-48
 uses-sdk
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml

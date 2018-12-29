@@ -29,6 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="oak.shef.ac.uk.livedata.ShowPicDetail" />
 
         <provider
             android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider"

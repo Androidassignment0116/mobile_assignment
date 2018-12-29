@@ -52,16 +52,7 @@ class MyRepository extends ViewModel {
      * called by the UI to request the generation of a new random number
      */
 
-    private byte[] getPicture(Drawable drawable) {
-        if(drawable == null) {
-            return null;
-        }
-        BitmapDrawable bd = (BitmapDrawable) drawable;
-        Bitmap bitmap = bd.getBitmap();
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
-        return os.toByteArray();
-    }
+
 
     public void onPhotosReturned(List<File> files){
         for (File file:files

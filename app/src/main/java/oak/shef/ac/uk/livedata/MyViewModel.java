@@ -39,12 +39,7 @@ public class MyViewModel extends AndroidViewModel {
      * getter for the live data
      * @return
      */
-    LiveData<PicinfoData> getNumberDataToDisplay() {
-        if (numberDataToDisplay == null) {
-            numberDataToDisplay = new MutableLiveData<PicinfoData>();
-        }
-        return numberDataToDisplay;
-    }
+
 
     LiveData<List<byte[]>> getPicDataToDisplay(){
         if (picDataToDisplay == null){

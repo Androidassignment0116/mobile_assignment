@@ -18,6 +18,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
@@ -26,6 +27,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -43,12 +45,10 @@ import pl.aprilapps.easyphotopicker.EasyImage;
 public class MyView extends AppCompatActivity {
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2987;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 7829;
-    LiveData<PicinfoData> stringToDisplay;
     private MyViewModel myViewModel;
     private Activity activity;
-    private PicAdapter PicAdapter;
+    private PicAdapter PicAdapterview;
 
-    Context mContext;
 
 
 
@@ -59,59 +59,55 @@ public class MyView extends AppCompatActivity {
 
 
 
-
         RecyclerView recyclerView = findViewById(R.id.grid_recycler_view);
         int numberOfColumns = 4;
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
         recyclerView.setHasFixedSize(true);
-        PicAdapter = new PicAdapter();
-        recyclerView.setAdapter(PicAdapter);
+        PicAdapterview = new PicAdapter();
+        recyclerView.setAdapter(PicAdapterview);
+
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,0) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder viewHolder1) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
+
+            }
+        }).attachToRecyclerView(recyclerView);
+
+        PicAdapterview.setOnItemClickListener(new PicAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Bitmap node) {
+                Intent intent = new Intent(MyView.this,ShowPicDetail.class);
+                Bundle bundle = new Bundle();
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                node.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                node.recycle();
+                bundle.putByteArray("Picture",byteArray);
+                startActivity(intent);
+            }
+        });
 
         activity= this;
         // Get a new or existing ViewModel from the ViewModelProvider.
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
-        // Add an observer on the LiveData. The onChanged() method fires
-        // when the observed data changes and the activity is
-        // in the foreground.
-//        myViewModel.getNumberDataToDisplay().observe(this, new Observer<PicinfoData>(){
-//            @Override
-//            public void onChanged(@Nullable final PicinfoData newValue) {
-//                TextView tv= findViewById(R.id.textView);
-//                ImageView iv = findViewById(R.id.iv_1);
-//                // if database is empty
-//                if (newValue==null)
-//                    tv.setText("click button");
-//                else
-//                {
-//                    tv.setText(newValue.getNumber()+""+newValue.getImage());
-//                    Bitmap bitmap = BitmapFactory.decodeByteArray(newValue.getImage() , 0, newValue.getImage() .length);
-//                    int x = bitmap.getWidth();
-//                    int y = bitmap.getHeight();
-//                    int[] intArray = new int[x * y];
-//                    bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
-//                    iv.setImageBitmap(bitmap);
-//                }
-//
-//            }});
+
 
         myViewModel.getPicDataToDisplay().observe(this, new Observer<List<byte[]>>() {
             @Override
             public void onChanged(@Nullable List<byte[]> bytes) {
-                PicAdapter.setBitmaps(bytes);
+                PicAdapterview.setBitmaps(bytes);
             }
         });
 
 
         checkPermissions(getApplicationContext());
         initEasyImage();
-        // it generates a request to generate a new random number
-//        Button button = findViewById(R.id.button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                myViewModel.generateNewNumber();
-//            }
-//        });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_camera);
         fab.setOnClickListener(new View.OnClickListener() {
