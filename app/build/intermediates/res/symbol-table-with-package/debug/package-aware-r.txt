@@ -1064,7 +1064,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button
 id buttonPanel
 id center
 id center_horizontal
@@ -1122,7 +1121,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id iv_1
 id labeled
 id largeLabel
 id left
@@ -1209,7 +1207,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1218,6 +1215,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside

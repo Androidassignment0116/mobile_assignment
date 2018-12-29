@@ -23,12 +23,16 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import oak.shef.ac.uk.livedata.database.PicinfoData;
@@ -41,49 +45,81 @@ public class MyView extends AppCompatActivity {
     LiveData<PicinfoData> stringToDisplay;
     private MyViewModel myViewModel;
     private Activity activity;
+    private PicAdapter PicAdapter;
+    List<byte[]> initpic = new ArrayList<>();
+    Context mContext;
+
+    private void initpic(){
+        Bitmap bm = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.joe1);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bm.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
+        bm.recycle();
+        initpic.add(byteArray);
+        initpic.add(byteArray);
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+
+        RecyclerView recyclerView = findViewById(R.id.grid_recycler_view);
+        int numberOfColumns = 4;
+        recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
+        recyclerView.setHasFixedSize(true);
+        PicAdapter = new PicAdapter(initpic);
+        recyclerView.setAdapter(PicAdapter);
+
         activity= this;
         // Get a new or existing ViewModel from the ViewModelProvider.
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
         // Add an observer on the LiveData. The onChanged() method fires
         // when the observed data changes and the activity is
         // in the foreground.
-        myViewModel.getNumberDataToDisplay().observe(this, new Observer<PicinfoData>(){
-            @Override
-            public void onChanged(@Nullable final PicinfoData newValue) {
-                TextView tv= findViewById(R.id.textView);
-                ImageView iv = findViewById(R.id.iv_1);
-                // if database is empty
-                if (newValue==null)
-                    tv.setText("click button");
-                else
-                {
-                    tv.setText(newValue.getNumber()+""+newValue.getImage());
-                    Bitmap bitmap = BitmapFactory.decodeByteArray(newValue.getImage() , 0, newValue.getImage() .length);
-                    int x = bitmap.getWidth();
-                    int y = bitmap.getHeight();
-                    int[] intArray = new int[x * y];
-                    bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
-                    iv.setImageBitmap(bitmap);
-                }
+//        myViewModel.getNumberDataToDisplay().observe(this, new Observer<PicinfoData>(){
+//            @Override
+//            public void onChanged(@Nullable final PicinfoData newValue) {
+//                TextView tv= findViewById(R.id.textView);
+//                ImageView iv = findViewById(R.id.iv_1);
+//                // if database is empty
+//                if (newValue==null)
+//                    tv.setText("click button");
+//                else
+//                {
+//                    tv.setText(newValue.getNumber()+""+newValue.getImage());
+//                    Bitmap bitmap = BitmapFactory.decodeByteArray(newValue.getImage() , 0, newValue.getImage() .length);
+//                    int x = bitmap.getWidth();
+//                    int y = bitmap.getHeight();
+//                    int[] intArray = new int[x * y];
+//                    bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
+//                    iv.setImageBitmap(bitmap);
+//                }
+//
+//            }});
 
-            }});
+        myViewModel.getPicDataToDisplay().observe(this, new Observer<List<byte[]>>() {
+            @Override
+            public void onChanged(@Nullable List<byte[]> bytes) {
+                PicAdapter.setBitmaps(bytes);
+            }
+        });
 
 
         checkPermissions(getApplicationContext());
         initEasyImage();
         // it generates a request to generate a new random number
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myViewModel.generateNewNumber();
-            }
-        });
+//        Button button = findViewById(R.id.button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                myViewModel.generateNewNumber();
+//            }
+//        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_camera);
         fab.setOnClickListener(new View.OnClickListener() {

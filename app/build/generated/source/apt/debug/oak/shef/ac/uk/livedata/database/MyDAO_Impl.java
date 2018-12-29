@@ -12,6 +12,8 @@ import android.database.Cursor;
 import android.support.annotation.NonNull;
 import java.lang.Override;
 import java.lang.String;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class MyDAO_Impl implements MyDAO {
@@ -148,6 +150,45 @@ public class MyDAO_Impl implements MyDAO {
             _result.setId(_tmpId);
           } else {
             _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<List<byte[]>> getallimage() {
+    final String _sql = "SELECT image FROM picinfo_database";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<List<byte[]>>() {
+      private Observer _observer;
+
+      @Override
+      protected List<byte[]> compute() {
+        if (_observer == null) {
+          _observer = new Observer("picinfo_database") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final List<byte[]> _result = new ArrayList<byte[]>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final byte[] _item;
+            _item = _cursor.getBlob(0);
+            _result.add(_item);
           }
           return _result;
         } finally {
