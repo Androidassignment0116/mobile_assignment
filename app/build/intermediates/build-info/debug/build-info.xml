@@ -5,23 +5,28 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.2.1"
-    timestamp="1546105904243"
+    timestamp="1546107785096"
     token="-6055667223617506685"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2332" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="37" />
     <task
         name="verifier"
-        duration="0" />
+        duration="12" />
+
+    <artifact
+        location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
@@ -69,7 +74,20 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1546105904243"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1546106927720"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1546107785096"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>

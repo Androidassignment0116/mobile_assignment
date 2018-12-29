@@ -16,18 +16,6 @@ import java.util.List;
 public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
     private List<Bitmap> bitmaps = new ArrayList<>();
 
-    public PicAdapter(List<byte[]> pic)
-    {
-        for (byte[] b:pic
-             ) {
-            Bitmap bitmap = BitmapFactory.decodeByteArray(b , 0, b .length);
-            int x = bitmap.getWidth();
-            int y = bitmap.getHeight();
-            int[] intArray = new int[x * y];
-            bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
-            bitmaps.add(bitmap);
-        }
-    }
 
     @NonNull
     @Override

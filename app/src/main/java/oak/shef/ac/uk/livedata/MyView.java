@@ -25,6 +25,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -46,18 +47,10 @@ public class MyView extends AppCompatActivity {
     private MyViewModel myViewModel;
     private Activity activity;
     private PicAdapter PicAdapter;
-    List<byte[]> initpic = new ArrayList<>();
+
     Context mContext;
 
-    private void initpic(){
-        Bitmap bm = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.joe1);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bm.compress(Bitmap.CompressFormat.PNG, 100, stream);
-        byte[] byteArray = stream.toByteArray();
-        bm.recycle();
-        initpic.add(byteArray);
-        initpic.add(byteArray);
-    }
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,12 +60,11 @@ public class MyView extends AppCompatActivity {
 
 
 
-
         RecyclerView recyclerView = findViewById(R.id.grid_recycler_view);
         int numberOfColumns = 4;
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
         recyclerView.setHasFixedSize(true);
-        PicAdapter = new PicAdapter(initpic);
+        PicAdapter = new PicAdapter();
         recyclerView.setAdapter(PicAdapter);
 
         activity= this;
