@@ -78,22 +78,9 @@ public class MyView extends AppCompatActivity {
             }
         }).attachToRecyclerView(recyclerView);
 
-        PicAdapterview.setOnItemClickListener(new PicAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(Bitmap node) {
-                Intent intent = new Intent(MyView.this,ShowPicDetail.class);
-                Bundle bundle = new Bundle();
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                node.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                node.recycle();
-                bundle.putByteArray("Picture",byteArray);
-                startActivity(intent);
-            }
-        });
 
         activity= this;
-        // Get a new or existing ViewModel from the ViewModelProvider.
+
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
 
 

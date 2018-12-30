@@ -22,12 +22,11 @@ public class MyViewModel extends AndroidViewModel {
 
     LiveData<PicinfoData> numberDataToDisplay;
     LiveData<List<byte[]>> picDataToDisplay;
-    List<ImageElement> temp = new ArrayList<>();
+//    List<ImageElement> temp = new ArrayList<>();
 
 
     public MyViewModel (Application application) {
         super(application);
-        // creation and connection to the Repository
         mRepository = new MyRepository(application);
         numberDataToDisplay = mRepository.getNumberData();
         picDataToDisplay = mRepository.getallimage();

@@ -1,5 +1,7 @@
 package oak.shef.ac.uk.livedata;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
@@ -16,24 +18,40 @@ import java.util.List;
 import oak.shef.ac.uk.livedata.database.PicinfoData;
 
 public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
-    private List<Bitmap> bitmaps = new ArrayList<>();
-    private OnItemClickListener listener;
+    private static List<Bitmap> bitmaps = new ArrayList<>();
+    private static Context context;
+
 
     public PicAdapter(){};
 
     public PicAdapter(List<Bitmap> b){  this.bitmaps = b;}
 
+    public PicAdapter(Context cont, List<Bitmap> b){
+        this.context = cont;
+        this.bitmaps = b;
+    }
+
     @NonNull
     @Override
     public PicAdapter.PicHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.list_item_image, viewGroup, false);
+        context = viewGroup.getContext();
         return new PicHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PicAdapter.PicHolder picHolder, int i) {
+    public void onBindViewHolder(@NonNull PicAdapter.PicHolder picHolder, final int i) {
         Bitmap currentPic = bitmaps.get(i);
         picHolder.imageViewpic.setImageBitmap(currentPic);
+//
+        picHolder.imageViewpic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ShowPicDetail.class);
+                intent.putExtra("position", i);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -64,26 +82,11 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
             super(itemView);
             imageViewpic = itemView.findViewById(R.id.image_item);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
-                    if (listener != null && position != RecyclerView.NO_POSITION){
-                        listener.onItemClick(bitmaps.get(position));
-                    }
-                }
-            });
         }
     }
 
-    public  List<Bitmap> getItems() {
+    public static List<Bitmap> getItems() {
         return bitmaps;
     }
-    public interface OnItemClickListener {
-        void onItemClick(Bitmap node);
-    }
 
-    public void setOnItemClickListener(OnItemClickListener listener) {
-        this.listener = listener;
-    }
 }

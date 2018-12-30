@@ -221,4 +221,23 @@ public class MyDAO_Impl implements MyDAO {
       _statement.release();
     }
   }
+
+  @Override
+  public List<byte[]> checkcontain() {
+    final String _sql = "SELECT image From picinfo_database";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final List<byte[]> _result = new ArrayList<byte[]>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final byte[] _item;
+        _item = _cursor.getBlob(0);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
 }

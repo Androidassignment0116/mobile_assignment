@@ -13,17 +13,20 @@ public class ShowPicDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_pic);
 
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        byte[] b = bundle.getByteArray("Picture");
-        Bitmap bitmap = BitmapFactory.decodeByteArray(b , 0, b.length);
-        int x = bitmap.getWidth();
-        int y = bitmap.getHeight();
-        int[] intArray = new int[x * y];
-        bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
 
-        ImageView imageView = findViewById(R.id.image);
-        imageView.setImageBitmap(bitmap);
+        Bundle bundle = getIntent().getExtras();
+        int pos = -1;
+        if (bundle !=null){
+            pos = bundle.getInt("position");
+            if (pos!= -1){
+                ImageView imageView = findViewById(R.id.image);
+                Bitmap b = PicAdapter.getItems().get(pos);
+                if (b != null)
+                    imageView.setImageBitmap(b);
+            }
+        }
+
+
 
     }
 }

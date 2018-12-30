@@ -16,6 +16,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -83,8 +84,11 @@ class MyRepository extends ViewModel {
         }
         @Override
         protected Void doInBackground(final PicinfoData... params) {
-            mAsyncTaskDao.insert(params[0]);
-            Log.i("MyRepository", "number generated: "+params[0].getNumber()+""+ params[0].getTitle() + " " +params[0].getDescription()+ " "+ params[0].getImage());
+
+                mAsyncTaskDao.insert(params[0]);
+                Log.i("MyRepository", "number generated: "+params[0].getNumber()+""+ params[0].getTitle() + " " +params[0].getDescription()+ " "+ params[0].getImage());
+
+
             // you may want to uncomment this to check if numbers have been inserted
             //            int ix=mAsyncTaskDao.howManyElements();
             //            Log.i("TAG", ix+"");

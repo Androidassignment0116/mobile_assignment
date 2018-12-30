@@ -11,6 +11,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
 
+import java.util.HashSet;
 import java.util.List;
 
 @Dao
@@ -36,4 +37,5 @@ public interface MyDAO {
 
     @Query("SELECT COUNT(*) FROM picinfo_database")
     int howManyElements();
+    
 }
