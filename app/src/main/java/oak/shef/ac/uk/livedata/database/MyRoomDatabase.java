@@ -9,7 +9,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@android.arch.persistence.room.Database(entities = {PicinfoData.class}, version = 2, exportSchema = false)
+@android.arch.persistence.room.Database(entities = {PicinfoData.class}, version = 5, exportSchema = false)
 public abstract class MyRoomDatabase extends RoomDatabase {
     public abstract MyDAO myDao();
 

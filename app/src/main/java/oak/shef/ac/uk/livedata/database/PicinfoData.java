@@ -14,21 +14,26 @@ public class PicinfoData {
     @PrimaryKey(autoGenerate = true)
     @android.support.annotation.NonNull
     private int id=0;
-    private int number;
+
     private String title;
     private String description;
+    private String datetime;
+    private Float latitude;
+    private Float longitude;
+
 
     @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
     private byte[] image;
 
-//    public PicinfoData(int number) {
-//        this.number= number;
-//    }
-    public PicinfoData(int number, String title, String description, byte[] image){
-        this.number = number;
+
+    public PicinfoData(String title, String description, byte[] image, String datetime, Float latitude, Float longitude){
+
         this.description = description;
         this.title = title;
         this.image = image;
+        this.datetime = datetime;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     @android.support.annotation.NonNull
@@ -39,12 +44,20 @@ public class PicinfoData {
         this.id = id;
     }
 
-    public int getNumber() {
-        return number;
+    public Float getLatitude() {
+        return latitude;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setLatitude(Float latitude) {
+        this.latitude = latitude;
+    }
+
+    public Float getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Float longitude) {
+        this.longitude = longitude;
     }
 
     public void setTitle(String title) {
@@ -69,5 +82,13 @@ public class PicinfoData {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public String getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(String datetime) {
+        this.datetime = datetime;
     }
 }

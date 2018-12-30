@@ -37,5 +37,11 @@ public interface MyDAO {
 
     @Query("SELECT COUNT(*) FROM picinfo_database")
     int howManyElements();
-    
+
+    @Query("SELECT datetime FROM picinfo_database")
+    List<String> getalldatetime();
+
+    @Query("SELECT * FROM picinfo_database WHERE datetime = :datetime")
+    boolean checkexits(String datetime);
+
 }

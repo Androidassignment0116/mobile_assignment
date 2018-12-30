@@ -66,17 +66,6 @@ public class MyView extends AppCompatActivity {
         PicAdapterview = new PicAdapter();
         recyclerView.setAdapter(PicAdapterview);
 
-        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,0) {
-            @Override
-            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder viewHolder1) {
-                return false;
-            }
-
-            @Override
-            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-
-            }
-        }).attachToRecyclerView(recyclerView);
 
 
         activity= this;

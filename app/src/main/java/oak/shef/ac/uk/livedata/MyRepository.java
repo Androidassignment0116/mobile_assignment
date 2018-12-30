@@ -14,6 +14,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.ExifInterface;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -55,6 +56,7 @@ class MyRepository extends ViewModel {
 
 
 
+
     public void onPhotosReturned(List<File> files){
         for (File file:files
              ) {
@@ -64,14 +66,75 @@ class MyRepository extends ViewModel {
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
             byte[] byteArray = stream.toByteArray();
             bitmap.recycle();
-            Random r = new Random();
-            int i1 = r.nextInt(10000 - 1) + 1;
-            String title = "new title";
-            String description = "new dec";
+            String time = "default";
+            String Latitude = "0";
+            String Longitude = "0";
+            String title = "default title";
+            String description = "default description";
+            String latitude_Ref = "N";
+            String longitude_Ref = "E";
+            Float latitude =0.0f, longitude=0.0f;
+            try {
+                ExifInterface exifInterface = new ExifInterface(filePath);
+                Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
+                latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
+                Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
+                longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
+                time = exifInterface.getAttribute(ExifInterface.TAG_DATETIME);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            if((Latitude !=null)
+                    && (latitude_Ref !=null)
+                    && (Longitude != null)
+                    && (longitude_Ref !=null))
+            {
 
-            new insertAsyncTask(mDBDao).execute(new PicinfoData(i1, title, description, byteArray));
+                if(latitude_Ref.equals("N")){
+                    latitude = convertToDegree(Latitude);
+                }
+                else{
+                    latitude = 0 - convertToDegree(Latitude);
+                }
+
+                if(longitude_Ref.equals("E")){
+                    longitude = convertToDegree(Longitude);
+                }
+                else{
+                    longitude = 0 - convertToDegree(Longitude);
+                }
+
+            }
+            new insertAsyncTask(mDBDao).execute(new PicinfoData(title, description, byteArray, time, latitude, longitude));
+
         }
     }
+
+    private Float convertToDegree(String stringDMS){
+        Float result = null;
+        String[] DMS = stringDMS.split(",", 3);
+
+        String[] stringD = DMS[0].split("/", 2);
+        Double D0 = new Double(stringD[0]);
+        Double D1 = new Double(stringD[1]);
+        Double FloatD = D0/D1;
+
+        String[] stringM = DMS[1].split("/", 2);
+        Double M0 = new Double(stringM[0]);
+        Double M1 = new Double(stringM[1]);
+        Double FloatM = M0/M1;
+
+        String[] stringS = DMS[2].split("/", 2);
+        Double S0 = new Double(stringS[0]);
+        Double S1 = new Double(stringS[1]);
+        Double FloatS = S0/S1;
+
+        result = new Float(FloatD + (FloatM/60) + (FloatS/3600));
+
+        return result;
+
+
+    };
 
 
 
@@ -84,10 +147,10 @@ class MyRepository extends ViewModel {
         }
         @Override
         protected Void doInBackground(final PicinfoData... params) {
-
-                mAsyncTaskDao.insert(params[0]);
-                Log.i("MyRepository", "number generated: "+params[0].getNumber()+""+ params[0].getTitle() + " " +params[0].getDescription()+ " "+ params[0].getImage());
-
+                if (!mAsyncTaskDao.checkexits(params[0].getDatetime())) {
+                    mAsyncTaskDao.insert(params[0]);
+                    Log.i("MyRepository", "number generated: " + "" + params[0].getTitle() + " " + params[0].getDescription() + " " + params[0].getImage()+ " "+params[0].getLatitude()+" "+ params[0].getLongitude());
+                }
 
             // you may want to uncomment this to check if numbers have been inserted
             //            int ix=mAsyncTaskDao.howManyElements();

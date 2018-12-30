@@ -22,11 +22,11 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
   private volatile MyDAO _myDAO;
 
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `picinfo_database` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `number` INTEGER NOT NULL, `title` TEXT, `description` TEXT, `image` BLOB)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `picinfo_database` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `description` TEXT, `datetime` TEXT, `latitude` REAL, `longitude` REAL, `image` BLOB)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"54625e14ccfff171d86a4e9ac6a25802\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"e82afb500ebd102b4f96166abd6a7b48\")");
       }
 
       public void dropAllTables(SupportSQLiteDatabase _db) {
@@ -52,11 +52,13 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
       }
 
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsPicinfoDatabase = new HashMap<String, TableInfo.Column>(5);
+        final HashMap<String, TableInfo.Column> _columnsPicinfoDatabase = new HashMap<String, TableInfo.Column>(7);
         _columnsPicinfoDatabase.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
-        _columnsPicinfoDatabase.put("number", new TableInfo.Column("number", "INTEGER", true, 0));
         _columnsPicinfoDatabase.put("title", new TableInfo.Column("title", "TEXT", false, 0));
         _columnsPicinfoDatabase.put("description", new TableInfo.Column("description", "TEXT", false, 0));
+        _columnsPicinfoDatabase.put("datetime", new TableInfo.Column("datetime", "TEXT", false, 0));
+        _columnsPicinfoDatabase.put("latitude", new TableInfo.Column("latitude", "REAL", false, 0));
+        _columnsPicinfoDatabase.put("longitude", new TableInfo.Column("longitude", "REAL", false, 0));
         _columnsPicinfoDatabase.put("image", new TableInfo.Column("image", "BLOB", false, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysPicinfoDatabase = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesPicinfoDatabase = new HashSet<TableInfo.Index>(0);
@@ -68,7 +70,7 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
                   + " Found:\n" + _existingPicinfoDatabase);
         }
       }
-    }, "54625e14ccfff171d86a4e9ac6a25802");
+    }, "e82afb500ebd102b4f96166abd6a7b48");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

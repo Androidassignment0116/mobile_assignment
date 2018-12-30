@@ -10,6 +10,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.RoomSQLiteQuery;
 import android.database.Cursor;
 import android.support.annotation.NonNull;
+import java.lang.Float;
 import java.lang.Override;
 import java.lang.String;
 import java.util.ArrayList;
@@ -28,27 +29,41 @@ public class MyDAO_Impl implements MyDAO {
     this.__insertionAdapterOfPicinfoData = new EntityInsertionAdapter<PicinfoData>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`number`,`title`,`description`,`image`) VALUES (nullif(?, 0),?,?,?,?)";
+        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`title`,`description`,`datetime`,`latitude`,`longitude`,`image`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, PicinfoData value) {
         stmt.bindLong(1, value.getId());
-        stmt.bindLong(2, value.getNumber());
         if (value.getTitle() == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(2);
         } else {
-          stmt.bindString(3, value.getTitle());
+          stmt.bindString(2, value.getTitle());
         }
         if (value.getDescription() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getDescription());
+        }
+        if (value.getDatetime() == null) {
           stmt.bindNull(4);
         } else {
-          stmt.bindString(4, value.getDescription());
+          stmt.bindString(4, value.getDatetime());
         }
-        if (value.getImage() == null) {
+        if (value.getLatitude() == null) {
           stmt.bindNull(5);
         } else {
-          stmt.bindBlob(5, value.getImage());
+          stmt.bindDouble(5, value.getLatitude());
+        }
+        if (value.getLongitude() == null) {
+          stmt.bindNull(6);
+        } else {
+          stmt.bindDouble(6, value.getLongitude());
+        }
+        if (value.getImage() == null) {
+          stmt.bindNull(7);
+        } else {
+          stmt.bindBlob(7, value.getImage());
         }
       }
     };
@@ -130,21 +145,35 @@ public class MyDAO_Impl implements MyDAO {
         final Cursor _cursor = __db.query(_statement);
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfNumber = _cursor.getColumnIndexOrThrow("number");
           final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
           final int _cursorIndexOfDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfDatetime = _cursor.getColumnIndexOrThrow("datetime");
+          final int _cursorIndexOfLatitude = _cursor.getColumnIndexOrThrow("latitude");
+          final int _cursorIndexOfLongitude = _cursor.getColumnIndexOrThrow("longitude");
           final int _cursorIndexOfImage = _cursor.getColumnIndexOrThrow("image");
           final PicinfoData _result;
           if(_cursor.moveToFirst()) {
-            final int _tmpNumber;
-            _tmpNumber = _cursor.getInt(_cursorIndexOfNumber);
             final String _tmpTitle;
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            final String _tmpDatetime;
+            _tmpDatetime = _cursor.getString(_cursorIndexOfDatetime);
+            final Float _tmpLatitude;
+            if (_cursor.isNull(_cursorIndexOfLatitude)) {
+              _tmpLatitude = null;
+            } else {
+              _tmpLatitude = _cursor.getFloat(_cursorIndexOfLatitude);
+            }
+            final Float _tmpLongitude;
+            if (_cursor.isNull(_cursorIndexOfLongitude)) {
+              _tmpLongitude = null;
+            } else {
+              _tmpLongitude = _cursor.getFloat(_cursorIndexOfLongitude);
+            }
             final byte[] _tmpImage;
             _tmpImage = _cursor.getBlob(_cursorIndexOfImage);
-            _result = new PicinfoData(_tmpNumber,_tmpTitle,_tmpDescription,_tmpImage);
+            _result = new PicinfoData(_tmpTitle,_tmpDescription,_tmpImage,_tmpDatetime,_tmpLatitude,_tmpLongitude);
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             _result.setId(_tmpId);
@@ -223,16 +252,43 @@ public class MyDAO_Impl implements MyDAO {
   }
 
   @Override
-  public List<byte[]> checkcontain() {
-    final String _sql = "SELECT image From picinfo_database";
+  public List<String> getalldatetime() {
+    final String _sql = "SELECT datetime FROM picinfo_database";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final Cursor _cursor = __db.query(_statement);
     try {
-      final List<byte[]> _result = new ArrayList<byte[]>(_cursor.getCount());
+      final List<String> _result = new ArrayList<String>(_cursor.getCount());
       while(_cursor.moveToNext()) {
-        final byte[] _item;
-        _item = _cursor.getBlob(0);
+        final String _item;
+        _item = _cursor.getString(0);
         _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public boolean checkexits(String datetime) {
+    final String _sql = "SELECT * FROM picinfo_database WHERE datetime = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (datetime == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, datetime);
+    }
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final boolean _result;
+      if(_cursor.moveToFirst()) {
+        final int _tmp;
+        _tmp = _cursor.getInt(0);
+        _result = _tmp != 0;
+      } else {
+        _result = false;
       }
       return _result;
     } finally {
