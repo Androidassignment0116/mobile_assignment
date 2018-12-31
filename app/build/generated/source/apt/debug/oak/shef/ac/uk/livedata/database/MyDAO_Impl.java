@@ -125,75 +125,6 @@ public class MyDAO_Impl implements MyDAO {
   }
 
   @Override
-  public LiveData<PicinfoData> retrieveOnePicinfo() {
-    final String _sql = "SELECT * FROM picinfo_database ORDER BY RANDOM() LIMIT 1";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    return new ComputableLiveData<PicinfoData>() {
-      private Observer _observer;
-
-      @Override
-      protected PicinfoData compute() {
-        if (_observer == null) {
-          _observer = new Observer("picinfo_database") {
-            @Override
-            public void onInvalidated(@NonNull Set<String> tables) {
-              invalidate();
-            }
-          };
-          __db.getInvalidationTracker().addWeakObserver(_observer);
-        }
-        final Cursor _cursor = __db.query(_statement);
-        try {
-          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
-          final int _cursorIndexOfDescription = _cursor.getColumnIndexOrThrow("description");
-          final int _cursorIndexOfDatetime = _cursor.getColumnIndexOrThrow("datetime");
-          final int _cursorIndexOfLatitude = _cursor.getColumnIndexOrThrow("latitude");
-          final int _cursorIndexOfLongitude = _cursor.getColumnIndexOrThrow("longitude");
-          final int _cursorIndexOfImage = _cursor.getColumnIndexOrThrow("image");
-          final PicinfoData _result;
-          if(_cursor.moveToFirst()) {
-            final String _tmpTitle;
-            _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
-            final String _tmpDescription;
-            _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final String _tmpDatetime;
-            _tmpDatetime = _cursor.getString(_cursorIndexOfDatetime);
-            final Float _tmpLatitude;
-            if (_cursor.isNull(_cursorIndexOfLatitude)) {
-              _tmpLatitude = null;
-            } else {
-              _tmpLatitude = _cursor.getFloat(_cursorIndexOfLatitude);
-            }
-            final Float _tmpLongitude;
-            if (_cursor.isNull(_cursorIndexOfLongitude)) {
-              _tmpLongitude = null;
-            } else {
-              _tmpLongitude = _cursor.getFloat(_cursorIndexOfLongitude);
-            }
-            final byte[] _tmpImage;
-            _tmpImage = _cursor.getBlob(_cursorIndexOfImage);
-            _result = new PicinfoData(_tmpTitle,_tmpDescription,_tmpImage,_tmpDatetime,_tmpLatitude,_tmpLongitude);
-            final int _tmpId;
-            _tmpId = _cursor.getInt(_cursorIndexOfId);
-            _result.setId(_tmpId);
-          } else {
-            _result = null;
-          }
-          return _result;
-        } finally {
-          _cursor.close();
-        }
-      }
-
-      @Override
-      protected void finalize() {
-        _statement.release();
-      }
-    }.getLiveData();
-  }
-
-  @Override
   public LiveData<List<byte[]>> getallimage() {
     final String _sql = "SELECT image FROM picinfo_database";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
@@ -217,6 +148,75 @@ public class MyDAO_Impl implements MyDAO {
           while(_cursor.moveToNext()) {
             final byte[] _item;
             _item = _cursor.getBlob(0);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<List<PicinfoData>> getall() {
+    final String _sql = "SELECT * FROM picinfo_database";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<List<PicinfoData>>() {
+      private Observer _observer;
+
+      @Override
+      protected List<PicinfoData> compute() {
+        if (_observer == null) {
+          _observer = new Observer("picinfo_database") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
+          final int _cursorIndexOfDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfDatetime = _cursor.getColumnIndexOrThrow("datetime");
+          final int _cursorIndexOfLatitude = _cursor.getColumnIndexOrThrow("latitude");
+          final int _cursorIndexOfLongitude = _cursor.getColumnIndexOrThrow("longitude");
+          final int _cursorIndexOfImage = _cursor.getColumnIndexOrThrow("image");
+          final List<PicinfoData> _result = new ArrayList<PicinfoData>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final PicinfoData _item;
+            final String _tmpTitle;
+            _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+            final String _tmpDescription;
+            _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            final String _tmpDatetime;
+            _tmpDatetime = _cursor.getString(_cursorIndexOfDatetime);
+            final Float _tmpLatitude;
+            if (_cursor.isNull(_cursorIndexOfLatitude)) {
+              _tmpLatitude = null;
+            } else {
+              _tmpLatitude = _cursor.getFloat(_cursorIndexOfLatitude);
+            }
+            final Float _tmpLongitude;
+            if (_cursor.isNull(_cursorIndexOfLongitude)) {
+              _tmpLongitude = null;
+            } else {
+              _tmpLongitude = _cursor.getFloat(_cursorIndexOfLongitude);
+            }
+            final byte[] _tmpImage;
+            _tmpImage = _cursor.getBlob(_cursorIndexOfImage);
+            _item = new PicinfoData(_tmpTitle,_tmpDescription,_tmpImage,_tmpDatetime,_tmpLatitude,_tmpLongitude);
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            _item.setId(_tmpId);
             _result.add(_item);
           }
           return _result;

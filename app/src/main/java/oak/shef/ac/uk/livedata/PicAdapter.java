@@ -20,9 +20,11 @@ import oak.shef.ac.uk.livedata.database.PicinfoData;
 public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
     private static List<Bitmap> bitmaps = new ArrayList<>();
     private static Context context;
+    private static List<PicinfoData> allinfo = new ArrayList<>();
 
 
     public PicAdapter(){};
+
 
     public PicAdapter(List<Bitmap> b){  this.bitmaps = b;}
 
@@ -58,12 +60,15 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
     public int getItemCount() {
         return bitmaps.size();
     }
-    public void setBitmaps(List<byte[]> pic)
+
+    public void setBitmaps(List<PicinfoData> pic)
     {
+
         List<Bitmap> bit = new ArrayList<>();
-        for (byte[] b:pic
-             ) {
-            Bitmap bitmap = BitmapFactory.decodeByteArray(b , 0, b.length);
+        for (PicinfoData b:pic
+                ) {
+            byte[] temp = b.getImage();
+            Bitmap bitmap = BitmapFactory.decodeByteArray(temp , 0, temp.length);
             int x = bitmap.getWidth();
             int y = bitmap.getHeight();
             int[] intArray = new int[x * y];
@@ -71,6 +76,7 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
             bit.add(bitmap);
         }
         this.bitmaps = bit;
+        this.allinfo = pic;
         notifyDataSetChanged();
     }
 
@@ -85,8 +91,8 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
         }
     }
 
-    public static List<Bitmap> getItems() {
-        return bitmaps;
+    public static List<PicinfoData> getItems() {
+        return allinfo;
     }
 
 }

@@ -40,19 +40,11 @@ class MyRepository extends ViewModel {
         mDBDao = db.myDao();
     }
 
-    /**
-     * it gets the data when changed in the db and returns it to the ViewModel
-     * @return
-     */
-    public LiveData<PicinfoData> getNumberData() {
-        return mDBDao.retrieveOnePicinfo();
-    }
 
-    public LiveData<List<byte[]>> getallimage() {    return mDBDao.getallimage(); }
 
-    /**
-     * called by the UI to request the generation of a new random number
-     */
+    public LiveData<List<PicinfoData>> getall(){return mDBDao.getall();}
+
+
 
 
 
@@ -152,9 +144,6 @@ class MyRepository extends ViewModel {
                     Log.i("MyRepository", "number generated: " + "" + params[0].getTitle() + " " + params[0].getDescription() + " " + params[0].getImage()+ " "+params[0].getLatitude()+" "+ params[0].getLongitude());
                 }
 
-            // you may want to uncomment this to check if numbers have been inserted
-            //            int ix=mAsyncTaskDao.howManyElements();
-            //            Log.i("TAG", ix+"");
             return null;
         }
     }

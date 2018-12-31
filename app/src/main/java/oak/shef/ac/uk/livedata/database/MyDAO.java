@@ -25,12 +25,12 @@ public interface MyDAO {
     @Delete
     void delete(PicinfoData picinfoData);
 
-    // it selects a random element
-    @Query("SELECT * FROM picinfo_database ORDER BY RANDOM() LIMIT 1")
-    LiveData<PicinfoData> retrieveOnePicinfo();
 
     @Query("SELECT image FROM picinfo_database")
     LiveData<List<byte[]>> getallimage();
+
+    @Query("SELECT * FROM picinfo_database")
+    LiveData<List<PicinfoData>> getall();
 
     @Delete
     void deleteAll(PicinfoData... picinfoData);
@@ -43,5 +43,6 @@ public interface MyDAO {
 
     @Query("SELECT * FROM picinfo_database WHERE datetime = :datetime")
     boolean checkexits(String datetime);
+
 
 }

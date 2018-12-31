@@ -72,13 +72,13 @@ public class MyView extends AppCompatActivity {
 
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
 
-
-        myViewModel.getPicDataToDisplay().observe(this, new Observer<List<byte[]>>() {
+        myViewModel.getallData().observe(this, new Observer<List<PicinfoData>>() {
             @Override
-            public void onChanged(@Nullable List<byte[]> bytes) {
-                PicAdapterview.setBitmaps(bytes);
+            public void onChanged(@Nullable List<PicinfoData> picinfoData) {
+                PicAdapterview.setBitmaps(picinfoData);
             }
         });
+
 
 
         checkPermissions(getApplicationContext());

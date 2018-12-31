@@ -20,47 +20,29 @@ import oak.shef.ac.uk.livedata.database.PicinfoData;
 public class MyViewModel extends AndroidViewModel {
     private final MyRepository mRepository;
 
-    LiveData<PicinfoData> numberDataToDisplay;
-    LiveData<List<byte[]>> picDataToDisplay;
-//    List<ImageElement> temp = new ArrayList<>();
+
+
+    LiveData<List<PicinfoData>> allData;
+
 
 
     public MyViewModel (Application application) {
         super(application);
         mRepository = new MyRepository(application);
-        numberDataToDisplay = mRepository.getNumberData();
-        picDataToDisplay = mRepository.getallimage();
+        allData = mRepository.getall();
 
     }
 
 
-    /**
-     * getter for the live data
-     * @return
-     */
 
 
-    LiveData<List<byte[]>> getPicDataToDisplay(){
-        if (picDataToDisplay == null){
-            picDataToDisplay = new MutableLiveData<List<byte[]>>();
+    LiveData<List<PicinfoData>> getallData(){
+        if(allData == null){
+            allData = new MutableLiveData<List<PicinfoData>>();
         }
-        return picDataToDisplay;
+        return  allData;
     }
-//    List<ImageElement> getPicDataToDisplay(){
-//        if(picDataToDisplay != null) {
-//            for (byte[] b:picDataToDisplay
-//                 ) {
-//                Bitmap bitmap = BitmapFactory.decodeByteArray(b , 0, b .length);
-//                int x = bitmap.getWidth();
-//                int y = bitmap.getHeight();
-//                int[] intArray = new int[x * y];
-//                bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
-//                temp.add(bitmap);
-//            }
-//        }
-//        else
-//            return null;
-//    }
+
 
     /**
      * request by the UI to generate a new random number
@@ -69,4 +51,5 @@ public class MyViewModel extends AndroidViewModel {
     public void sortpic(List<File> files){
         mRepository.onPhotosReturned(files);
     }
+
 }
