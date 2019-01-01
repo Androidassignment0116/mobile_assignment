@@ -1030,6 +1030,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
+id EditButton
 id FUNCTION
 id META
 id SHIFT
@@ -1080,7 +1081,6 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
-id date
 id decor_content_parent
 id default_activity_button
 id description
@@ -1300,6 +1300,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout detail_pic
+layout edit_pic
 layout list_item_image
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1363,6 +1364,7 @@ string character_counter_content_description
 string character_counter_pattern
 string date
 string description
+string edit
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior

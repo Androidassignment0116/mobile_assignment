@@ -7,6 +7,7 @@
     >
 
 
+
     <!--<android.support.design.widget.AppBarLayout-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -71,18 +72,18 @@
                     android:textSize="30dp" />
 
 
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/date"
-                    android:textSize="30dp"
-                    android:textStyle="bold"/>
-                <TextView
+                <!--<TextView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/date"-->
+                    <!--android:textSize="30dp"-->
+                    <!--android:textStyle="bold"/>-->
+                <!--<TextView-->
 
-                    android:id="@+id/date"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp" />
+                    <!--android:id="@+id/date"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="30dp" />-->
 
 
                 <TextView
@@ -100,17 +101,22 @@
                     android:layout_height="wrap_content"
                     android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/location"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+
 
 
 
         </LinearLayout>
+        <Button
+            android:id="@+id/EditButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/edit"
+
+            />
     </LinearLayout>
+
+
 
 </android.support.design.widget.CoordinatorLayout>
 
