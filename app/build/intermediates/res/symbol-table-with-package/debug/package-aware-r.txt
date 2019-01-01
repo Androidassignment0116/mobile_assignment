@@ -1080,8 +1080,10 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id date
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1128,7 +1130,7 @@ id line1
 id line3
 id listMode
 id list_item
-id map
+id location
 id masked
 id message
 id middle
@@ -1359,9 +1361,12 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string date
+string description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string location
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
@@ -1370,6 +1375,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string tittle
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

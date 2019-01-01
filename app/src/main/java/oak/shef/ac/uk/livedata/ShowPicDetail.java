@@ -18,7 +18,9 @@ import oak.shef.ac.uk.livedata.database.PicinfoData;
 public class ShowPicDetail extends AppCompatActivity {
     private MyViewModel myViewModeldetail;
     private byte[] byteArray;
-    TextView textView;
+    TextView textTittle;
+    TextView textDescription;
+    TextView textLocation;
 
 
     @Override
@@ -33,7 +35,9 @@ public class ShowPicDetail extends AppCompatActivity {
             pos = bundle.getInt("position");
             if (pos!= -1){
                 ImageView imageView = findViewById(R.id.image);
-                TextView textView = findViewById(R.id.title);
+                TextView textTittle = findViewById(R.id.title);
+                TextView textDescription = findViewById(R.id.description);
+                TextView textLocation = findViewById(R.id.location);
 
                 byte[] temp = PicAdapter.getItems().get(pos).getImage();
                 Bitmap b = BitmapFactory.decodeByteArray(temp , 0, temp.length);
@@ -43,7 +47,12 @@ public class ShowPicDetail extends AppCompatActivity {
                 if (b != null)
                     imageView.setImageBitmap(b);
 
-                textView.setText("Title: "+ PicAdapter.getItems().get(pos).getTitle()+" Description: "+ PicAdapter.getItems().get(pos).getDescription()+ " latitude: "+ PicAdapter.getItems().get(pos).getLatitude() + " Longitude:"+ PicAdapter.getItems().get(pos).getLongitude());
+                textTittle.setText( PicAdapter.getItems().get(pos).getTitle());
+
+                textDescription.setText( PicAdapter.getItems().get(pos).getDescription());
+                textLocation.setText(" latitude: "+ PicAdapter.getItems().get(pos).getLatitude()
+                        + " Longitude:"+ PicAdapter.getItems().get(pos).getLongitude());
+
             }
         }
 

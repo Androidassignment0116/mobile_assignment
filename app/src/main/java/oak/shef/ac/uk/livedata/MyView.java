@@ -66,8 +66,6 @@ public class MyView extends AppCompatActivity {
         PicAdapterview = new PicAdapter();
         recyclerView.setAdapter(PicAdapterview);
 
-
-
         activity= this;
 
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
