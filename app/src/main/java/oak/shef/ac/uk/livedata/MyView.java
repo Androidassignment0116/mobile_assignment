@@ -99,6 +99,15 @@ public class MyView extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton fabmap = (FloatingActionButton) findViewById(R.id.fab_map);
+        fabmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyView.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initEasyImage() {

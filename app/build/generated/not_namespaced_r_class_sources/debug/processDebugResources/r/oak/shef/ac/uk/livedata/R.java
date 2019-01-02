@@ -337,13 +337,10 @@ public final class R {
      */
     public static final int alphabeticModifiers=0x7f030028;
     /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
      */
-    public static final int arrowHeadLength=0x7f030029;
+    public static final int ambientEnabled=0x7f030029;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -351,14 +348,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int arrowShaftLength=0x7f03002a;
+    public static final int arrowHeadLength=0x7f03002a;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int arrowShaftLength=0x7f03002b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoCompleteTextViewStyle=0x7f03002b;
+    public static final int autoCompleteTextViewStyle=0x7f03002c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -366,7 +371,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMaxTextSize=0x7f03002c;
+    public static final int autoSizeMaxTextSize=0x7f03002d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -374,14 +379,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMinTextSize=0x7f03002d;
+    public static final int autoSizeMinTextSize=0x7f03002e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoSizePresetSizes=0x7f03002e;
+    public static final int autoSizePresetSizes=0x7f03002f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -389,7 +394,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeStepGranularity=0x7f03002f;
+    public static final int autoSizeStepGranularity=0x7f030030;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -401,24 +406,14 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int autoSizeTextType=0x7f030030;
+    public static final int autoSizeTextType=0x7f030031;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int background=0x7f030031;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int backgroundSplit=0x7f030032;
+    public static final int background=0x7f030032;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -428,13 +423,23 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundStacked=0x7f030033;
+    public static final int backgroundSplit=0x7f030033;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int backgroundStacked=0x7f030034;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundTint=0x7f030034;
+    public static final int backgroundTint=0x7f030035;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -450,7 +455,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int backgroundTintMode=0x7f030035;
+    public static final int backgroundTintMode=0x7f030036;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -458,12 +463,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int barLength=0x7f030036;
+    public static final int barLength=0x7f030037;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int barrierAllowsGoneWidgets=0x7f030037;
+    public static final int barrierAllowsGoneWidgets=0x7f030038;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -479,22 +484,22 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int barrierDirection=0x7f030038;
+    public static final int barrierDirection=0x7f030039;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int behavior_autoHide=0x7f030039;
+    public static final int behavior_autoHide=0x7f03003a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int behavior_fitToContents=0x7f03003a;
+    public static final int behavior_fitToContents=0x7f03003b;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int behavior_hideable=0x7f03003b;
+    public static final int behavior_hideable=0x7f03003c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -502,7 +507,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int behavior_overlapTop=0x7f03003c;
+    public static final int behavior_overlapTop=0x7f03003d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -518,12 +523,12 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int behavior_peekHeight=0x7f03003d;
+    public static final int behavior_peekHeight=0x7f03003e;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int behavior_skipCollapsed=0x7f03003e;
+    public static final int behavior_skipCollapsed=0x7f03003f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -531,48 +536,48 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int borderWidth=0x7f03003f;
+    public static final int borderWidth=0x7f030040;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int borderlessButtonStyle=0x7f030040;
+    public static final int borderlessButtonStyle=0x7f030041;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int bottomAppBarStyle=0x7f030041;
+    public static final int bottomAppBarStyle=0x7f030042;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int bottomNavigationStyle=0x7f030042;
+    public static final int bottomNavigationStyle=0x7f030043;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int bottomSheetDialogTheme=0x7f030043;
+    public static final int bottomSheetDialogTheme=0x7f030044;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int bottomSheetStyle=0x7f030044;
+    public static final int bottomSheetStyle=0x7f030045;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int boxBackgroundColor=0x7f030045;
+    public static final int boxBackgroundColor=0x7f030046;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -585,7 +590,7 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int boxBackgroundMode=0x7f030046;
+    public static final int boxBackgroundMode=0x7f030047;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -593,7 +598,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxCollapsedPaddingTop=0x7f030047;
+    public static final int boxCollapsedPaddingTop=0x7f030048;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -601,7 +606,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxCornerRadiusBottomEnd=0x7f030048;
+    public static final int boxCornerRadiusBottomEnd=0x7f030049;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -609,7 +614,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxCornerRadiusBottomStart=0x7f030049;
+    public static final int boxCornerRadiusBottomStart=0x7f03004a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -617,7 +622,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxCornerRadiusTopEnd=0x7f03004a;
+    public static final int boxCornerRadiusTopEnd=0x7f03004b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -625,13 +630,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxCornerRadiusTopStart=0x7f03004b;
+    public static final int boxCornerRadiusTopStart=0x7f03004c;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int boxStrokeColor=0x7f03004c;
+    public static final int boxStrokeColor=0x7f03004d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -639,42 +644,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int boxStrokeWidth=0x7f03004d;
+    public static final int boxStrokeWidth=0x7f03004e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarButtonStyle=0x7f03004e;
+    public static final int buttonBarButtonStyle=0x7f03004f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNegativeButtonStyle=0x7f03004f;
+    public static final int buttonBarNegativeButtonStyle=0x7f030050;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNeutralButtonStyle=0x7f030050;
+    public static final int buttonBarNeutralButtonStyle=0x7f030051;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarPositiveButtonStyle=0x7f030051;
+    public static final int buttonBarPositiveButtonStyle=0x7f030052;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarStyle=0x7f030052;
+    public static final int buttonBarStyle=0x7f030053;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -686,7 +691,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int buttonGravity=0x7f030053;
+    public static final int buttonGravity=0x7f030054;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -694,34 +699,51 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int buttonIconDimen=0x7f030054;
+    public static final int buttonIconDimen=0x7f030055;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonPanelSideLayout=0x7f030055;
+    public static final int buttonPanelSideLayout=0x7f030056;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_only</td><td>2</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * <tr><td>wide</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int buttonSize=0x7f030057;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyle=0x7f030056;
+    public static final int buttonStyle=0x7f030058;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyleSmall=0x7f030057;
+    public static final int buttonStyleSmall=0x7f030059;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int buttonTint=0x7f030058;
+    public static final int buttonTint=0x7f03005a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -737,13 +759,41 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int buttonTintMode=0x7f030059;
+    public static final int buttonTintMode=0x7f03005b;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraBearing=0x7f03005c;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMaxZoomPreference=0x7f03005d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMinZoomPreference=0x7f03005e;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLat=0x7f03005f;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLng=0x7f030060;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTilt=0x7f030061;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraZoom=0x7f030062;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cardBackgroundColor=0x7f03005a;
+    public static final int cardBackgroundColor=0x7f030063;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -751,7 +801,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardCornerRadius=0x7f03005b;
+    public static final int cardCornerRadius=0x7f030064;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -759,7 +809,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardElevation=0x7f03005c;
+    public static final int cardElevation=0x7f030065;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -767,73 +817,73 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardMaxElevation=0x7f03005d;
+    public static final int cardMaxElevation=0x7f030066;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardPreventCornerOverlap=0x7f03005e;
+    public static final int cardPreventCornerOverlap=0x7f030067;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardUseCompatPadding=0x7f03005f;
+    public static final int cardUseCompatPadding=0x7f030068;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cardViewStyle=0x7f030060;
+    public static final int cardViewStyle=0x7f030069;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int chainUseRtl=0x7f030061;
+    public static final int chainUseRtl=0x7f03006a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f030062;
+    public static final int checkboxStyle=0x7f03006b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedChip=0x7f030063;
+    public static final int checkedChip=0x7f03006c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedIcon=0x7f030064;
+    public static final int checkedIcon=0x7f03006d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int checkedIconEnabled=0x7f030065;
+    public static final int checkedIconEnabled=0x7f03006e;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int checkedIconVisible=0x7f030066;
+    public static final int checkedIconVisible=0x7f03006f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f030067;
+    public static final int checkedTextViewStyle=0x7f030070;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int chipBackgroundColor=0x7f030068;
+    public static final int chipBackgroundColor=0x7f030071;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -841,7 +891,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipCornerRadius=0x7f030069;
+    public static final int chipCornerRadius=0x7f030072;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -849,26 +899,26 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipEndPadding=0x7f03006a;
+    public static final int chipEndPadding=0x7f030073;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int chipGroupStyle=0x7f03006b;
+    public static final int chipGroupStyle=0x7f030074;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int chipIcon=0x7f03006c;
+    public static final int chipIcon=0x7f030075;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int chipIconEnabled=0x7f03006d;
+    public static final int chipIconEnabled=0x7f030076;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -876,18 +926,18 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipIconSize=0x7f03006e;
+    public static final int chipIconSize=0x7f030077;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int chipIconTint=0x7f03006f;
+    public static final int chipIconTint=0x7f030078;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int chipIconVisible=0x7f030070;
+    public static final int chipIconVisible=0x7f030079;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -895,7 +945,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipMinHeight=0x7f030071;
+    public static final int chipMinHeight=0x7f03007a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -903,7 +953,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipSpacing=0x7f030072;
+    public static final int chipSpacing=0x7f03007b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -911,7 +961,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipSpacingHorizontal=0x7f030073;
+    public static final int chipSpacingHorizontal=0x7f03007c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -919,14 +969,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipSpacingVertical=0x7f030074;
+    public static final int chipSpacingVertical=0x7f03007d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int chipStandaloneStyle=0x7f030075;
+    public static final int chipStandaloneStyle=0x7f03007e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -934,13 +984,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipStartPadding=0x7f030076;
+    public static final int chipStartPadding=0x7f03007f;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int chipStrokeColor=0x7f030077;
+    public static final int chipStrokeColor=0x7f030080;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -948,26 +998,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int chipStrokeWidth=0x7f030078;
+    public static final int chipStrokeWidth=0x7f030081;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int chipStyle=0x7f030079;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int closeIcon=0x7f03007a;
+    public static final int chipStyle=0x7f030082;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int closeIconEnabled=0x7f03007b;
+    public static final int circleCrop=0x7f030083;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int closeIcon=0x7f030084;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int closeIconEnabled=0x7f030085;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -975,7 +1030,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int closeIconEndPadding=0x7f03007c;
+    public static final int closeIconEndPadding=0x7f030086;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -983,7 +1038,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int closeIconSize=0x7f03007d;
+    public static final int closeIconSize=0x7f030087;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -991,37 +1046,37 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int closeIconStartPadding=0x7f03007e;
+    public static final int closeIconStartPadding=0x7f030088;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int closeIconTint=0x7f03007f;
+    public static final int closeIconTint=0x7f030089;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int closeIconVisible=0x7f030080;
+    public static final int closeIconVisible=0x7f03008a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f030081;
+    public static final int closeItemLayout=0x7f03008b;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f030082;
+    public static final int collapseContentDescription=0x7f03008c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f030083;
+    public static final int collapseIcon=0x7f03008d;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1041,56 +1096,56 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int collapsedTitleGravity=0x7f030084;
+    public static final int collapsedTitleGravity=0x7f03008e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapsedTitleTextAppearance=0x7f030085;
+    public static final int collapsedTitleTextAppearance=0x7f03008f;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f030086;
+    public static final int color=0x7f030090;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f030087;
+    public static final int colorAccent=0x7f030091;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f030088;
+    public static final int colorBackgroundFloating=0x7f030092;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f030089;
+    public static final int colorButtonNormal=0x7f030093;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f03008a;
+    public static final int colorControlActivated=0x7f030094;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f03008b;
+    public static final int colorControlHighlight=0x7f030095;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f03008c;
+    public static final int colorControlNormal=0x7f030096;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1100,62 +1155,79 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f03008d;
+    public static final int colorError=0x7f030097;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f03008e;
+    public static final int colorPrimary=0x7f030098;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f03008f;
+    public static final int colorPrimaryDark=0x7f030099;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>auto</td><td>2</td><td></td></tr>
+     * <tr><td>dark</td><td>0</td><td></td></tr>
+     * <tr><td>light</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int colorScheme=0x7f03009a;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSecondary=0x7f030090;
+    public static final int colorSecondary=0x7f03009b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f030091;
+    public static final int colorSwitchThumbNormal=0x7f03009c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f030092;
+    public static final int commitIcon=0x7f03009d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int constraintSet=0x7f030093;
+    public static final int constraintSet=0x7f03009e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int constraint_referenced_ids=0x7f030094;
+    public static final int constraint_referenced_ids=0x7f03009f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int content=0x7f030095;
+    public static final int content=0x7f0300a0;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f030096;
+    public static final int contentDescription=0x7f0300a1;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1163,7 +1235,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f030097;
+    public static final int contentInsetEnd=0x7f0300a2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1171,7 +1243,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f030098;
+    public static final int contentInsetEndWithActions=0x7f0300a3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1179,7 +1251,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f030099;
+    public static final int contentInsetLeft=0x7f0300a4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1187,7 +1259,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f03009a;
+    public static final int contentInsetRight=0x7f0300a5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1195,7 +1267,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f03009b;
+    public static final int contentInsetStart=0x7f0300a6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1203,7 +1275,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f03009c;
+    public static final int contentInsetStartWithNavigation=0x7f0300a7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1211,7 +1283,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPadding=0x7f03009d;
+    public static final int contentPadding=0x7f0300a8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1219,7 +1291,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingBottom=0x7f03009e;
+    public static final int contentPaddingBottom=0x7f0300a9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1227,7 +1299,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingLeft=0x7f03009f;
+    public static final int contentPaddingLeft=0x7f0300aa;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1235,7 +1307,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingRight=0x7f0300a0;
+    public static final int contentPaddingRight=0x7f0300ab;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1243,27 +1315,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingTop=0x7f0300a1;
+    public static final int contentPaddingTop=0x7f0300ac;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int contentScrim=0x7f0300a2;
+    public static final int contentScrim=0x7f0300ad;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f0300a3;
+    public static final int controlBackground=0x7f0300ae;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f0300a4;
+    public static final int coordinatorLayoutStyle=0x7f0300af;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1271,42 +1343,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cornerRadius=0x7f0300a5;
+    public static final int cornerRadius=0x7f0300b0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int counterEnabled=0x7f0300a6;
+    public static final int counterEnabled=0x7f0300b1;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int counterMaxLength=0x7f0300a7;
+    public static final int counterMaxLength=0x7f0300b2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int counterOverflowTextAppearance=0x7f0300a8;
+    public static final int counterOverflowTextAppearance=0x7f0300b3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int counterTextAppearance=0x7f0300a9;
+    public static final int counterTextAppearance=0x7f0300b4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f0300aa;
+    public static final int customNavigationLayout=0x7f0300b5;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int defaultQueryHint=0x7f0300ab;
+    public static final int defaultQueryHint=0x7f0300b6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1314,7 +1386,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogCornerRadius=0x7f0300ac;
+    public static final int dialogCornerRadius=0x7f0300b7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1322,14 +1394,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogPreferredPadding=0x7f0300ad;
+    public static final int dialogPreferredPadding=0x7f0300b8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f0300ae;
+    public static final int dialogTheme=0x7f0300b9;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1346,21 +1418,21 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f0300af;
+    public static final int displayOptions=0x7f0300ba;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f0300b0;
+    public static final int divider=0x7f0300bb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f0300b1;
+    public static final int dividerHorizontal=0x7f0300bc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1368,14 +1440,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f0300b2;
+    public static final int dividerPadding=0x7f0300bd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f0300b3;
+    public static final int dividerVertical=0x7f0300be;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1383,21 +1455,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f0300b4;
+    public static final int drawableSize=0x7f0300bf;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f0300b5;
+    public static final int drawerArrowStyle=0x7f0300c0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f0300b6;
+    public static final int dropDownListViewStyle=0x7f0300c1;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1405,14 +1477,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f0300b7;
+    public static final int dropdownListPreferredItemHeight=0x7f0300c2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextBackground=0x7f0300b8;
+    public static final int editTextBackground=0x7f0300c3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1422,14 +1494,14 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int editTextColor=0x7f0300b9;
+    public static final int editTextColor=0x7f0300c4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextStyle=0x7f0300ba;
+    public static final int editTextStyle=0x7f0300c5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1437,7 +1509,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int elevation=0x7f0300bb;
+    public static final int elevation=0x7f0300c6;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1449,41 +1521,41 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int emptyVisibility=0x7f0300bc;
+    public static final int emptyVisibility=0x7f0300c7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int enforceMaterialTheme=0x7f0300bd;
+    public static final int enforceMaterialTheme=0x7f0300c8;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int enforceTextAppearance=0x7f0300be;
+    public static final int enforceTextAppearance=0x7f0300c9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int errorEnabled=0x7f0300bf;
+    public static final int errorEnabled=0x7f0300ca;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int errorTextAppearance=0x7f0300c0;
+    public static final int errorTextAppearance=0x7f0300cb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandActivityOverflowButtonDrawable=0x7f0300c1;
+    public static final int expandActivityOverflowButtonDrawable=0x7f0300cc;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int expanded=0x7f0300c2;
+    public static final int expanded=0x7f0300cd;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1503,7 +1575,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int expandedTitleGravity=0x7f0300c3;
+    public static final int expandedTitleGravity=0x7f0300ce;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1511,7 +1583,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int expandedTitleMargin=0x7f0300c4;
+    public static final int expandedTitleMargin=0x7f0300cf;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1519,7 +1591,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int expandedTitleMarginBottom=0x7f0300c5;
+    public static final int expandedTitleMarginBottom=0x7f0300d0;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1527,7 +1599,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int expandedTitleMarginEnd=0x7f0300c6;
+    public static final int expandedTitleMarginEnd=0x7f0300d1;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1535,7 +1607,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int expandedTitleMarginStart=0x7f0300c7;
+    public static final int expandedTitleMarginStart=0x7f0300d2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1543,14 +1615,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int expandedTitleMarginTop=0x7f0300c8;
+    public static final int expandedTitleMarginTop=0x7f0300d3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandedTitleTextAppearance=0x7f0300c9;
+    public static final int expandedTitleTextAppearance=0x7f0300d4;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1562,7 +1634,7 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int fabAlignmentMode=0x7f0300ca;
+    public static final int fabAlignmentMode=0x7f0300d5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1570,7 +1642,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int fabCradleMargin=0x7f0300cb;
+    public static final int fabCradleMargin=0x7f0300d6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1578,7 +1650,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int fabCradleRoundedCornerRadius=0x7f0300cc;
+    public static final int fabCradleRoundedCornerRadius=0x7f0300d7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1586,7 +1658,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int fabCradleVerticalOffset=0x7f0300cd;
+    public static final int fabCradleVerticalOffset=0x7f0300d8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1594,7 +1666,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int fabCustomSize=0x7f0300ce;
+    public static final int fabCustomSize=0x7f0300d9;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1607,40 +1679,40 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fabSize=0x7f0300cf;
+    public static final int fabSize=0x7f0300da;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int fastScrollEnabled=0x7f0300d0;
+    public static final int fastScrollEnabled=0x7f0300db;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fastScrollHorizontalThumbDrawable=0x7f0300d1;
+    public static final int fastScrollHorizontalThumbDrawable=0x7f0300dc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fastScrollHorizontalTrackDrawable=0x7f0300d2;
+    public static final int fastScrollHorizontalTrackDrawable=0x7f0300dd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fastScrollVerticalThumbDrawable=0x7f0300d3;
+    public static final int fastScrollVerticalThumbDrawable=0x7f0300de;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fastScrollVerticalTrackDrawable=0x7f0300d4;
+    public static final int fastScrollVerticalTrackDrawable=0x7f0300df;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1648,7 +1720,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int firstBaselineToTopHeight=0x7f0300d5;
+    public static final int firstBaselineToTopHeight=0x7f0300e0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1673,31 +1745,31 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int floatingActionButtonStyle=0x7f0300d6;
+    public static final int floatingActionButtonStyle=0x7f0300e1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f0300d7;
+    public static final int font=0x7f0300e2;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f0300d8;
+    public static final int fontFamily=0x7f0300e3;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f0300d9;
+    public static final int fontProviderAuthority=0x7f0300e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f0300da;
+    public static final int fontProviderCerts=0x7f0300e5;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1709,7 +1781,7 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f0300db;
+    public static final int fontProviderFetchStrategy=0x7f0300e6;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -1721,17 +1793,17 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f0300dc;
+    public static final int fontProviderFetchTimeout=0x7f0300e7;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f0300dd;
+    public static final int fontProviderPackage=0x7f0300e8;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f0300de;
+    public static final int fontProviderQuery=0x7f0300e9;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1743,21 +1815,21 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f0300df;
+    public static final int fontStyle=0x7f0300ea;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f0300e0;
+    public static final int fontVariationSettings=0x7f0300eb;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f0300e1;
+    public static final int fontWeight=0x7f0300ec;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int foregroundInsidePadding=0x7f0300e2;
+    public static final int foregroundInsidePadding=0x7f0300ed;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1765,21 +1837,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f0300e3;
+    public static final int gapBetweenBars=0x7f0300ee;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f0300e4;
+    public static final int goIcon=0x7f0300ef;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int headerLayout=0x7f0300e5;
+    public static final int headerLayout=0x7f0300f0;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1787,72 +1859,72 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f0300e6;
+    public static final int height=0x7f0300f1;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int helperText=0x7f0300e7;
+    public static final int helperText=0x7f0300f2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int helperTextEnabled=0x7f0300e8;
+    public static final int helperTextEnabled=0x7f0300f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int helperTextTextAppearance=0x7f0300e9;
+    public static final int helperTextTextAppearance=0x7f0300f4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int hideMotionSpec=0x7f0300ea;
+    public static final int hideMotionSpec=0x7f0300f5;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f0300eb;
+    public static final int hideOnContentScroll=0x7f0300f6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnScroll=0x7f0300ec;
+    public static final int hideOnScroll=0x7f0300f7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hintAnimationEnabled=0x7f0300ed;
+    public static final int hintAnimationEnabled=0x7f0300f8;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hintEnabled=0x7f0300ee;
+    public static final int hintEnabled=0x7f0300f9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int hintTextAppearance=0x7f0300ef;
+    public static final int hintTextAppearance=0x7f0300fa;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f0300f0;
+    public static final int homeAsUpIndicator=0x7f0300fb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f0300f1;
+    public static final int homeLayout=0x7f0300fc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1860,14 +1932,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int hoveredFocusedTranslationZ=0x7f0300f2;
+    public static final int hoveredFocusedTranslationZ=0x7f0300fd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f0300f3;
+    public static final int icon=0x7f0300fe;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1875,7 +1947,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int iconEndPadding=0x7f0300f4;
+    public static final int iconEndPadding=0x7f0300ff;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1887,7 +1959,7 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int iconGravity=0x7f0300f5;
+    public static final int iconGravity=0x7f030100;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1895,7 +1967,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int iconPadding=0x7f0300f6;
+    public static final int iconPadding=0x7f030101;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1903,7 +1975,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int iconSize=0x7f0300f7;
+    public static final int iconSize=0x7f030102;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1911,13 +1983,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int iconStartPadding=0x7f0300f8;
+    public static final int iconStartPadding=0x7f030103;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f0300f9;
+    public static final int iconTint=0x7f030104;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1933,31 +2005,48 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f0300fa;
+    public static final int iconTintMode=0x7f030105;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f0300fb;
+    public static final int iconifiedByDefault=0x7f030106;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int imageAspectRatio=0x7f030107;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
+     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int imageAspectRatioAdjust=0x7f030108;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f0300fc;
+    public static final int imageButtonStyle=0x7f030109;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f0300fd;
+    public static final int indeterminateProgressStyle=0x7f03010a;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f0300fe;
+    public static final int initialActivityCount=0x7f03010b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1967,19 +2056,19 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int insetForeground=0x7f0300ff;
+    public static final int insetForeground=0x7f03010c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f030100;
+    public static final int isLightTheme=0x7f03010d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int itemBackground=0x7f030101;
+    public static final int itemBackground=0x7f03010e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1987,12 +2076,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemHorizontalPadding=0x7f030102;
+    public static final int itemHorizontalPadding=0x7f03010f;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int itemHorizontalTranslationEnabled=0x7f030103;
+    public static final int itemHorizontalTranslationEnabled=0x7f030110;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2000,7 +2089,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemIconPadding=0x7f030104;
+    public static final int itemIconPadding=0x7f030111;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2008,13 +2097,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemIconSize=0x7f030105;
+    public static final int itemIconSize=0x7f030112;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int itemIconTint=0x7f030106;
+    public static final int itemIconTint=0x7f030113;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2022,7 +2111,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f030107;
+    public static final int itemPadding=0x7f030114;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2030,41 +2119,41 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemSpacing=0x7f030108;
+    public static final int itemSpacing=0x7f030115;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int itemTextAppearance=0x7f030109;
+    public static final int itemTextAppearance=0x7f030116;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int itemTextAppearanceActive=0x7f03010a;
+    public static final int itemTextAppearanceActive=0x7f030117;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int itemTextAppearanceInactive=0x7f03010b;
+    public static final int itemTextAppearanceInactive=0x7f030118;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int itemTextColor=0x7f03010c;
+    public static final int itemTextColor=0x7f030119;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f03010d;
+    public static final int keylines=0x7f03011a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2078,7 +2167,7 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int labelVisibilityMode=0x7f03010e;
+    public static final int labelVisibilityMode=0x7f03011b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2086,26 +2175,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lastBaselineToBottomHeight=0x7f03010f;
+    public static final int lastBaselineToBottomHeight=0x7f03011c;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLatitude=0x7f03011d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLongitude=0x7f03011e;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLatitude=0x7f03011f;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLongitude=0x7f030120;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f030110;
+    public static final int layout=0x7f030121;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layoutManager=0x7f030111;
+    public static final int layoutManager=0x7f030122;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f030112;
+    public static final int layout_anchor=0x7f030123;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2129,12 +2234,12 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f030113;
+    public static final int layout_anchorGravity=0x7f030124;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f030114;
+    public static final int layout_behavior=0x7f030125;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2147,25 +2252,25 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_collapseMode=0x7f030115;
+    public static final int layout_collapseMode=0x7f030126;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_collapseParallaxMultiplier=0x7f030116;
+    public static final int layout_collapseParallaxMultiplier=0x7f030127;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedHeight=0x7f030117;
+    public static final int layout_constrainedHeight=0x7f030128;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedWidth=0x7f030118;
+    public static final int layout_constrainedWidth=0x7f030129;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBaseline_creator=0x7f030119;
+    public static final int layout_constraintBaseline_creator=0x7f03012a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2180,11 +2285,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBaseline_toBaselineOf=0x7f03011a;
+    public static final int layout_constraintBaseline_toBaselineOf=0x7f03012b;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBottom_creator=0x7f03011b;
+    public static final int layout_constraintBottom_creator=0x7f03012c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2199,7 +2304,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toBottomOf=0x7f03011c;
+    public static final int layout_constraintBottom_toBottomOf=0x7f03012d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2214,18 +2319,18 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toTopOf=0x7f03011d;
+    public static final int layout_constraintBottom_toTopOf=0x7f03012e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_constraintCircle=0x7f03011e;
+    public static final int layout_constraintCircle=0x7f03012f;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintCircleAngle=0x7f03011f;
+    public static final int layout_constraintCircleAngle=0x7f030130;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2233,12 +2338,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintCircleRadius=0x7f030120;
+    public static final int layout_constraintCircleRadius=0x7f030131;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_constraintDimensionRatio=0x7f030121;
+    public static final int layout_constraintDimensionRatio=0x7f030132;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2253,7 +2358,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toEndOf=0x7f030122;
+    public static final int layout_constraintEnd_toEndOf=0x7f030133;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2268,7 +2373,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toStartOf=0x7f030123;
+    public static final int layout_constraintEnd_toStartOf=0x7f030134;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2276,7 +2381,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_begin=0x7f030124;
+    public static final int layout_constraintGuide_begin=0x7f030135;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2284,11 +2389,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_end=0x7f030125;
+    public static final int layout_constraintGuide_end=0x7f030136;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintGuide_percent=0x7f030126;
+    public static final int layout_constraintGuide_percent=0x7f030137;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2301,7 +2406,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_default=0x7f030127;
+    public static final int layout_constraintHeight_default=0x7f030138;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2317,7 +2422,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_max=0x7f030128;
+    public static final int layout_constraintHeight_max=0x7f030139;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2333,15 +2438,15 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_min=0x7f030129;
+    public static final int layout_constraintHeight_min=0x7f03013a;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHeight_percent=0x7f03012a;
+    public static final int layout_constraintHeight_percent=0x7f03013b;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_bias=0x7f03012b;
+    public static final int layout_constraintHorizontal_bias=0x7f03013c;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2354,15 +2459,15 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHorizontal_chainStyle=0x7f03012c;
+    public static final int layout_constraintHorizontal_chainStyle=0x7f03013d;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_weight=0x7f03012d;
+    public static final int layout_constraintHorizontal_weight=0x7f03013e;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintLeft_creator=0x7f03012e;
+    public static final int layout_constraintLeft_creator=0x7f03013f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2377,7 +2482,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toLeftOf=0x7f03012f;
+    public static final int layout_constraintLeft_toLeftOf=0x7f030140;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2392,11 +2497,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toRightOf=0x7f030130;
+    public static final int layout_constraintLeft_toRightOf=0x7f030141;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintRight_creator=0x7f030131;
+    public static final int layout_constraintRight_creator=0x7f030142;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2411,7 +2516,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toLeftOf=0x7f030132;
+    public static final int layout_constraintRight_toLeftOf=0x7f030143;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2426,7 +2531,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toRightOf=0x7f030133;
+    public static final int layout_constraintRight_toRightOf=0x7f030144;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2441,7 +2546,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toEndOf=0x7f030134;
+    public static final int layout_constraintStart_toEndOf=0x7f030145;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2456,11 +2561,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toStartOf=0x7f030135;
+    public static final int layout_constraintStart_toStartOf=0x7f030146;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintTop_creator=0x7f030136;
+    public static final int layout_constraintTop_creator=0x7f030147;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2475,7 +2580,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toBottomOf=0x7f030137;
+    public static final int layout_constraintTop_toBottomOf=0x7f030148;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2490,11 +2595,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toTopOf=0x7f030138;
+    public static final int layout_constraintTop_toTopOf=0x7f030149;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_bias=0x7f030139;
+    public static final int layout_constraintVertical_bias=0x7f03014a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2507,11 +2612,11 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintVertical_chainStyle=0x7f03013a;
+    public static final int layout_constraintVertical_chainStyle=0x7f03014b;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_weight=0x7f03013b;
+    public static final int layout_constraintVertical_weight=0x7f03014c;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2524,7 +2629,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_default=0x7f03013c;
+    public static final int layout_constraintWidth_default=0x7f03014d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2540,7 +2645,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_max=0x7f03013d;
+    public static final int layout_constraintWidth_max=0x7f03014e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2556,11 +2661,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_min=0x7f03013e;
+    public static final int layout_constraintWidth_min=0x7f03014f;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintWidth_percent=0x7f03013f;
+    public static final int layout_constraintWidth_percent=0x7f030150;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2578,7 +2683,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f030140;
+    public static final int layout_dodgeInsetEdges=0x7f030151;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2586,7 +2691,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteX=0x7f030141;
+    public static final int layout_editor_absoluteX=0x7f030152;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2594,7 +2699,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteY=0x7f030142;
+    public static final int layout_editor_absoluteY=0x7f030153;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2602,7 +2707,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginBottom=0x7f030143;
+    public static final int layout_goneMarginBottom=0x7f030154;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2610,7 +2715,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginEnd=0x7f030144;
+    public static final int layout_goneMarginEnd=0x7f030155;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2618,7 +2723,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginLeft=0x7f030145;
+    public static final int layout_goneMarginLeft=0x7f030156;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2626,7 +2731,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginRight=0x7f030146;
+    public static final int layout_goneMarginRight=0x7f030157;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2634,7 +2739,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginStart=0x7f030147;
+    public static final int layout_goneMarginStart=0x7f030158;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2642,7 +2747,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginTop=0x7f030148;
+    public static final int layout_goneMarginTop=0x7f030159;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2659,11 +2764,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f030149;
+    public static final int layout_insetEdge=0x7f03015a;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f03014a;
+    public static final int layout_keyline=0x7f03015b;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2680,7 +2785,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      */
-    public static final int layout_optimizationLevel=0x7f03014b;
+    public static final int layout_optimizationLevel=0x7f03015c;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2696,19 +2801,19 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      */
-    public static final int layout_scrollFlags=0x7f03014c;
+    public static final int layout_scrollFlags=0x7f03015d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_scrollInterpolator=0x7f03014d;
+    public static final int layout_scrollInterpolator=0x7f03015e;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int liftOnScroll=0x7f03014e;
+    public static final int liftOnScroll=0x7f03015f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2716,7 +2821,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineHeight=0x7f03014f;
+    public static final int lineHeight=0x7f030160;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2724,49 +2829,49 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineSpacing=0x7f030150;
+    public static final int lineSpacing=0x7f030161;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f030151;
+    public static final int listChoiceBackgroundIndicator=0x7f030162;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f030152;
+    public static final int listDividerAlertDialog=0x7f030163;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f030153;
+    public static final int listItemLayout=0x7f030164;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f030154;
+    public static final int listLayout=0x7f030165;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f030155;
+    public static final int listMenuViewStyle=0x7f030166;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f030156;
+    public static final int listPopupWindowStyle=0x7f030167;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2774,7 +2879,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f030157;
+    public static final int listPreferredItemHeight=0x7f030168;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2782,7 +2887,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f030158;
+    public static final int listPreferredItemHeightLarge=0x7f030169;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2790,7 +2895,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f030159;
+    public static final int listPreferredItemHeightSmall=0x7f03016a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2798,7 +2903,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f03015a;
+    public static final int listPreferredItemPaddingLeft=0x7f03016b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2806,88 +2911,108 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f03015b;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int logo=0x7f03015c;
-    /**
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     */
-    public static final int logoDescription=0x7f03015d;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int materialButtonStyle=0x7f03015e;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int materialCardViewStyle=0x7f03015f;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int maxActionInlineWidth=0x7f030160;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int maxButtonHeight=0x7f030161;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int maxImageSize=0x7f030162;
+    public static final int listPreferredItemPaddingRight=0x7f03016c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f030163;
+    public static final int liteMode=0x7f03016d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int menu=0x7f030164;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int multiChoiceItemLayout=0x7f030165;
+    public static final int logo=0x7f03016e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f030166;
+    public static final int logoDescription=0x7f03016f;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int mapType=0x7f030170;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f030167;
+    public static final int materialButtonStyle=0x7f030171;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int materialCardViewStyle=0x7f030172;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int maxActionInlineWidth=0x7f030173;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int maxButtonHeight=0x7f030174;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int maxImageSize=0x7f030175;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int measureWithLargestChild=0x7f030176;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int menu=0x7f030177;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int multiChoiceItemLayout=0x7f030178;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int navigationContentDescription=0x7f030179;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int navigationIcon=0x7f03017a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2900,14 +3025,14 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f030168;
+    public static final int navigationMode=0x7f03017b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationViewStyle=0x7f030169;
+    public static final int navigationViewStyle=0x7f03017c;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2923,12 +3048,12 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f03016a;
+    public static final int numericModifiers=0x7f03017d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int overlapAnchor=0x7f03016b;
+    public static final int overlapAnchor=0x7f03017e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2936,7 +3061,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingBottomNoButtons=0x7f03016c;
+    public static final int paddingBottomNoButtons=0x7f03017f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2944,7 +3069,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingEnd=0x7f03016d;
+    public static final int paddingEnd=0x7f030180;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2952,7 +3077,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingStart=0x7f03016e;
+    public static final int paddingStart=0x7f030181;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2960,21 +3085,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingTopNoTitle=0x7f03016f;
+    public static final int paddingTopNoTitle=0x7f030182;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelBackground=0x7f030170;
+    public static final int panelBackground=0x7f030183;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelMenuListTheme=0x7f030171;
+    public static final int panelMenuListTheme=0x7f030184;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2982,30 +3107,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int panelMenuListWidth=0x7f030172;
+    public static final int panelMenuListWidth=0x7f030185;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int passwordToggleContentDescription=0x7f030173;
+    public static final int passwordToggleContentDescription=0x7f030186;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int passwordToggleDrawable=0x7f030174;
+    public static final int passwordToggleDrawable=0x7f030187;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int passwordToggleEnabled=0x7f030175;
+    public static final int passwordToggleEnabled=0x7f030188;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int passwordToggleTint=0x7f030176;
+    public static final int passwordToggleTint=0x7f030189;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3020,33 +3145,33 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int passwordToggleTintMode=0x7f030177;
+    public static final int passwordToggleTintMode=0x7f03018a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupMenuStyle=0x7f030178;
+    public static final int popupMenuStyle=0x7f03018b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupTheme=0x7f030179;
+    public static final int popupTheme=0x7f03018c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupWindowStyle=0x7f03017a;
+    public static final int popupWindowStyle=0x7f03018d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int preserveIconSpacing=0x7f03017b;
+    public static final int preserveIconSpacing=0x7f03018e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3054,7 +3179,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int pressedTranslationZ=0x7f03017c;
+    public static final int pressedTranslationZ=0x7f03018f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3062,69 +3187,78 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int progressBarPadding=0x7f03017d;
+    public static final int progressBarPadding=0x7f030190;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarStyle=0x7f03017e;
+    public static final int progressBarStyle=0x7f030191;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f03017f;
+    public static final int queryBackground=0x7f030192;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f030180;
+    public static final int queryHint=0x7f030193;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f030181;
+    public static final int radioButtonStyle=0x7f030194;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f030182;
+    public static final int ratingBarStyle=0x7f030195;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f030183;
+    public static final int ratingBarStyleIndicator=0x7f030196;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f030184;
+    public static final int ratingBarStyleSmall=0x7f030197;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int reverseLayout=0x7f030185;
+    public static final int reverseLayout=0x7f030198;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int rippleColor=0x7f030186;
+    public static final int rippleColor=0x7f030199;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int scopeUris=0x7f03019a;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int scrimAnimationDuration=0x7f030187;
+    public static final int scrimAnimationDuration=0x7f03019b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3134,7 +3268,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int scrimBackground=0x7f030188;
+    public static final int scrimBackground=0x7f03019c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3142,49 +3276,49 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int scrimVisibleHeightTrigger=0x7f030189;
+    public static final int scrimVisibleHeightTrigger=0x7f03019d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f03018a;
+    public static final int searchHintIcon=0x7f03019e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f03018b;
+    public static final int searchIcon=0x7f03019f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f03018c;
+    public static final int searchViewStyle=0x7f0301a0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f03018d;
+    public static final int seekBarStyle=0x7f0301a1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f03018e;
+    public static final int selectableItemBackground=0x7f0301a2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f03018f;
+    public static final int selectableItemBackgroundBorderless=0x7f0301a3;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -3199,7 +3333,7 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f030190;
+    public static final int showAsAction=0x7f0301a4;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -3213,120 +3347,120 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f030191;
+    public static final int showDividers=0x7f0301a5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int showMotionSpec=0x7f030192;
+    public static final int showMotionSpec=0x7f0301a6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f030193;
+    public static final int showText=0x7f0301a7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f030194;
+    public static final int showTitle=0x7f0301a8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f030195;
+    public static final int singleChoiceItemLayout=0x7f0301a9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int singleLine=0x7f030196;
+    public static final int singleLine=0x7f0301aa;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int singleSelection=0x7f030197;
+    public static final int singleSelection=0x7f0301ab;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int snackbarButtonStyle=0x7f030198;
+    public static final int snackbarButtonStyle=0x7f0301ac;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int snackbarStyle=0x7f030199;
+    public static final int snackbarStyle=0x7f0301ad;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int spanCount=0x7f03019a;
+    public static final int spanCount=0x7f0301ae;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f03019b;
+    public static final int spinBars=0x7f0301af;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f03019c;
+    public static final int spinnerDropDownItemStyle=0x7f0301b0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f03019d;
+    public static final int spinnerStyle=0x7f0301b1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f03019e;
+    public static final int splitTrack=0x7f0301b2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f03019f;
+    public static final int srcCompat=0x7f0301b3;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int stackFromEnd=0x7f0301a0;
+    public static final int stackFromEnd=0x7f0301b4;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f0301a1;
+    public static final int state_above_anchor=0x7f0301b5;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_collapsed=0x7f0301a2;
+    public static final int state_collapsed=0x7f0301b6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_collapsible=0x7f0301a3;
+    public static final int state_collapsible=0x7f0301b7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_liftable=0x7f0301a4;
+    public static final int state_liftable=0x7f0301b8;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_lifted=0x7f0301a5;
+    public static final int state_lifted=0x7f0301b9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3336,19 +3470,19 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f0301a6;
+    public static final int statusBarBackground=0x7f0301ba;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarScrim=0x7f0301a7;
+    public static final int statusBarScrim=0x7f0301bb;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int strokeColor=0x7f0301a8;
+    public static final int strokeColor=0x7f0301bc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3356,53 +3490,53 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int strokeWidth=0x7f0301a9;
+    public static final int strokeWidth=0x7f0301bd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f0301aa;
+    public static final int subMenuArrow=0x7f0301be;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f0301ab;
+    public static final int submitBackground=0x7f0301bf;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f0301ac;
+    public static final int subtitle=0x7f0301c0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f0301ad;
+    public static final int subtitleTextAppearance=0x7f0301c1;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f0301ae;
+    public static final int subtitleTextColor=0x7f0301c2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f0301af;
+    public static final int subtitleTextStyle=0x7f0301c3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f0301b0;
+    public static final int suggestionRowLayout=0x7f0301c4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3410,7 +3544,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f0301b1;
+    public static final int switchMinWidth=0x7f0301c5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3418,28 +3552,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f0301b2;
+    public static final int switchPadding=0x7f0301c6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f0301b3;
+    public static final int switchStyle=0x7f0301c7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f0301b4;
+    public static final int switchTextAppearance=0x7f0301c8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tabBackground=0x7f0301b5;
+    public static final int tabBackground=0x7f0301c9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3447,7 +3581,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabContentStart=0x7f0301b6;
+    public static final int tabContentStart=0x7f0301ca;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3459,13 +3593,13 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int tabGravity=0x7f0301b7;
+    public static final int tabGravity=0x7f0301cb;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tabIconTint=0x7f0301b8;
+    public static final int tabIconTint=0x7f0301cc;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3481,29 +3615,29 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tabIconTintMode=0x7f0301b9;
+    public static final int tabIconTintMode=0x7f0301cd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tabIndicator=0x7f0301ba;
+    public static final int tabIndicator=0x7f0301ce;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int tabIndicatorAnimationDuration=0x7f0301bb;
+    public static final int tabIndicatorAnimationDuration=0x7f0301cf;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tabIndicatorColor=0x7f0301bc;
+    public static final int tabIndicatorColor=0x7f0301d0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int tabIndicatorFullWidth=0x7f0301bd;
+    public static final int tabIndicatorFullWidth=0x7f0301d1;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3517,7 +3651,7 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int tabIndicatorGravity=0x7f0301be;
+    public static final int tabIndicatorGravity=0x7f0301d2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3525,12 +3659,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabIndicatorHeight=0x7f0301bf;
+    public static final int tabIndicatorHeight=0x7f0301d3;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int tabInlineLabel=0x7f0301c0;
+    public static final int tabInlineLabel=0x7f0301d4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3538,7 +3672,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabMaxWidth=0x7f0301c1;
+    public static final int tabMaxWidth=0x7f0301d5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3546,7 +3680,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabMinWidth=0x7f0301c2;
+    public static final int tabMinWidth=0x7f0301d6;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3558,7 +3692,7 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int tabMode=0x7f0301c3;
+    public static final int tabMode=0x7f0301d7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3566,7 +3700,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabPadding=0x7f0301c4;
+    public static final int tabPadding=0x7f0301d8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3574,7 +3708,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabPaddingBottom=0x7f0301c5;
+    public static final int tabPaddingBottom=0x7f0301d9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3582,7 +3716,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabPaddingEnd=0x7f0301c6;
+    public static final int tabPaddingEnd=0x7f0301da;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3590,7 +3724,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabPaddingStart=0x7f0301c7;
+    public static final int tabPaddingStart=0x7f0301db;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3598,44 +3732,44 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int tabPaddingTop=0x7f0301c8;
+    public static final int tabPaddingTop=0x7f0301dc;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tabRippleColor=0x7f0301c9;
+    public static final int tabRippleColor=0x7f0301dd;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tabSelectedTextColor=0x7f0301ca;
+    public static final int tabSelectedTextColor=0x7f0301de;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tabStyle=0x7f0301cb;
+    public static final int tabStyle=0x7f0301df;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tabTextAppearance=0x7f0301cc;
+    public static final int tabTextAppearance=0x7f0301e0;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tabTextColor=0x7f0301cd;
+    public static final int tabTextColor=0x7f0301e1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int tabUnboundedRipple=0x7f0301ce;
+    public static final int tabUnboundedRipple=0x7f0301e2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3644,164 +3778,154 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f0301cf;
+    public static final int textAllCaps=0x7f0301e3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceBody1=0x7f0301d0;
+    public static final int textAppearanceBody1=0x7f0301e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceBody2=0x7f0301d1;
+    public static final int textAppearanceBody2=0x7f0301e5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceButton=0x7f0301d2;
+    public static final int textAppearanceButton=0x7f0301e6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceCaption=0x7f0301d3;
+    public static final int textAppearanceCaption=0x7f0301e7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline1=0x7f0301d4;
+    public static final int textAppearanceHeadline1=0x7f0301e8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline2=0x7f0301d5;
+    public static final int textAppearanceHeadline2=0x7f0301e9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline3=0x7f0301d6;
+    public static final int textAppearanceHeadline3=0x7f0301ea;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline4=0x7f0301d7;
+    public static final int textAppearanceHeadline4=0x7f0301eb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline5=0x7f0301d8;
+    public static final int textAppearanceHeadline5=0x7f0301ec;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceHeadline6=0x7f0301d9;
+    public static final int textAppearanceHeadline6=0x7f0301ed;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f0301da;
+    public static final int textAppearanceLargePopupMenu=0x7f0301ee;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f0301db;
+    public static final int textAppearanceListItem=0x7f0301ef;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f0301dc;
+    public static final int textAppearanceListItemSecondary=0x7f0301f0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f0301dd;
+    public static final int textAppearanceListItemSmall=0x7f0301f1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceOverline=0x7f0301de;
+    public static final int textAppearanceOverline=0x7f0301f2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f0301df;
+    public static final int textAppearancePopupMenuHeader=0x7f0301f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f0301e0;
+    public static final int textAppearanceSearchResultSubtitle=0x7f0301f4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f0301e1;
+    public static final int textAppearanceSearchResultTitle=0x7f0301f5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f0301e2;
+    public static final int textAppearanceSmallPopupMenu=0x7f0301f6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSubtitle1=0x7f0301e3;
+    public static final int textAppearanceSubtitle1=0x7f0301f7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSubtitle2=0x7f0301e4;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int textColorAlertDialogListItem=0x7f0301e5;
+    public static final int textAppearanceSubtitle2=0x7f0301f8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3811,7 +3935,17 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f0301e6;
+    public static final int textColorAlertDialogListItem=0x7f0301f9;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int textColorSearchUrl=0x7f0301fa;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3819,14 +3953,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int textEndPadding=0x7f0301e7;
+    public static final int textEndPadding=0x7f0301fb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textInputStyle=0x7f0301e8;
+    public static final int textInputStyle=0x7f0301fc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3834,14 +3968,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int textStartPadding=0x7f0301e9;
+    public static final int textStartPadding=0x7f0301fd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f0301ea;
+    public static final int theme=0x7f0301fe;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3849,7 +3983,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f0301eb;
+    public static final int thickness=0x7f0301ff;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3857,13 +3991,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f0301ec;
+    public static final int thumbTextPadding=0x7f030200;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f0301ed;
+    public static final int thumbTint=0x7f030201;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3879,20 +4013,20 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f0301ee;
+    public static final int thumbTintMode=0x7f030202;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f0301ef;
+    public static final int tickMark=0x7f030203;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f0301f0;
+    public static final int tickMarkTint=0x7f030204;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3908,13 +4042,13 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f0301f1;
+    public static final int tickMarkTintMode=0x7f030205;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f0301f2;
+    public static final int tint=0x7f030206;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3930,17 +4064,17 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f0301f3;
+    public static final int tintMode=0x7f030207;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f0301f4;
+    public static final int title=0x7f030208;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int titleEnabled=0x7f0301f5;
+    public static final int titleEnabled=0x7f030209;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3948,7 +4082,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f0301f6;
+    public static final int titleMargin=0x7f03020a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3956,7 +4090,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f0301f7;
+    public static final int titleMarginBottom=0x7f03020b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3964,7 +4098,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f0301f8;
+    public static final int titleMarginEnd=0x7f03020c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3972,7 +4106,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f0301f9;
+    public static final int titleMarginStart=0x7f03020d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3980,7 +4114,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f0301fa;
+    public static final int titleMarginTop=0x7f03020e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3988,48 +4122,48 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargins=0x7f0301fb;
+    public static final int titleMargins=0x7f03020f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f0301fc;
+    public static final int titleTextAppearance=0x7f030210;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f0301fd;
+    public static final int titleTextColor=0x7f030211;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f0301fe;
+    public static final int titleTextStyle=0x7f030212;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarId=0x7f0301ff;
+    public static final int toolbarId=0x7f030213;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f030200;
+    public static final int toolbarNavigationButtonStyle=0x7f030214;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f030201;
+    public static final int toolbarStyle=0x7f030215;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -4039,32 +4173,32 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f030202;
+    public static final int tooltipForegroundColor=0x7f030216;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f030203;
+    public static final int tooltipFrameBackground=0x7f030217;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f030204;
+    public static final int tooltipText=0x7f030218;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f030205;
+    public static final int track=0x7f030219;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f030206;
+    public static final int trackTint=0x7f03021a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -4080,43 +4214,83 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f030207;
+    public static final int trackTintMode=0x7f03021b;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f030208;
+    public static final int ttcIndex=0x7f03021c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int useCompatPadding=0x7f030209;
+    public static final int uiCompass=0x7f03021d;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiMapToolbar=0x7f03021e;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiRotateGestures=0x7f03021f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGestures=0x7f030220;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiTiltGestures=0x7f030221;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomControls=0x7f030222;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomGestures=0x7f030223;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useCompatPadding=0x7f030224;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useViewLifecycle=0x7f030225;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f03020a;
+    public static final int viewInflaterClass=0x7f030226;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f03020b;
+    public static final int voiceIcon=0x7f030227;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f03020c;
+    public static final int windowActionBar=0x7f030228;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f03020d;
+    public static final int windowActionBarOverlay=0x7f030229;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f03020e;
+    public static final int windowActionModeOverlay=0x7f03022a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4128,7 +4302,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f03020f;
+    public static final int windowFixedHeightMajor=0x7f03022b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4140,7 +4314,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f030210;
+    public static final int windowFixedHeightMinor=0x7f03022c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4152,7 +4326,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f030211;
+    public static final int windowFixedWidthMajor=0x7f03022d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4164,7 +4338,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f030212;
+    public static final int windowFixedWidthMinor=0x7f03022e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4176,7 +4350,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f030213;
+    public static final int windowMinWidthMajor=0x7f03022f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4188,12 +4362,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f030214;
+    public static final int windowMinWidthMinor=0x7f030230;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f030215;
+    public static final int windowNoTitle=0x7f030231;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int zOrderOnTop=0x7f030232;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f040000;
@@ -4247,91 +4426,103 @@ public final class R {
     public static final int colorAccent=0x7f05002a;
     public static final int colorPrimary=0x7f05002b;
     public static final int colorPrimaryDark=0x7f05002c;
-    public static final int design_bottom_navigation_shadow_color=0x7f05002d;
-    public static final int design_default_color_primary=0x7f05002e;
-    public static final int design_default_color_primary_dark=0x7f05002f;
-    public static final int design_error=0x7f050030;
-    public static final int design_fab_shadow_end_color=0x7f050031;
-    public static final int design_fab_shadow_mid_color=0x7f050032;
-    public static final int design_fab_shadow_start_color=0x7f050033;
-    public static final int design_fab_stroke_end_inner_color=0x7f050034;
-    public static final int design_fab_stroke_end_outer_color=0x7f050035;
-    public static final int design_fab_stroke_top_inner_color=0x7f050036;
-    public static final int design_fab_stroke_top_outer_color=0x7f050037;
-    public static final int design_snackbar_background_color=0x7f050038;
-    public static final int design_tint_password_toggle=0x7f050039;
-    public static final int dim_foreground_disabled_material_dark=0x7f05003a;
-    public static final int dim_foreground_disabled_material_light=0x7f05003b;
-    public static final int dim_foreground_material_dark=0x7f05003c;
-    public static final int dim_foreground_material_light=0x7f05003d;
-    public static final int error_color_material_dark=0x7f05003e;
-    public static final int error_color_material_light=0x7f05003f;
-    public static final int foreground_material_dark=0x7f050040;
-    public static final int foreground_material_light=0x7f050041;
-    public static final int highlighted_text_material_dark=0x7f050042;
-    public static final int highlighted_text_material_light=0x7f050043;
-    public static final int material_blue_grey_800=0x7f050044;
-    public static final int material_blue_grey_900=0x7f050045;
-    public static final int material_blue_grey_950=0x7f050046;
-    public static final int material_deep_teal_200=0x7f050047;
-    public static final int material_deep_teal_500=0x7f050048;
-    public static final int material_grey_100=0x7f050049;
-    public static final int material_grey_300=0x7f05004a;
-    public static final int material_grey_50=0x7f05004b;
-    public static final int material_grey_600=0x7f05004c;
-    public static final int material_grey_800=0x7f05004d;
-    public static final int material_grey_850=0x7f05004e;
-    public static final int material_grey_900=0x7f05004f;
-    public static final int mtrl_bottom_nav_colored_item_tint=0x7f050050;
-    public static final int mtrl_bottom_nav_item_tint=0x7f050051;
-    public static final int mtrl_btn_bg_color_disabled=0x7f050052;
-    public static final int mtrl_btn_bg_color_selector=0x7f050053;
-    public static final int mtrl_btn_ripple_color=0x7f050054;
-    public static final int mtrl_btn_stroke_color_selector=0x7f050055;
-    public static final int mtrl_btn_text_btn_ripple_color=0x7f050056;
-    public static final int mtrl_btn_text_color_disabled=0x7f050057;
-    public static final int mtrl_btn_text_color_selector=0x7f050058;
-    public static final int mtrl_btn_transparent_bg_color=0x7f050059;
-    public static final int mtrl_chip_background_color=0x7f05005a;
-    public static final int mtrl_chip_close_icon_tint=0x7f05005b;
-    public static final int mtrl_chip_ripple_color=0x7f05005c;
-    public static final int mtrl_chip_text_color=0x7f05005d;
-    public static final int mtrl_fab_ripple_color=0x7f05005e;
-    public static final int mtrl_scrim_color=0x7f05005f;
-    public static final int mtrl_tabs_colored_ripple_color=0x7f050060;
-    public static final int mtrl_tabs_icon_color_selector=0x7f050061;
-    public static final int mtrl_tabs_icon_color_selector_colored=0x7f050062;
-    public static final int mtrl_tabs_legacy_text_color_selector=0x7f050063;
-    public static final int mtrl_tabs_ripple_color=0x7f050064;
-    public static final int mtrl_text_btn_text_color_selector=0x7f050065;
-    public static final int mtrl_textinput_default_box_stroke_color=0x7f050066;
-    public static final int mtrl_textinput_disabled_color=0x7f050067;
-    public static final int mtrl_textinput_filled_box_default_background_color=0x7f050068;
-    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f050069;
-    public static final int notification_action_color_filter=0x7f05006a;
-    public static final int notification_icon_bg_color=0x7f05006b;
-    public static final int primary_dark_material_dark=0x7f05006c;
-    public static final int primary_dark_material_light=0x7f05006d;
-    public static final int primary_material_dark=0x7f05006e;
-    public static final int primary_material_light=0x7f05006f;
-    public static final int primary_text_default_material_dark=0x7f050070;
-    public static final int primary_text_default_material_light=0x7f050071;
-    public static final int primary_text_disabled_material_dark=0x7f050072;
-    public static final int primary_text_disabled_material_light=0x7f050073;
-    public static final int ripple_material_dark=0x7f050074;
-    public static final int ripple_material_light=0x7f050075;
-    public static final int secondary_text_default_material_dark=0x7f050076;
-    public static final int secondary_text_default_material_light=0x7f050077;
-    public static final int secondary_text_disabled_material_dark=0x7f050078;
-    public static final int secondary_text_disabled_material_light=0x7f050079;
-    public static final int switch_thumb_disabled_material_dark=0x7f05007a;
-    public static final int switch_thumb_disabled_material_light=0x7f05007b;
-    public static final int switch_thumb_material_dark=0x7f05007c;
-    public static final int switch_thumb_material_light=0x7f05007d;
-    public static final int switch_thumb_normal_material_dark=0x7f05007e;
-    public static final int switch_thumb_normal_material_light=0x7f05007f;
-    public static final int tooltip_background_dark=0x7f050080;
-    public static final int tooltip_background_light=0x7f050081;
+    public static final int common_google_signin_btn_text_dark=0x7f05002d;
+    public static final int common_google_signin_btn_text_dark_default=0x7f05002e;
+    public static final int common_google_signin_btn_text_dark_disabled=0x7f05002f;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f050030;
+    public static final int common_google_signin_btn_text_dark_pressed=0x7f050031;
+    public static final int common_google_signin_btn_text_light=0x7f050032;
+    public static final int common_google_signin_btn_text_light_default=0x7f050033;
+    public static final int common_google_signin_btn_text_light_disabled=0x7f050034;
+    public static final int common_google_signin_btn_text_light_focused=0x7f050035;
+    public static final int common_google_signin_btn_text_light_pressed=0x7f050036;
+    public static final int common_google_signin_btn_tint=0x7f050037;
+    public static final int design_bottom_navigation_shadow_color=0x7f050038;
+    public static final int design_default_color_primary=0x7f050039;
+    public static final int design_default_color_primary_dark=0x7f05003a;
+    public static final int design_error=0x7f05003b;
+    public static final int design_fab_shadow_end_color=0x7f05003c;
+    public static final int design_fab_shadow_mid_color=0x7f05003d;
+    public static final int design_fab_shadow_start_color=0x7f05003e;
+    public static final int design_fab_stroke_end_inner_color=0x7f05003f;
+    public static final int design_fab_stroke_end_outer_color=0x7f050040;
+    public static final int design_fab_stroke_top_inner_color=0x7f050041;
+    public static final int design_fab_stroke_top_outer_color=0x7f050042;
+    public static final int design_snackbar_background_color=0x7f050043;
+    public static final int design_tint_password_toggle=0x7f050044;
+    public static final int dim_foreground_disabled_material_dark=0x7f050045;
+    public static final int dim_foreground_disabled_material_light=0x7f050046;
+    public static final int dim_foreground_material_dark=0x7f050047;
+    public static final int dim_foreground_material_light=0x7f050048;
+    public static final int error_color_material_dark=0x7f050049;
+    public static final int error_color_material_light=0x7f05004a;
+    public static final int foreground_material_dark=0x7f05004b;
+    public static final int foreground_material_light=0x7f05004c;
+    public static final int highlighted_text_material_dark=0x7f05004d;
+    public static final int highlighted_text_material_light=0x7f05004e;
+    public static final int material_blue_grey_800=0x7f05004f;
+    public static final int material_blue_grey_900=0x7f050050;
+    public static final int material_blue_grey_950=0x7f050051;
+    public static final int material_deep_teal_200=0x7f050052;
+    public static final int material_deep_teal_500=0x7f050053;
+    public static final int material_grey_100=0x7f050054;
+    public static final int material_grey_300=0x7f050055;
+    public static final int material_grey_50=0x7f050056;
+    public static final int material_grey_600=0x7f050057;
+    public static final int material_grey_800=0x7f050058;
+    public static final int material_grey_850=0x7f050059;
+    public static final int material_grey_900=0x7f05005a;
+    public static final int mtrl_bottom_nav_colored_item_tint=0x7f05005b;
+    public static final int mtrl_bottom_nav_item_tint=0x7f05005c;
+    public static final int mtrl_btn_bg_color_disabled=0x7f05005d;
+    public static final int mtrl_btn_bg_color_selector=0x7f05005e;
+    public static final int mtrl_btn_ripple_color=0x7f05005f;
+    public static final int mtrl_btn_stroke_color_selector=0x7f050060;
+    public static final int mtrl_btn_text_btn_ripple_color=0x7f050061;
+    public static final int mtrl_btn_text_color_disabled=0x7f050062;
+    public static final int mtrl_btn_text_color_selector=0x7f050063;
+    public static final int mtrl_btn_transparent_bg_color=0x7f050064;
+    public static final int mtrl_chip_background_color=0x7f050065;
+    public static final int mtrl_chip_close_icon_tint=0x7f050066;
+    public static final int mtrl_chip_ripple_color=0x7f050067;
+    public static final int mtrl_chip_text_color=0x7f050068;
+    public static final int mtrl_fab_ripple_color=0x7f050069;
+    public static final int mtrl_scrim_color=0x7f05006a;
+    public static final int mtrl_tabs_colored_ripple_color=0x7f05006b;
+    public static final int mtrl_tabs_icon_color_selector=0x7f05006c;
+    public static final int mtrl_tabs_icon_color_selector_colored=0x7f05006d;
+    public static final int mtrl_tabs_legacy_text_color_selector=0x7f05006e;
+    public static final int mtrl_tabs_ripple_color=0x7f05006f;
+    public static final int mtrl_text_btn_text_color_selector=0x7f050070;
+    public static final int mtrl_textinput_default_box_stroke_color=0x7f050071;
+    public static final int mtrl_textinput_disabled_color=0x7f050072;
+    public static final int mtrl_textinput_filled_box_default_background_color=0x7f050073;
+    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f050074;
+    public static final int notification_action_color_filter=0x7f050075;
+    public static final int notification_icon_bg_color=0x7f050076;
+    public static final int notification_material_background_media_default_color=0x7f050077;
+    public static final int primary_dark_material_dark=0x7f050078;
+    public static final int primary_dark_material_light=0x7f050079;
+    public static final int primary_material_dark=0x7f05007a;
+    public static final int primary_material_light=0x7f05007b;
+    public static final int primary_text_default_material_dark=0x7f05007c;
+    public static final int primary_text_default_material_light=0x7f05007d;
+    public static final int primary_text_disabled_material_dark=0x7f05007e;
+    public static final int primary_text_disabled_material_light=0x7f05007f;
+    public static final int ripple_material_dark=0x7f050080;
+    public static final int ripple_material_light=0x7f050081;
+    public static final int secondary_text_default_material_dark=0x7f050082;
+    public static final int secondary_text_default_material_light=0x7f050083;
+    public static final int secondary_text_disabled_material_dark=0x7f050084;
+    public static final int secondary_text_disabled_material_light=0x7f050085;
+    public static final int switch_thumb_disabled_material_dark=0x7f050086;
+    public static final int switch_thumb_disabled_material_light=0x7f050087;
+    public static final int switch_thumb_material_dark=0x7f050088;
+    public static final int switch_thumb_material_light=0x7f050089;
+    public static final int switch_thumb_normal_material_dark=0x7f05008a;
+    public static final int switch_thumb_normal_material_light=0x7f05008b;
+    public static final int tooltip_background_dark=0x7f05008c;
+    public static final int tooltip_background_light=0x7f05008d;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f060000;
@@ -4638,39 +4829,60 @@ public final class R {
     public static final int abc_vector_test=0x7f07005a;
     public static final int avd_hide_password=0x7f07005b;
     public static final int avd_show_password=0x7f07005c;
-    public static final int design_bottom_navigation_item_background=0x7f07005d;
-    public static final int design_fab_background=0x7f07005e;
-    public static final int design_ic_visibility=0x7f07005f;
-    public static final int design_ic_visibility_off=0x7f070060;
-    public static final int design_password_eye=0x7f070061;
-    public static final int design_snackbar_background=0x7f070062;
-    public static final int ic_add_a_photo_black_24dp=0x7f070063;
-    public static final int ic_gallery_black_24dp=0x7f070064;
-    public static final int ic_launcher_background=0x7f070065;
-    public static final int ic_launcher_foreground=0x7f070066;
-    public static final int ic_mtrl_chip_checked_black=0x7f070067;
-    public static final int ic_mtrl_chip_checked_circle=0x7f070068;
-    public static final int ic_mtrl_chip_close_circle=0x7f070069;
-    public static final int joe1=0x7f07006a;
-    public static final int joe2=0x7f07006b;
-    public static final int joe3=0x7f07006c;
-    public static final int mtrl_snackbar_background=0x7f07006d;
-    public static final int mtrl_tabs_default_indicator=0x7f07006e;
-    public static final int navigation_empty_icon=0x7f07006f;
-    public static final int notification_action_background=0x7f070070;
-    public static final int notification_bg=0x7f070071;
-    public static final int notification_bg_low=0x7f070072;
-    public static final int notification_bg_low_normal=0x7f070073;
-    public static final int notification_bg_low_pressed=0x7f070074;
-    public static final int notification_bg_normal=0x7f070075;
-    public static final int notification_bg_normal_pressed=0x7f070076;
-    public static final int notification_icon_background=0x7f070077;
-    public static final int notification_template_icon_bg=0x7f070078;
-    public static final int notification_template_icon_low_bg=0x7f070079;
-    public static final int notification_tile_bg=0x7f07007a;
-    public static final int notify_panel_notification_icon_bg=0x7f07007b;
-    public static final int tooltip_frame_dark=0x7f07007c;
-    public static final int tooltip_frame_light=0x7f07007d;
+    public static final int common_full_open_on_phone=0x7f07005d;
+    public static final int common_google_signin_btn_icon_dark=0x7f07005e;
+    public static final int common_google_signin_btn_icon_dark_focused=0x7f07005f;
+    public static final int common_google_signin_btn_icon_dark_normal=0x7f070060;
+    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f070061;
+    public static final int common_google_signin_btn_icon_disabled=0x7f070062;
+    public static final int common_google_signin_btn_icon_light=0x7f070063;
+    public static final int common_google_signin_btn_icon_light_focused=0x7f070064;
+    public static final int common_google_signin_btn_icon_light_normal=0x7f070065;
+    public static final int common_google_signin_btn_icon_light_normal_background=0x7f070066;
+    public static final int common_google_signin_btn_text_dark=0x7f070067;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f070068;
+    public static final int common_google_signin_btn_text_dark_normal=0x7f070069;
+    public static final int common_google_signin_btn_text_dark_normal_background=0x7f07006a;
+    public static final int common_google_signin_btn_text_disabled=0x7f07006b;
+    public static final int common_google_signin_btn_text_light=0x7f07006c;
+    public static final int common_google_signin_btn_text_light_focused=0x7f07006d;
+    public static final int common_google_signin_btn_text_light_normal=0x7f07006e;
+    public static final int common_google_signin_btn_text_light_normal_background=0x7f07006f;
+    public static final int design_bottom_navigation_item_background=0x7f070070;
+    public static final int design_fab_background=0x7f070071;
+    public static final int design_ic_visibility=0x7f070072;
+    public static final int design_ic_visibility_off=0x7f070073;
+    public static final int design_password_eye=0x7f070074;
+    public static final int design_snackbar_background=0x7f070075;
+    public static final int googleg_disabled_color_18=0x7f070076;
+    public static final int googleg_standard_color_18=0x7f070077;
+    public static final int ic_add_a_photo_black_24dp=0x7f070078;
+    public static final int ic_gallery_black_24dp=0x7f070079;
+    public static final int ic_launcher_background=0x7f07007a;
+    public static final int ic_launcher_foreground=0x7f07007b;
+    public static final int ic_mtrl_chip_checked_black=0x7f07007c;
+    public static final int ic_mtrl_chip_checked_circle=0x7f07007d;
+    public static final int ic_mtrl_chip_close_circle=0x7f07007e;
+    public static final int joe1=0x7f07007f;
+    public static final int joe2=0x7f070080;
+    public static final int joe3=0x7f070081;
+    public static final int mtrl_snackbar_background=0x7f070082;
+    public static final int mtrl_tabs_default_indicator=0x7f070083;
+    public static final int navigation_empty_icon=0x7f070084;
+    public static final int notification_action_background=0x7f070085;
+    public static final int notification_bg=0x7f070086;
+    public static final int notification_bg_low=0x7f070087;
+    public static final int notification_bg_low_normal=0x7f070088;
+    public static final int notification_bg_low_pressed=0x7f070089;
+    public static final int notification_bg_normal=0x7f07008a;
+    public static final int notification_bg_normal_pressed=0x7f07008b;
+    public static final int notification_icon_background=0x7f07008c;
+    public static final int notification_template_icon_bg=0x7f07008d;
+    public static final int notification_template_icon_low_bg=0x7f07008e;
+    public static final int notification_tile_bg=0x7f07008f;
+    public static final int notify_panel_notification_icon_bg=0x7f070090;
+    public static final int tooltip_frame_dark=0x7f070091;
+    public static final int tooltip_frame_light=0x7f070092;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -4680,207 +4892,223 @@ public final class R {
     public static final int META=0x7f080004;
     public static final int SHIFT=0x7f080005;
     public static final int SYM=0x7f080006;
-    public static final int action_bar=0x7f080007;
-    public static final int action_bar_activity_content=0x7f080008;
-    public static final int action_bar_container=0x7f080009;
-    public static final int action_bar_root=0x7f08000a;
-    public static final int action_bar_spinner=0x7f08000b;
-    public static final int action_bar_subtitle=0x7f08000c;
-    public static final int action_bar_title=0x7f08000d;
-    public static final int action_container=0x7f08000e;
-    public static final int action_context_bar=0x7f08000f;
-    public static final int action_divider=0x7f080010;
-    public static final int action_image=0x7f080011;
-    public static final int action_menu_divider=0x7f080012;
-    public static final int action_menu_presenter=0x7f080013;
-    public static final int action_mode_bar=0x7f080014;
-    public static final int action_mode_bar_stub=0x7f080015;
-    public static final int action_mode_close_button=0x7f080016;
-    public static final int action_settings=0x7f080017;
-    public static final int action_text=0x7f080018;
-    public static final int actions=0x7f080019;
-    public static final int activity_chooser_view_content=0x7f08001a;
-    public static final int add=0x7f08001b;
-    public static final int alertTitle=0x7f08001c;
-    public static final int all=0x7f08001d;
-    public static final int always=0x7f08001e;
-    public static final int async=0x7f08001f;
-    public static final int auto=0x7f080020;
-    public static final int barrier=0x7f080021;
-    public static final int beginning=0x7f080022;
-    public static final int blocking=0x7f080023;
-    public static final int bottom=0x7f080024;
-    public static final int buttonPanel=0x7f080025;
-    public static final int center=0x7f080026;
-    public static final int center_horizontal=0x7f080027;
-    public static final int center_vertical=0x7f080028;
-    public static final int chains=0x7f080029;
-    public static final int checkbox=0x7f08002a;
-    public static final int chronometer=0x7f08002b;
-    public static final int clip_horizontal=0x7f08002c;
-    public static final int clip_vertical=0x7f08002d;
-    public static final int collapseActionView=0x7f08002e;
-    public static final int container=0x7f08002f;
-    public static final int content=0x7f080030;
-    public static final int contentPanel=0x7f080031;
-    public static final int coordinator=0x7f080032;
-    public static final int custom=0x7f080033;
-    public static final int customPanel=0x7f080034;
-    public static final int decor_content_parent=0x7f080035;
-    public static final int default_activity_button=0x7f080036;
-    public static final int description=0x7f080037;
-    public static final int design_bottom_sheet=0x7f080038;
-    public static final int design_menu_item_action_area=0x7f080039;
-    public static final int design_menu_item_action_area_stub=0x7f08003a;
-    public static final int design_menu_item_text=0x7f08003b;
-    public static final int design_navigation_view=0x7f08003c;
-    public static final int dimensions=0x7f08003d;
-    public static final int direct=0x7f08003e;
-    public static final int disableHome=0x7f08003f;
-    public static final int edit_query=0x7f080040;
-    public static final int end=0x7f080041;
-    public static final int enterAlways=0x7f080042;
-    public static final int enterAlwaysCollapsed=0x7f080043;
-    public static final int exitUntilCollapsed=0x7f080044;
-    public static final int expand_activities_button=0x7f080045;
-    public static final int expanded_menu=0x7f080046;
-    public static final int fab_camera=0x7f080047;
-    public static final int fab_gallery=0x7f080048;
-    public static final int fill=0x7f080049;
-    public static final int fill_horizontal=0x7f08004a;
-    public static final int fill_vertical=0x7f08004b;
-    public static final int filled=0x7f08004c;
-    public static final int fixed=0x7f08004d;
-    public static final int forever=0x7f08004e;
-    public static final int ghost_view=0x7f08004f;
-    public static final int gone=0x7f080050;
-    public static final int grid_recycler_view=0x7f080051;
-    public static final int group_divider=0x7f080052;
-    public static final int groups=0x7f080053;
-    public static final int home=0x7f080054;
-    public static final int homeAsUp=0x7f080055;
-    public static final int icon=0x7f080056;
-    public static final int icon_group=0x7f080057;
-    public static final int ifRoom=0x7f080058;
-    public static final int image=0x7f080059;
-    public static final int image_item=0x7f08005a;
-    public static final int info=0x7f08005b;
-    public static final int invisible=0x7f08005c;
-    public static final int italic=0x7f08005d;
-    public static final int item_touch_helper_previous_elevation=0x7f08005e;
-    public static final int labeled=0x7f08005f;
-    public static final int largeLabel=0x7f080060;
-    public static final int left=0x7f080061;
-    public static final int line1=0x7f080062;
-    public static final int line3=0x7f080063;
-    public static final int listMode=0x7f080064;
-    public static final int list_item=0x7f080065;
-    public static final int location=0x7f080066;
-    public static final int masked=0x7f080067;
-    public static final int message=0x7f080068;
-    public static final int middle=0x7f080069;
-    public static final int mini=0x7f08006a;
-    public static final int mtrl_child_content_container=0x7f08006b;
-    public static final int mtrl_internal_children_alpha_tag=0x7f08006c;
-    public static final int multiply=0x7f08006d;
-    public static final int navigation_header_container=0x7f08006e;
-    public static final int never=0x7f08006f;
-    public static final int none=0x7f080070;
-    public static final int normal=0x7f080071;
-    public static final int notification_background=0x7f080072;
-    public static final int notification_main_column=0x7f080073;
-    public static final int notification_main_column_container=0x7f080074;
-    public static final int outline=0x7f080075;
-    public static final int packed=0x7f080076;
-    public static final int parallax=0x7f080077;
-    public static final int parent=0x7f080078;
-    public static final int parentPanel=0x7f080079;
-    public static final int parent_matrix=0x7f08007a;
-    public static final int percent=0x7f08007b;
-    public static final int pin=0x7f08007c;
-    public static final int progress_circular=0x7f08007d;
-    public static final int progress_horizontal=0x7f08007e;
-    public static final int radio=0x7f08007f;
-    public static final int right=0x7f080080;
-    public static final int right_icon=0x7f080081;
-    public static final int right_side=0x7f080082;
-    public static final int save_image_matrix=0x7f080083;
-    public static final int save_non_transition_alpha=0x7f080084;
-    public static final int save_scale_type=0x7f080085;
-    public static final int screen=0x7f080086;
-    public static final int scroll=0x7f080087;
-    public static final int scrollIndicatorDown=0x7f080088;
-    public static final int scrollIndicatorUp=0x7f080089;
-    public static final int scrollView=0x7f08008a;
-    public static final int scrollable=0x7f08008b;
-    public static final int search_badge=0x7f08008c;
-    public static final int search_bar=0x7f08008d;
-    public static final int search_button=0x7f08008e;
-    public static final int search_close_btn=0x7f08008f;
-    public static final int search_edit_frame=0x7f080090;
-    public static final int search_go_btn=0x7f080091;
-    public static final int search_mag_icon=0x7f080092;
-    public static final int search_plate=0x7f080093;
-    public static final int search_src_text=0x7f080094;
-    public static final int search_voice_btn=0x7f080095;
-    public static final int select_dialog_listview=0x7f080096;
-    public static final int selected=0x7f080097;
-    public static final int shortcut=0x7f080098;
-    public static final int showCustom=0x7f080099;
-    public static final int showHome=0x7f08009a;
-    public static final int showTitle=0x7f08009b;
-    public static final int smallLabel=0x7f08009c;
-    public static final int snackbar_action=0x7f08009d;
-    public static final int snackbar_text=0x7f08009e;
-    public static final int snap=0x7f08009f;
-    public static final int snapMargins=0x7f0800a0;
-    public static final int spacer=0x7f0800a1;
-    public static final int split_action_bar=0x7f0800a2;
-    public static final int spread=0x7f0800a3;
-    public static final int spread_inside=0x7f0800a4;
-    public static final int src_atop=0x7f0800a5;
-    public static final int src_in=0x7f0800a6;
-    public static final int src_over=0x7f0800a7;
-    public static final int standard=0x7f0800a8;
-    public static final int start=0x7f0800a9;
-    public static final int stretch=0x7f0800aa;
-    public static final int submenuarrow=0x7f0800ab;
-    public static final int submit_area=0x7f0800ac;
-    public static final int tabMode=0x7f0800ad;
-    public static final int tag_transition_group=0x7f0800ae;
-    public static final int tag_unhandled_key_event_manager=0x7f0800af;
-    public static final int tag_unhandled_key_listeners=0x7f0800b0;
-    public static final int text=0x7f0800b1;
-    public static final int text2=0x7f0800b2;
-    public static final int textSpacerNoButtons=0x7f0800b3;
-    public static final int textSpacerNoTitle=0x7f0800b4;
-    public static final int textStart=0x7f0800b5;
-    public static final int text_input_password_toggle=0x7f0800b6;
-    public static final int textinput_counter=0x7f0800b7;
-    public static final int textinput_error=0x7f0800b8;
-    public static final int textinput_helper_text=0x7f0800b9;
-    public static final int time=0x7f0800ba;
-    public static final int title=0x7f0800bb;
-    public static final int titleDividerNoCustom=0x7f0800bc;
-    public static final int title_template=0x7f0800bd;
-    public static final int toolbar=0x7f0800be;
-    public static final int top=0x7f0800bf;
-    public static final int topPanel=0x7f0800c0;
-    public static final int touch_outside=0x7f0800c1;
-    public static final int transition_current_scene=0x7f0800c2;
-    public static final int transition_layout_save=0x7f0800c3;
-    public static final int transition_position=0x7f0800c4;
-    public static final int transition_scene_layoutid_cache=0x7f0800c5;
-    public static final int transition_transform=0x7f0800c6;
-    public static final int uniform=0x7f0800c7;
-    public static final int unlabeled=0x7f0800c8;
-    public static final int up=0x7f0800c9;
-    public static final int useLogo=0x7f0800ca;
-    public static final int view_offset_helper=0x7f0800cb;
-    public static final int visible=0x7f0800cc;
-    public static final int withText=0x7f0800cd;
-    public static final int wrap=0x7f0800ce;
-    public static final int wrap_content=0x7f0800cf;
+    public static final int action0=0x7f080007;
+    public static final int action_bar=0x7f080008;
+    public static final int action_bar_activity_content=0x7f080009;
+    public static final int action_bar_container=0x7f08000a;
+    public static final int action_bar_root=0x7f08000b;
+    public static final int action_bar_spinner=0x7f08000c;
+    public static final int action_bar_subtitle=0x7f08000d;
+    public static final int action_bar_title=0x7f08000e;
+    public static final int action_container=0x7f08000f;
+    public static final int action_context_bar=0x7f080010;
+    public static final int action_divider=0x7f080011;
+    public static final int action_image=0x7f080012;
+    public static final int action_menu_divider=0x7f080013;
+    public static final int action_menu_presenter=0x7f080014;
+    public static final int action_mode_bar=0x7f080015;
+    public static final int action_mode_bar_stub=0x7f080016;
+    public static final int action_mode_close_button=0x7f080017;
+    public static final int action_settings=0x7f080018;
+    public static final int action_text=0x7f080019;
+    public static final int actions=0x7f08001a;
+    public static final int activity_chooser_view_content=0x7f08001b;
+    public static final int add=0x7f08001c;
+    public static final int adjust_height=0x7f08001d;
+    public static final int adjust_width=0x7f08001e;
+    public static final int alertTitle=0x7f08001f;
+    public static final int all=0x7f080020;
+    public static final int always=0x7f080021;
+    public static final int async=0x7f080022;
+    public static final int auto=0x7f080023;
+    public static final int barrier=0x7f080024;
+    public static final int beginning=0x7f080025;
+    public static final int blocking=0x7f080026;
+    public static final int bottom=0x7f080027;
+    public static final int buttonPanel=0x7f080028;
+    public static final int cancel_action=0x7f080029;
+    public static final int center=0x7f08002a;
+    public static final int center_horizontal=0x7f08002b;
+    public static final int center_vertical=0x7f08002c;
+    public static final int chains=0x7f08002d;
+    public static final int checkbox=0x7f08002e;
+    public static final int chronometer=0x7f08002f;
+    public static final int clip_horizontal=0x7f080030;
+    public static final int clip_vertical=0x7f080031;
+    public static final int collapseActionView=0x7f080032;
+    public static final int container=0x7f080033;
+    public static final int content=0x7f080034;
+    public static final int contentPanel=0x7f080035;
+    public static final int coordinator=0x7f080036;
+    public static final int custom=0x7f080037;
+    public static final int customPanel=0x7f080038;
+    public static final int dark=0x7f080039;
+    public static final int decor_content_parent=0x7f08003a;
+    public static final int default_activity_button=0x7f08003b;
+    public static final int description=0x7f08003c;
+    public static final int design_bottom_sheet=0x7f08003d;
+    public static final int design_menu_item_action_area=0x7f08003e;
+    public static final int design_menu_item_action_area_stub=0x7f08003f;
+    public static final int design_menu_item_text=0x7f080040;
+    public static final int design_navigation_view=0x7f080041;
+    public static final int dimensions=0x7f080042;
+    public static final int direct=0x7f080043;
+    public static final int disableHome=0x7f080044;
+    public static final int edit_query=0x7f080045;
+    public static final int end=0x7f080046;
+    public static final int end_padder=0x7f080047;
+    public static final int enterAlways=0x7f080048;
+    public static final int enterAlwaysCollapsed=0x7f080049;
+    public static final int exitUntilCollapsed=0x7f08004a;
+    public static final int expand_activities_button=0x7f08004b;
+    public static final int expanded_menu=0x7f08004c;
+    public static final int fab_camera=0x7f08004d;
+    public static final int fab_gallery=0x7f08004e;
+    public static final int fab_map=0x7f08004f;
+    public static final int fill=0x7f080050;
+    public static final int fill_horizontal=0x7f080051;
+    public static final int fill_vertical=0x7f080052;
+    public static final int filled=0x7f080053;
+    public static final int fixed=0x7f080054;
+    public static final int forever=0x7f080055;
+    public static final int ghost_view=0x7f080056;
+    public static final int gone=0x7f080057;
+    public static final int grid_recycler_view=0x7f080058;
+    public static final int group_divider=0x7f080059;
+    public static final int groups=0x7f08005a;
+    public static final int home=0x7f08005b;
+    public static final int homeAsUp=0x7f08005c;
+    public static final int hybrid=0x7f08005d;
+    public static final int icon=0x7f08005e;
+    public static final int icon_group=0x7f08005f;
+    public static final int icon_only=0x7f080060;
+    public static final int ifRoom=0x7f080061;
+    public static final int image=0x7f080062;
+    public static final int image_item=0x7f080063;
+    public static final int info=0x7f080064;
+    public static final int invisible=0x7f080065;
+    public static final int italic=0x7f080066;
+    public static final int item_touch_helper_previous_elevation=0x7f080067;
+    public static final int labeled=0x7f080068;
+    public static final int largeLabel=0x7f080069;
+    public static final int left=0x7f08006a;
+    public static final int light=0x7f08006b;
+    public static final int line1=0x7f08006c;
+    public static final int line3=0x7f08006d;
+    public static final int listMode=0x7f08006e;
+    public static final int list_item=0x7f08006f;
+    public static final int location=0x7f080070;
+    public static final int map=0x7f080071;
+    public static final int masked=0x7f080072;
+    public static final int media_actions=0x7f080073;
+    public static final int message=0x7f080074;
+    public static final int middle=0x7f080075;
+    public static final int mini=0x7f080076;
+    public static final int mtrl_child_content_container=0x7f080077;
+    public static final int mtrl_internal_children_alpha_tag=0x7f080078;
+    public static final int multiply=0x7f080079;
+    public static final int navigation_header_container=0x7f08007a;
+    public static final int never=0x7f08007b;
+    public static final int none=0x7f08007c;
+    public static final int normal=0x7f08007d;
+    public static final int notification_background=0x7f08007e;
+    public static final int notification_main_column=0x7f08007f;
+    public static final int notification_main_column_container=0x7f080080;
+    public static final int outline=0x7f080081;
+    public static final int packed=0x7f080082;
+    public static final int parallax=0x7f080083;
+    public static final int parent=0x7f080084;
+    public static final int parentPanel=0x7f080085;
+    public static final int parent_matrix=0x7f080086;
+    public static final int percent=0x7f080087;
+    public static final int pin=0x7f080088;
+    public static final int progress_circular=0x7f080089;
+    public static final int progress_horizontal=0x7f08008a;
+    public static final int radio=0x7f08008b;
+    public static final int right=0x7f08008c;
+    public static final int right_icon=0x7f08008d;
+    public static final int right_side=0x7f08008e;
+    public static final int satellite=0x7f08008f;
+    public static final int save_image_matrix=0x7f080090;
+    public static final int save_non_transition_alpha=0x7f080091;
+    public static final int save_scale_type=0x7f080092;
+    public static final int screen=0x7f080093;
+    public static final int scroll=0x7f080094;
+    public static final int scrollIndicatorDown=0x7f080095;
+    public static final int scrollIndicatorUp=0x7f080096;
+    public static final int scrollView=0x7f080097;
+    public static final int scrollable=0x7f080098;
+    public static final int search_badge=0x7f080099;
+    public static final int search_bar=0x7f08009a;
+    public static final int search_button=0x7f08009b;
+    public static final int search_close_btn=0x7f08009c;
+    public static final int search_edit_frame=0x7f08009d;
+    public static final int search_go_btn=0x7f08009e;
+    public static final int search_mag_icon=0x7f08009f;
+    public static final int search_plate=0x7f0800a0;
+    public static final int search_src_text=0x7f0800a1;
+    public static final int search_voice_btn=0x7f0800a2;
+    public static final int select_dialog_listview=0x7f0800a3;
+    public static final int selected=0x7f0800a4;
+    public static final int shortcut=0x7f0800a5;
+    public static final int showCustom=0x7f0800a6;
+    public static final int showHome=0x7f0800a7;
+    public static final int showTitle=0x7f0800a8;
+    public static final int smallLabel=0x7f0800a9;
+    public static final int snackbar_action=0x7f0800aa;
+    public static final int snackbar_text=0x7f0800ab;
+    public static final int snap=0x7f0800ac;
+    public static final int snapMargins=0x7f0800ad;
+    public static final int spacer=0x7f0800ae;
+    public static final int split_action_bar=0x7f0800af;
+    public static final int spread=0x7f0800b0;
+    public static final int spread_inside=0x7f0800b1;
+    public static final int src_atop=0x7f0800b2;
+    public static final int src_in=0x7f0800b3;
+    public static final int src_over=0x7f0800b4;
+    public static final int standard=0x7f0800b5;
+    public static final int start=0x7f0800b6;
+    public static final int status_bar_latest_event_content=0x7f0800b7;
+    public static final int stretch=0x7f0800b8;
+    public static final int submenuarrow=0x7f0800b9;
+    public static final int submit_area=0x7f0800ba;
+    public static final int tabMode=0x7f0800bb;
+    public static final int tag_transition_group=0x7f0800bc;
+    public static final int tag_unhandled_key_event_manager=0x7f0800bd;
+    public static final int tag_unhandled_key_listeners=0x7f0800be;
+    public static final int terrain=0x7f0800bf;
+    public static final int text=0x7f0800c0;
+    public static final int text2=0x7f0800c1;
+    public static final int textSpacerNoButtons=0x7f0800c2;
+    public static final int textSpacerNoTitle=0x7f0800c3;
+    public static final int textStart=0x7f0800c4;
+    public static final int text_input_password_toggle=0x7f0800c5;
+    public static final int textinput_counter=0x7f0800c6;
+    public static final int textinput_error=0x7f0800c7;
+    public static final int textinput_helper_text=0x7f0800c8;
+    public static final int time=0x7f0800c9;
+    public static final int title=0x7f0800ca;
+    public static final int titleDividerNoCustom=0x7f0800cb;
+    public static final int title_template=0x7f0800cc;
+    public static final int toolbar=0x7f0800cd;
+    public static final int top=0x7f0800ce;
+    public static final int topPanel=0x7f0800cf;
+    public static final int touch_outside=0x7f0800d0;
+    public static final int transition_current_scene=0x7f0800d1;
+    public static final int transition_layout_save=0x7f0800d2;
+    public static final int transition_position=0x7f0800d3;
+    public static final int transition_scene_layoutid_cache=0x7f0800d4;
+    public static final int transition_transform=0x7f0800d5;
+    public static final int uniform=0x7f0800d6;
+    public static final int unlabeled=0x7f0800d7;
+    public static final int up=0x7f0800d8;
+    public static final int useLogo=0x7f0800d9;
+    public static final int view_offset_helper=0x7f0800da;
+    public static final int visible=0x7f0800db;
+    public static final int wide=0x7f0800dc;
+    public static final int withText=0x7f0800dd;
+    public static final int wrap=0x7f0800de;
+    public static final int wrap_content=0x7f0800df;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -4891,13 +5119,14 @@ public final class R {
     public static final int config_tooltipAnimTime=0x7f090005;
     public static final int design_snackbar_text_max_lines=0x7f090006;
     public static final int design_tab_indicator_anim_duration_ms=0x7f090007;
-    public static final int hide_password_duration=0x7f090008;
-    public static final int mtrl_btn_anim_delay_ms=0x7f090009;
-    public static final int mtrl_btn_anim_duration_ms=0x7f09000a;
-    public static final int mtrl_chip_anim_duration=0x7f09000b;
-    public static final int mtrl_tab_indicator_anim_duration_ms=0x7f09000c;
-    public static final int show_password_duration=0x7f09000d;
-    public static final int status_bar_notification_info_maxnum=0x7f09000e;
+    public static final int google_play_services_version=0x7f090008;
+    public static final int hide_password_duration=0x7f090009;
+    public static final int mtrl_btn_anim_delay_ms=0x7f09000a;
+    public static final int mtrl_btn_anim_duration_ms=0x7f09000b;
+    public static final int mtrl_chip_anim_duration=0x7f09000c;
+    public static final int mtrl_tab_indicator_anim_duration_ms=0x7f09000d;
+    public static final int show_password_duration=0x7f09000e;
+    public static final int status_bar_notification_info_maxnum=0x7f09000f;
   }
   public static final class interpolator {
     public static final int mtrl_fast_out_linear_in=0x7f0a0000;
@@ -4935,36 +5164,46 @@ public final class R {
     public static final int abc_select_dialog_material=0x7f0b001a;
     public static final int abc_tooltip=0x7f0b001b;
     public static final int activity_main=0x7f0b001c;
-    public static final int content_camera=0x7f0b001d;
-    public static final int design_bottom_navigation_item=0x7f0b001e;
-    public static final int design_bottom_sheet_dialog=0x7f0b001f;
-    public static final int design_layout_snackbar=0x7f0b0020;
-    public static final int design_layout_snackbar_include=0x7f0b0021;
-    public static final int design_layout_tab_icon=0x7f0b0022;
-    public static final int design_layout_tab_text=0x7f0b0023;
-    public static final int design_menu_item_action_area=0x7f0b0024;
-    public static final int design_navigation_item=0x7f0b0025;
-    public static final int design_navigation_item_header=0x7f0b0026;
-    public static final int design_navigation_item_separator=0x7f0b0027;
-    public static final int design_navigation_item_subheader=0x7f0b0028;
-    public static final int design_navigation_menu=0x7f0b0029;
-    public static final int design_navigation_menu_item=0x7f0b002a;
-    public static final int design_text_input_password_icon=0x7f0b002b;
-    public static final int detail_pic=0x7f0b002c;
-    public static final int edit_pic=0x7f0b002d;
-    public static final int list_item_image=0x7f0b002e;
-    public static final int mtrl_layout_snackbar=0x7f0b002f;
-    public static final int mtrl_layout_snackbar_include=0x7f0b0030;
-    public static final int notification_action=0x7f0b0031;
-    public static final int notification_action_tombstone=0x7f0b0032;
-    public static final int notification_template_custom_big=0x7f0b0033;
-    public static final int notification_template_icon_group=0x7f0b0034;
-    public static final int notification_template_part_chronometer=0x7f0b0035;
-    public static final int notification_template_part_time=0x7f0b0036;
-    public static final int select_dialog_item_material=0x7f0b0037;
-    public static final int select_dialog_multichoice_material=0x7f0b0038;
-    public static final int select_dialog_singlechoice_material=0x7f0b0039;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b003a;
+    public static final int activity_maps=0x7f0b001d;
+    public static final int content_camera=0x7f0b001e;
+    public static final int design_bottom_navigation_item=0x7f0b001f;
+    public static final int design_bottom_sheet_dialog=0x7f0b0020;
+    public static final int design_layout_snackbar=0x7f0b0021;
+    public static final int design_layout_snackbar_include=0x7f0b0022;
+    public static final int design_layout_tab_icon=0x7f0b0023;
+    public static final int design_layout_tab_text=0x7f0b0024;
+    public static final int design_menu_item_action_area=0x7f0b0025;
+    public static final int design_navigation_item=0x7f0b0026;
+    public static final int design_navigation_item_header=0x7f0b0027;
+    public static final int design_navigation_item_separator=0x7f0b0028;
+    public static final int design_navigation_item_subheader=0x7f0b0029;
+    public static final int design_navigation_menu=0x7f0b002a;
+    public static final int design_navigation_menu_item=0x7f0b002b;
+    public static final int design_text_input_password_icon=0x7f0b002c;
+    public static final int detail_pic=0x7f0b002d;
+    public static final int edit_pic=0x7f0b002e;
+    public static final int list_item_image=0x7f0b002f;
+    public static final int mtrl_layout_snackbar=0x7f0b0030;
+    public static final int mtrl_layout_snackbar_include=0x7f0b0031;
+    public static final int notification_action=0x7f0b0032;
+    public static final int notification_action_tombstone=0x7f0b0033;
+    public static final int notification_media_action=0x7f0b0034;
+    public static final int notification_media_cancel_action=0x7f0b0035;
+    public static final int notification_template_big_media=0x7f0b0036;
+    public static final int notification_template_big_media_custom=0x7f0b0037;
+    public static final int notification_template_big_media_narrow=0x7f0b0038;
+    public static final int notification_template_big_media_narrow_custom=0x7f0b0039;
+    public static final int notification_template_custom_big=0x7f0b003a;
+    public static final int notification_template_icon_group=0x7f0b003b;
+    public static final int notification_template_lines_media=0x7f0b003c;
+    public static final int notification_template_media=0x7f0b003d;
+    public static final int notification_template_media_custom=0x7f0b003e;
+    public static final int notification_template_part_chronometer=0x7f0b003f;
+    public static final int notification_template_part_time=0x7f0b0040;
+    public static final int select_dialog_item_material=0x7f0b0041;
+    public static final int select_dialog_multichoice_material=0x7f0b0042;
+    public static final int select_dialog_singlechoice_material=0x7f0b0043;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b0044;
   }
   public static final class menu {
     public static final int menu_camera=0x7f0c0000;
@@ -5019,22 +5258,42 @@ public final class R {
     public static final int bottom_sheet_behavior=0x7f0e002a;
     public static final int character_counter_content_description=0x7f0e002b;
     public static final int character_counter_pattern=0x7f0e002c;
-    public static final int date=0x7f0e002d;
-    public static final int description=0x7f0e002e;
-    public static final int edit=0x7f0e002f;
-    public static final int fab_transformation_scrim_behavior=0x7f0e0030;
-    public static final int fab_transformation_sheet_behavior=0x7f0e0031;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e0032;
-    public static final int location=0x7f0e0033;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0e0034;
-    public static final int password_toggle_content_description=0x7f0e0035;
-    public static final int path_password_eye=0x7f0e0036;
-    public static final int path_password_eye_mask_strike_through=0x7f0e0037;
-    public static final int path_password_eye_mask_visible=0x7f0e0038;
-    public static final int path_password_strike_through=0x7f0e0039;
-    public static final int search_menu_title=0x7f0e003a;
-    public static final int status_bar_notification_info_overflow=0x7f0e003b;
-    public static final int tittle=0x7f0e003c;
+    public static final int common_google_play_services_enable_button=0x7f0e002d;
+    public static final int common_google_play_services_enable_text=0x7f0e002e;
+    public static final int common_google_play_services_enable_title=0x7f0e002f;
+    public static final int common_google_play_services_install_button=0x7f0e0030;
+    public static final int common_google_play_services_install_text=0x7f0e0031;
+    public static final int common_google_play_services_install_title=0x7f0e0032;
+    public static final int common_google_play_services_notification_channel_name=0x7f0e0033;
+    public static final int common_google_play_services_notification_ticker=0x7f0e0034;
+    public static final int common_google_play_services_unknown_issue=0x7f0e0035;
+    public static final int common_google_play_services_unsupported_text=0x7f0e0036;
+    public static final int common_google_play_services_update_button=0x7f0e0037;
+    public static final int common_google_play_services_update_text=0x7f0e0038;
+    public static final int common_google_play_services_update_title=0x7f0e0039;
+    public static final int common_google_play_services_updating_text=0x7f0e003a;
+    public static final int common_google_play_services_wear_update_text=0x7f0e003b;
+    public static final int common_open_on_phone=0x7f0e003c;
+    public static final int common_signin_button_text=0x7f0e003d;
+    public static final int common_signin_button_text_long=0x7f0e003e;
+    public static final int date=0x7f0e003f;
+    public static final int description=0x7f0e0040;
+    public static final int edit=0x7f0e0041;
+    public static final int fab_transformation_scrim_behavior=0x7f0e0042;
+    public static final int fab_transformation_sheet_behavior=0x7f0e0043;
+    public static final int google_maps_key=0x7f0e0044;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e0045;
+    public static final int location=0x7f0e0046;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0e0047;
+    public static final int password_toggle_content_description=0x7f0e0048;
+    public static final int path_password_eye=0x7f0e0049;
+    public static final int path_password_eye_mask_strike_through=0x7f0e004a;
+    public static final int path_password_eye_mask_visible=0x7f0e004b;
+    public static final int path_password_strike_through=0x7f0e004c;
+    public static final int search_menu_title=0x7f0e004d;
+    public static final int status_bar_notification_info_overflow=0x7f0e004e;
+    public static final int title_activity_maps=0x7f0e004f;
+    public static final int tittle=0x7f0e0050;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;
@@ -5319,223 +5578,228 @@ public final class R {
     public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0f0117;
     public static final int TextAppearance_Compat_Notification=0x7f0f0118;
     public static final int TextAppearance_Compat_Notification_Info=0x7f0f0119;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0f011a;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0f011b;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0f011c;
-    public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0f011d;
-    public static final int TextAppearance_Design_Counter=0x7f0f011e;
-    public static final int TextAppearance_Design_Counter_Overflow=0x7f0f011f;
-    public static final int TextAppearance_Design_Error=0x7f0f0120;
-    public static final int TextAppearance_Design_HelperText=0x7f0f0121;
-    public static final int TextAppearance_Design_Hint=0x7f0f0122;
-    public static final int TextAppearance_Design_Snackbar_Message=0x7f0f0123;
-    public static final int TextAppearance_Design_Tab=0x7f0f0124;
-    public static final int TextAppearance_MaterialComponents_Body1=0x7f0f0125;
-    public static final int TextAppearance_MaterialComponents_Body2=0x7f0f0126;
-    public static final int TextAppearance_MaterialComponents_Button=0x7f0f0127;
-    public static final int TextAppearance_MaterialComponents_Caption=0x7f0f0128;
-    public static final int TextAppearance_MaterialComponents_Chip=0x7f0f0129;
-    public static final int TextAppearance_MaterialComponents_Headline1=0x7f0f012a;
-    public static final int TextAppearance_MaterialComponents_Headline2=0x7f0f012b;
-    public static final int TextAppearance_MaterialComponents_Headline3=0x7f0f012c;
-    public static final int TextAppearance_MaterialComponents_Headline4=0x7f0f012d;
-    public static final int TextAppearance_MaterialComponents_Headline5=0x7f0f012e;
-    public static final int TextAppearance_MaterialComponents_Headline6=0x7f0f012f;
-    public static final int TextAppearance_MaterialComponents_Overline=0x7f0f0130;
-    public static final int TextAppearance_MaterialComponents_Subtitle1=0x7f0f0131;
-    public static final int TextAppearance_MaterialComponents_Subtitle2=0x7f0f0132;
-    public static final int TextAppearance_MaterialComponents_Tab=0x7f0f0133;
-    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0f0134;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0f0135;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0f0136;
-    public static final int Theme_AppCompat=0x7f0f0137;
-    public static final int Theme_AppCompat_CompactMenu=0x7f0f0138;
-    public static final int Theme_AppCompat_DayNight=0x7f0f0139;
-    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0f013a;
-    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0f013b;
-    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0f013c;
-    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0f013d;
-    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0f013e;
-    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0f013f;
-    public static final int Theme_AppCompat_Dialog=0x7f0f0140;
-    public static final int Theme_AppCompat_Dialog_Alert=0x7f0f0141;
-    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0f0142;
-    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0f0143;
-    public static final int Theme_AppCompat_Light=0x7f0f0144;
-    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0f0145;
-    public static final int Theme_AppCompat_Light_Dialog=0x7f0f0146;
-    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0f0147;
-    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0f0148;
-    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0f0149;
-    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0f014a;
-    public static final int Theme_AppCompat_NoActionBar=0x7f0f014b;
-    public static final int Theme_Design=0x7f0f014c;
-    public static final int Theme_Design_BottomSheetDialog=0x7f0f014d;
-    public static final int Theme_Design_Light=0x7f0f014e;
-    public static final int Theme_Design_Light_BottomSheetDialog=0x7f0f014f;
-    public static final int Theme_Design_Light_NoActionBar=0x7f0f0150;
-    public static final int Theme_Design_NoActionBar=0x7f0f0151;
-    public static final int Theme_MaterialComponents=0x7f0f0152;
-    public static final int Theme_MaterialComponents_BottomSheetDialog=0x7f0f0153;
-    public static final int Theme_MaterialComponents_Bridge=0x7f0f0154;
-    public static final int Theme_MaterialComponents_CompactMenu=0x7f0f0155;
-    public static final int Theme_MaterialComponents_Dialog=0x7f0f0156;
-    public static final int Theme_MaterialComponents_Dialog_Alert=0x7f0f0157;
-    public static final int Theme_MaterialComponents_Dialog_MinWidth=0x7f0f0158;
-    public static final int Theme_MaterialComponents_DialogWhenLarge=0x7f0f0159;
-    public static final int Theme_MaterialComponents_Light=0x7f0f015a;
-    public static final int Theme_MaterialComponents_Light_BottomSheetDialog=0x7f0f015b;
-    public static final int Theme_MaterialComponents_Light_Bridge=0x7f0f015c;
-    public static final int Theme_MaterialComponents_Light_DarkActionBar=0x7f0f015d;
-    public static final int Theme_MaterialComponents_Light_DarkActionBar_Bridge=0x7f0f015e;
-    public static final int Theme_MaterialComponents_Light_Dialog=0x7f0f015f;
-    public static final int Theme_MaterialComponents_Light_Dialog_Alert=0x7f0f0160;
-    public static final int Theme_MaterialComponents_Light_Dialog_MinWidth=0x7f0f0161;
-    public static final int Theme_MaterialComponents_Light_DialogWhenLarge=0x7f0f0162;
-    public static final int Theme_MaterialComponents_Light_NoActionBar=0x7f0f0163;
-    public static final int Theme_MaterialComponents_Light_NoActionBar_Bridge=0x7f0f0164;
-    public static final int Theme_MaterialComponents_NoActionBar=0x7f0f0165;
-    public static final int Theme_MaterialComponents_NoActionBar_Bridge=0x7f0f0166;
-    public static final int ThemeOverlay_AppCompat=0x7f0f0167;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0f0168;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f0f0169;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0f016a;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0f016b;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0f016c;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f0f016d;
-    public static final int ThemeOverlay_MaterialComponents=0x7f0f016e;
-    public static final int ThemeOverlay_MaterialComponents_ActionBar=0x7f0f016f;
-    public static final int ThemeOverlay_MaterialComponents_Dark=0x7f0f0170;
-    public static final int ThemeOverlay_MaterialComponents_Dark_ActionBar=0x7f0f0171;
-    public static final int ThemeOverlay_MaterialComponents_Dialog=0x7f0f0172;
-    public static final int ThemeOverlay_MaterialComponents_Dialog_Alert=0x7f0f0173;
-    public static final int ThemeOverlay_MaterialComponents_Light=0x7f0f0174;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText=0x7f0f0175;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=0x7f0f0176;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f0f0177;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=0x7f0f0178;
-    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f0f0179;
-    public static final int Widget_AppCompat_ActionBar=0x7f0f017a;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0f017b;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0f017c;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0f017d;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0f017e;
-    public static final int Widget_AppCompat_ActionButton=0x7f0f017f;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0f0180;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0f0181;
-    public static final int Widget_AppCompat_ActionMode=0x7f0f0182;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f0f0183;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0f0184;
-    public static final int Widget_AppCompat_Button=0x7f0f0185;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f0f0186;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0f0187;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0f0188;
-    public static final int Widget_AppCompat_Button_Colored=0x7f0f0189;
-    public static final int Widget_AppCompat_Button_Small=0x7f0f018a;
-    public static final int Widget_AppCompat_ButtonBar=0x7f0f018b;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0f018c;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0f018d;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0f018e;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0f018f;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0f0190;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0f0191;
-    public static final int Widget_AppCompat_EditText=0x7f0f0192;
-    public static final int Widget_AppCompat_ImageButton=0x7f0f0193;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f0f0194;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0f0195;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0f0196;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0f0197;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0f0198;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0f0199;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0f019a;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0f019b;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0f019c;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f0f019d;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0f019e;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0f019f;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0f01a0;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0f01a1;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0f01a2;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0f01a3;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0f01a4;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0f01a5;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0f01a6;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0f01a7;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f0f01a8;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0f01a9;
-    public static final int Widget_AppCompat_ListMenuView=0x7f0f01aa;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f0f01ab;
-    public static final int Widget_AppCompat_ListView=0x7f0f01ac;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f0f01ad;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f0f01ae;
-    public static final int Widget_AppCompat_PopupMenu=0x7f0f01af;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0f01b0;
-    public static final int Widget_AppCompat_PopupWindow=0x7f0f01b1;
-    public static final int Widget_AppCompat_ProgressBar=0x7f0f01b2;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0f01b3;
-    public static final int Widget_AppCompat_RatingBar=0x7f0f01b4;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0f01b5;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f0f01b6;
-    public static final int Widget_AppCompat_SearchView=0x7f0f01b7;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0f01b8;
-    public static final int Widget_AppCompat_SeekBar=0x7f0f01b9;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0f01ba;
-    public static final int Widget_AppCompat_Spinner=0x7f0f01bb;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0f01bc;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0f01bd;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0f01be;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0f01bf;
-    public static final int Widget_AppCompat_Toolbar=0x7f0f01c0;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0f01c1;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0f01c2;
-    public static final int Widget_Compat_NotificationActionText=0x7f0f01c3;
-    public static final int Widget_Design_AppBarLayout=0x7f0f01c4;
-    public static final int Widget_Design_BottomNavigationView=0x7f0f01c5;
-    public static final int Widget_Design_BottomSheet_Modal=0x7f0f01c6;
-    public static final int Widget_Design_CollapsingToolbar=0x7f0f01c7;
-    public static final int Widget_Design_FloatingActionButton=0x7f0f01c8;
-    public static final int Widget_Design_NavigationView=0x7f0f01c9;
-    public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f0f01ca;
-    public static final int Widget_Design_Snackbar=0x7f0f01cb;
-    public static final int Widget_Design_TabLayout=0x7f0f01cc;
-    public static final int Widget_Design_TextInputLayout=0x7f0f01cd;
-    public static final int Widget_MaterialComponents_BottomAppBar=0x7f0f01ce;
-    public static final int Widget_MaterialComponents_BottomAppBar_Colored=0x7f0f01cf;
-    public static final int Widget_MaterialComponents_BottomNavigationView=0x7f0f01d0;
-    public static final int Widget_MaterialComponents_BottomNavigationView_Colored=0x7f0f01d1;
-    public static final int Widget_MaterialComponents_BottomSheet_Modal=0x7f0f01d2;
-    public static final int Widget_MaterialComponents_Button=0x7f0f01d3;
-    public static final int Widget_MaterialComponents_Button_Icon=0x7f0f01d4;
-    public static final int Widget_MaterialComponents_Button_OutlinedButton=0x7f0f01d5;
-    public static final int Widget_MaterialComponents_Button_OutlinedButton_Icon=0x7f0f01d6;
-    public static final int Widget_MaterialComponents_Button_TextButton=0x7f0f01d7;
-    public static final int Widget_MaterialComponents_Button_TextButton_Dialog=0x7f0f01d8;
-    public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Icon=0x7f0f01d9;
-    public static final int Widget_MaterialComponents_Button_TextButton_Icon=0x7f0f01da;
-    public static final int Widget_MaterialComponents_Button_UnelevatedButton=0x7f0f01db;
-    public static final int Widget_MaterialComponents_Button_UnelevatedButton_Icon=0x7f0f01dc;
-    public static final int Widget_MaterialComponents_CardView=0x7f0f01dd;
-    public static final int Widget_MaterialComponents_Chip_Action=0x7f0f01de;
-    public static final int Widget_MaterialComponents_Chip_Choice=0x7f0f01df;
-    public static final int Widget_MaterialComponents_Chip_Entry=0x7f0f01e0;
-    public static final int Widget_MaterialComponents_Chip_Filter=0x7f0f01e1;
-    public static final int Widget_MaterialComponents_ChipGroup=0x7f0f01e2;
-    public static final int Widget_MaterialComponents_FloatingActionButton=0x7f0f01e3;
-    public static final int Widget_MaterialComponents_NavigationView=0x7f0f01e4;
-    public static final int Widget_MaterialComponents_Snackbar=0x7f0f01e5;
-    public static final int Widget_MaterialComponents_Snackbar_FullWidth=0x7f0f01e6;
-    public static final int Widget_MaterialComponents_TabLayout=0x7f0f01e7;
-    public static final int Widget_MaterialComponents_TabLayout_Colored=0x7f0f01e8;
-    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox=0x7f0f01e9;
-    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f0f01ea;
-    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox=0x7f0f01eb;
-    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f0f01ec;
-    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox=0x7f0f01ed;
-    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=0x7f0f01ee;
-    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox=0x7f0f01ef;
-    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=0x7f0f01f0;
-    public static final int Widget_MaterialComponents_Toolbar=0x7f0f01f1;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0f01f2;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0f011a;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0f011b;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0f011c;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0f011d;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0f011e;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0f011f;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0f0120;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0f0121;
+    public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0f0122;
+    public static final int TextAppearance_Design_Counter=0x7f0f0123;
+    public static final int TextAppearance_Design_Counter_Overflow=0x7f0f0124;
+    public static final int TextAppearance_Design_Error=0x7f0f0125;
+    public static final int TextAppearance_Design_HelperText=0x7f0f0126;
+    public static final int TextAppearance_Design_Hint=0x7f0f0127;
+    public static final int TextAppearance_Design_Snackbar_Message=0x7f0f0128;
+    public static final int TextAppearance_Design_Tab=0x7f0f0129;
+    public static final int TextAppearance_MaterialComponents_Body1=0x7f0f012a;
+    public static final int TextAppearance_MaterialComponents_Body2=0x7f0f012b;
+    public static final int TextAppearance_MaterialComponents_Button=0x7f0f012c;
+    public static final int TextAppearance_MaterialComponents_Caption=0x7f0f012d;
+    public static final int TextAppearance_MaterialComponents_Chip=0x7f0f012e;
+    public static final int TextAppearance_MaterialComponents_Headline1=0x7f0f012f;
+    public static final int TextAppearance_MaterialComponents_Headline2=0x7f0f0130;
+    public static final int TextAppearance_MaterialComponents_Headline3=0x7f0f0131;
+    public static final int TextAppearance_MaterialComponents_Headline4=0x7f0f0132;
+    public static final int TextAppearance_MaterialComponents_Headline5=0x7f0f0133;
+    public static final int TextAppearance_MaterialComponents_Headline6=0x7f0f0134;
+    public static final int TextAppearance_MaterialComponents_Overline=0x7f0f0135;
+    public static final int TextAppearance_MaterialComponents_Subtitle1=0x7f0f0136;
+    public static final int TextAppearance_MaterialComponents_Subtitle2=0x7f0f0137;
+    public static final int TextAppearance_MaterialComponents_Tab=0x7f0f0138;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0f0139;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0f013a;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0f013b;
+    public static final int Theme_AppCompat=0x7f0f013c;
+    public static final int Theme_AppCompat_CompactMenu=0x7f0f013d;
+    public static final int Theme_AppCompat_DayNight=0x7f0f013e;
+    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0f013f;
+    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0f0140;
+    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0f0141;
+    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0f0142;
+    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0f0143;
+    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0f0144;
+    public static final int Theme_AppCompat_Dialog=0x7f0f0145;
+    public static final int Theme_AppCompat_Dialog_Alert=0x7f0f0146;
+    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0f0147;
+    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0f0148;
+    public static final int Theme_AppCompat_Light=0x7f0f0149;
+    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0f014a;
+    public static final int Theme_AppCompat_Light_Dialog=0x7f0f014b;
+    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0f014c;
+    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0f014d;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0f014e;
+    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0f014f;
+    public static final int Theme_AppCompat_NoActionBar=0x7f0f0150;
+    public static final int Theme_Design=0x7f0f0151;
+    public static final int Theme_Design_BottomSheetDialog=0x7f0f0152;
+    public static final int Theme_Design_Light=0x7f0f0153;
+    public static final int Theme_Design_Light_BottomSheetDialog=0x7f0f0154;
+    public static final int Theme_Design_Light_NoActionBar=0x7f0f0155;
+    public static final int Theme_Design_NoActionBar=0x7f0f0156;
+    public static final int Theme_MaterialComponents=0x7f0f0157;
+    public static final int Theme_MaterialComponents_BottomSheetDialog=0x7f0f0158;
+    public static final int Theme_MaterialComponents_Bridge=0x7f0f0159;
+    public static final int Theme_MaterialComponents_CompactMenu=0x7f0f015a;
+    public static final int Theme_MaterialComponents_Dialog=0x7f0f015b;
+    public static final int Theme_MaterialComponents_Dialog_Alert=0x7f0f015c;
+    public static final int Theme_MaterialComponents_Dialog_MinWidth=0x7f0f015d;
+    public static final int Theme_MaterialComponents_DialogWhenLarge=0x7f0f015e;
+    public static final int Theme_MaterialComponents_Light=0x7f0f015f;
+    public static final int Theme_MaterialComponents_Light_BottomSheetDialog=0x7f0f0160;
+    public static final int Theme_MaterialComponents_Light_Bridge=0x7f0f0161;
+    public static final int Theme_MaterialComponents_Light_DarkActionBar=0x7f0f0162;
+    public static final int Theme_MaterialComponents_Light_DarkActionBar_Bridge=0x7f0f0163;
+    public static final int Theme_MaterialComponents_Light_Dialog=0x7f0f0164;
+    public static final int Theme_MaterialComponents_Light_Dialog_Alert=0x7f0f0165;
+    public static final int Theme_MaterialComponents_Light_Dialog_MinWidth=0x7f0f0166;
+    public static final int Theme_MaterialComponents_Light_DialogWhenLarge=0x7f0f0167;
+    public static final int Theme_MaterialComponents_Light_NoActionBar=0x7f0f0168;
+    public static final int Theme_MaterialComponents_Light_NoActionBar_Bridge=0x7f0f0169;
+    public static final int Theme_MaterialComponents_NoActionBar=0x7f0f016a;
+    public static final int Theme_MaterialComponents_NoActionBar_Bridge=0x7f0f016b;
+    public static final int ThemeOverlay_AppCompat=0x7f0f016c;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0f016d;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f0f016e;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0f016f;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0f0170;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0f0171;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f0f0172;
+    public static final int ThemeOverlay_MaterialComponents=0x7f0f0173;
+    public static final int ThemeOverlay_MaterialComponents_ActionBar=0x7f0f0174;
+    public static final int ThemeOverlay_MaterialComponents_Dark=0x7f0f0175;
+    public static final int ThemeOverlay_MaterialComponents_Dark_ActionBar=0x7f0f0176;
+    public static final int ThemeOverlay_MaterialComponents_Dialog=0x7f0f0177;
+    public static final int ThemeOverlay_MaterialComponents_Dialog_Alert=0x7f0f0178;
+    public static final int ThemeOverlay_MaterialComponents_Light=0x7f0f0179;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText=0x7f0f017a;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=0x7f0f017b;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f0f017c;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=0x7f0f017d;
+    public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f0f017e;
+    public static final int Widget_AppCompat_ActionBar=0x7f0f017f;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0f0180;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0f0181;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0f0182;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0f0183;
+    public static final int Widget_AppCompat_ActionButton=0x7f0f0184;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0f0185;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0f0186;
+    public static final int Widget_AppCompat_ActionMode=0x7f0f0187;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f0f0188;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0f0189;
+    public static final int Widget_AppCompat_Button=0x7f0f018a;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f0f018b;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0f018c;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0f018d;
+    public static final int Widget_AppCompat_Button_Colored=0x7f0f018e;
+    public static final int Widget_AppCompat_Button_Small=0x7f0f018f;
+    public static final int Widget_AppCompat_ButtonBar=0x7f0f0190;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0f0191;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0f0192;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0f0193;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0f0194;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0f0195;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0f0196;
+    public static final int Widget_AppCompat_EditText=0x7f0f0197;
+    public static final int Widget_AppCompat_ImageButton=0x7f0f0198;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f0f0199;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0f019a;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0f019b;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0f019c;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0f019d;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0f019e;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0f019f;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0f01a0;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0f01a1;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f0f01a2;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0f01a3;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0f01a4;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0f01a5;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0f01a6;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0f01a7;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0f01a8;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0f01a9;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0f01aa;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0f01ab;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0f01ac;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f0f01ad;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0f01ae;
+    public static final int Widget_AppCompat_ListMenuView=0x7f0f01af;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f0f01b0;
+    public static final int Widget_AppCompat_ListView=0x7f0f01b1;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f0f01b2;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f0f01b3;
+    public static final int Widget_AppCompat_PopupMenu=0x7f0f01b4;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0f01b5;
+    public static final int Widget_AppCompat_PopupWindow=0x7f0f01b6;
+    public static final int Widget_AppCompat_ProgressBar=0x7f0f01b7;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0f01b8;
+    public static final int Widget_AppCompat_RatingBar=0x7f0f01b9;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0f01ba;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f0f01bb;
+    public static final int Widget_AppCompat_SearchView=0x7f0f01bc;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0f01bd;
+    public static final int Widget_AppCompat_SeekBar=0x7f0f01be;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0f01bf;
+    public static final int Widget_AppCompat_Spinner=0x7f0f01c0;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0f01c1;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0f01c2;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0f01c3;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0f01c4;
+    public static final int Widget_AppCompat_Toolbar=0x7f0f01c5;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0f01c6;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0f01c7;
+    public static final int Widget_Compat_NotificationActionText=0x7f0f01c8;
+    public static final int Widget_Design_AppBarLayout=0x7f0f01c9;
+    public static final int Widget_Design_BottomNavigationView=0x7f0f01ca;
+    public static final int Widget_Design_BottomSheet_Modal=0x7f0f01cb;
+    public static final int Widget_Design_CollapsingToolbar=0x7f0f01cc;
+    public static final int Widget_Design_FloatingActionButton=0x7f0f01cd;
+    public static final int Widget_Design_NavigationView=0x7f0f01ce;
+    public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f0f01cf;
+    public static final int Widget_Design_Snackbar=0x7f0f01d0;
+    public static final int Widget_Design_TabLayout=0x7f0f01d1;
+    public static final int Widget_Design_TextInputLayout=0x7f0f01d2;
+    public static final int Widget_MaterialComponents_BottomAppBar=0x7f0f01d3;
+    public static final int Widget_MaterialComponents_BottomAppBar_Colored=0x7f0f01d4;
+    public static final int Widget_MaterialComponents_BottomNavigationView=0x7f0f01d5;
+    public static final int Widget_MaterialComponents_BottomNavigationView_Colored=0x7f0f01d6;
+    public static final int Widget_MaterialComponents_BottomSheet_Modal=0x7f0f01d7;
+    public static final int Widget_MaterialComponents_Button=0x7f0f01d8;
+    public static final int Widget_MaterialComponents_Button_Icon=0x7f0f01d9;
+    public static final int Widget_MaterialComponents_Button_OutlinedButton=0x7f0f01da;
+    public static final int Widget_MaterialComponents_Button_OutlinedButton_Icon=0x7f0f01db;
+    public static final int Widget_MaterialComponents_Button_TextButton=0x7f0f01dc;
+    public static final int Widget_MaterialComponents_Button_TextButton_Dialog=0x7f0f01dd;
+    public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Icon=0x7f0f01de;
+    public static final int Widget_MaterialComponents_Button_TextButton_Icon=0x7f0f01df;
+    public static final int Widget_MaterialComponents_Button_UnelevatedButton=0x7f0f01e0;
+    public static final int Widget_MaterialComponents_Button_UnelevatedButton_Icon=0x7f0f01e1;
+    public static final int Widget_MaterialComponents_CardView=0x7f0f01e2;
+    public static final int Widget_MaterialComponents_Chip_Action=0x7f0f01e3;
+    public static final int Widget_MaterialComponents_Chip_Choice=0x7f0f01e4;
+    public static final int Widget_MaterialComponents_Chip_Entry=0x7f0f01e5;
+    public static final int Widget_MaterialComponents_Chip_Filter=0x7f0f01e6;
+    public static final int Widget_MaterialComponents_ChipGroup=0x7f0f01e7;
+    public static final int Widget_MaterialComponents_FloatingActionButton=0x7f0f01e8;
+    public static final int Widget_MaterialComponents_NavigationView=0x7f0f01e9;
+    public static final int Widget_MaterialComponents_Snackbar=0x7f0f01ea;
+    public static final int Widget_MaterialComponents_Snackbar_FullWidth=0x7f0f01eb;
+    public static final int Widget_MaterialComponents_TabLayout=0x7f0f01ec;
+    public static final int Widget_MaterialComponents_TabLayout_Colored=0x7f0f01ed;
+    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox=0x7f0f01ee;
+    public static final int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=0x7f0f01ef;
+    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox=0x7f0f01f0;
+    public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=0x7f0f01f1;
+    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox=0x7f0f01f2;
+    public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=0x7f0f01f3;
+    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox=0x7f0f01f4;
+    public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=0x7f0f01f5;
+    public static final int Widget_MaterialComponents_Toolbar=0x7f0f01f6;
+    public static final int Widget_Support_CoordinatorLayout=0x7f0f01f7;
   }
   public static final class styleable {
     /**
@@ -5545,35 +5809,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background oak.shef.ac.uk.myapplication:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit oak.shef.ac.uk.myapplication:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked oak.shef.ac.uk.myapplication:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd oak.shef.ac.uk.myapplication:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions oak.shef.ac.uk.myapplication:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft oak.shef.ac.uk.myapplication:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight oak.shef.ac.uk.myapplication:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart oak.shef.ac.uk.myapplication:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation oak.shef.ac.uk.myapplication:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout oak.shef.ac.uk.myapplication:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions oak.shef.ac.uk.myapplication:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider oak.shef.ac.uk.myapplication:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height oak.shef.ac.uk.myapplication:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll oak.shef.ac.uk.myapplication:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator oak.shef.ac.uk.myapplication:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout oak.shef.ac.uk.myapplication:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon oak.shef.ac.uk.myapplication:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle oak.shef.ac.uk.myapplication:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding oak.shef.ac.uk.myapplication:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo oak.shef.ac.uk.myapplication:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode oak.shef.ac.uk.myapplication:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme oak.shef.ac.uk.myapplication:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding oak.shef.ac.uk.myapplication:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle oak.shef.ac.uk.myapplication:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle oak.shef.ac.uk.myapplication:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle oak.shef.ac.uk.myapplication:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title oak.shef.ac.uk.myapplication:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle oak.shef.ac.uk.myapplication:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background oak.shef.ac.uk.cgxassignment:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit oak.shef.ac.uk.cgxassignment:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked oak.shef.ac.uk.cgxassignment:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd oak.shef.ac.uk.cgxassignment:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions oak.shef.ac.uk.cgxassignment:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft oak.shef.ac.uk.cgxassignment:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight oak.shef.ac.uk.cgxassignment:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart oak.shef.ac.uk.cgxassignment:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation oak.shef.ac.uk.cgxassignment:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout oak.shef.ac.uk.cgxassignment:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions oak.shef.ac.uk.cgxassignment:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider oak.shef.ac.uk.cgxassignment:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height oak.shef.ac.uk.cgxassignment:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll oak.shef.ac.uk.cgxassignment:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator oak.shef.ac.uk.cgxassignment:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout oak.shef.ac.uk.cgxassignment:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon oak.shef.ac.uk.cgxassignment:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle oak.shef.ac.uk.cgxassignment:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding oak.shef.ac.uk.cgxassignment:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo oak.shef.ac.uk.cgxassignment:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode oak.shef.ac.uk.cgxassignment:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme oak.shef.ac.uk.cgxassignment:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding oak.shef.ac.uk.cgxassignment:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle oak.shef.ac.uk.cgxassignment:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle oak.shef.ac.uk.cgxassignment:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle oak.shef.ac.uk.cgxassignment:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title oak.shef.ac.uk.cgxassignment:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle oak.shef.ac.uk.cgxassignment:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -5606,17 +5870,17 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f030031, 0x7f030032, 0x7f030033, 0x7f030097, 
-      0x7f030098, 0x7f030099, 0x7f03009a, 0x7f03009b, 
-      0x7f03009c, 0x7f0300aa, 0x7f0300af, 0x7f0300b0, 
-      0x7f0300bb, 0x7f0300e6, 0x7f0300eb, 0x7f0300f0, 
-      0x7f0300f1, 0x7f0300f3, 0x7f0300fd, 0x7f030107, 
-      0x7f03015c, 0x7f030168, 0x7f030179, 0x7f03017d, 
-      0x7f03017e, 0x7f0301ac, 0x7f0301af, 0x7f0301f4, 
-      0x7f0301fe
+      0x7f030032, 0x7f030033, 0x7f030034, 0x7f0300a2, 
+      0x7f0300a3, 0x7f0300a4, 0x7f0300a5, 0x7f0300a6, 
+      0x7f0300a7, 0x7f0300b5, 0x7f0300ba, 0x7f0300bb, 
+      0x7f0300c6, 0x7f0300f1, 0x7f0300f6, 0x7f0300fb, 
+      0x7f0300fc, 0x7f0300fe, 0x7f03010a, 0x7f030114, 
+      0x7f03016e, 0x7f03017b, 0x7f03018c, 0x7f030190, 
+      0x7f030191, 0x7f0301c0, 0x7f0301c3, 0x7f030208, 
+      0x7f030212
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#background}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5624,11 +5888,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:background
+     * @attr name oak.shef.ac.uk.cgxassignment:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5639,11 +5903,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundSplit
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5654,11 +5918,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundStacked
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5667,11 +5931,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5680,11 +5944,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetEndWithActions
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5693,11 +5957,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5706,11 +5970,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetRight
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5719,11 +5983,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetStart
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5732,11 +5996,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetStartWithNavigation
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5744,11 +6008,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:customNavigationLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -5766,11 +6030,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:displayOptions
+     * @attr name oak.shef.ac.uk.cgxassignment:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#divider}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5778,11 +6042,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:divider
+     * @attr name oak.shef.ac.uk.cgxassignment:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5791,11 +6055,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#height}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5804,21 +6068,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:height
+     * @attr name oak.shef.ac.uk.cgxassignment:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hideOnContentScroll
+     * @attr name oak.shef.ac.uk.cgxassignment:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5826,11 +6090,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:homeAsUpIndicator
+     * @attr name oak.shef.ac.uk.cgxassignment:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5838,11 +6102,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:homeLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#icon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5850,11 +6114,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:icon
+     * @attr name oak.shef.ac.uk.cgxassignment:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5862,11 +6126,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:indeterminateProgressStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5875,11 +6139,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#logo}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5887,11 +6151,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:logo
+     * @attr name oak.shef.ac.uk.cgxassignment:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5905,11 +6169,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:navigationMode
+     * @attr name oak.shef.ac.uk.cgxassignment:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5917,11 +6181,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:popupTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5930,11 +6194,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:progressBarPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5942,21 +6206,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:progressBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitle
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5964,21 +6228,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitleTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#title}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:title
+     * @attr name oak.shef.ac.uk.cgxassignment:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5986,7 +6250,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -6068,12 +6332,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background oak.shef.ac.uk.myapplication:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit oak.shef.ac.uk.myapplication:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout oak.shef.ac.uk.myapplication:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height oak.shef.ac.uk.myapplication:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle oak.shef.ac.uk.myapplication:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle oak.shef.ac.uk.myapplication:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background oak.shef.ac.uk.cgxassignment:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit oak.shef.ac.uk.cgxassignment:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout oak.shef.ac.uk.cgxassignment:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height oak.shef.ac.uk.cgxassignment:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle oak.shef.ac.uk.cgxassignment:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle oak.shef.ac.uk.cgxassignment:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -6083,11 +6347,11 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f030031, 0x7f030032, 0x7f030081, 0x7f0300e6, 
-      0x7f0301af, 0x7f0301fe
+      0x7f030032, 0x7f030033, 0x7f03008b, 0x7f0300f1, 
+      0x7f0301c3, 0x7f030212
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#background}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6095,11 +6359,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:background
+     * @attr name oak.shef.ac.uk.cgxassignment:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6110,11 +6374,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundSplit
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6122,11 +6386,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeItemLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#height}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6135,11 +6399,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:height
+     * @attr name oak.shef.ac.uk.cgxassignment:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6147,11 +6411,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitleTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6159,7 +6423,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -6169,17 +6433,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable oak.shef.ac.uk.myapplication:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount oak.shef.ac.uk.myapplication:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable oak.shef.ac.uk.cgxassignment:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount oak.shef.ac.uk.cgxassignment:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f0300c1, 0x7f0300fe
+      0x7f0300cc, 0x7f03010b
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6187,17 +6451,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandActivityOverflowButtonDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:initialActivityCount
+     * @attr name oak.shef.ac.uk.cgxassignment:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -6208,13 +6472,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen oak.shef.ac.uk.myapplication:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout oak.shef.ac.uk.myapplication:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout oak.shef.ac.uk.myapplication:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout oak.shef.ac.uk.myapplication:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout oak.shef.ac.uk.myapplication:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle oak.shef.ac.uk.myapplication:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout oak.shef.ac.uk.myapplication:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen oak.shef.ac.uk.cgxassignment:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout oak.shef.ac.uk.cgxassignment:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout oak.shef.ac.uk.cgxassignment:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout oak.shef.ac.uk.cgxassignment:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout oak.shef.ac.uk.cgxassignment:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle oak.shef.ac.uk.cgxassignment:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout oak.shef.ac.uk.cgxassignment:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -6226,8 +6490,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f030054, 0x7f030055, 0x7f030153, 
-      0x7f030154, 0x7f030165, 0x7f030194, 0x7f030195
+      0x010100f2, 0x7f030055, 0x7f030056, 0x7f030164, 
+      0x7f030165, 0x7f030178, 0x7f0301a8, 0x7f0301a9
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -6242,7 +6506,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6251,11 +6515,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonIconDimen
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6263,11 +6527,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonPanelSideLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6275,11 +6539,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listItemLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6287,11 +6551,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6299,21 +6563,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:multiChoiceItemLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:showTitle
+     * @attr name oak.shef.ac.uk.cgxassignment:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6321,7 +6585,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:singleChoiceItemLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -6523,9 +6787,9 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded oak.shef.ac.uk.myapplication:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll oak.shef.ac.uk.myapplication:liftOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded oak.shef.ac.uk.cgxassignment:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll oak.shef.ac.uk.cgxassignment:liftOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -6535,8 +6799,8 @@ public final class R {
      * @see #AppBarLayout_liftOnScroll
      */
     public static final int[] AppBarLayout={
-      0x010100d4, 0x0101048f, 0x01010540, 0x7f0300bb, 
-      0x7f0300c2, 0x7f03014e
+      0x010100d4, 0x0101048f, 0x01010540, 0x7f0300c6, 
+      0x7f0300cd, 0x7f03015f
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -6574,7 +6838,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6583,27 +6847,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:expanded
+     * @attr name oak.shef.ac.uk.cgxassignment:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#liftOnScroll}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#liftOnScroll}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:liftOnScroll
+     * @attr name oak.shef.ac.uk.cgxassignment:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -6613,10 +6877,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed oak.shef.ac.uk.myapplication:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible oak.shef.ac.uk.myapplication:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable oak.shef.ac.uk.myapplication:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted oak.shef.ac.uk.myapplication:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed oak.shef.ac.uk.cgxassignment:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible oak.shef.ac.uk.cgxassignment:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable oak.shef.ac.uk.cgxassignment:state_liftable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted oak.shef.ac.uk.cgxassignment:state_lifted}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -6624,46 +6888,46 @@ public final class R {
      * @see #AppBarLayoutStates_state_lifted
      */
     public static final int[] AppBarLayoutStates={
-      0x7f0301a2, 0x7f0301a3, 0x7f0301a4, 0x7f0301a5
+      0x7f0301b6, 0x7f0301b7, 0x7f0301b8, 0x7f0301b9
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:state_collapsed
+     * @attr name oak.shef.ac.uk.cgxassignment:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:state_collapsible
+     * @attr name oak.shef.ac.uk.cgxassignment:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#state_liftable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#state_liftable}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:state_liftable
+     * @attr name oak.shef.ac.uk.cgxassignment:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#state_lifted}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#state_lifted}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:state_lifted
+     * @attr name oak.shef.ac.uk.cgxassignment:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -6673,17 +6937,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags oak.shef.ac.uk.myapplication:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator oak.shef.ac.uk.myapplication:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags oak.shef.ac.uk.cgxassignment:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator oak.shef.ac.uk.cgxassignment:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
      */
     public static final int[] AppBarLayout_Layout={
-      0x7f03014c, 0x7f03014d
+      0x7f03015d, 0x7f03015e
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -6700,11 +6964,11 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_scrollFlags
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6712,7 +6976,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_scrollInterpolator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -6723,9 +6987,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat oak.shef.ac.uk.myapplication:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint oak.shef.ac.uk.myapplication:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode oak.shef.ac.uk.myapplication:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat oak.shef.ac.uk.cgxassignment:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint oak.shef.ac.uk.cgxassignment:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode oak.shef.ac.uk.cgxassignment:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -6733,7 +6997,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f03019f, 0x7f0301f2, 0x7f0301f3
+      0x01010119, 0x7f0301b3, 0x7f030206, 0x7f030207
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -6751,7 +7015,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6759,22 +7023,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:srcCompat
+     * @attr name oak.shef.ac.uk.cgxassignment:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tint
+     * @attr name oak.shef.ac.uk.cgxassignment:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6791,7 +7055,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -6802,9 +7066,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark oak.shef.ac.uk.myapplication:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint oak.shef.ac.uk.myapplication:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode oak.shef.ac.uk.myapplication:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark oak.shef.ac.uk.cgxassignment:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint oak.shef.ac.uk.cgxassignment:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode oak.shef.ac.uk.cgxassignment:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -6812,7 +7076,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f0301ef, 0x7f0301f0, 0x7f0301f1
+      0x01010142, 0x7f030203, 0x7f030204, 0x7f030205
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -6827,7 +7091,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6835,22 +7099,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tickMark
+     * @attr name oak.shef.ac.uk.cgxassignment:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tickMarkTint
+     * @attr name oak.shef.ac.uk.cgxassignment:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6867,7 +7131,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tickMarkTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -7007,16 +7271,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize oak.shef.ac.uk.myapplication:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize oak.shef.ac.uk.myapplication:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes oak.shef.ac.uk.myapplication:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity oak.shef.ac.uk.myapplication:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType oak.shef.ac.uk.myapplication:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight oak.shef.ac.uk.myapplication:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily oak.shef.ac.uk.myapplication:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight oak.shef.ac.uk.myapplication:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight oak.shef.ac.uk.myapplication:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps oak.shef.ac.uk.myapplication:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize oak.shef.ac.uk.cgxassignment:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize oak.shef.ac.uk.cgxassignment:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes oak.shef.ac.uk.cgxassignment:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity oak.shef.ac.uk.cgxassignment:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType oak.shef.ac.uk.cgxassignment:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight oak.shef.ac.uk.cgxassignment:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily oak.shef.ac.uk.cgxassignment:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight oak.shef.ac.uk.cgxassignment:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight oak.shef.ac.uk.cgxassignment:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps oak.shef.ac.uk.cgxassignment:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -7031,9 +7295,9 @@ public final class R {
      * @see #AppCompatTextView_textAllCaps
      */
     public static final int[] AppCompatTextView={
-      0x01010034, 0x7f03002c, 0x7f03002d, 0x7f03002e, 
-      0x7f03002f, 0x7f030030, 0x7f0300d5, 0x7f0300d8, 
-      0x7f03010f, 0x7f03014f, 0x7f0301cf
+      0x01010034, 0x7f03002d, 0x7f03002e, 0x7f03002f, 
+      0x7f030030, 0x7f030031, 0x7f0300e0, 0x7f0300e3, 
+      0x7f03011c, 0x7f030160, 0x7f0301e3
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -7048,7 +7312,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7057,11 +7321,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoSizeMaxTextSize
+     * @attr name oak.shef.ac.uk.cgxassignment:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7070,11 +7334,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoSizeMinTextSize
+     * @attr name oak.shef.ac.uk.cgxassignment:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7082,11 +7346,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoSizePresetSizes
+     * @attr name oak.shef.ac.uk.cgxassignment:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7095,11 +7359,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoSizeStepGranularity
+     * @attr name oak.shef.ac.uk.cgxassignment:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7112,11 +7376,11 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoSizeTextType
+     * @attr name oak.shef.ac.uk.cgxassignment:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7125,21 +7389,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:firstBaselineToTopHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontFamily
+     * @attr name oak.shef.ac.uk.cgxassignment:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7148,11 +7412,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:lastBaselineToBottomHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7161,11 +7425,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:lineHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7175,7 +7439,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAllCaps
+     * @attr name oak.shef.ac.uk.cgxassignment:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -7187,125 +7451,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider oak.shef.ac.uk.myapplication:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground oak.shef.ac.uk.myapplication:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme oak.shef.ac.uk.myapplication:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize oak.shef.ac.uk.myapplication:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle oak.shef.ac.uk.myapplication:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle oak.shef.ac.uk.myapplication:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle oak.shef.ac.uk.myapplication:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle oak.shef.ac.uk.myapplication:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle oak.shef.ac.uk.myapplication:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme oak.shef.ac.uk.myapplication:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme oak.shef.ac.uk.myapplication:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle oak.shef.ac.uk.myapplication:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle oak.shef.ac.uk.myapplication:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance oak.shef.ac.uk.myapplication:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor oak.shef.ac.uk.myapplication:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground oak.shef.ac.uk.myapplication:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle oak.shef.ac.uk.myapplication:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable oak.shef.ac.uk.myapplication:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable oak.shef.ac.uk.myapplication:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable oak.shef.ac.uk.myapplication:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable oak.shef.ac.uk.myapplication:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable oak.shef.ac.uk.myapplication:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle oak.shef.ac.uk.myapplication:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable oak.shef.ac.uk.myapplication:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable oak.shef.ac.uk.myapplication:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground oak.shef.ac.uk.myapplication:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle oak.shef.ac.uk.myapplication:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable oak.shef.ac.uk.myapplication:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle oak.shef.ac.uk.myapplication:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle oak.shef.ac.uk.myapplication:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle oak.shef.ac.uk.myapplication:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle oak.shef.ac.uk.myapplication:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons oak.shef.ac.uk.myapplication:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle oak.shef.ac.uk.myapplication:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme oak.shef.ac.uk.myapplication:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle oak.shef.ac.uk.myapplication:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle oak.shef.ac.uk.myapplication:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle oak.shef.ac.uk.myapplication:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle oak.shef.ac.uk.myapplication:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle oak.shef.ac.uk.myapplication:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle oak.shef.ac.uk.myapplication:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle oak.shef.ac.uk.myapplication:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle oak.shef.ac.uk.myapplication:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall oak.shef.ac.uk.myapplication:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle oak.shef.ac.uk.myapplication:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle oak.shef.ac.uk.myapplication:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent oak.shef.ac.uk.myapplication:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating oak.shef.ac.uk.myapplication:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal oak.shef.ac.uk.myapplication:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated oak.shef.ac.uk.myapplication:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight oak.shef.ac.uk.myapplication:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal oak.shef.ac.uk.myapplication:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError oak.shef.ac.uk.myapplication:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary oak.shef.ac.uk.myapplication:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark oak.shef.ac.uk.myapplication:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal oak.shef.ac.uk.myapplication:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground oak.shef.ac.uk.myapplication:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius oak.shef.ac.uk.myapplication:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding oak.shef.ac.uk.myapplication:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme oak.shef.ac.uk.myapplication:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal oak.shef.ac.uk.myapplication:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical oak.shef.ac.uk.myapplication:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle oak.shef.ac.uk.myapplication:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight oak.shef.ac.uk.myapplication:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground oak.shef.ac.uk.myapplication:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor oak.shef.ac.uk.myapplication:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle oak.shef.ac.uk.myapplication:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator oak.shef.ac.uk.myapplication:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle oak.shef.ac.uk.myapplication:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator oak.shef.ac.uk.myapplication:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog oak.shef.ac.uk.myapplication:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle oak.shef.ac.uk.myapplication:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle oak.shef.ac.uk.myapplication:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight oak.shef.ac.uk.myapplication:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge oak.shef.ac.uk.myapplication:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall oak.shef.ac.uk.myapplication:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft oak.shef.ac.uk.myapplication:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight oak.shef.ac.uk.myapplication:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground oak.shef.ac.uk.myapplication:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme oak.shef.ac.uk.myapplication:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth oak.shef.ac.uk.myapplication:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle oak.shef.ac.uk.myapplication:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle oak.shef.ac.uk.myapplication:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle oak.shef.ac.uk.myapplication:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle oak.shef.ac.uk.myapplication:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator oak.shef.ac.uk.myapplication:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall oak.shef.ac.uk.myapplication:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle oak.shef.ac.uk.myapplication:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle oak.shef.ac.uk.myapplication:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground oak.shef.ac.uk.myapplication:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless oak.shef.ac.uk.myapplication:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle oak.shef.ac.uk.myapplication:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle oak.shef.ac.uk.myapplication:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle oak.shef.ac.uk.myapplication:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu oak.shef.ac.uk.myapplication:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem oak.shef.ac.uk.myapplication:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary oak.shef.ac.uk.myapplication:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall oak.shef.ac.uk.myapplication:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader oak.shef.ac.uk.myapplication:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle oak.shef.ac.uk.myapplication:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle oak.shef.ac.uk.myapplication:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu oak.shef.ac.uk.myapplication:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem oak.shef.ac.uk.myapplication:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl oak.shef.ac.uk.myapplication:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle oak.shef.ac.uk.myapplication:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle oak.shef.ac.uk.myapplication:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor oak.shef.ac.uk.myapplication:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground oak.shef.ac.uk.myapplication:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass oak.shef.ac.uk.myapplication:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar oak.shef.ac.uk.myapplication:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay oak.shef.ac.uk.myapplication:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay oak.shef.ac.uk.myapplication:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor oak.shef.ac.uk.myapplication:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor oak.shef.ac.uk.myapplication:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor oak.shef.ac.uk.myapplication:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor oak.shef.ac.uk.myapplication:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor oak.shef.ac.uk.myapplication:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor oak.shef.ac.uk.myapplication:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle oak.shef.ac.uk.myapplication:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider oak.shef.ac.uk.cgxassignment:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground oak.shef.ac.uk.cgxassignment:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme oak.shef.ac.uk.cgxassignment:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize oak.shef.ac.uk.cgxassignment:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle oak.shef.ac.uk.cgxassignment:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle oak.shef.ac.uk.cgxassignment:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle oak.shef.ac.uk.cgxassignment:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle oak.shef.ac.uk.cgxassignment:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle oak.shef.ac.uk.cgxassignment:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme oak.shef.ac.uk.cgxassignment:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme oak.shef.ac.uk.cgxassignment:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle oak.shef.ac.uk.cgxassignment:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle oak.shef.ac.uk.cgxassignment:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance oak.shef.ac.uk.cgxassignment:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor oak.shef.ac.uk.cgxassignment:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground oak.shef.ac.uk.cgxassignment:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle oak.shef.ac.uk.cgxassignment:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable oak.shef.ac.uk.cgxassignment:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable oak.shef.ac.uk.cgxassignment:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable oak.shef.ac.uk.cgxassignment:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable oak.shef.ac.uk.cgxassignment:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable oak.shef.ac.uk.cgxassignment:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle oak.shef.ac.uk.cgxassignment:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable oak.shef.ac.uk.cgxassignment:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable oak.shef.ac.uk.cgxassignment:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground oak.shef.ac.uk.cgxassignment:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle oak.shef.ac.uk.cgxassignment:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable oak.shef.ac.uk.cgxassignment:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle oak.shef.ac.uk.cgxassignment:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle oak.shef.ac.uk.cgxassignment:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle oak.shef.ac.uk.cgxassignment:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle oak.shef.ac.uk.cgxassignment:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons oak.shef.ac.uk.cgxassignment:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle oak.shef.ac.uk.cgxassignment:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme oak.shef.ac.uk.cgxassignment:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle oak.shef.ac.uk.cgxassignment:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle oak.shef.ac.uk.cgxassignment:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle oak.shef.ac.uk.cgxassignment:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle oak.shef.ac.uk.cgxassignment:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle oak.shef.ac.uk.cgxassignment:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle oak.shef.ac.uk.cgxassignment:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle oak.shef.ac.uk.cgxassignment:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle oak.shef.ac.uk.cgxassignment:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall oak.shef.ac.uk.cgxassignment:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle oak.shef.ac.uk.cgxassignment:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle oak.shef.ac.uk.cgxassignment:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent oak.shef.ac.uk.cgxassignment:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating oak.shef.ac.uk.cgxassignment:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal oak.shef.ac.uk.cgxassignment:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated oak.shef.ac.uk.cgxassignment:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight oak.shef.ac.uk.cgxassignment:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal oak.shef.ac.uk.cgxassignment:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError oak.shef.ac.uk.cgxassignment:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary oak.shef.ac.uk.cgxassignment:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark oak.shef.ac.uk.cgxassignment:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal oak.shef.ac.uk.cgxassignment:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground oak.shef.ac.uk.cgxassignment:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius oak.shef.ac.uk.cgxassignment:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding oak.shef.ac.uk.cgxassignment:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme oak.shef.ac.uk.cgxassignment:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal oak.shef.ac.uk.cgxassignment:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical oak.shef.ac.uk.cgxassignment:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle oak.shef.ac.uk.cgxassignment:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight oak.shef.ac.uk.cgxassignment:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground oak.shef.ac.uk.cgxassignment:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor oak.shef.ac.uk.cgxassignment:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle oak.shef.ac.uk.cgxassignment:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator oak.shef.ac.uk.cgxassignment:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle oak.shef.ac.uk.cgxassignment:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator oak.shef.ac.uk.cgxassignment:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog oak.shef.ac.uk.cgxassignment:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle oak.shef.ac.uk.cgxassignment:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle oak.shef.ac.uk.cgxassignment:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight oak.shef.ac.uk.cgxassignment:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge oak.shef.ac.uk.cgxassignment:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall oak.shef.ac.uk.cgxassignment:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft oak.shef.ac.uk.cgxassignment:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight oak.shef.ac.uk.cgxassignment:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground oak.shef.ac.uk.cgxassignment:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme oak.shef.ac.uk.cgxassignment:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth oak.shef.ac.uk.cgxassignment:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle oak.shef.ac.uk.cgxassignment:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle oak.shef.ac.uk.cgxassignment:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle oak.shef.ac.uk.cgxassignment:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle oak.shef.ac.uk.cgxassignment:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator oak.shef.ac.uk.cgxassignment:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall oak.shef.ac.uk.cgxassignment:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle oak.shef.ac.uk.cgxassignment:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle oak.shef.ac.uk.cgxassignment:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground oak.shef.ac.uk.cgxassignment:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless oak.shef.ac.uk.cgxassignment:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle oak.shef.ac.uk.cgxassignment:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle oak.shef.ac.uk.cgxassignment:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle oak.shef.ac.uk.cgxassignment:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu oak.shef.ac.uk.cgxassignment:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem oak.shef.ac.uk.cgxassignment:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary oak.shef.ac.uk.cgxassignment:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall oak.shef.ac.uk.cgxassignment:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader oak.shef.ac.uk.cgxassignment:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle oak.shef.ac.uk.cgxassignment:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle oak.shef.ac.uk.cgxassignment:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu oak.shef.ac.uk.cgxassignment:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem oak.shef.ac.uk.cgxassignment:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl oak.shef.ac.uk.cgxassignment:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle oak.shef.ac.uk.cgxassignment:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle oak.shef.ac.uk.cgxassignment:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor oak.shef.ac.uk.cgxassignment:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground oak.shef.ac.uk.cgxassignment:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass oak.shef.ac.uk.cgxassignment:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar oak.shef.ac.uk.cgxassignment:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay oak.shef.ac.uk.cgxassignment:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay oak.shef.ac.uk.cgxassignment:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor oak.shef.ac.uk.cgxassignment:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor oak.shef.ac.uk.cgxassignment:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor oak.shef.ac.uk.cgxassignment:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor oak.shef.ac.uk.cgxassignment:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor oak.shef.ac.uk.cgxassignment:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor oak.shef.ac.uk.cgxassignment:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle oak.shef.ac.uk.cgxassignment:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -7439,28 +7703,28 @@ public final class R {
       0x7f030017, 0x7f030018, 0x7f030019, 0x7f03001a, 
       0x7f03001b, 0x7f03001c, 0x7f03001d, 0x7f03001e, 
       0x7f030021, 0x7f030022, 0x7f030023, 0x7f030024, 
-      0x7f030025, 0x7f03002b, 0x7f030040, 0x7f03004e, 
-      0x7f03004f, 0x7f030050, 0x7f030051, 0x7f030052, 
-      0x7f030056, 0x7f030057, 0x7f030062, 0x7f030067, 
-      0x7f030087, 0x7f030088, 0x7f030089, 0x7f03008a, 
-      0x7f03008b, 0x7f03008c, 0x7f03008d, 0x7f03008e, 
-      0x7f03008f, 0x7f030091, 0x7f0300a3, 0x7f0300ac, 
-      0x7f0300ad, 0x7f0300ae, 0x7f0300b1, 0x7f0300b3, 
-      0x7f0300b6, 0x7f0300b7, 0x7f0300b8, 0x7f0300b9, 
-      0x7f0300ba, 0x7f0300f0, 0x7f0300fc, 0x7f030151, 
-      0x7f030152, 0x7f030155, 0x7f030156, 0x7f030157, 
-      0x7f030158, 0x7f030159, 0x7f03015a, 0x7f03015b, 
-      0x7f030170, 0x7f030171, 0x7f030172, 0x7f030178, 
-      0x7f03017a, 0x7f030181, 0x7f030182, 0x7f030183, 
-      0x7f030184, 0x7f03018c, 0x7f03018d, 0x7f03018e, 
-      0x7f03018f, 0x7f03019c, 0x7f03019d, 0x7f0301b3, 
-      0x7f0301da, 0x7f0301db, 0x7f0301dc, 0x7f0301dd, 
-      0x7f0301df, 0x7f0301e0, 0x7f0301e1, 0x7f0301e2, 
-      0x7f0301e5, 0x7f0301e6, 0x7f030200, 0x7f030201, 
-      0x7f030202, 0x7f030203, 0x7f03020a, 0x7f03020c, 
-      0x7f03020d, 0x7f03020e, 0x7f03020f, 0x7f030210, 
-      0x7f030211, 0x7f030212, 0x7f030213, 0x7f030214, 
-      0x7f030215
+      0x7f030025, 0x7f03002c, 0x7f030041, 0x7f03004f, 
+      0x7f030050, 0x7f030051, 0x7f030052, 0x7f030053, 
+      0x7f030058, 0x7f030059, 0x7f03006b, 0x7f030070, 
+      0x7f030091, 0x7f030092, 0x7f030093, 0x7f030094, 
+      0x7f030095, 0x7f030096, 0x7f030097, 0x7f030098, 
+      0x7f030099, 0x7f03009c, 0x7f0300ae, 0x7f0300b7, 
+      0x7f0300b8, 0x7f0300b9, 0x7f0300bc, 0x7f0300be, 
+      0x7f0300c1, 0x7f0300c2, 0x7f0300c3, 0x7f0300c4, 
+      0x7f0300c5, 0x7f0300fb, 0x7f030109, 0x7f030162, 
+      0x7f030163, 0x7f030166, 0x7f030167, 0x7f030168, 
+      0x7f030169, 0x7f03016a, 0x7f03016b, 0x7f03016c, 
+      0x7f030183, 0x7f030184, 0x7f030185, 0x7f03018b, 
+      0x7f03018d, 0x7f030194, 0x7f030195, 0x7f030196, 
+      0x7f030197, 0x7f0301a0, 0x7f0301a1, 0x7f0301a2, 
+      0x7f0301a3, 0x7f0301b0, 0x7f0301b1, 0x7f0301c7, 
+      0x7f0301ee, 0x7f0301ef, 0x7f0301f0, 0x7f0301f1, 
+      0x7f0301f3, 0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 
+      0x7f0301f9, 0x7f0301fa, 0x7f030214, 0x7f030215, 
+      0x7f030216, 0x7f030217, 0x7f030226, 0x7f030228, 
+      0x7f030229, 0x7f03022a, 0x7f03022b, 0x7f03022c, 
+      0x7f03022d, 0x7f03022e, 0x7f03022f, 0x7f030230, 
+      0x7f030231
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -7485,7 +7749,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7493,11 +7757,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarDivider
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7505,11 +7769,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarItemBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7517,11 +7781,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarPopupTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7538,11 +7802,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarSize
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7550,11 +7814,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarSplitStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7562,11 +7826,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7574,11 +7838,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarTabBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7586,11 +7850,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarTabStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7598,11 +7862,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarTabTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7610,11 +7874,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7622,11 +7886,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionBarWidgetTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7634,11 +7898,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7646,11 +7910,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionDropDownStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7658,11 +7922,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionMenuTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7673,11 +7937,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionMenuTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7685,11 +7949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7697,11 +7961,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeCloseButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7709,11 +7973,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeCloseDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7721,11 +7985,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeCopyDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7733,11 +7997,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeCutDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7745,11 +8009,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeFindDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7757,11 +8021,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModePasteDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7769,11 +8033,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModePopupWindowStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7781,11 +8045,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeSelectAllDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7793,11 +8057,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeShareDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7805,11 +8069,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeSplitBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7817,11 +8081,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7829,11 +8093,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionModeWebSearchDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7841,11 +8105,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionOverflowButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7853,11 +8117,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionOverflowMenuStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7865,11 +8129,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:activityChooserViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7877,21 +8141,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:alertDialogButtonGroupStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:alertDialogCenterButtons
+     * @attr name oak.shef.ac.uk.cgxassignment:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7899,11 +8163,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:alertDialogStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7911,11 +8175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:alertDialogTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7923,11 +8187,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:autoCompleteTextViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7935,11 +8199,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:borderlessButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7947,11 +8211,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonBarButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7959,11 +8223,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonBarNegativeButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7971,11 +8235,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonBarNeutralButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7983,11 +8247,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonBarPositiveButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7995,11 +8259,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8007,11 +8271,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8019,11 +8283,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonStyleSmall
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8031,11 +8295,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkboxStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8043,77 +8307,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkedTextViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorAccent
+     * @attr name oak.shef.ac.uk.cgxassignment:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorBackgroundFloating
+     * @attr name oak.shef.ac.uk.cgxassignment:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorButtonNormal
+     * @attr name oak.shef.ac.uk.cgxassignment:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorControlActivated
+     * @attr name oak.shef.ac.uk.cgxassignment:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorControlHighlight
+     * @attr name oak.shef.ac.uk.cgxassignment:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorControlNormal
+     * @attr name oak.shef.ac.uk.cgxassignment:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8124,44 +8388,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorError
+     * @attr name oak.shef.ac.uk.cgxassignment:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorPrimary
+     * @attr name oak.shef.ac.uk.cgxassignment:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorPrimaryDark
+     * @attr name oak.shef.ac.uk.cgxassignment:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorSwitchThumbNormal
+     * @attr name oak.shef.ac.uk.cgxassignment:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8169,11 +8433,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:controlBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8182,11 +8446,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:dialogCornerRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8195,11 +8459,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:dialogPreferredPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8207,11 +8471,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:dialogTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8219,11 +8483,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:dividerHorizontal
+     * @attr name oak.shef.ac.uk.cgxassignment:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8231,11 +8495,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:dividerVertical
+     * @attr name oak.shef.ac.uk.cgxassignment:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8243,11 +8507,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:dropDownListViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8256,11 +8520,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:dropdownListPreferredItemHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8268,11 +8532,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:editTextBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8283,11 +8547,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:editTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8295,11 +8559,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:editTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8307,11 +8571,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:homeAsUpIndicator
+     * @attr name oak.shef.ac.uk.cgxassignment:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8319,11 +8583,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:imageButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8331,11 +8595,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listChoiceBackgroundIndicator
+     * @attr name oak.shef.ac.uk.cgxassignment:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8343,11 +8607,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listDividerAlertDialog
+     * @attr name oak.shef.ac.uk.cgxassignment:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8355,11 +8619,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listMenuViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8367,11 +8631,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPopupWindowStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8380,11 +8644,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPreferredItemHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8393,11 +8657,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPreferredItemHeightLarge
+     * @attr name oak.shef.ac.uk.cgxassignment:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8406,11 +8670,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPreferredItemHeightSmall
+     * @attr name oak.shef.ac.uk.cgxassignment:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8419,11 +8683,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPreferredItemPaddingLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8432,11 +8696,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:listPreferredItemPaddingRight
+     * @attr name oak.shef.ac.uk.cgxassignment:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8444,11 +8708,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:panelBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8456,11 +8720,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:panelMenuListTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8469,11 +8733,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:panelMenuListWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8481,11 +8745,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:popupMenuStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8493,11 +8757,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:popupWindowStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8505,11 +8769,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:radioButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8517,11 +8781,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:ratingBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8529,11 +8793,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:ratingBarStyleIndicator
+     * @attr name oak.shef.ac.uk.cgxassignment:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8541,11 +8805,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:ratingBarStyleSmall
+     * @attr name oak.shef.ac.uk.cgxassignment:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8553,11 +8817,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:searchViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8565,11 +8829,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:seekBarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8577,11 +8841,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:selectableItemBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8589,11 +8853,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:selectableItemBackgroundBorderless
+     * @attr name oak.shef.ac.uk.cgxassignment:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8601,11 +8865,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:spinnerDropDownItemStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8613,11 +8877,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:spinnerStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8625,11 +8889,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:switchStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8637,11 +8901,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceLargePopupMenu
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8649,11 +8913,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceListItem
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8661,11 +8925,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceListItemSecondary
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8673,11 +8937,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceListItemSmall
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8685,11 +8949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearancePopupMenuHeader
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8697,11 +8961,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceSearchResultSubtitle
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8709,11 +8973,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceSearchResultTitle
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8721,11 +8985,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceSmallPopupMenu
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8736,11 +9000,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textColorAlertDialogListItem
+     * @attr name oak.shef.ac.uk.cgxassignment:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8751,11 +9015,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textColorSearchUrl
+     * @attr name oak.shef.ac.uk.cgxassignment:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8763,11 +9027,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:toolbarNavigationButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8775,11 +9039,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:toolbarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8790,11 +9054,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tooltipForegroundColor
+     * @attr name oak.shef.ac.uk.cgxassignment:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8802,51 +9066,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tooltipFrameBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:viewInflaterClass
+     * @attr name oak.shef.ac.uk.cgxassignment:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowActionBar
+     * @attr name oak.shef.ac.uk.cgxassignment:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowActionBarOverlay
+     * @attr name oak.shef.ac.uk.cgxassignment:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowActionModeOverlay
+     * @attr name oak.shef.ac.uk.cgxassignment:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8859,11 +9123,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowFixedHeightMajor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8876,11 +9140,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowFixedHeightMinor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8893,11 +9157,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowFixedWidthMajor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8910,11 +9174,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowFixedWidthMinor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8927,11 +9191,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowMinWidthMajor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8944,17 +9208,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowMinWidthMinor
+     * @attr name oak.shef.ac.uk.cgxassignment:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:windowNoTitle
+     * @attr name oak.shef.ac.uk.cgxassignment:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -8964,12 +9228,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint oak.shef.ac.uk.myapplication:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode oak.shef.ac.uk.myapplication:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin oak.shef.ac.uk.myapplication:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius oak.shef.ac.uk.myapplication:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset oak.shef.ac.uk.myapplication:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll oak.shef.ac.uk.myapplication:hideOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint oak.shef.ac.uk.cgxassignment:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode oak.shef.ac.uk.cgxassignment:fabAlignmentMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin oak.shef.ac.uk.cgxassignment:fabCradleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius oak.shef.ac.uk.cgxassignment:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset oak.shef.ac.uk.cgxassignment:fabCradleVerticalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll oak.shef.ac.uk.cgxassignment:hideOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_fabAlignmentMode
@@ -8979,22 +9243,22 @@ public final class R {
      * @see #BottomAppBar_hideOnScroll
      */
     public static final int[] BottomAppBar={
-      0x7f030034, 0x7f0300ca, 0x7f0300cb, 0x7f0300cc, 
-      0x7f0300cd, 0x7f0300ec
+      0x7f030035, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 
+      0x7f0300d8, 0x7f0300f7
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTint
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabAlignmentMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabAlignmentMode}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9007,11 +9271,11 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabAlignmentMode
+     * @attr name oak.shef.ac.uk.cgxassignment:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabCradleMargin}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabCradleMargin}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9020,11 +9284,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabCradleMargin
+     * @attr name oak.shef.ac.uk.cgxassignment:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabCradleRoundedCornerRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabCradleRoundedCornerRadius}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9033,11 +9297,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabCradleRoundedCornerRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabCradleVerticalOffset}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabCradleVerticalOffset}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9046,17 +9310,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabCradleVerticalOffset
+     * @attr name oak.shef.ac.uk.cgxassignment:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hideOnScroll}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hideOnScroll}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hideOnScroll
+     * @attr name oak.shef.ac.uk.cgxassignment:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=5;
     /**
@@ -9066,16 +9330,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground oak.shef.ac.uk.myapplication:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled oak.shef.ac.uk.myapplication:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize oak.shef.ac.uk.myapplication:itemIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint oak.shef.ac.uk.myapplication:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive oak.shef.ac.uk.myapplication:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive oak.shef.ac.uk.myapplication:itemTextAppearanceInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor oak.shef.ac.uk.myapplication:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode oak.shef.ac.uk.myapplication:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu oak.shef.ac.uk.myapplication:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground oak.shef.ac.uk.cgxassignment:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled oak.shef.ac.uk.cgxassignment:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize oak.shef.ac.uk.cgxassignment:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint oak.shef.ac.uk.cgxassignment:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive oak.shef.ac.uk.cgxassignment:itemTextAppearanceActive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive oak.shef.ac.uk.cgxassignment:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor oak.shef.ac.uk.cgxassignment:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode oak.shef.ac.uk.cgxassignment:labelVisibilityMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu oak.shef.ac.uk.cgxassignment:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -9089,12 +9353,12 @@ public final class R {
      * @see #BottomNavigationView_menu
      */
     public static final int[] BottomNavigationView={
-      0x7f0300bb, 0x7f030101, 0x7f030103, 0x7f030105, 
-      0x7f030106, 0x7f03010a, 0x7f03010b, 0x7f03010c, 
-      0x7f03010e, 0x7f030164
+      0x7f0300c6, 0x7f03010e, 0x7f030110, 0x7f030112, 
+      0x7f030113, 0x7f030117, 0x7f030118, 0x7f030119, 
+      0x7f03011b, 0x7f030177
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9103,11 +9367,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9115,21 +9379,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemHorizontalTranslationEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemHorizontalTranslationEnabled}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemHorizontalTranslationEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemIconSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemIconSize}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9138,22 +9402,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemIconSize
+     * @attr name oak.shef.ac.uk.cgxassignment:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemIconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemTextAppearanceActive}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemTextAppearanceActive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9161,11 +9425,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemTextAppearanceActive
+     * @attr name oak.shef.ac.uk.cgxassignment:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemTextAppearanceInactive}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemTextAppearanceInactive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9173,22 +9437,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemTextAppearanceInactive
+     * @attr name oak.shef.ac.uk.cgxassignment:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#labelVisibilityMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#labelVisibilityMode}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9203,11 +9467,11 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:labelVisibilityMode
+     * @attr name oak.shef.ac.uk.cgxassignment:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#menu}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9215,7 +9479,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:menu
+     * @attr name oak.shef.ac.uk.cgxassignment:menu
      */
     public static final int BottomNavigationView_menu=9;
     /**
@@ -9225,10 +9489,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents oak.shef.ac.uk.myapplication:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable oak.shef.ac.uk.myapplication:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight oak.shef.ac.uk.myapplication:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed oak.shef.ac.uk.myapplication:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents oak.shef.ac.uk.cgxassignment:behavior_fitToContents}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable oak.shef.ac.uk.cgxassignment:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight oak.shef.ac.uk.cgxassignment:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed oak.shef.ac.uk.cgxassignment:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_fitToContents
      * @see #BottomSheetBehavior_Layout_behavior_hideable
@@ -9236,30 +9500,30 @@ public final class R {
      * @see #BottomSheetBehavior_Layout_behavior_skipCollapsed
      */
     public static final int[] BottomSheetBehavior_Layout={
-      0x7f03003a, 0x7f03003b, 0x7f03003d, 0x7f03003e
+      0x7f03003b, 0x7f03003c, 0x7f03003e, 0x7f03003f
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_fitToContents}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_fitToContents}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_fitToContents
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_hideable
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9276,17 +9540,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_peekHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_skipCollapsed
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=3;
     /**
@@ -9296,7 +9560,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking oak.shef.ac.uk.myapplication:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking oak.shef.ac.uk.cgxassignment:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -9304,13 +9568,13 @@ public final class R {
       0x7f030026
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:allowStacking
+     * @attr name oak.shef.ac.uk.cgxassignment:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -9322,17 +9586,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor oak.shef.ac.uk.myapplication:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius oak.shef.ac.uk.myapplication:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation oak.shef.ac.uk.myapplication:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation oak.shef.ac.uk.myapplication:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap oak.shef.ac.uk.myapplication:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding oak.shef.ac.uk.myapplication:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding oak.shef.ac.uk.myapplication:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom oak.shef.ac.uk.myapplication:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft oak.shef.ac.uk.myapplication:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight oak.shef.ac.uk.myapplication:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop oak.shef.ac.uk.myapplication:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor oak.shef.ac.uk.cgxassignment:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius oak.shef.ac.uk.cgxassignment:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation oak.shef.ac.uk.cgxassignment:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation oak.shef.ac.uk.cgxassignment:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap oak.shef.ac.uk.cgxassignment:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding oak.shef.ac.uk.cgxassignment:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding oak.shef.ac.uk.cgxassignment:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom oak.shef.ac.uk.cgxassignment:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft oak.shef.ac.uk.cgxassignment:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight oak.shef.ac.uk.cgxassignment:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop oak.shef.ac.uk.cgxassignment:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -9349,10 +9613,10 @@ public final class R {
      * @see #CardView_contentPaddingTop
      */
     public static final int[] CardView={
-      0x0101013f, 0x01010140, 0x7f03005a, 0x7f03005b, 
-      0x7f03005c, 0x7f03005d, 0x7f03005e, 0x7f03005f, 
-      0x7f03009d, 0x7f03009e, 0x7f03009f, 0x7f0300a0, 
-      0x7f0300a1
+      0x0101013f, 0x01010140, 0x7f030063, 0x7f030064, 
+      0x7f030065, 0x7f030066, 0x7f030067, 0x7f030068, 
+      0x7f0300a8, 0x7f0300a9, 0x7f0300aa, 0x7f0300ab, 
+      0x7f0300ac
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
@@ -9381,18 +9645,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardBackgroundColor
+     * @attr name oak.shef.ac.uk.cgxassignment:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9401,11 +9665,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardCornerRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9414,11 +9678,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardElevation
+     * @attr name oak.shef.ac.uk.cgxassignment:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9427,31 +9691,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardMaxElevation
+     * @attr name oak.shef.ac.uk.cgxassignment:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardPreventCornerOverlap
+     * @attr name oak.shef.ac.uk.cgxassignment:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:cardUseCompatPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9460,11 +9724,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9473,11 +9737,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentPaddingBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9486,11 +9750,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentPaddingLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9499,11 +9763,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentPaddingRight
+     * @attr name oak.shef.ac.uk.cgxassignment:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9512,7 +9776,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentPaddingTop
+     * @attr name oak.shef.ac.uk.cgxassignment:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -9527,35 +9791,35 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon oak.shef.ac.uk.myapplication:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled oak.shef.ac.uk.myapplication:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible oak.shef.ac.uk.myapplication:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor oak.shef.ac.uk.myapplication:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius oak.shef.ac.uk.myapplication:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding oak.shef.ac.uk.myapplication:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon oak.shef.ac.uk.myapplication:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled oak.shef.ac.uk.myapplication:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize oak.shef.ac.uk.myapplication:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint oak.shef.ac.uk.myapplication:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible oak.shef.ac.uk.myapplication:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight oak.shef.ac.uk.myapplication:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding oak.shef.ac.uk.myapplication:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor oak.shef.ac.uk.myapplication:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth oak.shef.ac.uk.myapplication:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon oak.shef.ac.uk.myapplication:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled oak.shef.ac.uk.myapplication:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding oak.shef.ac.uk.myapplication:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize oak.shef.ac.uk.myapplication:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding oak.shef.ac.uk.myapplication:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint oak.shef.ac.uk.myapplication:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible oak.shef.ac.uk.myapplication:closeIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec oak.shef.ac.uk.myapplication:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding oak.shef.ac.uk.myapplication:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding oak.shef.ac.uk.myapplication:iconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor oak.shef.ac.uk.myapplication:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec oak.shef.ac.uk.myapplication:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding oak.shef.ac.uk.myapplication:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding oak.shef.ac.uk.myapplication:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon oak.shef.ac.uk.cgxassignment:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled oak.shef.ac.uk.cgxassignment:checkedIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible oak.shef.ac.uk.cgxassignment:checkedIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor oak.shef.ac.uk.cgxassignment:chipBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius oak.shef.ac.uk.cgxassignment:chipCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding oak.shef.ac.uk.cgxassignment:chipEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon oak.shef.ac.uk.cgxassignment:chipIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled oak.shef.ac.uk.cgxassignment:chipIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize oak.shef.ac.uk.cgxassignment:chipIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint oak.shef.ac.uk.cgxassignment:chipIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible oak.shef.ac.uk.cgxassignment:chipIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight oak.shef.ac.uk.cgxassignment:chipMinHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding oak.shef.ac.uk.cgxassignment:chipStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor oak.shef.ac.uk.cgxassignment:chipStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth oak.shef.ac.uk.cgxassignment:chipStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon oak.shef.ac.uk.cgxassignment:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled oak.shef.ac.uk.cgxassignment:closeIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding oak.shef.ac.uk.cgxassignment:closeIconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize oak.shef.ac.uk.cgxassignment:closeIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding oak.shef.ac.uk.cgxassignment:closeIconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint oak.shef.ac.uk.cgxassignment:closeIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible oak.shef.ac.uk.cgxassignment:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec oak.shef.ac.uk.cgxassignment:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding oak.shef.ac.uk.cgxassignment:iconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding oak.shef.ac.uk.cgxassignment:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor oak.shef.ac.uk.cgxassignment:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec oak.shef.ac.uk.cgxassignment:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding oak.shef.ac.uk.cgxassignment:textEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding oak.shef.ac.uk.cgxassignment:textStartPadding}</code></td><td></td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_ellipsize
@@ -9594,14 +9858,14 @@ public final class R {
      */
     public static final int[] Chip={
       0x01010034, 0x010100ab, 0x0101011f, 0x0101014f, 
-      0x010101e5, 0x7f030064, 0x7f030065, 0x7f030066, 
-      0x7f030068, 0x7f030069, 0x7f03006a, 0x7f03006c, 
-      0x7f03006d, 0x7f03006e, 0x7f03006f, 0x7f030070, 
-      0x7f030071, 0x7f030076, 0x7f030077, 0x7f030078, 
-      0x7f03007a, 0x7f03007b, 0x7f03007c, 0x7f03007d, 
-      0x7f03007e, 0x7f03007f, 0x7f030080, 0x7f0300ea, 
-      0x7f0300f4, 0x7f0300f8, 0x7f030186, 0x7f030192, 
-      0x7f0301e7, 0x7f0301e9
+      0x010101e5, 0x7f03006d, 0x7f03006e, 0x7f03006f, 
+      0x7f030071, 0x7f030072, 0x7f030073, 0x7f030075, 
+      0x7f030076, 0x7f030077, 0x7f030078, 0x7f030079, 
+      0x7f03007a, 0x7f03007f, 0x7f030080, 0x7f030081, 
+      0x7f030084, 0x7f030085, 0x7f030086, 0x7f030087, 
+      0x7f030088, 0x7f030089, 0x7f03008a, 0x7f0300f5, 
+      0x7f0300ff, 0x7f030103, 0x7f030199, 0x7f0301a6, 
+      0x7f0301fb, 0x7f0301fd
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -9669,7 +9933,7 @@ public final class R {
      */
     public static final int Chip_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkedIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkedIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9677,42 +9941,42 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkedIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:checkedIcon
      */
     public static final int Chip_checkedIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkedIconEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkedIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkedIconEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkedIconVisible}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkedIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkedIconVisible
+     * @attr name oak.shef.ac.uk.cgxassignment:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipBackgroundColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipBackgroundColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipBackgroundColor
+     * @attr name oak.shef.ac.uk.cgxassignment:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipCornerRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipCornerRadius}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9721,11 +9985,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipCornerRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipEndPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9734,11 +9998,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipEndPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:chipEndPadding
      */
     public static final int Chip_chipEndPadding=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9746,21 +10010,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:chipIcon
      */
     public static final int Chip_chipIcon=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipIconEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipIconEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipIconSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9769,32 +10033,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipIconSize
+     * @attr name oak.shef.ac.uk.cgxassignment:chipIconSize
      */
     public static final int Chip_chipIconSize=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipIconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipIconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:chipIconTint
      */
     public static final int Chip_chipIconTint=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipIconVisible}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipIconVisible
+     * @attr name oak.shef.ac.uk.cgxassignment:chipIconVisible
      */
     public static final int Chip_chipIconVisible=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipMinHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipMinHeight}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9803,11 +10067,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipMinHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:chipMinHeight
      */
     public static final int Chip_chipMinHeight=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipStartPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9816,22 +10080,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipStartPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:chipStartPadding
      */
     public static final int Chip_chipStartPadding=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipStrokeColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipStrokeColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipStrokeColor
+     * @attr name oak.shef.ac.uk.cgxassignment:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipStrokeWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipStrokeWidth}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9840,11 +10104,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipStrokeWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9852,21 +10116,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIcon
      */
     public static final int Chip_closeIcon=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconEndPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9875,11 +10139,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconEndPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9888,11 +10152,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconSize
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconSize
      */
     public static final int Chip_closeIconSize=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconStartPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9901,32 +10165,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconStartPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconTint
      */
     public static final int Chip_closeIconTint=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIconVisible}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIconVisible
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIconVisible
      */
     public static final int Chip_closeIconVisible=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9934,11 +10198,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hideMotionSpec
+     * @attr name oak.shef.ac.uk.cgxassignment:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconEndPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9947,11 +10211,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconEndPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:iconEndPadding
      */
     public static final int Chip_iconEndPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconStartPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9960,22 +10224,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconStartPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:iconStartPadding
      */
     public static final int Chip_iconStartPadding=29;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#rippleColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:rippleColor
+     * @attr name oak.shef.ac.uk.cgxassignment:rippleColor
      */
     public static final int Chip_rippleColor=30;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9983,11 +10247,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:showMotionSpec
+     * @attr name oak.shef.ac.uk.cgxassignment:showMotionSpec
      */
     public static final int Chip_showMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textEndPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9996,11 +10260,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:textEndPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:textEndPadding
      */
     public static final int Chip_textEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textStartPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10009,7 +10273,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:textStartPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:textStartPadding
      */
     public static final int Chip_textStartPadding=33;
     /**
@@ -10019,12 +10283,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip oak.shef.ac.uk.myapplication:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing oak.shef.ac.uk.myapplication:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal oak.shef.ac.uk.myapplication:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical oak.shef.ac.uk.myapplication:chipSpacingVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine oak.shef.ac.uk.myapplication:singleLine}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection oak.shef.ac.uk.myapplication:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip oak.shef.ac.uk.cgxassignment:checkedChip}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing oak.shef.ac.uk.cgxassignment:chipSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal oak.shef.ac.uk.cgxassignment:chipSpacingHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical oak.shef.ac.uk.cgxassignment:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine oak.shef.ac.uk.cgxassignment:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection oak.shef.ac.uk.cgxassignment:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -10034,11 +10298,11 @@ public final class R {
      * @see #ChipGroup_singleSelection
      */
     public static final int[] ChipGroup={
-      0x7f030063, 0x7f030072, 0x7f030073, 0x7f030074, 
-      0x7f030196, 0x7f030197
+      0x7f03006c, 0x7f03007b, 0x7f03007c, 0x7f03007d, 
+      0x7f0301aa, 0x7f0301ab
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#checkedChip}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#checkedChip}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10046,11 +10310,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:checkedChip
+     * @attr name oak.shef.ac.uk.cgxassignment:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipSpacing}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipSpacing}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10059,11 +10323,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipSpacing
+     * @attr name oak.shef.ac.uk.cgxassignment:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipSpacingHorizontal}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipSpacingHorizontal}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10072,11 +10336,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipSpacingHorizontal
+     * @attr name oak.shef.ac.uk.cgxassignment:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipSpacingVertical}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipSpacingVertical}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10085,27 +10349,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipSpacingVertical
+     * @attr name oak.shef.ac.uk.cgxassignment:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#singleLine}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#singleLine}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:singleLine
+     * @attr name oak.shef.ac.uk.cgxassignment:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#singleSelection}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#singleSelection}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:singleSelection
+     * @attr name oak.shef.ac.uk.cgxassignment:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -10115,22 +10379,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity oak.shef.ac.uk.myapplication:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance oak.shef.ac.uk.myapplication:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim oak.shef.ac.uk.myapplication:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity oak.shef.ac.uk.myapplication:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin oak.shef.ac.uk.myapplication:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom oak.shef.ac.uk.myapplication:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd oak.shef.ac.uk.myapplication:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart oak.shef.ac.uk.myapplication:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop oak.shef.ac.uk.myapplication:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance oak.shef.ac.uk.myapplication:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration oak.shef.ac.uk.myapplication:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger oak.shef.ac.uk.myapplication:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim oak.shef.ac.uk.myapplication:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title oak.shef.ac.uk.myapplication:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled oak.shef.ac.uk.myapplication:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId oak.shef.ac.uk.myapplication:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity oak.shef.ac.uk.cgxassignment:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance oak.shef.ac.uk.cgxassignment:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim oak.shef.ac.uk.cgxassignment:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity oak.shef.ac.uk.cgxassignment:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin oak.shef.ac.uk.cgxassignment:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom oak.shef.ac.uk.cgxassignment:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd oak.shef.ac.uk.cgxassignment:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart oak.shef.ac.uk.cgxassignment:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop oak.shef.ac.uk.cgxassignment:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance oak.shef.ac.uk.cgxassignment:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration oak.shef.ac.uk.cgxassignment:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger oak.shef.ac.uk.cgxassignment:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim oak.shef.ac.uk.cgxassignment:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title oak.shef.ac.uk.cgxassignment:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled oak.shef.ac.uk.cgxassignment:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId oak.shef.ac.uk.cgxassignment:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -10150,13 +10414,13 @@ public final class R {
      * @see #CollapsingToolbarLayout_toolbarId
      */
     public static final int[] CollapsingToolbarLayout={
-      0x7f030084, 0x7f030085, 0x7f0300a2, 0x7f0300c3, 
-      0x7f0300c4, 0x7f0300c5, 0x7f0300c6, 0x7f0300c7, 
-      0x7f0300c8, 0x7f0300c9, 0x7f030187, 0x7f030189, 
-      0x7f0301a7, 0x7f0301f4, 0x7f0301f5, 0x7f0301ff
+      0x7f03008e, 0x7f03008f, 0x7f0300ad, 0x7f0300ce, 
+      0x7f0300cf, 0x7f0300d0, 0x7f0300d1, 0x7f0300d2, 
+      0x7f0300d3, 0x7f0300d4, 0x7f03019b, 0x7f03019d, 
+      0x7f0301bb, 0x7f030208, 0x7f030209, 0x7f030213
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10177,11 +10441,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:collapsedTitleGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10189,22 +10453,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:collapsedTitleTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentScrim
+     * @attr name oak.shef.ac.uk.cgxassignment:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10225,11 +10489,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10238,11 +10502,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleMargin
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10251,11 +10515,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleMarginBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10264,11 +10528,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleMarginEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10277,11 +10541,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleMarginStart
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10290,11 +10554,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleMarginTop
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10302,20 +10566,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:expandedTitleTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:scrimAnimationDuration
+     * @attr name oak.shef.ac.uk.cgxassignment:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10324,42 +10588,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:scrimVisibleHeightTrigger
+     * @attr name oak.shef.ac.uk.cgxassignment:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:statusBarScrim
+     * @attr name oak.shef.ac.uk.cgxassignment:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#title}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:title
+     * @attr name oak.shef.ac.uk.cgxassignment:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10367,7 +10631,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:toolbarId
+     * @attr name oak.shef.ac.uk.cgxassignment:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -10377,17 +10641,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode oak.shef.ac.uk.myapplication:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier oak.shef.ac.uk.myapplication:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode oak.shef.ac.uk.cgxassignment:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier oak.shef.ac.uk.cgxassignment:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
      */
     public static final int[] CollapsingToolbarLayout_Layout={
-      0x7f030115, 0x7f030116
+      0x7f030126, 0x7f030127
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10401,16 +10665,16 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_collapseMode
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_collapseParallaxMultiplier
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -10422,7 +10686,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha oak.shef.ac.uk.myapplication:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha oak.shef.ac.uk.cgxassignment:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -10452,12 +10716,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:alpha
+     * @attr name oak.shef.ac.uk.cgxassignment:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -10468,15 +10732,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint oak.shef.ac.uk.myapplication:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode oak.shef.ac.uk.myapplication:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint oak.shef.ac.uk.cgxassignment:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode oak.shef.ac.uk.cgxassignment:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-      0x01010107, 0x7f030058, 0x7f030059
+      0x01010107, 0x7f03005a, 0x7f03005b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -10491,18 +10755,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonTint
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10519,7 +10783,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -10534,61 +10798,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets oak.shef.ac.uk.myapplication:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection oak.shef.ac.uk.myapplication:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl oak.shef.ac.uk.myapplication:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet oak.shef.ac.uk.myapplication:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids oak.shef.ac.uk.myapplication:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight oak.shef.ac.uk.myapplication:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth oak.shef.ac.uk.myapplication:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator oak.shef.ac.uk.myapplication:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf oak.shef.ac.uk.myapplication:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator oak.shef.ac.uk.myapplication:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf oak.shef.ac.uk.myapplication:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf oak.shef.ac.uk.myapplication:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle oak.shef.ac.uk.myapplication:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle oak.shef.ac.uk.myapplication:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius oak.shef.ac.uk.myapplication:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio oak.shef.ac.uk.myapplication:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf oak.shef.ac.uk.myapplication:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf oak.shef.ac.uk.myapplication:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin oak.shef.ac.uk.myapplication:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end oak.shef.ac.uk.myapplication:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent oak.shef.ac.uk.myapplication:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default oak.shef.ac.uk.myapplication:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max oak.shef.ac.uk.myapplication:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min oak.shef.ac.uk.myapplication:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent oak.shef.ac.uk.myapplication:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias oak.shef.ac.uk.myapplication:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle oak.shef.ac.uk.myapplication:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight oak.shef.ac.uk.myapplication:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator oak.shef.ac.uk.myapplication:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf oak.shef.ac.uk.myapplication:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf oak.shef.ac.uk.myapplication:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator oak.shef.ac.uk.myapplication:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf oak.shef.ac.uk.myapplication:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf oak.shef.ac.uk.myapplication:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf oak.shef.ac.uk.myapplication:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf oak.shef.ac.uk.myapplication:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator oak.shef.ac.uk.myapplication:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf oak.shef.ac.uk.myapplication:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf oak.shef.ac.uk.myapplication:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias oak.shef.ac.uk.myapplication:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle oak.shef.ac.uk.myapplication:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight oak.shef.ac.uk.myapplication:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default oak.shef.ac.uk.myapplication:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max oak.shef.ac.uk.myapplication:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min oak.shef.ac.uk.myapplication:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent oak.shef.ac.uk.myapplication:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX oak.shef.ac.uk.myapplication:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY oak.shef.ac.uk.myapplication:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom oak.shef.ac.uk.myapplication:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd oak.shef.ac.uk.myapplication:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft oak.shef.ac.uk.myapplication:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight oak.shef.ac.uk.myapplication:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart oak.shef.ac.uk.myapplication:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop oak.shef.ac.uk.myapplication:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel oak.shef.ac.uk.myapplication:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets oak.shef.ac.uk.cgxassignment:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection oak.shef.ac.uk.cgxassignment:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl oak.shef.ac.uk.cgxassignment:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet oak.shef.ac.uk.cgxassignment:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids oak.shef.ac.uk.cgxassignment:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight oak.shef.ac.uk.cgxassignment:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth oak.shef.ac.uk.cgxassignment:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator oak.shef.ac.uk.cgxassignment:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle oak.shef.ac.uk.cgxassignment:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle oak.shef.ac.uk.cgxassignment:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius oak.shef.ac.uk.cgxassignment:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio oak.shef.ac.uk.cgxassignment:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin oak.shef.ac.uk.cgxassignment:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end oak.shef.ac.uk.cgxassignment:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent oak.shef.ac.uk.cgxassignment:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default oak.shef.ac.uk.cgxassignment:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max oak.shef.ac.uk.cgxassignment:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min oak.shef.ac.uk.cgxassignment:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent oak.shef.ac.uk.cgxassignment:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator oak.shef.ac.uk.cgxassignment:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator oak.shef.ac.uk.cgxassignment:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf oak.shef.ac.uk.cgxassignment:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf oak.shef.ac.uk.cgxassignment:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf oak.shef.ac.uk.cgxassignment:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf oak.shef.ac.uk.cgxassignment:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator oak.shef.ac.uk.cgxassignment:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf oak.shef.ac.uk.cgxassignment:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf oak.shef.ac.uk.cgxassignment:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias oak.shef.ac.uk.cgxassignment:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle oak.shef.ac.uk.cgxassignment:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight oak.shef.ac.uk.cgxassignment:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default oak.shef.ac.uk.cgxassignment:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max oak.shef.ac.uk.cgxassignment:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min oak.shef.ac.uk.cgxassignment:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent oak.shef.ac.uk.cgxassignment:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX oak.shef.ac.uk.cgxassignment:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY oak.shef.ac.uk.cgxassignment:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom oak.shef.ac.uk.cgxassignment:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd oak.shef.ac.uk.cgxassignment:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft oak.shef.ac.uk.cgxassignment:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight oak.shef.ac.uk.cgxassignment:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart oak.shef.ac.uk.cgxassignment:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop oak.shef.ac.uk.cgxassignment:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel oak.shef.ac.uk.cgxassignment:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -10653,20 +10917,20 @@ public final class R {
      */
     public static final int[] ConstraintLayout_Layout={
       0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x7f030037, 0x7f030038, 0x7f030061, 
-      0x7f030093, 0x7f030094, 0x7f030117, 0x7f030118, 
-      0x7f030119, 0x7f03011a, 0x7f03011b, 0x7f03011c, 
-      0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f030120, 
-      0x7f030121, 0x7f030122, 0x7f030123, 0x7f030124, 
-      0x7f030125, 0x7f030126, 0x7f030127, 0x7f030128, 
-      0x7f030129, 0x7f03012a, 0x7f03012b, 0x7f03012c, 
-      0x7f03012d, 0x7f03012e, 0x7f03012f, 0x7f030130, 
-      0x7f030131, 0x7f030132, 0x7f030133, 0x7f030134, 
-      0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 
-      0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f03013c, 
-      0x7f03013d, 0x7f03013e, 0x7f03013f, 0x7f030141, 
+      0x01010140, 0x7f030038, 0x7f030039, 0x7f03006a, 
+      0x7f03009e, 0x7f03009f, 0x7f030128, 0x7f030129, 
+      0x7f03012a, 0x7f03012b, 0x7f03012c, 0x7f03012d, 
+      0x7f03012e, 0x7f03012f, 0x7f030130, 0x7f030131, 
+      0x7f030132, 0x7f030133, 0x7f030134, 0x7f030135, 
+      0x7f030136, 0x7f030137, 0x7f030138, 0x7f030139, 
+      0x7f03013a, 0x7f03013b, 0x7f03013c, 0x7f03013d, 
+      0x7f03013e, 0x7f03013f, 0x7f030140, 0x7f030141, 
       0x7f030142, 0x7f030143, 0x7f030144, 0x7f030145, 
-      0x7f030146, 0x7f030147, 0x7f030148, 0x7f03014b
+      0x7f030146, 0x7f030147, 0x7f030148, 0x7f030149, 
+      0x7f03014a, 0x7f03014b, 0x7f03014c, 0x7f03014d, 
+      0x7f03014e, 0x7f03014f, 0x7f030150, 0x7f030152, 
+      0x7f030153, 0x7f030154, 0x7f030155, 0x7f030156, 
+      0x7f030157, 0x7f030158, 0x7f030159, 0x7f03015c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -10738,17 +11002,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:barrierAllowsGoneWidgets
+     * @attr name oak.shef.ac.uk.cgxassignment:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10765,21 +11029,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:barrierDirection
+     * @attr name oak.shef.ac.uk.cgxassignment:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chainUseRtl
+     * @attr name oak.shef.ac.uk.cgxassignment:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10787,50 +11051,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:constraintSet
+     * @attr name oak.shef.ac.uk.cgxassignment:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:constraint_referenced_ids
+     * @attr name oak.shef.ac.uk.cgxassignment:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constrainedHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constrainedWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBaseline_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10846,20 +11110,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBaseline_toBaselineOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10875,11 +11139,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_toBottomOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10895,11 +11159,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_toTopOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10907,20 +11171,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircleAngle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10929,21 +11193,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircleRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintDimensionRatio
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10959,11 +11223,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintEnd_toEndOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10979,11 +11243,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintEnd_toStartOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10992,11 +11256,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_begin
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11005,20 +11269,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_end
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11032,11 +11296,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_default
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11053,11 +11317,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_max
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11074,29 +11338,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_min
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_bias
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11110,29 +11374,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_chainStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_weight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11148,11 +11412,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_toLeftOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11168,20 +11432,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_toRightOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11197,11 +11461,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_toLeftOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11217,11 +11481,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_toRightOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11237,11 +11501,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintStart_toEndOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11257,20 +11521,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintStart_toStartOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11286,11 +11550,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_toBottomOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11306,20 +11570,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_toTopOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_bias
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11333,20 +11597,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_chainStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_weight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11360,11 +11624,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_default
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11381,11 +11645,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_max
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11402,20 +11666,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_min
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11424,11 +11688,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_editor_absoluteX
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11437,11 +11701,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_editor_absoluteY
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11450,11 +11714,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11463,11 +11727,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11476,11 +11740,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11489,11 +11753,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginRight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11502,11 +11766,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginStart
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11515,11 +11779,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginTop
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11537,7 +11801,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_optimizationLevel
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -11547,17 +11811,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content oak.shef.ac.uk.myapplication:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility oak.shef.ac.uk.myapplication:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content oak.shef.ac.uk.cgxassignment:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility oak.shef.ac.uk.cgxassignment:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
      */
     public static final int[] ConstraintLayout_placeholder={
-      0x7f030095, 0x7f0300bc
+      0x7f0300a0, 0x7f0300c7
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#content}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11565,11 +11829,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:content
+     * @attr name oak.shef.ac.uk.cgxassignment:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11582,7 +11846,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:emptyVisibility
+     * @attr name oak.shef.ac.uk.cgxassignment:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -11619,59 +11883,59 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets oak.shef.ac.uk.myapplication:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierDirection oak.shef.ac.uk.myapplication:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_chainUseRtl oak.shef.ac.uk.myapplication:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids oak.shef.ac.uk.myapplication:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight oak.shef.ac.uk.myapplication:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth oak.shef.ac.uk.myapplication:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator oak.shef.ac.uk.myapplication:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf oak.shef.ac.uk.myapplication:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator oak.shef.ac.uk.myapplication:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf oak.shef.ac.uk.myapplication:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf oak.shef.ac.uk.myapplication:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle oak.shef.ac.uk.myapplication:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle oak.shef.ac.uk.myapplication:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius oak.shef.ac.uk.myapplication:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio oak.shef.ac.uk.myapplication:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf oak.shef.ac.uk.myapplication:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf oak.shef.ac.uk.myapplication:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin oak.shef.ac.uk.myapplication:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end oak.shef.ac.uk.myapplication:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent oak.shef.ac.uk.myapplication:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default oak.shef.ac.uk.myapplication:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max oak.shef.ac.uk.myapplication:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min oak.shef.ac.uk.myapplication:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent oak.shef.ac.uk.myapplication:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias oak.shef.ac.uk.myapplication:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle oak.shef.ac.uk.myapplication:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight oak.shef.ac.uk.myapplication:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator oak.shef.ac.uk.myapplication:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf oak.shef.ac.uk.myapplication:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf oak.shef.ac.uk.myapplication:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator oak.shef.ac.uk.myapplication:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf oak.shef.ac.uk.myapplication:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf oak.shef.ac.uk.myapplication:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf oak.shef.ac.uk.myapplication:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf oak.shef.ac.uk.myapplication:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator oak.shef.ac.uk.myapplication:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf oak.shef.ac.uk.myapplication:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf oak.shef.ac.uk.myapplication:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias oak.shef.ac.uk.myapplication:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle oak.shef.ac.uk.myapplication:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight oak.shef.ac.uk.myapplication:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default oak.shef.ac.uk.myapplication:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max oak.shef.ac.uk.myapplication:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min oak.shef.ac.uk.myapplication:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent oak.shef.ac.uk.myapplication:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX oak.shef.ac.uk.myapplication:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY oak.shef.ac.uk.myapplication:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom oak.shef.ac.uk.myapplication:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd oak.shef.ac.uk.myapplication:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft oak.shef.ac.uk.myapplication:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight oak.shef.ac.uk.myapplication:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart oak.shef.ac.uk.myapplication:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop oak.shef.ac.uk.myapplication:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets oak.shef.ac.uk.cgxassignment:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection oak.shef.ac.uk.cgxassignment:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl oak.shef.ac.uk.cgxassignment:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids oak.shef.ac.uk.cgxassignment:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight oak.shef.ac.uk.cgxassignment:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth oak.shef.ac.uk.cgxassignment:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator oak.shef.ac.uk.cgxassignment:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle oak.shef.ac.uk.cgxassignment:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle oak.shef.ac.uk.cgxassignment:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius oak.shef.ac.uk.cgxassignment:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio oak.shef.ac.uk.cgxassignment:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin oak.shef.ac.uk.cgxassignment:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end oak.shef.ac.uk.cgxassignment:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent oak.shef.ac.uk.cgxassignment:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default oak.shef.ac.uk.cgxassignment:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max oak.shef.ac.uk.cgxassignment:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min oak.shef.ac.uk.cgxassignment:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent oak.shef.ac.uk.cgxassignment:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator oak.shef.ac.uk.cgxassignment:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator oak.shef.ac.uk.cgxassignment:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf oak.shef.ac.uk.cgxassignment:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf oak.shef.ac.uk.cgxassignment:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf oak.shef.ac.uk.cgxassignment:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf oak.shef.ac.uk.cgxassignment:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator oak.shef.ac.uk.cgxassignment:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf oak.shef.ac.uk.cgxassignment:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf oak.shef.ac.uk.cgxassignment:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias oak.shef.ac.uk.cgxassignment:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle oak.shef.ac.uk.cgxassignment:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight oak.shef.ac.uk.cgxassignment:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default oak.shef.ac.uk.cgxassignment:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max oak.shef.ac.uk.cgxassignment:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min oak.shef.ac.uk.cgxassignment:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent oak.shef.ac.uk.cgxassignment:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX oak.shef.ac.uk.cgxassignment:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY oak.shef.ac.uk.cgxassignment:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom oak.shef.ac.uk.cgxassignment:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd oak.shef.ac.uk.cgxassignment:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft oak.shef.ac.uk.cgxassignment:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight oak.shef.ac.uk.cgxassignment:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart oak.shef.ac.uk.cgxassignment:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop oak.shef.ac.uk.cgxassignment:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -11761,20 +12025,20 @@ public final class R {
       0x01010140, 0x0101031f, 0x01010320, 0x01010321, 
       0x01010322, 0x01010323, 0x01010324, 0x01010325, 
       0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
-      0x010103b6, 0x010103fa, 0x01010440, 0x7f030037, 
-      0x7f030038, 0x7f030061, 0x7f030094, 0x7f030117, 
-      0x7f030118, 0x7f030119, 0x7f03011a, 0x7f03011b, 
-      0x7f03011c, 0x7f03011d, 0x7f03011e, 0x7f03011f, 
-      0x7f030120, 0x7f030121, 0x7f030122, 0x7f030123, 
-      0x7f030124, 0x7f030125, 0x7f030126, 0x7f030127, 
-      0x7f030128, 0x7f030129, 0x7f03012a, 0x7f03012b, 
-      0x7f03012c, 0x7f03012d, 0x7f03012e, 0x7f03012f, 
-      0x7f030130, 0x7f030131, 0x7f030132, 0x7f030133, 
-      0x7f030134, 0x7f030135, 0x7f030136, 0x7f030137, 
-      0x7f030138, 0x7f030139, 0x7f03013a, 0x7f03013b, 
-      0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f03013f, 
+      0x010103b6, 0x010103fa, 0x01010440, 0x7f030038, 
+      0x7f030039, 0x7f03006a, 0x7f03009f, 0x7f030128, 
+      0x7f030129, 0x7f03012a, 0x7f03012b, 0x7f03012c, 
+      0x7f03012d, 0x7f03012e, 0x7f03012f, 0x7f030130, 
+      0x7f030131, 0x7f030132, 0x7f030133, 0x7f030134, 
+      0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 
+      0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f03013c, 
+      0x7f03013d, 0x7f03013e, 0x7f03013f, 0x7f030140, 
       0x7f030141, 0x7f030142, 0x7f030143, 0x7f030144, 
-      0x7f030145, 0x7f030146, 0x7f030147, 0x7f030148
+      0x7f030145, 0x7f030146, 0x7f030147, 0x7f030148, 
+      0x7f030149, 0x7f03014a, 0x7f03014b, 0x7f03014c, 
+      0x7f03014d, 0x7f03014e, 0x7f03014f, 0x7f030150, 
+      0x7f030152, 0x7f030153, 0x7f030154, 0x7f030155, 
+      0x7f030156, 0x7f030157, 0x7f030158, 0x7f030159
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -12132,17 +12396,17 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:barrierAllowsGoneWidgets
+     * @attr name oak.shef.ac.uk.cgxassignment:barrierAllowsGoneWidgets
      */
     public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12159,60 +12423,60 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:barrierDirection
+     * @attr name oak.shef.ac.uk.cgxassignment:barrierDirection
      */
     public static final int ConstraintSet_barrierDirection=28;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chainUseRtl
+     * @attr name oak.shef.ac.uk.cgxassignment:chainUseRtl
      */
     public static final int ConstraintSet_chainUseRtl=29;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:constraint_referenced_ids
+     * @attr name oak.shef.ac.uk.cgxassignment:constraint_referenced_ids
      */
     public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constrainedHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constrainedWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBaseline_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12228,20 +12492,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBaseline_toBaselineOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12257,11 +12521,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_toBottomOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12277,11 +12541,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintBottom_toTopOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12289,20 +12553,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=38;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircleAngle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12311,21 +12575,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintCircleRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintDimensionRatio
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12341,11 +12605,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintEnd_toEndOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12361,11 +12625,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintEnd_toStartOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12374,11 +12638,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_begin
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12387,20 +12651,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_end
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintGuide_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12414,11 +12678,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_default
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12435,11 +12699,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_max
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12456,29 +12720,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_min
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHeight_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_bias
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12492,29 +12756,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_chainStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintHorizontal_weight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12530,11 +12794,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_toLeftOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12550,20 +12814,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintLeft_toRightOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12579,11 +12843,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_toLeftOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12599,11 +12863,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintRight_toRightOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12619,11 +12883,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintStart_toEndOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12639,20 +12903,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintStart_toStartOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_creator
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12668,11 +12932,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_toBottomOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12688,20 +12952,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintTop_toTopOf
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_bias
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12715,20 +12979,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_chainStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintVertical_weight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12742,11 +13006,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_default
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12763,11 +13027,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_max
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12784,20 +13048,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_min
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_constraintWidth_percent
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12806,11 +13070,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_editor_absoluteX
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12819,11 +13083,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_editor_absoluteY
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12832,11 +13096,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12845,11 +13109,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12858,11 +13122,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12871,11 +13135,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginRight
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12884,11 +13148,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginStart
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12897,7 +13161,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_goneMarginTop
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
@@ -12907,17 +13171,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines oak.shef.ac.uk.myapplication:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground oak.shef.ac.uk.myapplication:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines oak.shef.ac.uk.cgxassignment:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground oak.shef.ac.uk.cgxassignment:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f03010d, 0x7f0301a6
+      0x7f03011a, 0x7f0301ba
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12925,11 +13189,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:keylines
+     * @attr name oak.shef.ac.uk.cgxassignment:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12940,7 +13204,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:statusBarBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -12951,12 +13215,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor oak.shef.ac.uk.myapplication:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity oak.shef.ac.uk.myapplication:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior oak.shef.ac.uk.myapplication:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges oak.shef.ac.uk.myapplication:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge oak.shef.ac.uk.myapplication:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline oak.shef.ac.uk.myapplication:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor oak.shef.ac.uk.cgxassignment:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity oak.shef.ac.uk.cgxassignment:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior oak.shef.ac.uk.cgxassignment:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges oak.shef.ac.uk.cgxassignment:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge oak.shef.ac.uk.cgxassignment:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline oak.shef.ac.uk.cgxassignment:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -12967,8 +13231,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f030112, 0x7f030113, 0x7f030114, 
-      0x7f030140, 0x7f030149, 0x7f03014a
+      0x010100b3, 0x7f030123, 0x7f030124, 0x7f030125, 
+      0x7f030151, 0x7f03015a, 0x7f03015b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -13000,7 +13264,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13008,11 +13272,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_anchor
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13037,21 +13301,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_anchorGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_behavior
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13070,11 +13334,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_dodgeInsetEdges
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13092,16 +13356,16 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_insetEdge
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout_keyline
+     * @attr name oak.shef.ac.uk.cgxassignment:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -13111,17 +13375,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme oak.shef.ac.uk.myapplication:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle oak.shef.ac.uk.myapplication:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme oak.shef.ac.uk.cgxassignment:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle oak.shef.ac.uk.cgxassignment:bottomSheetStyle}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
      */
     public static final int[] DesignTheme={
-      0x7f030043, 0x7f030044
+      0x7f030044, 0x7f030045
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13129,11 +13393,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:bottomSheetDialogTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13141,7 +13405,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:bottomSheetStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
@@ -13151,14 +13415,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength oak.shef.ac.uk.myapplication:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength oak.shef.ac.uk.myapplication:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength oak.shef.ac.uk.myapplication:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color oak.shef.ac.uk.myapplication:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize oak.shef.ac.uk.myapplication:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars oak.shef.ac.uk.myapplication:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars oak.shef.ac.uk.myapplication:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness oak.shef.ac.uk.myapplication:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength oak.shef.ac.uk.cgxassignment:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength oak.shef.ac.uk.cgxassignment:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength oak.shef.ac.uk.cgxassignment:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color oak.shef.ac.uk.cgxassignment:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize oak.shef.ac.uk.cgxassignment:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars oak.shef.ac.uk.cgxassignment:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars oak.shef.ac.uk.cgxassignment:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness oak.shef.ac.uk.cgxassignment:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -13170,11 +13434,11 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f030029, 0x7f03002a, 0x7f030036, 0x7f030086, 
-      0x7f0300b4, 0x7f0300e3, 0x7f03019b, 0x7f0301eb
+      0x7f03002a, 0x7f03002b, 0x7f030037, 0x7f030090, 
+      0x7f0300bf, 0x7f0300ee, 0x7f0301af, 0x7f0301ff
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13183,11 +13447,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:arrowHeadLength
+     * @attr name oak.shef.ac.uk.cgxassignment:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13196,11 +13460,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:arrowShaftLength
+     * @attr name oak.shef.ac.uk.cgxassignment:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13209,22 +13473,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:barLength
+     * @attr name oak.shef.ac.uk.cgxassignment:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#color}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:color
+     * @attr name oak.shef.ac.uk.cgxassignment:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13233,11 +13497,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:drawableSize
+     * @attr name oak.shef.ac.uk.cgxassignment:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13246,21 +13510,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:gapBetweenBars
+     * @attr name oak.shef.ac.uk.cgxassignment:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:spinBars
+     * @attr name oak.shef.ac.uk.cgxassignment:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13269,7 +13533,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:thickness
+     * @attr name oak.shef.ac.uk.cgxassignment:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -13279,19 +13543,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint oak.shef.ac.uk.myapplication:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode oak.shef.ac.uk.myapplication:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth oak.shef.ac.uk.myapplication:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize oak.shef.ac.uk.myapplication:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize oak.shef.ac.uk.myapplication:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec oak.shef.ac.uk.myapplication:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ oak.shef.ac.uk.myapplication:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize oak.shef.ac.uk.myapplication:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ oak.shef.ac.uk.myapplication:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor oak.shef.ac.uk.myapplication:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec oak.shef.ac.uk.myapplication:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding oak.shef.ac.uk.myapplication:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint oak.shef.ac.uk.cgxassignment:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode oak.shef.ac.uk.cgxassignment:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth oak.shef.ac.uk.cgxassignment:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize oak.shef.ac.uk.cgxassignment:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize oak.shef.ac.uk.cgxassignment:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec oak.shef.ac.uk.cgxassignment:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ oak.shef.ac.uk.cgxassignment:hoveredFocusedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize oak.shef.ac.uk.cgxassignment:maxImageSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ oak.shef.ac.uk.cgxassignment:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor oak.shef.ac.uk.cgxassignment:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec oak.shef.ac.uk.cgxassignment:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding oak.shef.ac.uk.cgxassignment:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -13308,24 +13572,24 @@ public final class R {
      * @see #FloatingActionButton_useCompatPadding
      */
     public static final int[] FloatingActionButton={
-      0x7f030034, 0x7f030035, 0x7f03003f, 0x7f0300bb, 
-      0x7f0300ce, 0x7f0300cf, 0x7f0300ea, 0x7f0300f2, 
-      0x7f030162, 0x7f03017c, 0x7f030186, 0x7f030192, 
-      0x7f030209
+      0x7f030035, 0x7f030036, 0x7f030040, 0x7f0300c6, 
+      0x7f0300d9, 0x7f0300da, 0x7f0300f5, 0x7f0300fd, 
+      0x7f030175, 0x7f03018f, 0x7f030199, 0x7f0301a6, 
+      0x7f030224
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTint
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13342,11 +13606,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13355,11 +13619,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:borderWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13368,11 +13632,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13381,11 +13645,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabCustomSize
+     * @attr name oak.shef.ac.uk.cgxassignment:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13399,11 +13663,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:fabSize
+     * @attr name oak.shef.ac.uk.cgxassignment:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13411,11 +13675,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hideMotionSpec
+     * @attr name oak.shef.ac.uk.cgxassignment:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hoveredFocusedTranslationZ}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hoveredFocusedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13424,11 +13688,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:hoveredFocusedTranslationZ
+     * @attr name oak.shef.ac.uk.cgxassignment:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#maxImageSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#maxImageSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13437,11 +13701,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:maxImageSize
+     * @attr name oak.shef.ac.uk.cgxassignment:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13450,22 +13714,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:pressedTranslationZ
+     * @attr name oak.shef.ac.uk.cgxassignment:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:rippleColor
+     * @attr name oak.shef.ac.uk.cgxassignment:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13473,17 +13737,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:showMotionSpec
+     * @attr name oak.shef.ac.uk.cgxassignment:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:useCompatPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=12;
     /**
@@ -13493,21 +13757,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide oak.shef.ac.uk.myapplication:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide oak.shef.ac.uk.cgxassignment:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
     public static final int[] FloatingActionButton_Behavior_Layout={
-      0x7f030039
+      0x7f03003a
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_autoHide
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -13517,17 +13781,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing oak.shef.ac.uk.myapplication:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing oak.shef.ac.uk.myapplication:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing oak.shef.ac.uk.cgxassignment:itemSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing oak.shef.ac.uk.cgxassignment:lineSpacing}</code></td><td></td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
      */
     public static final int[] FlowLayout={
-      0x7f030108, 0x7f030150
+      0x7f030115, 0x7f030161
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemSpacing}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13536,11 +13800,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemSpacing
+     * @attr name oak.shef.ac.uk.cgxassignment:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#lineSpacing}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#lineSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13549,7 +13813,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:lineSpacing
+     * @attr name oak.shef.ac.uk.cgxassignment:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -13559,12 +13823,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority oak.shef.ac.uk.myapplication:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts oak.shef.ac.uk.myapplication:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy oak.shef.ac.uk.myapplication:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout oak.shef.ac.uk.myapplication:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage oak.shef.ac.uk.myapplication:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery oak.shef.ac.uk.myapplication:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority oak.shef.ac.uk.cgxassignment:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts oak.shef.ac.uk.cgxassignment:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy oak.shef.ac.uk.cgxassignment:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout oak.shef.ac.uk.cgxassignment:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage oak.shef.ac.uk.cgxassignment:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery oak.shef.ac.uk.cgxassignment:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -13574,21 +13838,21 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f0300d9, 0x7f0300da, 0x7f0300db, 0x7f0300dc, 
-      0x7f0300dd, 0x7f0300de
+      0x7f0300e4, 0x7f0300e5, 0x7f0300e6, 0x7f0300e7, 
+      0x7f0300e8, 0x7f0300e9
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderAuthority
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13596,11 +13860,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderCerts
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13613,11 +13877,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderFetchStrategy
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13630,27 +13894,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderFetchTimeout
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderPackage
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontProviderQuery
+     * @attr name oak.shef.ac.uk.cgxassignment:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -13665,11 +13929,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font oak.shef.ac.uk.myapplication:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle oak.shef.ac.uk.myapplication:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings oak.shef.ac.uk.myapplication:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight oak.shef.ac.uk.myapplication:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex oak.shef.ac.uk.myapplication:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font oak.shef.ac.uk.cgxassignment:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle oak.shef.ac.uk.cgxassignment:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings oak.shef.ac.uk.cgxassignment:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight oak.shef.ac.uk.cgxassignment:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex oak.shef.ac.uk.cgxassignment:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -13684,8 +13948,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f0300d7, 0x7f0300df, 0x7f0300e0, 
-      0x7f0300e1, 0x7f030208
+      0x01010570, 0x7f0300e2, 0x7f0300ea, 0x7f0300eb, 
+      0x7f0300ec, 0x7f03021c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -13745,7 +14009,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#font}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13753,11 +14017,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:font
+     * @attr name oak.shef.ac.uk.cgxassignment:font
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13770,35 +14034,35 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontVariationSettings
+     * @attr name oak.shef.ac.uk.cgxassignment:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontWeight
+     * @attr name oak.shef.ac.uk.cgxassignment:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:ttcIndex
+     * @attr name oak.shef.ac.uk.cgxassignment:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -13810,14 +14074,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding oak.shef.ac.uk.myapplication:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding oak.shef.ac.uk.cgxassignment:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
      * @see #ForegroundLinearLayout_foregroundInsidePadding
      */
     public static final int[] ForegroundLinearLayout={
-      0x01010109, 0x01010200, 0x7f0300e2
+      0x01010109, 0x01010200, 0x7f0300ed
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#foreground}
@@ -13862,13 +14126,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:foregroundInsidePadding
+     * @attr name oak.shef.ac.uk.cgxassignment:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -14138,10 +14402,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider oak.shef.ac.uk.myapplication:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding oak.shef.ac.uk.myapplication:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild oak.shef.ac.uk.myapplication:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers oak.shef.ac.uk.myapplication:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider oak.shef.ac.uk.cgxassignment:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding oak.shef.ac.uk.cgxassignment:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild oak.shef.ac.uk.cgxassignment:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers oak.shef.ac.uk.cgxassignment:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -14155,8 +14419,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
       0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f0300b0, 0x7f0300b2, 0x7f030163, 
-      0x7f030191
+      0x01010128, 0x7f0300bb, 0x7f0300bd, 0x7f030176, 
+      0x7f0301a5
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -14233,7 +14497,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#divider}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14241,11 +14505,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:divider
+     * @attr name oak.shef.ac.uk.cgxassignment:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14254,21 +14518,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:dividerPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:measureWithLargestChild
+     * @attr name oak.shef.ac.uk.cgxassignment:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14283,7 +14547,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:showDividers
+     * @attr name oak.shef.ac.uk.cgxassignment:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -14433,6 +14697,353 @@ public final class R {
      */
     public static final int ListPopupWindow_android_dropDownVerticalOffset=1;
     /**
+     * Attributes that can be used with a LoadingImageView.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop oak.shef.ac.uk.cgxassignment:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio oak.shef.ac.uk.cgxassignment:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust oak.shef.ac.uk.cgxassignment:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * </table>
+     * @see #LoadingImageView_circleCrop
+     * @see #LoadingImageView_imageAspectRatio
+     * @see #LoadingImageView_imageAspectRatioAdjust
+     */
+    public static final int[] LoadingImageView={
+      0x7f030083, 0x7f030107, 0x7f030108
+    };
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#circleCrop}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:circleCrop
+     */
+    public static final int LoadingImageView_circleCrop=0;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#imageAspectRatio}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:imageAspectRatio
+     */
+    public static final int LoadingImageView_imageAspectRatio=1;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#imageAspectRatioAdjust}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
+     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:imageAspectRatioAdjust
+     */
+    public static final int LoadingImageView_imageAspectRatioAdjust=2;
+    /**
+     * Attributes that can be used with a MapAttrs.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MapAttrs_ambientEnabled oak.shef.ac.uk.cgxassignment:ambientEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraBearing oak.shef.ac.uk.cgxassignment:cameraBearing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference oak.shef.ac.uk.cgxassignment:cameraMaxZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference oak.shef.ac.uk.cgxassignment:cameraMinZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLat oak.shef.ac.uk.cgxassignment:cameraTargetLat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLng oak.shef.ac.uk.cgxassignment:cameraTargetLng}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTilt oak.shef.ac.uk.cgxassignment:cameraTilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraZoom oak.shef.ac.uk.cgxassignment:cameraZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude oak.shef.ac.uk.cgxassignment:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude oak.shef.ac.uk.cgxassignment:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude oak.shef.ac.uk.cgxassignment:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude oak.shef.ac.uk.cgxassignment:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_liteMode oak.shef.ac.uk.cgxassignment:liteMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_mapType oak.shef.ac.uk.cgxassignment:mapType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiCompass oak.shef.ac.uk.cgxassignment:uiCompass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiMapToolbar oak.shef.ac.uk.cgxassignment:uiMapToolbar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiRotateGestures oak.shef.ac.uk.cgxassignment:uiRotateGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGestures oak.shef.ac.uk.cgxassignment:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiTiltGestures oak.shef.ac.uk.cgxassignment:uiTiltGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomControls oak.shef.ac.uk.cgxassignment:uiZoomControls}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomGestures oak.shef.ac.uk.cgxassignment:uiZoomGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_useViewLifecycle oak.shef.ac.uk.cgxassignment:useViewLifecycle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_zOrderOnTop oak.shef.ac.uk.cgxassignment:zOrderOnTop}</code></td><td></td></tr>
+     * </table>
+     * @see #MapAttrs_ambientEnabled
+     * @see #MapAttrs_cameraBearing
+     * @see #MapAttrs_cameraMaxZoomPreference
+     * @see #MapAttrs_cameraMinZoomPreference
+     * @see #MapAttrs_cameraTargetLat
+     * @see #MapAttrs_cameraTargetLng
+     * @see #MapAttrs_cameraTilt
+     * @see #MapAttrs_cameraZoom
+     * @see #MapAttrs_latLngBoundsNorthEastLatitude
+     * @see #MapAttrs_latLngBoundsNorthEastLongitude
+     * @see #MapAttrs_latLngBoundsSouthWestLatitude
+     * @see #MapAttrs_latLngBoundsSouthWestLongitude
+     * @see #MapAttrs_liteMode
+     * @see #MapAttrs_mapType
+     * @see #MapAttrs_uiCompass
+     * @see #MapAttrs_uiMapToolbar
+     * @see #MapAttrs_uiRotateGestures
+     * @see #MapAttrs_uiScrollGestures
+     * @see #MapAttrs_uiTiltGestures
+     * @see #MapAttrs_uiZoomControls
+     * @see #MapAttrs_uiZoomGestures
+     * @see #MapAttrs_useViewLifecycle
+     * @see #MapAttrs_zOrderOnTop
+     */
+    public static final int[] MapAttrs={
+      0x7f030029, 0x7f03005c, 0x7f03005d, 0x7f03005e, 
+      0x7f03005f, 0x7f030060, 0x7f030061, 0x7f030062, 
+      0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f030120, 
+      0x7f03016d, 0x7f030170, 0x7f03021d, 0x7f03021e, 
+      0x7f03021f, 0x7f030220, 0x7f030221, 0x7f030222, 
+      0x7f030223, 0x7f030225, 0x7f030232
+    };
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#ambientEnabled}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:ambientEnabled
+     */
+    public static final int MapAttrs_ambientEnabled=0;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraBearing}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraBearing
+     */
+    public static final int MapAttrs_cameraBearing=1;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraMaxZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraMaxZoomPreference
+     */
+    public static final int MapAttrs_cameraMaxZoomPreference=2;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraMinZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraMinZoomPreference
+     */
+    public static final int MapAttrs_cameraMinZoomPreference=3;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraTargetLat}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraTargetLat
+     */
+    public static final int MapAttrs_cameraTargetLat=4;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraTargetLng}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraTargetLng
+     */
+    public static final int MapAttrs_cameraTargetLng=5;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraTilt}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraTilt
+     */
+    public static final int MapAttrs_cameraTilt=6;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cameraZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:cameraZoom
+     */
+    public static final int MapAttrs_cameraZoom=7;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#latLngBoundsNorthEastLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:latLngBoundsNorthEastLatitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLatitude=8;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#latLngBoundsNorthEastLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:latLngBoundsNorthEastLongitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLongitude=9;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#latLngBoundsSouthWestLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:latLngBoundsSouthWestLatitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLatitude=10;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#latLngBoundsSouthWestLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:latLngBoundsSouthWestLongitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLongitude=11;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#liteMode}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:liteMode
+     */
+    public static final int MapAttrs_liteMode=12;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#mapType}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:mapType
+     */
+    public static final int MapAttrs_mapType=13;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiCompass}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiCompass
+     */
+    public static final int MapAttrs_uiCompass=14;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiMapToolbar}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiMapToolbar
+     */
+    public static final int MapAttrs_uiMapToolbar=15;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiRotateGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiRotateGestures
+     */
+    public static final int MapAttrs_uiRotateGestures=16;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiScrollGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiScrollGestures
+     */
+    public static final int MapAttrs_uiScrollGestures=17;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiTiltGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiTiltGestures
+     */
+    public static final int MapAttrs_uiTiltGestures=18;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiZoomControls}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiZoomControls
+     */
+    public static final int MapAttrs_uiZoomControls=19;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#uiZoomGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:uiZoomGestures
+     */
+    public static final int MapAttrs_uiZoomGestures=20;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#useViewLifecycle}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:useViewLifecycle
+     */
+    public static final int MapAttrs_useViewLifecycle=21;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#zOrderOnTop}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:zOrderOnTop
+     */
+    public static final int MapAttrs_zOrderOnTop=22;
+    /**
      * Attributes that can be used with a MaterialButton.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -14443,18 +15054,18 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint oak.shef.ac.uk.myapplication:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode oak.shef.ac.uk.myapplication:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius oak.shef.ac.uk.myapplication:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon oak.shef.ac.uk.myapplication:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity oak.shef.ac.uk.myapplication:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding oak.shef.ac.uk.myapplication:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize oak.shef.ac.uk.myapplication:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint oak.shef.ac.uk.myapplication:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode oak.shef.ac.uk.myapplication:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor oak.shef.ac.uk.myapplication:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor oak.shef.ac.uk.myapplication:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth oak.shef.ac.uk.myapplication:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint oak.shef.ac.uk.cgxassignment:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode oak.shef.ac.uk.cgxassignment:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius oak.shef.ac.uk.cgxassignment:cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon oak.shef.ac.uk.cgxassignment:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity oak.shef.ac.uk.cgxassignment:iconGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding oak.shef.ac.uk.cgxassignment:iconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize oak.shef.ac.uk.cgxassignment:iconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint oak.shef.ac.uk.cgxassignment:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode oak.shef.ac.uk.cgxassignment:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor oak.shef.ac.uk.cgxassignment:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor oak.shef.ac.uk.cgxassignment:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth oak.shef.ac.uk.cgxassignment:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -14475,9 +15086,9 @@ public final class R {
      */
     public static final int[] MaterialButton={
       0x010101b7, 0x010101b8, 0x010101b9, 0x010101ba, 
-      0x7f030034, 0x7f030035, 0x7f0300a5, 0x7f0300f3, 
-      0x7f0300f5, 0x7f0300f6, 0x7f0300f7, 0x7f0300f9, 
-      0x7f0300fa, 0x7f030186, 0x7f0301a8, 0x7f0301a9
+      0x7f030035, 0x7f030036, 0x7f0300b0, 0x7f0300fe, 
+      0x7f030100, 0x7f030101, 0x7f030102, 0x7f030104, 
+      0x7f030105, 0x7f030199, 0x7f0301bc, 0x7f0301bd
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#insetLeft}
@@ -14548,18 +15159,18 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTint
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14576,11 +15187,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#cornerRadius}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#cornerRadius}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14589,11 +15200,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:cornerRadius
+     * @attr name oak.shef.ac.uk.cgxassignment:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#icon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#icon}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14601,11 +15212,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:icon
+     * @attr name oak.shef.ac.uk.cgxassignment:icon
      */
     public static final int MaterialButton_icon=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconGravity}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14618,11 +15229,11 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:iconGravity
      */
     public static final int MaterialButton_iconGravity=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconPadding}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14631,11 +15242,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:iconPadding
      */
     public static final int MaterialButton_iconPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconSize}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconSize}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14644,22 +15255,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconSize
+     * @attr name oak.shef.ac.uk.cgxassignment:iconSize
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:iconTint
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14676,33 +15287,33 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#rippleColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:rippleColor
+     * @attr name oak.shef.ac.uk.cgxassignment:rippleColor
      */
     public static final int MaterialButton_rippleColor=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:strokeColor
+     * @attr name oak.shef.ac.uk.cgxassignment:strokeColor
      */
     public static final int MaterialButton_strokeColor=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14711,7 +15322,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:strokeWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=15;
     /**
@@ -14721,28 +15332,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor oak.shef.ac.uk.myapplication:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth oak.shef.ac.uk.myapplication:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor oak.shef.ac.uk.cgxassignment:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth oak.shef.ac.uk.cgxassignment:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_strokeColor
      * @see #MaterialCardView_strokeWidth
      */
     public static final int[] MaterialCardView={
-      0x7f0301a8, 0x7f0301a9
+      0x7f0301bc, 0x7f0301bd
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:strokeColor
+     * @attr name oak.shef.ac.uk.cgxassignment:strokeColor
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14751,7 +15362,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:strokeWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=1;
     /**
@@ -14761,38 +15372,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme oak.shef.ac.uk.myapplication:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle oak.shef.ac.uk.myapplication:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle oak.shef.ac.uk.myapplication:chipGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle oak.shef.ac.uk.myapplication:chipStandaloneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle oak.shef.ac.uk.myapplication:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent oak.shef.ac.uk.myapplication:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating oak.shef.ac.uk.myapplication:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary oak.shef.ac.uk.myapplication:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark oak.shef.ac.uk.myapplication:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary oak.shef.ac.uk.myapplication:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle oak.shef.ac.uk.myapplication:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle oak.shef.ac.uk.myapplication:floatingActionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle oak.shef.ac.uk.myapplication:materialButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle oak.shef.ac.uk.myapplication:materialCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle oak.shef.ac.uk.myapplication:navigationViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground oak.shef.ac.uk.myapplication:scrimBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle oak.shef.ac.uk.myapplication:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle oak.shef.ac.uk.myapplication:tabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 oak.shef.ac.uk.myapplication:textAppearanceBody1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 oak.shef.ac.uk.myapplication:textAppearanceBody2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton oak.shef.ac.uk.myapplication:textAppearanceButton}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption oak.shef.ac.uk.myapplication:textAppearanceCaption}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 oak.shef.ac.uk.myapplication:textAppearanceHeadline1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 oak.shef.ac.uk.myapplication:textAppearanceHeadline2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 oak.shef.ac.uk.myapplication:textAppearanceHeadline3}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 oak.shef.ac.uk.myapplication:textAppearanceHeadline4}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 oak.shef.ac.uk.myapplication:textAppearanceHeadline5}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 oak.shef.ac.uk.myapplication:textAppearanceHeadline6}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline oak.shef.ac.uk.myapplication:textAppearanceOverline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 oak.shef.ac.uk.myapplication:textAppearanceSubtitle1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 oak.shef.ac.uk.myapplication:textAppearanceSubtitle2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle oak.shef.ac.uk.myapplication:textInputStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme oak.shef.ac.uk.cgxassignment:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle oak.shef.ac.uk.cgxassignment:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle oak.shef.ac.uk.cgxassignment:chipGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle oak.shef.ac.uk.cgxassignment:chipStandaloneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle oak.shef.ac.uk.cgxassignment:chipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent oak.shef.ac.uk.cgxassignment:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating oak.shef.ac.uk.cgxassignment:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary oak.shef.ac.uk.cgxassignment:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark oak.shef.ac.uk.cgxassignment:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary oak.shef.ac.uk.cgxassignment:colorSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle oak.shef.ac.uk.cgxassignment:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle oak.shef.ac.uk.cgxassignment:floatingActionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle oak.shef.ac.uk.cgxassignment:materialButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle oak.shef.ac.uk.cgxassignment:materialCardViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle oak.shef.ac.uk.cgxassignment:navigationViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground oak.shef.ac.uk.cgxassignment:scrimBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle oak.shef.ac.uk.cgxassignment:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle oak.shef.ac.uk.cgxassignment:tabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 oak.shef.ac.uk.cgxassignment:textAppearanceBody1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 oak.shef.ac.uk.cgxassignment:textAppearanceBody2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton oak.shef.ac.uk.cgxassignment:textAppearanceButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption oak.shef.ac.uk.cgxassignment:textAppearanceCaption}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline4}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline5}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 oak.shef.ac.uk.cgxassignment:textAppearanceHeadline6}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline oak.shef.ac.uk.cgxassignment:textAppearanceOverline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 oak.shef.ac.uk.cgxassignment:textAppearanceSubtitle1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 oak.shef.ac.uk.cgxassignment:textAppearanceSubtitle2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle oak.shef.ac.uk.cgxassignment:textInputStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialComponentsTheme_bottomSheetDialogTheme
      * @see #MaterialComponentsTheme_bottomSheetStyle
@@ -14828,17 +15439,17 @@ public final class R {
      * @see #MaterialComponentsTheme_textInputStyle
      */
     public static final int[] MaterialComponentsTheme={
-      0x7f030043, 0x7f030044, 0x7f03006b, 0x7f030075, 
-      0x7f030079, 0x7f030087, 0x7f030088, 0x7f03008e, 
-      0x7f03008f, 0x7f030090, 0x7f0300ba, 0x7f0300d6, 
-      0x7f03015e, 0x7f03015f, 0x7f030169, 0x7f030188, 
-      0x7f030198, 0x7f0301cb, 0x7f0301d0, 0x7f0301d1, 
-      0x7f0301d2, 0x7f0301d3, 0x7f0301d4, 0x7f0301d5, 
-      0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 0x7f0301d9, 
-      0x7f0301de, 0x7f0301e3, 0x7f0301e4, 0x7f0301e8
+      0x7f030044, 0x7f030045, 0x7f030074, 0x7f03007e, 
+      0x7f030082, 0x7f030091, 0x7f030092, 0x7f030098, 
+      0x7f030099, 0x7f03009b, 0x7f0300c5, 0x7f0300e1, 
+      0x7f030171, 0x7f030172, 0x7f03017c, 0x7f03019c, 
+      0x7f0301ac, 0x7f0301df, 0x7f0301e4, 0x7f0301e5, 
+      0x7f0301e6, 0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 
+      0x7f0301ea, 0x7f0301eb, 0x7f0301ec, 0x7f0301ed, 
+      0x7f0301f2, 0x7f0301f7, 0x7f0301f8, 0x7f0301fc
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14846,11 +15457,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:bottomSheetDialogTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:bottomSheetDialogTheme
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14858,11 +15469,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:bottomSheetStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:bottomSheetStyle
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipGroupStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipGroupStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14870,11 +15481,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipGroupStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:chipGroupStyle
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipStandaloneStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipStandaloneStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14882,11 +15493,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipStandaloneStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:chipStandaloneStyle
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#chipStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#chipStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14894,66 +15505,66 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:chipStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:chipStyle
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorAccent}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorAccent
+     * @attr name oak.shef.ac.uk.cgxassignment:colorAccent
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorBackgroundFloating
+     * @attr name oak.shef.ac.uk.cgxassignment:colorBackgroundFloating
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorPrimary
+     * @attr name oak.shef.ac.uk.cgxassignment:colorPrimary
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorPrimaryDark
+     * @attr name oak.shef.ac.uk.cgxassignment:colorPrimaryDark
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#colorSecondary}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorSecondary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:colorSecondary
+     * @attr name oak.shef.ac.uk.cgxassignment:colorSecondary
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14961,11 +15572,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:editTextStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:editTextStyle
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#floatingActionButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#floatingActionButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14991,11 +15602,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name oak.shef.ac.uk.myapplication:floatingActionButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:floatingActionButtonStyle
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#materialButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#materialButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15003,11 +15614,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:materialButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:materialButtonStyle
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#materialCardViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#materialCardViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15015,11 +15626,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:materialCardViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:materialCardViewStyle
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#navigationViewStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#navigationViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15027,11 +15638,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:navigationViewStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:navigationViewStyle
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#scrimBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#scrimBackground}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15042,11 +15653,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:scrimBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:scrimBackground
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15054,11 +15665,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:snackbarButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:snackbarButtonStyle
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15066,11 +15677,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:tabStyle
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceBody1}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceBody1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15078,11 +15689,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceBody1
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceBody1
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceBody2}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceBody2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15090,11 +15701,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceBody2
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceBody2
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceButton}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceButton}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15102,11 +15713,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceButton
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceButton
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceCaption}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceCaption}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15114,11 +15725,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceCaption
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceCaption
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline1}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15126,11 +15737,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline1
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline1
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline2}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15138,11 +15749,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline2
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline2
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline3}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline3}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15150,11 +15761,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline3
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline3
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline4}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline4}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15162,11 +15773,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline4
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline4
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline5}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline5}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15174,11 +15785,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline5
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline5
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceHeadline6}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceHeadline6}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15186,11 +15797,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceHeadline6
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceHeadline6
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceOverline}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceOverline}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15198,11 +15809,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceOverline
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceOverline
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceSubtitle1}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceSubtitle1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15210,11 +15821,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceSubtitle1
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceSubtitle1
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAppearanceSubtitle2}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAppearanceSubtitle2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15222,11 +15833,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAppearanceSubtitle2
+     * @attr name oak.shef.ac.uk.cgxassignment:textAppearanceSubtitle2
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textInputStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textInputStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15234,7 +15845,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textInputStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:textInputStyle
      */
     public static final int MaterialComponentsTheme_textInputStyle=31;
     /**
@@ -15360,16 +15971,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout oak.shef.ac.uk.myapplication:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass oak.shef.ac.uk.myapplication:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass oak.shef.ac.uk.myapplication:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers oak.shef.ac.uk.myapplication:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription oak.shef.ac.uk.myapplication:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint oak.shef.ac.uk.myapplication:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode oak.shef.ac.uk.myapplication:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers oak.shef.ac.uk.myapplication:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction oak.shef.ac.uk.myapplication:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText oak.shef.ac.uk.myapplication:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout oak.shef.ac.uk.cgxassignment:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass oak.shef.ac.uk.cgxassignment:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass oak.shef.ac.uk.cgxassignment:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers oak.shef.ac.uk.cgxassignment:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription oak.shef.ac.uk.cgxassignment:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint oak.shef.ac.uk.cgxassignment:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode oak.shef.ac.uk.cgxassignment:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers oak.shef.ac.uk.cgxassignment:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction oak.shef.ac.uk.cgxassignment:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText oak.shef.ac.uk.cgxassignment:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -15400,8 +16011,8 @@ public final class R {
       0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
       0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
       0x0101026f, 0x7f03000d, 0x7f03001f, 0x7f030020, 
-      0x7f030028, 0x7f030096, 0x7f0300f9, 0x7f0300fa, 
-      0x7f03016a, 0x7f030190, 0x7f030204
+      0x7f030028, 0x7f0300a1, 0x7f030104, 0x7f030105, 
+      0x7f03017d, 0x7f0301a4, 0x7f030218
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#icon}
@@ -15546,7 +16157,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15554,31 +16165,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionProviderClass
+     * @attr name oak.shef.ac.uk.cgxassignment:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:actionViewClass
+     * @attr name oak.shef.ac.uk.cgxassignment:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15595,32 +16206,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:alphabeticModifiers
+     * @attr name oak.shef.ac.uk.cgxassignment:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentDescription
+     * @attr name oak.shef.ac.uk.cgxassignment:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15637,11 +16248,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15658,11 +16269,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:numericModifiers
+     * @attr name oak.shef.ac.uk.cgxassignment:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15678,17 +16289,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:showAsAction
+     * @attr name oak.shef.ac.uk.cgxassignment:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:tooltipText
+     * @attr name oak.shef.ac.uk.cgxassignment:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -15705,8 +16316,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing oak.shef.ac.uk.myapplication:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow oak.shef.ac.uk.myapplication:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing oak.shef.ac.uk.cgxassignment:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow oak.shef.ac.uk.cgxassignment:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -15720,8 +16331,8 @@ public final class R {
      */
     public static final int[] MenuView={
       0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f03017b, 
-      0x7f0301aa
+      0x0101012f, 0x01010130, 0x01010131, 0x7f03018e, 
+      0x7f0301be
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
@@ -15811,17 +16422,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:preserveIconSpacing
+     * @attr name oak.shef.ac.uk.cgxassignment:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15829,7 +16440,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:subMenuArrow
+     * @attr name oak.shef.ac.uk.cgxassignment:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -15842,15 +16453,15 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout oak.shef.ac.uk.myapplication:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground oak.shef.ac.uk.myapplication:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding oak.shef.ac.uk.myapplication:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding oak.shef.ac.uk.myapplication:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint oak.shef.ac.uk.myapplication:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance oak.shef.ac.uk.myapplication:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor oak.shef.ac.uk.myapplication:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu oak.shef.ac.uk.myapplication:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout oak.shef.ac.uk.cgxassignment:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground oak.shef.ac.uk.cgxassignment:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding oak.shef.ac.uk.cgxassignment:itemHorizontalPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding oak.shef.ac.uk.cgxassignment:itemIconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint oak.shef.ac.uk.cgxassignment:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance oak.shef.ac.uk.cgxassignment:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor oak.shef.ac.uk.cgxassignment:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu oak.shef.ac.uk.cgxassignment:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -15866,9 +16477,9 @@ public final class R {
      * @see #NavigationView_menu
      */
     public static final int[] NavigationView={
-      0x010100d4, 0x010100dd, 0x0101011f, 0x7f0300bb, 
-      0x7f0300e5, 0x7f030101, 0x7f030102, 0x7f030104, 
-      0x7f030106, 0x7f030109, 0x7f03010c, 0x7f030164
+      0x010100d4, 0x010100dd, 0x0101011f, 0x7f0300c6, 
+      0x7f0300f0, 0x7f03010e, 0x7f03010f, 0x7f030111, 
+      0x7f030113, 0x7f030116, 0x7f030119, 0x7f030177
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -15909,7 +16520,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15918,11 +16529,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15930,11 +16541,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:headerLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15942,11 +16553,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemHorizontalPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemHorizontalPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15955,11 +16566,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemHorizontalPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemIconPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemIconPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15968,22 +16579,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemIconPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemIconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:itemIconTint
      */
     public static final int NavigationView_itemIconTint=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15991,22 +16602,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:itemTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:itemTextColor
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#menu}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16014,7 +16625,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:menu
+     * @attr name oak.shef.ac.uk.cgxassignment:menu
      */
     public static final int NavigationView_menu=11;
     /**
@@ -16026,14 +16637,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor oak.shef.ac.uk.myapplication:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor oak.shef.ac.uk.cgxassignment:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f03016b
+      0x01010176, 0x010102c9, 0x7f03017e
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -16063,13 +16674,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:overlapAnchor
+     * @attr name oak.shef.ac.uk.cgxassignment:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -16079,21 +16690,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor oak.shef.ac.uk.myapplication:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor oak.shef.ac.uk.cgxassignment:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f0301a1
+      0x7f0301b5
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:state_above_anchor
+     * @attr name oak.shef.ac.uk.cgxassignment:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -16103,17 +16714,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons oak.shef.ac.uk.myapplication:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle oak.shef.ac.uk.myapplication:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons oak.shef.ac.uk.cgxassignment:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle oak.shef.ac.uk.cgxassignment:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f03016c, 0x7f03016f
+      0x7f03017f, 0x7f030182
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16122,11 +16733,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:paddingBottomNoButtons
+     * @attr name oak.shef.ac.uk.cgxassignment:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16135,7 +16746,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:paddingTopNoTitle
+     * @attr name oak.shef.ac.uk.cgxassignment:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -16147,15 +16758,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled oak.shef.ac.uk.myapplication:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable oak.shef.ac.uk.myapplication:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable oak.shef.ac.uk.myapplication:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable oak.shef.ac.uk.myapplication:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable oak.shef.ac.uk.myapplication:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager oak.shef.ac.uk.myapplication:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout oak.shef.ac.uk.myapplication:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount oak.shef.ac.uk.myapplication:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd oak.shef.ac.uk.myapplication:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled oak.shef.ac.uk.cgxassignment:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable oak.shef.ac.uk.cgxassignment:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable oak.shef.ac.uk.cgxassignment:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable oak.shef.ac.uk.cgxassignment:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable oak.shef.ac.uk.cgxassignment:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager oak.shef.ac.uk.cgxassignment:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout oak.shef.ac.uk.cgxassignment:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount oak.shef.ac.uk.cgxassignment:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd oak.shef.ac.uk.cgxassignment:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -16170,9 +16781,9 @@ public final class R {
      * @see #RecyclerView_stackFromEnd
      */
     public static final int[] RecyclerView={
-      0x010100c4, 0x010100f1, 0x7f0300d0, 0x7f0300d1, 
-      0x7f0300d2, 0x7f0300d3, 0x7f0300d4, 0x7f030111, 
-      0x7f030185, 0x7f03019a, 0x7f0301a0
+      0x010100c4, 0x010100f1, 0x7f0300db, 0x7f0300dc, 
+      0x7f0300dd, 0x7f0300de, 0x7f0300df, 0x7f030122, 
+      0x7f030198, 0x7f0301ae, 0x7f0301b4
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -16210,17 +16821,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fastScrollEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16228,11 +16839,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fastScrollHorizontalThumbDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16240,11 +16851,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fastScrollHorizontalTrackDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16252,11 +16863,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fastScrollVerticalThumbDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16264,46 +16875,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:fastScrollVerticalTrackDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:layoutManager
+     * @attr name oak.shef.ac.uk.cgxassignment:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:reverseLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:spanCount
+     * @attr name oak.shef.ac.uk.cgxassignment:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:stackFromEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -16313,15 +16924,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground oak.shef.ac.uk.myapplication:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground oak.shef.ac.uk.cgxassignment:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
     public static final int[] ScrimInsetsFrameLayout={
-      0x7f0300ff
+      0x7f03010c
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16332,7 +16943,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:insetForeground
+     * @attr name oak.shef.ac.uk.cgxassignment:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -16342,15 +16953,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop oak.shef.ac.uk.myapplication:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop oak.shef.ac.uk.cgxassignment:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
     public static final int[] ScrollingViewBehavior_Layout={
-      0x7f03003c
+      0x7f03003d
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16359,7 +16970,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:behavior_overlapTop
+     * @attr name oak.shef.ac.uk.cgxassignment:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -16373,19 +16984,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon oak.shef.ac.uk.myapplication:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon oak.shef.ac.uk.myapplication:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint oak.shef.ac.uk.myapplication:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon oak.shef.ac.uk.myapplication:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault oak.shef.ac.uk.myapplication:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout oak.shef.ac.uk.myapplication:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground oak.shef.ac.uk.myapplication:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint oak.shef.ac.uk.myapplication:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon oak.shef.ac.uk.myapplication:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon oak.shef.ac.uk.myapplication:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground oak.shef.ac.uk.myapplication:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout oak.shef.ac.uk.myapplication:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon oak.shef.ac.uk.myapplication:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon oak.shef.ac.uk.cgxassignment:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon oak.shef.ac.uk.cgxassignment:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint oak.shef.ac.uk.cgxassignment:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon oak.shef.ac.uk.cgxassignment:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault oak.shef.ac.uk.cgxassignment:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout oak.shef.ac.uk.cgxassignment:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground oak.shef.ac.uk.cgxassignment:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint oak.shef.ac.uk.cgxassignment:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon oak.shef.ac.uk.cgxassignment:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon oak.shef.ac.uk.cgxassignment:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground oak.shef.ac.uk.cgxassignment:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout oak.shef.ac.uk.cgxassignment:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon oak.shef.ac.uk.cgxassignment:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -16407,10 +17018,10 @@ public final class R {
      */
     public static final int[] SearchView={
       0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f03007a, 0x7f030092, 0x7f0300ab, 0x7f0300e4, 
-      0x7f0300fb, 0x7f030110, 0x7f03017f, 0x7f030180, 
-      0x7f03018a, 0x7f03018b, 0x7f0301ab, 0x7f0301b0, 
-      0x7f03020b
+      0x7f030084, 0x7f03009d, 0x7f0300b6, 0x7f0300ef, 
+      0x7f030106, 0x7f030121, 0x7f030192, 0x7f030193, 
+      0x7f03019e, 0x7f03019f, 0x7f0301bf, 0x7f0301c4, 
+      0x7f030227
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -16523,7 +17134,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16531,11 +17142,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:closeIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16543,21 +17154,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:commitIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:defaultQueryHint
+     * @attr name oak.shef.ac.uk.cgxassignment:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16565,21 +17176,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:goIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:iconifiedByDefault
+     * @attr name oak.shef.ac.uk.cgxassignment:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#layout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16587,11 +17198,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:layout
+     * @attr name oak.shef.ac.uk.cgxassignment:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16599,21 +17210,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:queryBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:queryHint
+     * @attr name oak.shef.ac.uk.cgxassignment:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16621,11 +17232,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:searchHintIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16633,11 +17244,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:searchIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16645,11 +17256,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:submitBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16657,11 +17268,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:suggestionRowLayout
+     * @attr name oak.shef.ac.uk.cgxassignment:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16669,9 +17280,85 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:voiceIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
+    /**
+     * Attributes that can be used with a SignInButton.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #SignInButton_buttonSize oak.shef.ac.uk.cgxassignment:buttonSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_colorScheme oak.shef.ac.uk.cgxassignment:colorScheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_scopeUris oak.shef.ac.uk.cgxassignment:scopeUris}</code></td><td></td></tr>
+     * </table>
+     * @see #SignInButton_buttonSize
+     * @see #SignInButton_colorScheme
+     * @see #SignInButton_scopeUris
+     */
+    public static final int[] SignInButton={
+      0x7f030057, 0x7f03009a, 0x7f03019a
+    };
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonSize}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_only</td><td>2</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * <tr><td>wide</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonSize
+     */
+    public static final int SignInButton_buttonSize=0;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#colorScheme}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>auto</td><td>2</td><td></td></tr>
+     * <tr><td>dark</td><td>0</td><td></td></tr>
+     * <tr><td>light</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:colorScheme
+     */
+    public static final int SignInButton_colorScheme=1;
+    /**
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#scopeUris}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name oak.shef.ac.uk.cgxassignment:scopeUris
+     */
+    public static final int SignInButton_scopeUris=2;
     /**
      * Attributes that can be used with a Snackbar.
      * <p>Includes the following attributes:</p>
@@ -16679,17 +17366,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle oak.shef.ac.uk.myapplication:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle oak.shef.ac.uk.myapplication:snackbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle oak.shef.ac.uk.cgxassignment:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle oak.shef.ac.uk.cgxassignment:snackbarStyle}</code></td><td></td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
      */
     public static final int[] Snackbar={
-      0x7f030198, 0x7f030199
+      0x7f0301ac, 0x7f0301ad
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16697,11 +17384,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:snackbarButtonStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#snackbarStyle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#snackbarStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16709,7 +17396,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:snackbarStyle
+     * @attr name oak.shef.ac.uk.cgxassignment:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -16720,15 +17407,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation oak.shef.ac.uk.myapplication:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth oak.shef.ac.uk.myapplication:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation oak.shef.ac.uk.cgxassignment:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth oak.shef.ac.uk.cgxassignment:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
      * @see #SnackbarLayout_maxActionInlineWidth
      */
     public static final int[] SnackbarLayout={
-      0x0101011f, 0x7f0300bb, 0x7f030160
+      0x0101011f, 0x7f0300c6, 0x7f030173
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
@@ -16744,7 +17431,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16753,11 +17440,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:elevation
+     * @attr name oak.shef.ac.uk.cgxassignment:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16766,7 +17453,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:maxActionInlineWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -16780,7 +17467,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme oak.shef.ac.uk.myapplication:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme oak.shef.ac.uk.cgxassignment:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -16790,7 +17477,7 @@ public final class R {
      */
     public static final int[] Spinner={
       0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f030179
+      0x7f03018c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
@@ -16855,7 +17542,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16863,7 +17550,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:popupTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -16985,17 +17672,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText oak.shef.ac.uk.myapplication:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack oak.shef.ac.uk.myapplication:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth oak.shef.ac.uk.myapplication:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding oak.shef.ac.uk.myapplication:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance oak.shef.ac.uk.myapplication:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding oak.shef.ac.uk.myapplication:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint oak.shef.ac.uk.myapplication:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode oak.shef.ac.uk.myapplication:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track oak.shef.ac.uk.myapplication:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint oak.shef.ac.uk.myapplication:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode oak.shef.ac.uk.myapplication:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText oak.shef.ac.uk.cgxassignment:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack oak.shef.ac.uk.cgxassignment:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth oak.shef.ac.uk.cgxassignment:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding oak.shef.ac.uk.cgxassignment:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance oak.shef.ac.uk.cgxassignment:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding oak.shef.ac.uk.cgxassignment:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint oak.shef.ac.uk.cgxassignment:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode oak.shef.ac.uk.cgxassignment:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track oak.shef.ac.uk.cgxassignment:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint oak.shef.ac.uk.cgxassignment:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode oak.shef.ac.uk.cgxassignment:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -17013,10 +17700,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f030193, 
-      0x7f03019e, 0x7f0301b1, 0x7f0301b2, 0x7f0301b4, 
-      0x7f0301ec, 0x7f0301ed, 0x7f0301ee, 0x7f030205, 
-      0x7f030206, 0x7f030207
+      0x01010124, 0x01010125, 0x01010142, 0x7f0301a7, 
+      0x7f0301b2, 0x7f0301c5, 0x7f0301c6, 0x7f0301c8, 
+      0x7f030200, 0x7f030201, 0x7f030202, 0x7f030219, 
+      0x7f03021a, 0x7f03021b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textOn}
@@ -17051,27 +17738,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#showText}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:showText
+     * @attr name oak.shef.ac.uk.cgxassignment:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:splitTrack
+     * @attr name oak.shef.ac.uk.cgxassignment:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17080,11 +17767,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:switchMinWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17093,11 +17780,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:switchPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17105,11 +17792,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:switchTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17118,22 +17805,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:thumbTextPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:thumbTint
+     * @attr name oak.shef.ac.uk.cgxassignment:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17150,11 +17837,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:thumbTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#track}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17162,22 +17849,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:track
+     * @attr name oak.shef.ac.uk.cgxassignment:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:trackTint
+     * @attr name oak.shef.ac.uk.cgxassignment:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17194,7 +17881,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:trackTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -17256,31 +17943,31 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground oak.shef.ac.uk.myapplication:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart oak.shef.ac.uk.myapplication:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity oak.shef.ac.uk.myapplication:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint oak.shef.ac.uk.myapplication:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode oak.shef.ac.uk.myapplication:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator oak.shef.ac.uk.myapplication:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration oak.shef.ac.uk.myapplication:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor oak.shef.ac.uk.myapplication:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth oak.shef.ac.uk.myapplication:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity oak.shef.ac.uk.myapplication:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight oak.shef.ac.uk.myapplication:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel oak.shef.ac.uk.myapplication:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth oak.shef.ac.uk.myapplication:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth oak.shef.ac.uk.myapplication:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode oak.shef.ac.uk.myapplication:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding oak.shef.ac.uk.myapplication:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom oak.shef.ac.uk.myapplication:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd oak.shef.ac.uk.myapplication:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart oak.shef.ac.uk.myapplication:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop oak.shef.ac.uk.myapplication:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor oak.shef.ac.uk.myapplication:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor oak.shef.ac.uk.myapplication:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance oak.shef.ac.uk.myapplication:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor oak.shef.ac.uk.myapplication:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple oak.shef.ac.uk.myapplication:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground oak.shef.ac.uk.cgxassignment:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart oak.shef.ac.uk.cgxassignment:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity oak.shef.ac.uk.cgxassignment:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint oak.shef.ac.uk.cgxassignment:tabIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode oak.shef.ac.uk.cgxassignment:tabIconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator oak.shef.ac.uk.cgxassignment:tabIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration oak.shef.ac.uk.cgxassignment:tabIndicatorAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor oak.shef.ac.uk.cgxassignment:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth oak.shef.ac.uk.cgxassignment:tabIndicatorFullWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity oak.shef.ac.uk.cgxassignment:tabIndicatorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight oak.shef.ac.uk.cgxassignment:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel oak.shef.ac.uk.cgxassignment:tabInlineLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth oak.shef.ac.uk.cgxassignment:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth oak.shef.ac.uk.cgxassignment:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode oak.shef.ac.uk.cgxassignment:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding oak.shef.ac.uk.cgxassignment:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom oak.shef.ac.uk.cgxassignment:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd oak.shef.ac.uk.cgxassignment:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart oak.shef.ac.uk.cgxassignment:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop oak.shef.ac.uk.cgxassignment:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor oak.shef.ac.uk.cgxassignment:tabRippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor oak.shef.ac.uk.cgxassignment:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance oak.shef.ac.uk.cgxassignment:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor oak.shef.ac.uk.cgxassignment:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple oak.shef.ac.uk.cgxassignment:tabUnboundedRipple}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -17309,16 +17996,16 @@ public final class R {
      * @see #TabLayout_tabUnboundedRipple
      */
     public static final int[] TabLayout={
-      0x7f0301b5, 0x7f0301b6, 0x7f0301b7, 0x7f0301b8, 
-      0x7f0301b9, 0x7f0301ba, 0x7f0301bb, 0x7f0301bc, 
-      0x7f0301bd, 0x7f0301be, 0x7f0301bf, 0x7f0301c0, 
-      0x7f0301c1, 0x7f0301c2, 0x7f0301c3, 0x7f0301c4, 
-      0x7f0301c5, 0x7f0301c6, 0x7f0301c7, 0x7f0301c8, 
-      0x7f0301c9, 0x7f0301ca, 0x7f0301cc, 0x7f0301cd, 
-      0x7f0301ce
+      0x7f0301c9, 0x7f0301ca, 0x7f0301cb, 0x7f0301cc, 
+      0x7f0301cd, 0x7f0301ce, 0x7f0301cf, 0x7f0301d0, 
+      0x7f0301d1, 0x7f0301d2, 0x7f0301d3, 0x7f0301d4, 
+      0x7f0301d5, 0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 
+      0x7f0301d9, 0x7f0301da, 0x7f0301db, 0x7f0301dc, 
+      0x7f0301dd, 0x7f0301de, 0x7f0301e0, 0x7f0301e1, 
+      0x7f0301e2
     };
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17326,11 +18013,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabBackground
+     * @attr name oak.shef.ac.uk.cgxassignment:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17339,11 +18026,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabContentStart
+     * @attr name oak.shef.ac.uk.cgxassignment:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17356,22 +18043,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIconTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIconTint}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIconTint
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIconTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIconTintMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17388,11 +18075,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIconTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicator}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicator}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17400,41 +18087,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicator
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicatorAnimationDuration}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicatorAnimationDuration}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicatorAnimationDuration
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicatorColor
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicatorFullWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicatorFullWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicatorFullWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicatorGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicatorGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17449,11 +18136,11 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicatorGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17462,21 +18149,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabIndicatorHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabInlineLabel}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabInlineLabel}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabInlineLabel
+     * @attr name oak.shef.ac.uk.cgxassignment:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17485,11 +18172,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabMaxWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17498,11 +18185,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabMinWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17515,11 +18202,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabMode
+     * @attr name oak.shef.ac.uk.cgxassignment:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17528,11 +18215,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabPadding
+     * @attr name oak.shef.ac.uk.cgxassignment:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17541,11 +18228,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabPaddingBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17554,11 +18241,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabPaddingEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17567,11 +18254,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabPaddingStart
+     * @attr name oak.shef.ac.uk.cgxassignment:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17580,33 +18267,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabPaddingTop
+     * @attr name oak.shef.ac.uk.cgxassignment:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabRippleColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabRippleColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabRippleColor
+     * @attr name oak.shef.ac.uk.cgxassignment:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabSelectedTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17614,28 +18301,28 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#tabUnboundedRipple}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#tabUnboundedRipple}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:tabUnboundedRipple
+     * @attr name oak.shef.ac.uk.cgxassignment:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -17656,8 +18343,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily oak.shef.ac.uk.myapplication:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps oak.shef.ac.uk.myapplication:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily oak.shef.ac.uk.cgxassignment:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps oak.shef.ac.uk.cgxassignment:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -17676,8 +18363,8 @@ public final class R {
     public static final int[] TextAppearance={
       0x01010095, 0x01010096, 0x01010097, 0x01010098, 
       0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
-      0x01010163, 0x01010164, 0x010103ac, 0x7f0300d8, 
-      0x7f0301cf
+      0x01010163, 0x01010164, 0x010103ac, 0x7f0300e3, 
+      0x7f0301e3
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -17823,17 +18510,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:fontFamily
+     * @attr name oak.shef.ac.uk.cgxassignment:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17843,7 +18530,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:textAllCaps
+     * @attr name oak.shef.ac.uk.cgxassignment:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -17855,32 +18542,32 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor oak.shef.ac.uk.myapplication:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode oak.shef.ac.uk.myapplication:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop oak.shef.ac.uk.myapplication:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd oak.shef.ac.uk.myapplication:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart oak.shef.ac.uk.myapplication:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd oak.shef.ac.uk.myapplication:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart oak.shef.ac.uk.myapplication:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor oak.shef.ac.uk.myapplication:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth oak.shef.ac.uk.myapplication:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled oak.shef.ac.uk.myapplication:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength oak.shef.ac.uk.myapplication:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance oak.shef.ac.uk.myapplication:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance oak.shef.ac.uk.myapplication:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled oak.shef.ac.uk.myapplication:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance oak.shef.ac.uk.myapplication:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText oak.shef.ac.uk.myapplication:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled oak.shef.ac.uk.myapplication:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance oak.shef.ac.uk.myapplication:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled oak.shef.ac.uk.myapplication:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled oak.shef.ac.uk.myapplication:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance oak.shef.ac.uk.myapplication:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription oak.shef.ac.uk.myapplication:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable oak.shef.ac.uk.myapplication:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled oak.shef.ac.uk.myapplication:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint oak.shef.ac.uk.myapplication:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode oak.shef.ac.uk.myapplication:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor oak.shef.ac.uk.cgxassignment:boxBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode oak.shef.ac.uk.cgxassignment:boxBackgroundMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop oak.shef.ac.uk.cgxassignment:boxCollapsedPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd oak.shef.ac.uk.cgxassignment:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart oak.shef.ac.uk.cgxassignment:boxCornerRadiusBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd oak.shef.ac.uk.cgxassignment:boxCornerRadiusTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart oak.shef.ac.uk.cgxassignment:boxCornerRadiusTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor oak.shef.ac.uk.cgxassignment:boxStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth oak.shef.ac.uk.cgxassignment:boxStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled oak.shef.ac.uk.cgxassignment:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength oak.shef.ac.uk.cgxassignment:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance oak.shef.ac.uk.cgxassignment:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance oak.shef.ac.uk.cgxassignment:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled oak.shef.ac.uk.cgxassignment:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance oak.shef.ac.uk.cgxassignment:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText oak.shef.ac.uk.cgxassignment:helperText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled oak.shef.ac.uk.cgxassignment:helperTextEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance oak.shef.ac.uk.cgxassignment:helperTextTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled oak.shef.ac.uk.cgxassignment:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled oak.shef.ac.uk.cgxassignment:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance oak.shef.ac.uk.cgxassignment:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription oak.shef.ac.uk.cgxassignment:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable oak.shef.ac.uk.cgxassignment:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled oak.shef.ac.uk.cgxassignment:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint oak.shef.ac.uk.cgxassignment:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode oak.shef.ac.uk.cgxassignment:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -17912,13 +18599,13 @@ public final class R {
      * @see #TextInputLayout_passwordToggleTintMode
      */
     public static final int[] TextInputLayout={
-      0x0101009a, 0x01010150, 0x7f030045, 0x7f030046, 
-      0x7f030047, 0x7f030048, 0x7f030049, 0x7f03004a, 
-      0x7f03004b, 0x7f03004c, 0x7f03004d, 0x7f0300a6, 
-      0x7f0300a7, 0x7f0300a8, 0x7f0300a9, 0x7f0300bf, 
-      0x7f0300c0, 0x7f0300e7, 0x7f0300e8, 0x7f0300e9, 
-      0x7f0300ed, 0x7f0300ee, 0x7f0300ef, 0x7f030173, 
-      0x7f030174, 0x7f030175, 0x7f030176, 0x7f030177
+      0x0101009a, 0x01010150, 0x7f030046, 0x7f030047, 
+      0x7f030048, 0x7f030049, 0x7f03004a, 0x7f03004b, 
+      0x7f03004c, 0x7f03004d, 0x7f03004e, 0x7f0300b1, 
+      0x7f0300b2, 0x7f0300b3, 0x7f0300b4, 0x7f0300ca, 
+      0x7f0300cb, 0x7f0300f2, 0x7f0300f3, 0x7f0300f4, 
+      0x7f0300f8, 0x7f0300f9, 0x7f0300fa, 0x7f030186, 
+      0x7f030187, 0x7f030188, 0x7f030189, 0x7f03018a
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textColorHint}
@@ -17946,18 +18633,18 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxBackgroundColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxBackgroundColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxBackgroundColor
+     * @attr name oak.shef.ac.uk.cgxassignment:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxBackgroundMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxBackgroundMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17971,11 +18658,11 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxBackgroundMode
+     * @attr name oak.shef.ac.uk.cgxassignment:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxCollapsedPaddingTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxCollapsedPaddingTop}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17984,11 +18671,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxCollapsedPaddingTop
+     * @attr name oak.shef.ac.uk.cgxassignment:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxCornerRadiusBottomEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxCornerRadiusBottomEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17997,11 +18684,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxCornerRadiusBottomEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxCornerRadiusBottomStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxCornerRadiusBottomStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18010,11 +18697,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxCornerRadiusBottomStart
+     * @attr name oak.shef.ac.uk.cgxassignment:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxCornerRadiusTopEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxCornerRadiusTopEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18023,11 +18710,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxCornerRadiusTopEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxCornerRadiusTopStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxCornerRadiusTopStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18036,22 +18723,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxCornerRadiusTopStart
+     * @attr name oak.shef.ac.uk.cgxassignment:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxStrokeColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxStrokeColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxStrokeColor
+     * @attr name oak.shef.ac.uk.cgxassignment:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#boxStrokeWidth}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#boxStrokeWidth}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18060,30 +18747,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:boxStrokeWidth
+     * @attr name oak.shef.ac.uk.cgxassignment:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:counterEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:counterMaxLength
+     * @attr name oak.shef.ac.uk.cgxassignment:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18091,11 +18778,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:counterOverflowTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18103,21 +18790,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:counterTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:errorEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18125,31 +18812,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:errorTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#helperText}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#helperText}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:helperText
+     * @attr name oak.shef.ac.uk.cgxassignment:helperText
      */
     public static final int TextInputLayout_helperText=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#helperTextEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#helperTextEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:helperTextEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#helperTextTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#helperTextTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18157,31 +18844,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:helperTextTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hintAnimationEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hintEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18189,21 +18876,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:hintTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:passwordToggleContentDescription
+     * @attr name oak.shef.ac.uk.cgxassignment:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18211,32 +18898,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:passwordToggleDrawable
+     * @attr name oak.shef.ac.uk.cgxassignment:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:passwordToggleEnabled
+     * @attr name oak.shef.ac.uk.cgxassignment:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:passwordToggleTint
+     * @attr name oak.shef.ac.uk.cgxassignment:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18252,7 +18939,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:passwordToggleTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=27;
     /**
@@ -18263,15 +18950,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme oak.shef.ac.uk.myapplication:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance oak.shef.ac.uk.myapplication:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme oak.shef.ac.uk.cgxassignment:enforceMaterialTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance oak.shef.ac.uk.cgxassignment:enforceTextAppearance}</code></td><td></td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
      * @see #ThemeEnforcement_enforceTextAppearance
      */
     public static final int[] ThemeEnforcement={
-      0x01010034, 0x7f0300bd, 0x7f0300be
+      0x01010034, 0x7f0300c8, 0x7f0300c9
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -18286,23 +18973,23 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#enforceMaterialTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#enforceMaterialTheme}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:enforceMaterialTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#enforceTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#enforceTextAppearance}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:enforceTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -18314,33 +19001,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity oak.shef.ac.uk.myapplication:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription oak.shef.ac.uk.myapplication:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon oak.shef.ac.uk.myapplication:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd oak.shef.ac.uk.myapplication:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions oak.shef.ac.uk.myapplication:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft oak.shef.ac.uk.myapplication:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight oak.shef.ac.uk.myapplication:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart oak.shef.ac.uk.myapplication:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation oak.shef.ac.uk.myapplication:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo oak.shef.ac.uk.myapplication:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription oak.shef.ac.uk.myapplication:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight oak.shef.ac.uk.myapplication:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription oak.shef.ac.uk.myapplication:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon oak.shef.ac.uk.myapplication:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme oak.shef.ac.uk.myapplication:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle oak.shef.ac.uk.myapplication:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance oak.shef.ac.uk.myapplication:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor oak.shef.ac.uk.myapplication:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title oak.shef.ac.uk.myapplication:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin oak.shef.ac.uk.myapplication:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom oak.shef.ac.uk.myapplication:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd oak.shef.ac.uk.myapplication:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart oak.shef.ac.uk.myapplication:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop oak.shef.ac.uk.myapplication:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins oak.shef.ac.uk.myapplication:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance oak.shef.ac.uk.myapplication:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor oak.shef.ac.uk.myapplication:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity oak.shef.ac.uk.cgxassignment:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription oak.shef.ac.uk.cgxassignment:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon oak.shef.ac.uk.cgxassignment:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd oak.shef.ac.uk.cgxassignment:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions oak.shef.ac.uk.cgxassignment:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft oak.shef.ac.uk.cgxassignment:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight oak.shef.ac.uk.cgxassignment:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart oak.shef.ac.uk.cgxassignment:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation oak.shef.ac.uk.cgxassignment:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo oak.shef.ac.uk.cgxassignment:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription oak.shef.ac.uk.cgxassignment:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight oak.shef.ac.uk.cgxassignment:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription oak.shef.ac.uk.cgxassignment:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon oak.shef.ac.uk.cgxassignment:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme oak.shef.ac.uk.cgxassignment:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle oak.shef.ac.uk.cgxassignment:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance oak.shef.ac.uk.cgxassignment:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor oak.shef.ac.uk.cgxassignment:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title oak.shef.ac.uk.cgxassignment:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin oak.shef.ac.uk.cgxassignment:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom oak.shef.ac.uk.cgxassignment:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd oak.shef.ac.uk.cgxassignment:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart oak.shef.ac.uk.cgxassignment:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop oak.shef.ac.uk.cgxassignment:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins oak.shef.ac.uk.cgxassignment:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance oak.shef.ac.uk.cgxassignment:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor oak.shef.ac.uk.cgxassignment:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -18373,14 +19060,14 @@ public final class R {
      * @see #Toolbar_titleTextColor
      */
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f030053, 0x7f030082, 
-      0x7f030083, 0x7f030097, 0x7f030098, 0x7f030099, 
-      0x7f03009a, 0x7f03009b, 0x7f03009c, 0x7f03015c, 
-      0x7f03015d, 0x7f030161, 0x7f030166, 0x7f030167, 
-      0x7f030179, 0x7f0301ac, 0x7f0301ad, 0x7f0301ae, 
-      0x7f0301f4, 0x7f0301f6, 0x7f0301f7, 0x7f0301f8, 
-      0x7f0301f9, 0x7f0301fa, 0x7f0301fb, 0x7f0301fc, 
-      0x7f0301fd
+      0x010100af, 0x01010140, 0x7f030054, 0x7f03008c, 
+      0x7f03008d, 0x7f0300a2, 0x7f0300a3, 0x7f0300a4, 
+      0x7f0300a5, 0x7f0300a6, 0x7f0300a7, 0x7f03016e, 
+      0x7f03016f, 0x7f030174, 0x7f030179, 0x7f03017a, 
+      0x7f03018c, 0x7f0301c0, 0x7f0301c1, 0x7f0301c2, 
+      0x7f030208, 0x7f03020a, 0x7f03020b, 0x7f03020c, 
+      0x7f03020d, 0x7f03020e, 0x7f03020f, 0x7f030210, 
+      0x7f030211
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -18425,7 +19112,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -18438,21 +19125,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:buttonGravity
+     * @attr name oak.shef.ac.uk.cgxassignment:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:collapseContentDescription
+     * @attr name oak.shef.ac.uk.cgxassignment:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18460,11 +19147,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:collapseIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18473,11 +19160,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18486,11 +19173,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetEndWithActions
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18499,11 +19186,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetLeft
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18512,11 +19199,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetRight
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18525,11 +19212,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetStart
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18538,11 +19225,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:contentInsetStartWithNavigation
+     * @attr name oak.shef.ac.uk.cgxassignment:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#logo}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18550,21 +19237,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:logo
+     * @attr name oak.shef.ac.uk.cgxassignment:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:logoDescription
+     * @attr name oak.shef.ac.uk.cgxassignment:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18573,21 +19260,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:maxButtonHeight
+     * @attr name oak.shef.ac.uk.cgxassignment:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:navigationContentDescription
+     * @attr name oak.shef.ac.uk.cgxassignment:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18595,11 +19282,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:navigationIcon
+     * @attr name oak.shef.ac.uk.cgxassignment:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18607,21 +19294,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:popupTheme
+     * @attr name oak.shef.ac.uk.cgxassignment:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitle
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18629,32 +19316,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitleTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:subtitleTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#title}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name oak.shef.ac.uk.myapplication:title
+     * @attr name oak.shef.ac.uk.cgxassignment:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18663,11 +19350,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMargin
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18676,11 +19363,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMarginBottom
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18689,11 +19376,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMarginEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18702,11 +19389,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMarginStart
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18715,11 +19402,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMarginTop
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18728,11 +19415,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleMargins
+     * @attr name oak.shef.ac.uk.cgxassignment:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18740,18 +19427,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleTextAppearance
+     * @attr name oak.shef.ac.uk.cgxassignment:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:titleTextColor
+     * @attr name oak.shef.ac.uk.cgxassignment:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -18763,9 +19450,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd oak.shef.ac.uk.myapplication:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart oak.shef.ac.uk.myapplication:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme oak.shef.ac.uk.myapplication:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd oak.shef.ac.uk.cgxassignment:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart oak.shef.ac.uk.cgxassignment:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme oak.shef.ac.uk.cgxassignment:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -18774,8 +19461,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f03016d, 0x7f03016e, 
-      0x7f0301ea
+      0x01010000, 0x010100da, 0x7f030180, 0x7f030181, 
+      0x7f0301fe
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#theme}
@@ -18808,7 +19495,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18817,11 +19504,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:paddingEnd
+     * @attr name oak.shef.ac.uk.cgxassignment:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18830,11 +19517,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name oak.shef.ac.uk.myapplication:paddingStart
+     * @attr name oak.shef.ac.uk.cgxassignment:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#theme}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18842,7 +19529,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:theme
+     * @attr name oak.shef.ac.uk.cgxassignment:theme
      */
     public static final int View_theme=4;
     /**
@@ -18853,15 +19540,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint oak.shef.ac.uk.myapplication:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode oak.shef.ac.uk.myapplication:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint oak.shef.ac.uk.cgxassignment:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode oak.shef.ac.uk.cgxassignment:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
      * @see #ViewBackgroundHelper_backgroundTintMode
      */
     public static final int[] ViewBackgroundHelper={
-      0x010100d4, 0x7f030034, 0x7f030035
+      0x010100d4, 0x7f030035, 0x7f030036
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -18879,18 +19566,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTint
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.myapplication.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link oak.shef.ac.uk.cgxassignment.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18907,7 +19594,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name oak.shef.ac.uk.myapplication:backgroundTintMode
+     * @attr name oak.shef.ac.uk.cgxassignment:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
