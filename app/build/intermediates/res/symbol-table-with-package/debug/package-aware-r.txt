@@ -1073,6 +1073,7 @@ drawable ic_mtrl_chip_close_circle
 drawable joe1
 drawable joe2
 drawable joe3
+drawable mapicon
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1147,8 +1148,10 @@ id coordinator
 id custom
 id customPanel
 id dark
+id date
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1157,6 +1160,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id edit
 id edit_query
 id end
 id end_padder

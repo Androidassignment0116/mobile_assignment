@@ -180,7 +180,6 @@ public class MyView extends AppCompatActivity {
 
             @Override
             public void onImagesPicked(List<File> imageFiles, EasyImage.ImageSource source, int type) {
-//                onPhotosReturned(imageFiles);
                 myViewModel.sortpic(imageFiles);
             }
 

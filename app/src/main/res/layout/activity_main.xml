@@ -42,7 +42,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@android:color/holo_orange_light"
         app:fabSize="normal"
-        android:src="@drawable/joe1" />
+        android:src="@drawable/mapicon" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_camera"

@@ -20,8 +20,9 @@ public class ShowPicDetail extends AppCompatActivity {
     private byte[] byteArray;
     TextView textTittle;
     TextView textDescription;
-    TextView textLocation;
+    TextView textDate;
     MyImageView imageViewmap;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,27 +35,29 @@ public class ShowPicDetail extends AppCompatActivity {
         if (bundle !=null){
             pos = bundle.getInt("position");
             if (pos!= -1){
-                ImageView imageView = findViewById(R.id.image);
-                TextView textTittle = findViewById(R.id.title);
-//                TextView textDescription = findViewById(R.id.description);
-//                TextView textLocation = findViewById(R.id.location);
+                imageView = findViewById(R.id.image);
+                textTittle = findViewById(R.id.title);
                 imageViewmap = findViewById(R.id.map);
+                textDescription = findViewById(R.id.description);
+                textDate = findViewById(R.id.date);
+
 
                 byte[] temp = PicAdapter.getItems().get(pos).getImage();
                 Bitmap b = BitmapFactory.decodeByteArray(temp , 0, temp.length);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 b.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byteArray = stream.toByteArray();
-                if (b != null)
+                if (b != null) {
                     imageView.setImageBitmap(b);
+                    textTittle.setText("Title:" + PicAdapter.getItems().get(pos).getTitle());
+                    textDescription.setText("Description: "+ PicAdapter.getItems().get(pos).getDescription());
+                    textDate.setText("Date: " + PicAdapter.getItems().get(pos).getDatetime());
+                }
 
-                textTittle.setText( PicAdapter.getItems().get(pos).getTitle());
                 String path = "https://maps.googleapis.com/maps/api/staticmap?markers="+PicAdapter.getItems().get(pos).getLatitude()+","+PicAdapter.getItems().get(pos).getLongitude()+"&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";
                 imageViewmap.setImageURL(path);
                 Log.i("url","URL: "+path);
-//                textDescription.setText( PicAdapter.getItems().get(pos).getDescription());
-                textTittle.setText(" latitude: "+ PicAdapter.getItems().get(pos).getLatitude()
-                        + " Longitude:"+ PicAdapter.getItems().get(pos).getLongitude());
+
 
             }
         }

@@ -138,13 +138,41 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/image" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/image" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/image" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
         android:layout_above="@id/map"
-        android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/image"
+        android:layout_below="@id/date"
+        android:text="Edit"
         />
 
 
