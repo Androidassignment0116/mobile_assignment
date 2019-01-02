@@ -6,16 +6,16 @@
     density="560dpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1546387229271"
+    timestamp="1546440941758"
     token="-6055667223617506685"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2070" />
+        duration="2044" />
     <task
         name="instant-run-dex"
-        duration="14" />
+        duration="15" />
     <task
         name="instant-run-transform"
         duration="29" />
@@ -29,7 +29,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1546386488153"
+        timestamp="1546438033774"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -73,20 +73,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1546386751280"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
+        timestamp="1546439319782"
+        verifier="R_CLASS_CHANGE" >
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
@@ -94,42 +82,64 @@
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
     </build>
     <build
+        build-mode="COLD"
+        timestamp="1546439720417"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1546439771604"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="G:\aa\mobile_assignment\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
         build-mode="HOT_WARM"
-        timestamp="1546386975986"
+        timestamp="1546439844464"
         verifier="COMPATIBLE" >
         <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546386975986\classes.dex"
+            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546439844464\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1546387060281"
+        timestamp="1546440011022"
         verifier="COMPATIBLE" >
         <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546387060281\classes.dex"
+            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546440011022\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1546387135273"
+        timestamp="1546440127309"
         verifier="COMPATIBLE" >
         <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546387135273\classes.dex"
+            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546440127309\classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1546387229271"
+        timestamp="1546440941758"
         verifier="COMPATIBLE" >
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\reload-dex\debug\classes.dex"

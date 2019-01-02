@@ -21,7 +21,7 @@ public class ShowPicDetail extends AppCompatActivity {
     TextView textTittle;
     TextView textDescription;
     TextView textLocation;
-
+    MyImageView imageViewmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +36,9 @@ public class ShowPicDetail extends AppCompatActivity {
             if (pos!= -1){
                 ImageView imageView = findViewById(R.id.image);
                 TextView textTittle = findViewById(R.id.title);
-                TextView textDescription = findViewById(R.id.description);
-                TextView textLocation = findViewById(R.id.location);
+//                TextView textDescription = findViewById(R.id.description);
+//                TextView textLocation = findViewById(R.id.location);
+                imageViewmap = findViewById(R.id.map);
 
                 byte[] temp = PicAdapter.getItems().get(pos).getImage();
                 Bitmap b = BitmapFactory.decodeByteArray(temp , 0, temp.length);
@@ -48,9 +49,11 @@ public class ShowPicDetail extends AppCompatActivity {
                     imageView.setImageBitmap(b);
 
                 textTittle.setText( PicAdapter.getItems().get(pos).getTitle());
-
-                textDescription.setText( PicAdapter.getItems().get(pos).getDescription());
-                textLocation.setText(" latitude: "+ PicAdapter.getItems().get(pos).getLatitude()
+                String path = "https://maps.googleapis.com/maps/api/staticmap?markers="+PicAdapter.getItems().get(pos).getLatitude()+","+PicAdapter.getItems().get(pos).getLongitude()+"&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";
+                imageViewmap.setImageURL(path);
+                Log.i("url","URL: "+path);
+//                textDescription.setText( PicAdapter.getItems().get(pos).getDescription());
+                textTittle.setText(" latitude: "+ PicAdapter.getItems().get(pos).getLatitude()
                         + " Longitude:"+ PicAdapter.getItems().get(pos).getLongitude());
 
             }
