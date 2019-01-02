@@ -2,12 +2,15 @@ package oak.shef.ac.uk.livedata;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +26,7 @@ public class ShowPicDetail extends AppCompatActivity {
     TextView textDate;
     MyImageView imageViewmap;
     ImageView imageView;
+    Button mButtonEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,7 @@ public class ShowPicDetail extends AppCompatActivity {
                 imageViewmap = findViewById(R.id.map);
                 textDescription = findViewById(R.id.description);
                 textDate = findViewById(R.id.date);
+                mButtonEdit = findViewById(R.id.edit);
 
 
                 byte[] temp = PicAdapter.getItems().get(pos).getImage();
@@ -52,6 +57,13 @@ public class ShowPicDetail extends AppCompatActivity {
                     textTittle.setText("Title:" + PicAdapter.getItems().get(pos).getTitle());
                     textDescription.setText("Description: "+ PicAdapter.getItems().get(pos).getDescription());
                     textDate.setText("Date: " + PicAdapter.getItems().get(pos).getDatetime());
+                    mButtonEdit.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(ShowPicDetail.this,Edit.class);
+                            startActivity(intent);
+                        }
+                    });
                 }
 
                 String path = "https://maps.googleapis.com/maps/api/staticmap?markers="+PicAdapter.getItems().get(pos).getLatitude()+","+PicAdapter.getItems().get(pos).getLongitude()+"&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";

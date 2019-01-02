@@ -16,18 +16,24 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.StrictMode;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -35,8 +41,16 @@ import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import oak.shef.ac.uk.livedata.database.PicinfoData;
 import pl.aprilapps.easyphotopicker.DefaultCallback;
@@ -45,11 +59,13 @@ import pl.aprilapps.easyphotopicker.EasyImage;
 public class MyView extends AppCompatActivity {
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2987;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 7829;
+    private static final int REQUEST_CODE_TAKE_PICTURE = 33;
     private MyViewModel myViewModel;
     private Activity activity;
     private PicAdapter PicAdapterview;
+    Uri photoURI;
 
-
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
 
     @Override
@@ -88,6 +104,17 @@ public class MyView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 EasyImage.openCamera(getActivity(), 0);
+//                Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+////                openCameraIntent.addCategory(Intent.CATEGORY_DEFAULT);
+//                SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
+//                Date date = new Date(System.currentTimeMillis());
+//                String fileName = format.format(date);
+//                File photeFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fileName +".jpg");
+//                Uri photeUri = Uri.fromFile(photeFile);
+//                openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, photeUri);
+//                startActivityForResult(openCameraIntent, REQUEST_CODE_TAKE_PICTURE);
+//                dispatchTakePictureIntent();
+
             }
         });
 
@@ -171,6 +198,16 @@ public class MyView extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+//        if (requestCode == REQUEST_IMAGE_CAPTURE  && resultCode == RESULT_OK) {
+//            //Bundle extras = data.getExtras();
+//            //Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            //mImageView.setImageBitmap(imageBitmap);
+//            Log.i("yao cunle ","yaocunle "+"yaocunle");
+//            galleryAddPic();
+//        }
+
+
+
         EasyImage.handleActivityResult(requestCode, resultCode, data, this, new DefaultCallback() {
             @Override
             public void onImagePickerError(Exception e, EasyImage.ImageSource source, int type) {
@@ -197,5 +234,57 @@ public class MyView extends AppCompatActivity {
     public Activity getActivity() {
         return activity;
     }
+//    String mCurrentPhotoPath;
+//
+//    private File createImageFile() throws IOException {
+//        // Create an image file name
+//        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+//        String imageFileName = "JPEG_" + timeStamp + "_";
+////        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+//        File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+//        File image = File.createTempFile(
+//                imageFileName,  /* prefix */
+//                ".jpg",         /* suffix */
+//                storageDir      /* directory */
+//        );
+//
+//        // Save a file: path for use with ACTION_VIEW intents
+//        photoURI = Uri.fromFile(image);
+//        return image;
+//    }
+//
+//    static final int REQUEST_TAKE_PHOTO = 1;
+//
+//    private void dispatchTakePictureIntent() {
+//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        // Ensure that there's a camera activity to handle the intent
+//        if (takePictureIntent != null) {
+//
+//
+//
+//            try {
+//                File photoFile = createImageFile();
+//
+//                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
+//                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+//
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//
+//
+//        }
+//    }
+//
+//
+//    private void galleryAddPic() {
+//        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+//        File f = new File(mCurrentPhotoPath);
+//        Uri contentUri = Uri.fromFile(f);
+//        mediaScanIntent.setData(contentUri);
+//        this.sendBroadcast(mediaScanIntent);
+//    }
+
 }
 

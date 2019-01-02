@@ -1161,7 +1161,10 @@ id dimensions
 id direct
 id disableHome
 id edit
+id edit_date
+id edit_description
 id edit_query
+id edit_tittle
 id end
 id end_padder
 id enterAlways
@@ -1484,6 +1487,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string save
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_maps

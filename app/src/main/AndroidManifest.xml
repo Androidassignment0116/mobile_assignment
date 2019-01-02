@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--   ~ Copyright (c) 2018. This code has been developed by Fabio Ciravegna, The University of Sheffield. All rights reserved. No part of this code can be used without the explicit written permission by the author -->
+<?xml version="1.0" encoding="utf-8"?><!-- ~ Copyright (c) 2018. This code has been developed by Fabio Ciravegna, The University of Sheffield. All rights reserved. No part of this code can be used without the explicit written permission by the author -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="oak.shef.ac.uk.livedata">
 
@@ -41,7 +41,8 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Edit"></activity>
     </application>
 
 </manifest>
