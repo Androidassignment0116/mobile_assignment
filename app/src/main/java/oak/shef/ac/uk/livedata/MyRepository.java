@@ -46,6 +46,15 @@ class MyRepository extends ViewModel {
 
 
 
+    public void onNewTitleReturned(String title, String datetime){
+
+        new updateTitleAsyncTask(mDBDao).execute(title,datetime);
+    }
+
+    public void onNewDescriptionReturned(String description, String datetime){
+
+        new updateDescriptionAsyncTask(mDBDao).execute(description,datetime);
+    }
 
 
 
@@ -144,6 +153,26 @@ class MyRepository extends ViewModel {
                     Log.i("MyRepository", "number generated: " + "" + params[0].getTitle() + " " + params[0].getDescription() + " " + params[0].getImage()+ " "+params[0].getLatitude()+" "+ params[0].getLongitude());
                 }
 
+            return null;
+        }
+    }
+
+    private static class updateTitleAsyncTask extends AsyncTask<String,Void,Void>{
+        private MyDAO mAsyncTaskDao;
+        updateTitleAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
+        @Override
+        protected Void doInBackground(String... strings) {
+            mAsyncTaskDao.updatetitle(strings[0],strings[1]);
+            return null;
+        }
+    }
+
+    private static class updateDescriptionAsyncTask extends AsyncTask<String, Void, Void>{
+        private MyDAO mAsyncTaskDao;
+        updateDescriptionAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
+        @Override
+        protected Void doInBackground(String... strings) {
+            mAsyncTaskDao.updatedescription(strings[0],strings[1]);
             return null;
         }
     }

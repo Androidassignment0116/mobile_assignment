@@ -56,11 +56,14 @@ public class ShowPicDetail extends AppCompatActivity {
                     imageView.setImageBitmap(b);
                     textTittle.setText("Title:" + PicAdapter.getItems().get(pos).getTitle());
                     textDescription.setText("Description: "+ PicAdapter.getItems().get(pos).getDescription());
-                    textDate.setText("Date: " + PicAdapter.getItems().get(pos).getDatetime());
+                    textDate.setText(PicAdapter.getItems().get(pos).getDatetime());
                     mButtonEdit.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(ShowPicDetail.this,Edit.class);
+                            intent.putExtra("Title",textTittle.getText().toString());
+                            intent.putExtra("Description",textDescription.getText().toString());
+                            intent.putExtra("datetime", textDate.getText().toString());
                             startActivity(intent);
                         }
                     });

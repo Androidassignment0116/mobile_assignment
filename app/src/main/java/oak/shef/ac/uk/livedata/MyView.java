@@ -206,9 +206,10 @@ public class MyView extends AppCompatActivity {
 //            galleryAddPic();
 //        }
 
-
+//        photoURI = data.getData();
 
         EasyImage.handleActivityResult(requestCode, resultCode, data, this, new DefaultCallback() {
+//            Intent d = data;
             @Override
             public void onImagePickerError(Exception e, EasyImage.ImageSource source, int type) {
                 //Some error handling
@@ -217,7 +218,19 @@ public class MyView extends AppCompatActivity {
 
             @Override
             public void onImagesPicked(List<File> imageFiles, EasyImage.ImageSource source, int type) {
-                myViewModel.sortpic(imageFiles);
+//                if(source ==EasyImage.ImageSource.CAMERA){
+//                    for (File f:imageFiles){
+//                        try {
+//                            File temp = createImageFile();
+//                            temp = f;
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        }
+//
+//                    }
+//                }
+//                else
+                     myViewModel.sortpic(imageFiles);
             }
 
             @Override
@@ -236,22 +249,22 @@ public class MyView extends AppCompatActivity {
     }
 //    String mCurrentPhotoPath;
 //
-//    private File createImageFile() throws IOException {
-//        // Create an image file name
-//        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-//        String imageFileName = "JPEG_" + timeStamp + "_";
-////        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-//        File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-//        File image = File.createTempFile(
-//                imageFileName,  /* prefix */
-//                ".jpg",         /* suffix */
-//                storageDir      /* directory */
-//        );
-//
-//        // Save a file: path for use with ACTION_VIEW intents
-//        photoURI = Uri.fromFile(image);
-//        return image;
-//    }
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+//        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
+        File image = File.createTempFile(
+                imageFileName,  /* prefix */
+                ".jpg",         /* suffix */
+                storageDir      /* directory */
+        );
+
+        // Save a file: path for use with ACTION_VIEW intents
+        photoURI = Uri.fromFile(image);
+        return image;
+    }
 //
 //    static final int REQUEST_TAKE_PHOTO = 1;
 //

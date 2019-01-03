@@ -51,5 +51,14 @@ public class MyViewModel extends AndroidViewModel {
     public void sortpic(List<File> files){
         mRepository.onPhotosReturned(files);
     }
+    public void updatenewTitle(String title, String datetime)
+    {
+        mRepository.onNewTitleReturned(title,datetime);
+    }
+
+    public void updatenewDescription(String description, String datetime){
+        mRepository.onNewDescriptionReturned(description,datetime);
+    }
+
 
 }

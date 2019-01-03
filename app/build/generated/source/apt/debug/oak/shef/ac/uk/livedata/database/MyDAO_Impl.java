@@ -8,6 +8,7 @@ import android.arch.persistence.room.EntityInsertionAdapter;
 import android.arch.persistence.room.InvalidationTracker.Observer;
 import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.RoomSQLiteQuery;
+import android.arch.persistence.room.SharedSQLiteStatement;
 import android.database.Cursor;
 import android.support.annotation.NonNull;
 import java.lang.Float;
@@ -23,6 +24,10 @@ public class MyDAO_Impl implements MyDAO {
   private final EntityInsertionAdapter __insertionAdapterOfPicinfoData;
 
   private final EntityDeletionOrUpdateAdapter __deletionAdapterOfPicinfoData;
+
+  private final SharedSQLiteStatement __preparedStmtOfUpdatetitle;
+
+  private final SharedSQLiteStatement __preparedStmtOfUpdatedescription;
 
   public MyDAO_Impl(RoomDatabase __db) {
     this.__db = __db;
@@ -78,6 +83,20 @@ public class MyDAO_Impl implements MyDAO {
         stmt.bindLong(1, value.getId());
       }
     };
+    this.__preparedStmtOfUpdatetitle = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "UPDATE picinfo_database SET title = ? WHERE datetime = ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfUpdatedescription = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "UPDATE picinfo_database SET description = ? WHERE datetime = ?";
+        return _query;
+      }
+    };
   }
 
   @Override
@@ -121,6 +140,56 @@ public class MyDAO_Impl implements MyDAO {
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void updatetitle(String newtitle, String datetime) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfUpdatetitle.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      if (newtitle == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, newtitle);
+      }
+      _argIndex = 2;
+      if (datetime == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, datetime);
+      }
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfUpdatetitle.release(_stmt);
+    }
+  }
+
+  @Override
+  public void updatedescription(String newdescription, String datetime) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfUpdatedescription.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      if (newdescription == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, newdescription);
+      }
+      _argIndex = 2;
+      if (datetime == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, datetime);
+      }
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfUpdatedescription.release(_stmt);
     }
   }
 

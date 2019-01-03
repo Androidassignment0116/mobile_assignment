@@ -44,5 +44,11 @@ public interface MyDAO {
     @Query("SELECT * FROM picinfo_database WHERE datetime = :datetime")
     boolean checkexits(String datetime);
 
+    @Query("UPDATE picinfo_database SET title = :newtitle WHERE datetime = :datetime")
+    void updatetitle(String newtitle,String datetime);
+
+    @Query("UPDATE picinfo_database SET description = :newdescription WHERE datetime = :datetime")
+    void updatedescription(String newdescription,String datetime);
+
 
 }
