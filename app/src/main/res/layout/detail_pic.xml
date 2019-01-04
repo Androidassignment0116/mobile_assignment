@@ -133,50 +133,106 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="246dp"
-        android:layout_height="353dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp" />
+        android:layout_marginStart="0dp"
+        android:scaleType="fitCenter"/>
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="138dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@id/image" />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="138dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/title"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@id/image" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="138dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/description"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@id/image" />
-
-    <Button
-        android:id="@+id/edit"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:layout_above="@id/map"
+        android:orientation="vertical"
         android:layout_toEndOf="@id/image"
-        android:layout_below="@id/date"
-        android:text="Edit"
-        />
+        >
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image"
+            android:text="@string/tittle" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image"
+            android:text="@string/date" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/description"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/map"
+                android:layout_below="@id/date"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@id/image"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/map"
+                android:layout_below="@id/date"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@id/image"
+                android:text="Delete" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <oak.shef.ac.uk.livedata.MyImageView
         android:layout_width="match_parent"

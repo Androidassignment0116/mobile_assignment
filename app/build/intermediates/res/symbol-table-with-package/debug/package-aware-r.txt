@@ -1130,6 +1130,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_cancel
 id btn_save
 id buttonPanel
 id cancel_action
@@ -1152,6 +1153,7 @@ id dark
 id date
 id decor_content_parent
 id default_activity_button
+id delete
 id description
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -1162,7 +1164,6 @@ id dimensions
 id direct
 id disableHome
 id edit
-id edit_date
 id edit_description
 id edit_query
 id edit_tittle
@@ -1264,6 +1265,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_date
 id smallLabel
 id snackbar_action
 id snackbar_text

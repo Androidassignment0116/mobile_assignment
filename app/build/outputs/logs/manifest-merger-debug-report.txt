@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\77149771da1ed4140d4a228e3449851d\AndroidManifest.xml:17:1-22:12
@@ -48,20 +48,20 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\hasee\.g
 MERGED from [com.android.support:print:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\ca045a537080c7d1eaf0bc05e02f4f59\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\47f24adc9af88c79641aa419cab68f07\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\timber-4.4.0.aar\1c8c39117c585af13db5cf07d571d0a4\AndroidManifest.xml:2:1-10:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:11-69
@@ -73,12 +73,16 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:22-78
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:13:5-79
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:7:5-89
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:7:22-86
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:16:22-76
 application
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:15:5-46:19
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:18:5-43:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:22:5-20
@@ -108,51 +112,51 @@ MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\hasee\.gradle\caches\
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a96412b8364e24c0cb9a4c8108bc2820\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:9-35
 	android:label
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:21:9-41
 	android:roundIcon
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:19:9-54
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:22:9-54
 	android:icon
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:9-43
 	android:allowBackup
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:21:9-40
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:24:9-40
 activity#oak.shef.ac.uk.livedata.MyView
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:22:19-41
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:19-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:30:27-74
 activity#oak.shef.ac.uk.livedata.ShowPicDetail
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:29:9-51
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:33:9-51
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:29:19-48
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:33:19-48
 meta-data#com.google.android.geo.API_KEY
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:38:9-40:55
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:35:9-37:55
 	android:value
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:40:13-52
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:39:13-58
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:36:13-58
 activity#oak.shef.ac.uk.livedata.MapsActivity
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:42:9-44:59
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:39:9-41:59
 	android:label
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:40:13-41
 activity#oak.shef.ac.uk.livedata.Edit
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:9-51
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:42:9-41
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:19-39
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:42:19-39
 uses-sdk
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml

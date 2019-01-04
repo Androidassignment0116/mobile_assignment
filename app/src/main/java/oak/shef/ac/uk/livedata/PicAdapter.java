@@ -67,12 +67,8 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
         List<Bitmap> bit = new ArrayList<>();
         for (PicinfoData b:pic
                 ) {
-            byte[] temp = b.getImage();
-            Bitmap bitmap = BitmapFactory.decodeByteArray(temp , 0, temp.length);
-            int x = bitmap.getWidth();
-            int y = bitmap.getHeight();
-            int[] intArray = new int[x * y];
-            bitmap.getPixels(intArray, 0, x, 0, 0, x, y);
+            Bitmap bitmap = BitmapFactory.decodeFile(b.getPath());
+
             bit.add(bitmap);
         }
         this.bitmaps = bit;

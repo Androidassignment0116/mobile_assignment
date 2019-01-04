@@ -22,15 +22,14 @@ public class PicinfoData {
     private Float longitude;
 
 
-    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
-    private byte[] image;
+    private String path;
 
 
-    public PicinfoData(String title, String description, byte[] image, String datetime, Float latitude, Float longitude){
+    public PicinfoData(String title, String description, String path, String datetime, Float latitude, Float longitude){
 
         this.description = description;
         this.title = title;
-        this.image = image;
+        this.path = path;
         this.datetime = datetime;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -76,12 +75,12 @@ public class PicinfoData {
         return description;
     }
 
-    public byte[] getImage() {
-        return image;
+    public String getPath() {
+        return path;
     }
 
-    public void setImage(byte[] image) {
-        this.image = image;
+    public void setPath(String path) {
+        this.path = path;
     }
 
     public String getDatetime() {

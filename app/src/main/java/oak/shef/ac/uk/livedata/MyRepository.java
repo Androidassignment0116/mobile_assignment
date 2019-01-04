@@ -42,7 +42,9 @@ class MyRepository extends ViewModel {
 
 
 
-    public LiveData<List<PicinfoData>> getall(){return mDBDao.getall();}
+    public LiveData<List<PicinfoData>> getall(){
+        return mDBDao.getall();
+    }
 
 
 
@@ -56,60 +58,75 @@ class MyRepository extends ViewModel {
         new updateDescriptionAsyncTask(mDBDao).execute(description,datetime);
     }
 
+    public void getallimagesfromphone(List<PicinfoData> files){
+        for (PicinfoData p:files){
+            p.getPath();
+        }
+
+    }
+
+    /**
+     * MainActivity
+     * 1. 拿到系统相册里的所有图片的地址
+     * 2. for循环地址list
+     * 每次创建一个picinfodata
+     * 3. 每个地址，查询相应title信息
+     * 4. 展示图片，有title显示title， 没有显示文件名
+     * 5. 点击图片，传入相应title， description, latitude...
+     *
+
+     */
+
+    public void updateorinsert(String p){
+        String title= "default";
+        String description= "default";
+        String path= p;
+        String datetime= "a";
+        Float latitude= 40f;
+        Float longitude= 20f;
+        String latitude_Ref= "N";
+        String longitude_Ref = "W";
+        String Latitude = "N";
+        String Longitude = "W";
 
 
-    public void onPhotosReturned(List<File> files){
-        for (File file:files
-             ) {
-            String filePath =file.getPath();
-            Bitmap bitmap = BitmapFactory.decodeFile(filePath);
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-            byte[] byteArray = stream.toByteArray();
-            bitmap.recycle();
-            String time = "default";
-            String Latitude = "0";
-            String Longitude = "0";
-            String title = "default title";
-            String description = "default description";
-            String latitude_Ref = "N";
-            String longitude_Ref = "E";
-            Float latitude =0.0f, longitude=0.0f;
-            try {
-                ExifInterface exifInterface = new ExifInterface(filePath);
-                Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
+        ExifInterface exifInterface = null;
+        try {
+            exifInterface = new ExifInterface(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
                 latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
                 Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
                 longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
-                time = exifInterface.getAttribute(ExifInterface.TAG_DATETIME);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                datetime = exifInterface.getAttribute(ExifInterface.TAG_DATETIME);
+
             if((Latitude !=null)
                     && (latitude_Ref !=null)
                     && (Longitude != null)
-                    && (longitude_Ref !=null))
-            {
+                    && (longitude_Ref !=null)) {
 
-                if(latitude_Ref.equals("N")){
+                if (latitude_Ref.equals("N")) {
                     latitude = convertToDegree(Latitude);
-                }
-                else{
+                } else {
                     latitude = 0 - convertToDegree(Latitude);
                 }
 
-                if(longitude_Ref.equals("E")){
+                if (longitude_Ref.equals("E")) {
                     longitude = convertToDegree(Longitude);
-                }
-                else{
+                } else {
                     longitude = 0 - convertToDegree(Longitude);
                 }
-
             }
-            new insertAsyncTask(mDBDao).execute(new PicinfoData(title, description, byteArray, time, latitude, longitude));
+            if (datetime == null){
+                datetime = "" + System.currentTimeMillis() / 1000;
+            }
+            new updateTitleAsyncTask(mDBDao).execute(title,datetime);
+            new updateDescriptionAsyncTask(mDBDao).execute(description,datetime);
 
-        }
-    }
+            new insertAsyncTask(mDBDao).execute(new PicinfoData(title, description, path, datetime, latitude, longitude)); }
+
 
     private Float convertToDegree(String stringDMS){
         Float result = null;
@@ -150,7 +167,7 @@ class MyRepository extends ViewModel {
         protected Void doInBackground(final PicinfoData... params) {
                 if (!mAsyncTaskDao.checkexits(params[0].getDatetime())) {
                     mAsyncTaskDao.insert(params[0]);
-                    Log.i("MyRepository", "number generated: " + "" + params[0].getTitle() + " " + params[0].getDescription() + " " + params[0].getImage()+ " "+params[0].getLatitude()+" "+ params[0].getLongitude());
+                    Log.i("MyRepository", "number generated: " + "" + params[0].getTitle() + " " + params[0].getDescription() + " " + params[0].getDatetime()+params[0].getPath()+ " "+params[0].getLatitude()+" "+ params[0].getLongitude());
                 }
 
             return null;
@@ -162,7 +179,8 @@ class MyRepository extends ViewModel {
         updateTitleAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
         @Override
         protected Void doInBackground(String... strings) {
-            mAsyncTaskDao.updatetitle(strings[0],strings[1]);
+            if (mAsyncTaskDao.checkexits(strings[1]))
+            {mAsyncTaskDao.updatetitle(strings[0],strings[1]);}
             return null;
         }
     }
@@ -172,9 +190,60 @@ class MyRepository extends ViewModel {
         updateDescriptionAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
         @Override
         protected Void doInBackground(String... strings) {
-            mAsyncTaskDao.updatedescription(strings[0],strings[1]);
+            if (mAsyncTaskDao.checkexits(strings[1])){
+            mAsyncTaskDao.updatedescription(strings[0],strings[1]);}
             return null;
         }
     }
 
 }
+//        for (File file:files
+//                ) {
+//                String filePath =file.getPath();
+//                Bitmap bitmap = BitmapFactory.decodeFile(filePath);
+//                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+//                byte[] byteArray = stream.toByteArray();
+//                bitmap.recycle();
+//                String time = "default";
+//                String Latitude = "0";
+//                String Longitude = "0";
+//                String title = "default title";
+//                String description = "default description";
+//                String latitude_Ref = "N";
+//                String longitude_Ref = "E";
+//                Float latitude =0.0f, longitude=0.0f;
+//                try {
+//                ExifInterface exifInterface = new ExifInterface(filePath);
+//                Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
+//                latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
+//                Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
+//                longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
+//                time = exifInterface.getAttribute(ExifInterface.TAG_DATETIME);
+//                } catch (IOException e) {
+//                e.printStackTrace();
+//                }
+//                if((Latitude !=null)
+//                && (latitude_Ref !=null)
+//                && (Longitude != null)
+//                && (longitude_Ref !=null))
+//                {
+//
+//                if(latitude_Ref.equals("N")){
+//                latitude = convertToDegree(Latitude);
+//                }
+//                else{
+//                latitude = 0 - convertToDegree(Latitude);
+//                }
+//
+//                if(longitude_Ref.equals("E")){
+//                longitude = convertToDegree(Longitude);
+//                }
+//                else{
+//                longitude = 0 - convertToDegree(Longitude);
+//                }
+//
+//                }
+////            new insertAsyncTask(mDBDao).execute(new PicinfoData(title, description, byteArray, time, latitude, longitude));
+//
+//                }

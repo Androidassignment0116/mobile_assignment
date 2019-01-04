@@ -47,9 +47,13 @@ public class MyViewModel extends AndroidViewModel {
     /**
      * request by the UI to generate a new random number
      */
+    public void updateorinsert(String p){
+        mRepository.updateorinsert(p);
+    }
 
-    public void sortpic(List<File> files){
-        mRepository.onPhotosReturned(files);
+
+    public void showallpic(List<PicinfoData> files){
+        mRepository.getallimagesfromphone(files);
     }
     public void updatenewTitle(String title, String datetime)
     {

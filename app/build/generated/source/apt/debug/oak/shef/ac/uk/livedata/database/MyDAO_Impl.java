@@ -34,7 +34,7 @@ public class MyDAO_Impl implements MyDAO {
     this.__insertionAdapterOfPicinfoData = new EntityInsertionAdapter<PicinfoData>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`title`,`description`,`datetime`,`latitude`,`longitude`,`image`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `picinfo_database`(`id`,`title`,`description`,`datetime`,`latitude`,`longitude`,`path`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
@@ -65,10 +65,10 @@ public class MyDAO_Impl implements MyDAO {
         } else {
           stmt.bindDouble(6, value.getLongitude());
         }
-        if (value.getImage() == null) {
+        if (value.getPath() == null) {
           stmt.bindNull(7);
         } else {
-          stmt.bindBlob(7, value.getImage());
+          stmt.bindString(7, value.getPath());
         }
       }
     };
@@ -194,14 +194,14 @@ public class MyDAO_Impl implements MyDAO {
   }
 
   @Override
-  public LiveData<List<byte[]>> getallimage() {
-    final String _sql = "SELECT image FROM picinfo_database";
+  public LiveData<List<String>> getallimage() {
+    final String _sql = "SELECT path FROM picinfo_database";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    return new ComputableLiveData<List<byte[]>>() {
+    return new ComputableLiveData<List<String>>() {
       private Observer _observer;
 
       @Override
-      protected List<byte[]> compute() {
+      protected List<String> compute() {
         if (_observer == null) {
           _observer = new Observer("picinfo_database") {
             @Override
@@ -213,10 +213,10 @@ public class MyDAO_Impl implements MyDAO {
         }
         final Cursor _cursor = __db.query(_statement);
         try {
-          final List<byte[]> _result = new ArrayList<byte[]>(_cursor.getCount());
+          final List<String> _result = new ArrayList<String>(_cursor.getCount());
           while(_cursor.moveToNext()) {
-            final byte[] _item;
-            _item = _cursor.getBlob(0);
+            final String _item;
+            _item = _cursor.getString(0);
             _result.add(_item);
           }
           return _result;
@@ -258,7 +258,7 @@ public class MyDAO_Impl implements MyDAO {
           final int _cursorIndexOfDatetime = _cursor.getColumnIndexOrThrow("datetime");
           final int _cursorIndexOfLatitude = _cursor.getColumnIndexOrThrow("latitude");
           final int _cursorIndexOfLongitude = _cursor.getColumnIndexOrThrow("longitude");
-          final int _cursorIndexOfImage = _cursor.getColumnIndexOrThrow("image");
+          final int _cursorIndexOfPath = _cursor.getColumnIndexOrThrow("path");
           final List<PicinfoData> _result = new ArrayList<PicinfoData>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final PicinfoData _item;
@@ -280,9 +280,9 @@ public class MyDAO_Impl implements MyDAO {
             } else {
               _tmpLongitude = _cursor.getFloat(_cursorIndexOfLongitude);
             }
-            final byte[] _tmpImage;
-            _tmpImage = _cursor.getBlob(_cursorIndexOfImage);
-            _item = new PicinfoData(_tmpTitle,_tmpDescription,_tmpImage,_tmpDatetime,_tmpLatitude,_tmpLongitude);
+            final String _tmpPath;
+            _tmpPath = _cursor.getString(_cursorIndexOfPath);
+            _item = new PicinfoData(_tmpTitle,_tmpDescription,_tmpPath,_tmpDatetime,_tmpLatitude,_tmpLongitude);
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             _item.setId(_tmpId);
@@ -331,6 +331,33 @@ public class MyDAO_Impl implements MyDAO {
         final String _item;
         _item = _cursor.getString(0);
         _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public boolean checkexitspath(String path) {
+    final String _sql = "SELECT * FROM picinfo_database WHERE path = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (path == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, path);
+    }
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final boolean _result;
+      if(_cursor.moveToFirst()) {
+        final int _tmp;
+        _tmp = _cursor.getInt(0);
+        _result = _tmp != 0;
+      } else {
+        _result = false;
       }
       return _result;
     } finally {

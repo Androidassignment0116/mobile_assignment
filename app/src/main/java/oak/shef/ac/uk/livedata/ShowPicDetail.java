@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.ExifInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 import oak.shef.ac.uk.livedata.database.PicinfoData;
 
@@ -27,6 +29,12 @@ public class ShowPicDetail extends AppCompatActivity {
     MyImageView imageViewmap;
     ImageView imageView;
     Button mButtonEdit;
+    String Latitude = "0";
+    String Longitude = "0";
+    String latitude_Ref = "N";
+    String longitude_Ref = "E";
+    Float latitude =0.0f, longitude=0.0f;
+    String time ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,29 +55,64 @@ public class ShowPicDetail extends AppCompatActivity {
                 mButtonEdit = findViewById(R.id.edit);
 
 
-                byte[] temp = PicAdapter.getItems().get(pos).getImage();
-                Bitmap b = BitmapFactory.decodeByteArray(temp , 0, temp.length);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                b.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byteArray = stream.toByteArray();
+                final String temp = PicAdapter.getItems().get(pos).getPath();
+                Bitmap b = BitmapFactory.decodeFile(temp);
                 if (b != null) {
                     imageView.setImageBitmap(b);
-                    textTittle.setText("Title:" + PicAdapter.getItems().get(pos).getTitle());
-                    textDescription.setText("Description: "+ PicAdapter.getItems().get(pos).getDescription());
-                    textDate.setText(PicAdapter.getItems().get(pos).getDatetime());
+                    textTittle.setText(PicAdapter.getItems().get(pos).getTitle());
+                    textDescription.setText(PicAdapter.getItems().get(pos).getDescription());
+                    time = PicAdapter.getItems().get(pos).getDatetime();
+
+                    ExifInterface exifInterface = null;
+                    try {
+                        exifInterface = new ExifInterface(temp);
+                        Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
+                        latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
+                        Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
+                        longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    textDate.setText(time);
+
+                    if((Latitude !=null)
+                            && (latitude_Ref !=null)
+                            && (Longitude != null)
+                            && (longitude_Ref !=null))
+                    {
+
+                        if(latitude_Ref.equals("N")){
+                            latitude = convertToDegree(Latitude);
+                        }
+                        else{
+                            latitude = 0 - convertToDegree(Latitude);
+                        }
+
+                        if(longitude_Ref.equals("E")){
+                            longitude = convertToDegree(Longitude);
+                        }
+                        else{
+                            longitude = 0 - convertToDegree(Longitude);
+                        }
+
+                    }
+
                     mButtonEdit.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(ShowPicDetail.this,Edit.class);
                             intent.putExtra("Title",textTittle.getText().toString());
                             intent.putExtra("Description",textDescription.getText().toString());
-                            intent.putExtra("datetime", textDate.getText().toString());
+                            intent.putExtra("datetime", time);
+                            intent.putExtra("picpath",temp);
+                            intent.putExtra("latitude", latitude);
+                            intent.putExtra("longitude",longitude);
                             startActivity(intent);
                         }
                     });
                 }
 
-                String path = "https://maps.googleapis.com/maps/api/staticmap?markers="+PicAdapter.getItems().get(pos).getLatitude()+","+PicAdapter.getItems().get(pos).getLongitude()+"&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";
+                String path = "https://maps.googleapis.com/maps/api/staticmap?markers="+latitude+","+longitude+"&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";
                 imageViewmap.setImageURL(path);
                 Log.i("url","URL: "+path);
 
@@ -80,4 +123,29 @@ public class ShowPicDetail extends AppCompatActivity {
 
 
     }
+    private Float convertToDegree(String stringDMS){
+        Float result = null;
+        String[] DMS = stringDMS.split(",", 3);
+
+        String[] stringD = DMS[0].split("/", 2);
+        Double D0 = new Double(stringD[0]);
+        Double D1 = new Double(stringD[1]);
+        Double FloatD = D0/D1;
+
+        String[] stringM = DMS[1].split("/", 2);
+        Double M0 = new Double(stringM[0]);
+        Double M1 = new Double(stringM[1]);
+        Double FloatM = M0/M1;
+
+        String[] stringS = DMS[2].split("/", 2);
+        Double S0 = new Double(stringS[0]);
+        Double S1 = new Double(stringS[1]);
+        Double FloatS = S0/S1;
+
+        result = new Float(FloatD + (FloatM/60) + (FloatS/3600));
+
+        return result;
+
+
+    };
 }

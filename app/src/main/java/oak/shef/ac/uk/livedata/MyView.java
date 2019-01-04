@@ -14,8 +14,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -55,23 +57,23 @@ import java.util.Locale;
 import oak.shef.ac.uk.livedata.database.PicinfoData;
 import pl.aprilapps.easyphotopicker.DefaultCallback;
 import pl.aprilapps.easyphotopicker.EasyImage;
+import pl.aprilapps.easyphotopicker.EasyImageConfiguration;
 
 public class MyView extends AppCompatActivity {
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2987;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 7829;
-    private static final int REQUEST_CODE_TAKE_PICTURE = 33;
     private MyViewModel myViewModel;
     private Activity activity;
     private PicAdapter PicAdapterview;
-    Uri photoURI;
 
-    static final int REQUEST_IMAGE_CAPTURE = 1;
+
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
 
 
 
@@ -82,6 +84,8 @@ public class MyView extends AppCompatActivity {
         PicAdapterview = new PicAdapter();
         recyclerView.setAdapter(PicAdapterview);
 
+
+
         activity= this;
 
         myViewModel = ViewModelProviders.of(this).get(MyViewModel.class);
@@ -89,13 +93,24 @@ public class MyView extends AppCompatActivity {
         myViewModel.getallData().observe(this, new Observer<List<PicinfoData>>() {
             @Override
             public void onChanged(@Nullable List<PicinfoData> picinfoData) {
+//                List<PicinfoData> newList = getallimagesFromPhone();
+//                newList.addAll(picinfoData);
+//                if (picinfoData.size()==0)
+//                {
+//                    PicAdapterview.setBitmaps(getallimagesFromPhone());
+//                }
+//                else
+
                 PicAdapterview.setBitmaps(picinfoData);
             }
         });
 
 
 
+
+
         checkPermissions(getApplicationContext());
+
         initEasyImage();
 
 
@@ -104,16 +119,6 @@ public class MyView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 EasyImage.openCamera(getActivity(), 0);
-//                Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-////                openCameraIntent.addCategory(Intent.CATEGORY_DEFAULT);
-//                SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
-//                Date date = new Date(System.currentTimeMillis());
-//                String fileName = format.format(date);
-//                File photeFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fileName +".jpg");
-//                Uri photeUri = Uri.fromFile(photeFile);
-//                openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, photeUri);
-//                startActivityForResult(openCameraIntent, REQUEST_CODE_TAKE_PICTURE);
-//                dispatchTakePictureIntent();
 
             }
         });
@@ -137,12 +142,23 @@ public class MyView extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+//        PackageManager.Per
+    }
+
     private void initEasyImage() {
-        EasyImage.configuration(this)
-                .setImagesFolderName("EasyImage sample")
+        EasyImageConfiguration c = EasyImage.configuration(this)
+                .setImagesFolderName("EasyImageSample")
                 .setCopyTakenPhotosToPublicGalleryAppFolder(true)
-                .setCopyPickedImagesToPublicGalleryAppFolder(false)
+                .setCopyPickedImagesToPublicGalleryAppFolder(true)
                 .setAllowMultiplePickInGallery(true);
+
+        ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+//        System.out.println(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES,
     }
 
     private void checkPermissions(final Context context) {
@@ -198,18 +214,9 @@ public class MyView extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-//        if (requestCode == REQUEST_IMAGE_CAPTURE  && resultCode == RESULT_OK) {
-//            //Bundle extras = data.getExtras();
-//            //Bitmap imageBitmap = (Bitmap) extras.get("data");
-//            //mImageView.setImageBitmap(imageBitmap);
-//            Log.i("yao cunle ","yaocunle "+"yaocunle");
-//            galleryAddPic();
-//        }
-
-//        photoURI = data.getData();
 
         EasyImage.handleActivityResult(requestCode, resultCode, data, this, new DefaultCallback() {
-//            Intent d = data;
+
             @Override
             public void onImagePickerError(Exception e, EasyImage.ImageSource source, int type) {
                 //Some error handling
@@ -218,19 +225,29 @@ public class MyView extends AppCompatActivity {
 
             @Override
             public void onImagesPicked(List<File> imageFiles, EasyImage.ImageSource source, int type) {
-//                if(source ==EasyImage.ImageSource.CAMERA){
-//                    for (File f:imageFiles){
-//                        try {
-//                            File temp = createImageFile();
-//                            temp = f;
-//                        } catch (IOException e) {
-//                            e.printStackTrace();
-//                        }
-//
-//                    }
-//                }
-//                else
-                     myViewModel.sortpic(imageFiles);
+
+//                myViewModel.sortpic(imageFiles);
+                for(File f: imageFiles){
+                    String p = f.getPath();
+//                    String title = f.getName();
+//                    String description = f.getName();
+//                    String time = "" + System.currentTimeMillis() / 1000;
+//                    Float latitude = 40f;
+//                    Float longitude = 3f;
+//                    List info = new ArrayList();
+//                    info.add(title);
+//                    info.add(description);
+//                    info.add(p);
+//                    info.add(time);
+//                    info.add(latitude);
+//                    info.add(longitude);
+                    myViewModel.updateorinsert(p);
+
+
+                }
+
+
+
             }
 
             @Override
@@ -247,57 +264,62 @@ public class MyView extends AppCompatActivity {
     public Activity getActivity() {
         return activity;
     }
-//    String mCurrentPhotoPath;
-//
-    private File createImageFile() throws IOException {
-        // Create an image file name
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String imageFileName = "JPEG_" + timeStamp + "_";
-//        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-        File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
-        File image = File.createTempFile(
-                imageFileName,  /* prefix */
-                ".jpg",         /* suffix */
-                storageDir      /* directory */
-        );
 
-        // Save a file: path for use with ACTION_VIEW intents
-        photoURI = Uri.fromFile(image);
-        return image;
-    }
-//
-//    static final int REQUEST_TAKE_PHOTO = 1;
-//
-//    private void dispatchTakePictureIntent() {
-//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//        // Ensure that there's a camera activity to handle the intent
-//        if (takePictureIntent != null) {
-//
-//
-//
+//private ArrayList<PicinfoData> getallimagesFromPhone() {
+//    ArrayList<PicinfoData> files = new ArrayList<>();
+//    Uri uri = MediaStore.Images.Media.getContentUri("external");
+//    if (uri != null) {
+//        String[] projection = new String[]{MediaStore.Files.FileColumns._ID, // id
+//                MediaStore.Files.FileColumns.DATA, // 文件路径
+//                MediaStore.Files.FileColumns.SIZE, // 文件大小
+//                MediaStore.Files.FileColumns.DATE_MODIFIED}; // 修改日期
+//        Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
+//        if (cursor != null) {
 //            try {
-//                File photoFile = createImageFile();
+//                if (cursor.moveToFirst()) {
+//                    final int pathIdx = cursor
+//                            .getColumnIndex(MediaStore.Files.FileColumns.DATA);
+//                    do {
+//                        String path = cursor.getString(pathIdx);
 //
-//                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
-//                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+//                        System.out.println(path);
+//                        File f = new File("");
+//                        PicinfoData file = new PicinfoData(MediaStore.Files.FileColumns.TITLE,"default description", path, "0",40.0f,3.0f);
 //
-//            } catch (IOException e) {
+//                        files.add(file);
+//                    } while (cursor.moveToNext());
+//                }
+//            } catch (Exception e) {
 //                e.printStackTrace();
+//            } finally {
+//                cursor.close();
 //            }
-//
-//
-//
 //        }
 //    }
-//
-//
-//    private void galleryAddPic() {
-//        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-//        File f = new File(mCurrentPhotoPath);
-//        Uri contentUri = Uri.fromFile(f);
-//        mediaScanIntent.setData(contentUri);
-//        this.sendBroadcast(mediaScanIntent);
-//    }
+//    return files;
+//}
+
+    public  void setExif (String filepath,String longitude,String latitude,String time){
+
+         ExifInterface exif = null;
+        try{
+            exif = new ExifInterface(filepath);     //根据图片的路径获取图片的Exif
+        }catch (IOException ex){
+            Log.e("Mine","cannot read exif",ex);
+        }
+        exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE,longitude);    //把经度写进exif
+        exif.setAttribute(ExifInterface.TAG_GPS_LATITUDE, latitude);     //把纬度写进exif
+        exif.setAttribute(ExifInterface.TAG_DATETIME,time);              //把时间写进exif
+        exif.setAttribute(ExifInterface.TAG_MAKE,longitude);             //把经度写进MAKE 设备的制造商，当然这样也是可以的，大家都是Stirng类型
+        exif.setAttribute(ExifInterface.TAG_MODEL,latitude);             //把纬度写进MODEL
+        try{
+            exif.saveAttributes();         //最后保存起来
+        }catch (IOException e){
+            Log.e("Mine","cannot save exif",e);
+        }
+    }
+
+
 
 }
 

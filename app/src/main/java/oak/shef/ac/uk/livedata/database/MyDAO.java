@@ -26,8 +26,8 @@ public interface MyDAO {
     void delete(PicinfoData picinfoData);
 
 
-    @Query("SELECT image FROM picinfo_database")
-    LiveData<List<byte[]>> getallimage();
+    @Query("SELECT path FROM picinfo_database")
+    LiveData<List<String>> getallimage();
 
     @Query("SELECT * FROM picinfo_database")
     LiveData<List<PicinfoData>> getall();
@@ -40,6 +40,10 @@ public interface MyDAO {
 
     @Query("SELECT datetime FROM picinfo_database")
     List<String> getalldatetime();
+
+    @Query("SELECT * FROM picinfo_database WHERE path = :path")
+    boolean checkexitspath(String path);
+
 
     @Query("SELECT * FROM picinfo_database WHERE datetime = :datetime")
     boolean checkexits(String datetime);
