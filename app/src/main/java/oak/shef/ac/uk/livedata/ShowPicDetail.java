@@ -35,9 +35,11 @@ public class ShowPicDetail extends AppCompatActivity {
     String longitude_Ref = "E";
     Float latitude =0.0f, longitude=0.0f;
     String time ;
+    Button mButtonDelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        myViewModeldetail = ViewModelProviders.of(this).get(MyViewModel.class);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_pic);
 
@@ -53,6 +55,7 @@ public class ShowPicDetail extends AppCompatActivity {
                 textDescription = findViewById(R.id.description);
                 textDate = findViewById(R.id.date);
                 mButtonEdit = findViewById(R.id.edit);
+                mButtonDelete = findViewById(R.id.delete);
 
 
                 final String temp = PicAdapter.getItems().get(pos).getPath();
@@ -62,40 +65,11 @@ public class ShowPicDetail extends AppCompatActivity {
                     textTittle.setText(PicAdapter.getItems().get(pos).getTitle());
                     textDescription.setText(PicAdapter.getItems().get(pos).getDescription());
                     time = PicAdapter.getItems().get(pos).getDatetime();
+                    longitude = PicAdapter.getItems().get(pos).getLongitude();
+                    latitude = PicAdapter.getItems().get(pos).getLatitude();
 
-                    ExifInterface exifInterface = null;
-                    try {
-                        exifInterface = new ExifInterface(temp);
-                        Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
-                        latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
-                        Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
-                        longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     textDate.setText(time);
 
-                    if((Latitude !=null)
-                            && (latitude_Ref !=null)
-                            && (Longitude != null)
-                            && (longitude_Ref !=null))
-                    {
-
-                        if(latitude_Ref.equals("N")){
-                            latitude = convertToDegree(Latitude);
-                        }
-                        else{
-                            latitude = 0 - convertToDegree(Latitude);
-                        }
-
-                        if(longitude_Ref.equals("E")){
-                            longitude = convertToDegree(Longitude);
-                        }
-                        else{
-                            longitude = 0 - convertToDegree(Longitude);
-                        }
-
-                    }
 
                     mButtonEdit.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -107,6 +81,15 @@ public class ShowPicDetail extends AppCompatActivity {
                             intent.putExtra("picpath",temp);
                             intent.putExtra("latitude", latitude);
                             intent.putExtra("longitude",longitude);
+                            startActivity(intent);
+                        }
+                    });
+                    final int finalPos = pos;
+                    mButtonDelete.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(ShowPicDetail.this, MyView.class);
+                            myViewModeldetail.deletePic(PicAdapter.getItems().get(finalPos));
                             startActivity(intent);
                         }
                     });

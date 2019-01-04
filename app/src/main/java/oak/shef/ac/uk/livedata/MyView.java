@@ -225,26 +225,12 @@ public class MyView extends AppCompatActivity {
 
             @Override
             public void onImagesPicked(List<File> imageFiles, EasyImage.ImageSource source, int type) {
+//                if (source == EasyImage.ImageSource.CAMERA)
+                    for (File f : imageFiles) {
 
-//                myViewModel.sortpic(imageFiles);
-                for(File f: imageFiles){
-                    String p = f.getPath();
-//                    String title = f.getName();
-//                    String description = f.getName();
-//                    String time = "" + System.currentTimeMillis() / 1000;
-//                    Float latitude = 40f;
-//                    Float longitude = 3f;
-//                    List info = new ArrayList();
-//                    info.add(title);
-//                    info.add(description);
-//                    info.add(p);
-//                    info.add(time);
-//                    info.add(latitude);
-//                    info.add(longitude);
-                    myViewModel.updateorinsert(p);
-
-
-                }
+                        String p = f.getPath();
+                        myViewModel.updateorinsert(p);
+                    }
 
 
 

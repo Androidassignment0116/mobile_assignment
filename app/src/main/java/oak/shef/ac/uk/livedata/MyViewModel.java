@@ -50,7 +50,9 @@ public class MyViewModel extends AndroidViewModel {
     public void updateorinsert(String p){
         mRepository.updateorinsert(p);
     }
-
+    public void deletePic(PicinfoData picinfoData){
+        mRepository.deletePicData(picinfoData);
+    }
 
     public void showallpic(List<PicinfoData> files){
         mRepository.getallimagesfromphone(files);

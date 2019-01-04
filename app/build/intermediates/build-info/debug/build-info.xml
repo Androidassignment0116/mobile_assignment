@@ -2,34 +2,34 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="560dpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1546629089141"
+    timestamp="1546632659208"
     token="-6055667223617506685"
-    verifier="COMPATIBLE" >
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="2120" />
+        duration="2063" />
     <task
         name="instant-run-dex"
-        duration="12" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="30" />
     <task
         name="verifier"
-        duration="3" />
+        duration="14" />
 
     <artifact
-        location="G:\aa\mobile_assignment\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1546624560251"
+        timestamp="1546630255614"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -73,72 +73,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1546625485119"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1546628631265"
-        verifier="SYNTHETIC_CONSTRUCTOR_CHANGE" >
+        timestamp="1546632659208"
+        verifier="CLASS_ADDED" >
         <artifact
             location="G:\aa\mobile_assignment\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1546628704043"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546628704043\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1546628857082"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546628857082\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1546628922472"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\builds\debug\1546628922472\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1546629089141"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\aa\mobile_assignment\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

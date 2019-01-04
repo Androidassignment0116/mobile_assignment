@@ -22,7 +22,9 @@ import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -76,6 +78,10 @@ class MyRepository extends ViewModel {
      *
 
      */
+    public void deletePicData(PicinfoData picinfoData){
+        new  deleteAsyncTask(mDBDao).execute(picinfoData);
+
+    }
 
     public void updateorinsert(String p){
         String title= "default";
@@ -120,7 +126,10 @@ class MyRepository extends ViewModel {
                 }
             }
             if (datetime == null){
-                datetime = "" + System.currentTimeMillis() / 1000;
+                long time = System.currentTimeMillis();
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy:MM:dd HH:mm:ss");
+                Date resultdate = new Date(time);
+                datetime = sdf.format(resultdate);
             }
             new updateTitleAsyncTask(mDBDao).execute(title,datetime);
             new updateDescriptionAsyncTask(mDBDao).execute(description,datetime);
@@ -192,6 +201,19 @@ class MyRepository extends ViewModel {
         protected Void doInBackground(String... strings) {
             if (mAsyncTaskDao.checkexits(strings[1])){
             mAsyncTaskDao.updatedescription(strings[0],strings[1]);}
+            return null;
+        }
+    }
+
+    private static class deleteAsyncTask extends AsyncTask<PicinfoData, Void, Void>{
+
+        private MyDAO mAsyncTaskDao;
+        deleteAsyncTask(MyDAO dao) {
+            mAsyncTaskDao = dao;
+        }
+        @Override
+        protected Void doInBackground(PicinfoData... picinfoData) {
+            mAsyncTaskDao.delete(picinfoData[0]);
             return null;
         }
     }
