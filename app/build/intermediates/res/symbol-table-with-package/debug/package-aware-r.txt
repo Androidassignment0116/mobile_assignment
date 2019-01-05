@@ -1,4 +1,4 @@
-oak.shef.ac.uk.cgxassignment
+myapplication.uk.ac.shef.oak.myapplication
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1385,6 +1385,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_maps
 layout activity_search_results
+layout activity_show_pic_detail_search
 layout content_camera
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ~ Copyright (c) 2018. This code has been developed by Fabio Ciravegna, The University of Sheffield. All rights reserved. No part of this code can be used without the explicit written permission by the author -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="oak.shef.ac.uk.cgxassignment">
+    package="uk.ac.shef.oak.com6510">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -20,25 +24,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="oak.shef.ac.uk.cgxassignment.MyView">
+        <activity android:name=".MyView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="oak.shef.ac.uk.cgxassignment.ShowPicDetail" />
+        <activity android:name=".ShowPicDetail" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="oak.shef.ac.uk.cgxassignment.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.Edit" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.Search" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.SearchResults"></activity>
+        <activity android:name=".Edit" />
+        <activity android:name=".Search" />
+        <activity android:name=".SearchResults" />
+        <activity android:name=".ShowPicDetailSearch"></activity>
     </application>
 
 </manifest>

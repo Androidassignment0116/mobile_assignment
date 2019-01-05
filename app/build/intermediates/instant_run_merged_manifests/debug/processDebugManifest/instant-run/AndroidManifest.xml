@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ~ Copyright (c) 2018. This code has been developed by Fabio Ciravegna, The University of Sheffield. All rights reserved. No part of this code can be used without the explicit written permission by the author -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="oak.shef.ac.uk.cgxassignment"
+    package="myapplication.uk.ac.shef.oak.myapplication"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,6 +9,10 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -38,29 +42,30 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="oak.shef.ac.uk.cgxassignment.MyView" >
+        <activity android:name="uk.ac.shef.oak.com6510.MyView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="oak.shef.ac.uk.cgxassignment.ShowPicDetail" />
+        <activity android:name="uk.ac.shef.oak.com6510.ShowPicDetail" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="oak.shef.ac.uk.cgxassignment.MapsActivity"
+            android:name="uk.ac.shef.oak.com6510.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.Edit" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.Search" />
-        <activity android:name="oak.shef.ac.uk.cgxassignment.SearchResults" />
+        <activity android:name="uk.ac.shef.oak.com6510.Edit" />
+        <activity android:name="uk.ac.shef.oak.com6510.Search" />
+        <activity android:name="uk.ac.shef.oak.com6510.SearchResults" />
+        <activity android:name="uk.ac.shef.oak.com6510.ShowPicDetailSearch" />
 
         <provider
             android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider"
-            android:authorities="oak.shef.ac.uk.cgxassignment.easyphotopicker.fileprovider"
+            android:authorities="myapplication.uk.ac.shef.oak.myapplication.easyphotopicker.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -69,7 +74,7 @@
         </provider>
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="oak.shef.ac.uk.cgxassignment.lifecycle-trojan"
+            android:authorities="myapplication.uk.ac.shef.oak.myapplication.lifecycle-trojan"
             android:exported="false"
             android:multiprocess="true" />
 
@@ -87,7 +92,7 @@
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="oak.shef.ac.uk.cgxassignment.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="myapplication.uk.ac.shef.oak.myapplication.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\77149771da1ed4140d4a228e3449851d\AndroidManifest.xml:17:1-22:12
@@ -12,10 +12,12 @@ MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\hasee\.g
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\f62a0082704038b6f1a1cc82f6a20503\AndroidManifest.xml:17:1-30:12
 MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\rxjava2-1.0.0.aar\de509b42f2c3f77638cee033f24e087b\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\23efa87270be45ddf0aca964f98757d9\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\b42976dd3d6ab58a2fd7311992dcb42f\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:transition:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\3e61573c0cb7bc5d2e2dbf80e2aeb53d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\e0bab2565b30a2e2720fed853d2395f0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\87700054d8e3af02735f5a29a0221b70\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\3c3d53bfc7a0386e910eaa3cdb54a0c0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\76a30b03e1d0354f4eda41a29d777bdd\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\6fd2e4e8decffaaf1cc0a67df76b65e4\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f99fa20b36448e7f989cdd0a39be70c4\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\24aa54a95249359d68aee7aaa6bad888\AndroidManifest.xml:17:1-31:12
@@ -48,41 +50,45 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\hasee\.g
 MERGED from [com.android.support:print:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\ca045a537080c7d1eaf0bc05e02f4f59\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\47f24adc9af88c79641aa419cab68f07\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\timber-4.4.0.aar\1c8c39117c585af13db5cf07d571d0a4\AndroidManifest.xml:2:1-10:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:3:5-43
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:5:5-80
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:5:22-77
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:5-81
-	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:6:22-78
-uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:7:5-89
-	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:7:22-86
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:14:5-79
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:14:22-76
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:11:5-89
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:11:22-86
 application
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:16:5-42:19
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:5-47:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\ecef2f5b79b78b47a5f1e45e6753c3d7\AndroidManifest.xml:11:5-21:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\94a782b5d44cc78537a688e50d27ccb7\AndroidManifest.xml:22:5-20
@@ -93,8 +99,12 @@ MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\hasee\.g
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\a8687a4b396e1fcbeb3befb456de5060\AndroidManifest.xml:30:5-20
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\f62a0082704038b6f1a1cc82f6a20503\AndroidManifest.xml:22:5-28:19
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\f62a0082704038b6f1a1cc82f6a20503\AndroidManifest.xml:22:5-28:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\b42976dd3d6ab58a2fd7311992dcb42f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\b42976dd3d6ab58a2fd7311992dcb42f\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\3c3d53bfc7a0386e910eaa3cdb54a0c0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\3c3d53bfc7a0386e910eaa3cdb54a0c0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\76a30b03e1d0354f4eda41a29d777bdd\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\76a30b03e1d0354f4eda41a29d777bdd\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\6fd2e4e8decffaaf1cc0a67df76b65e4\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\6fd2e4e8decffaaf1cc0a67df76b65e4\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f99fa20b36448e7f989cdd0a39be70c4\AndroidManifest.xml:22:5-26:19
@@ -112,59 +122,63 @@ MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\hasee\.gradle\caches\
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a96412b8364e24c0cb9a4c8108bc2820\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:25:9-35
 	android:label
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:9-41
 	android:roundIcon
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:24:9-54
 	android:icon
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:22:9-40
-activity#oak.shef.ac.uk.cgxassignment.MyView
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:9-29:20
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:26:9-40
+activity#uk.ac.shef.oak.com6510.MyView
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:23:19-69
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:27:19-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:27:27-74
-activity#oak.shef.ac.uk.cgxassignment.ShowPicDetail
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:30:9-79
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:31:27-74
+activity#uk.ac.shef.oak.com6510.ShowPicDetail
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:34:9-51
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:30:19-76
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:34:19-48
 meta-data#com.google.android.geo.API_KEY
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:32:9-34:55
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:36:9-38:55
 	android:value
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:34:13-52
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:38:13-52
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:33:13-58
-activity#oak.shef.ac.uk.cgxassignment.MapsActivity
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:36:9-38:59
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:37:13-58
+activity#uk.ac.shef.oak.com6510.MapsActivity
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:40:9-42:59
 	android:label
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:37:13-69
-activity#oak.shef.ac.uk.cgxassignment.Edit
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:39:9-70
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:41:13-41
+activity#uk.ac.shef.oak.com6510.Edit
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:43:9-42
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:39:19-67
-activity#oak.shef.ac.uk.cgxassignment.Search
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:40:9-72
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:43:19-39
+activity#uk.ac.shef.oak.com6510.Search
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:44:9-44
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:40:19-69
-activity#oak.shef.ac.uk.cgxassignment.SearchResults
-ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:41:9-88
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:44:19-41
+activity#uk.ac.shef.oak.com6510.SearchResults
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:9-51
 	android:name
-		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:41:19-76
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:19-48
+activity#uk.ac.shef.oak.com6510.ShowPicDetailSearch
+ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:46:9-66
+	android:name
+		ADDED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml:46:19-54
 uses-sdk
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\aa\mobile_assignment\app\src\main\AndroidManifest.xml
@@ -185,6 +199,8 @@ MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\hasee\.gradle
 MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\rxjava2-1.0.0.aar\de509b42f2c3f77638cee033f24e087b\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\23efa87270be45ddf0aca964f98757d9\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\23efa87270be45ddf0aca964f98757d9\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\b42976dd3d6ab58a2fd7311992dcb42f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\b42976dd3d6ab58a2fd7311992dcb42f\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:transition:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\3e61573c0cb7bc5d2e2dbf80e2aeb53d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\3e61573c0cb7bc5d2e2dbf80e2aeb53d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\e0bab2565b30a2e2720fed853d2395f0\AndroidManifest.xml:20:5-44
@@ -193,6 +209,8 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\hasee\.gradle\
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\87700054d8e3af02735f5a29a0221b70\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\3c3d53bfc7a0386e910eaa3cdb54a0c0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\3c3d53bfc7a0386e910eaa3cdb54a0c0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\76a30b03e1d0354f4eda41a29d777bdd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\76a30b03e1d0354f4eda41a29d777bdd\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\6fd2e4e8decffaaf1cc0a67df76b65e4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\6fd2e4e8decffaaf1cc0a67df76b65e4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\hasee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f99fa20b36448e7f989cdd0a39be70c4\AndroidManifest.xml:20:5-44

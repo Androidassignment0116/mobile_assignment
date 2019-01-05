@@ -113,7 +113,7 @@
 
     </LinearLayout>
 
-    <oak.shef.ac.uk.cgxassignment.MyImageView
+    <uk.ac.shef.oak.com6510.MyImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"

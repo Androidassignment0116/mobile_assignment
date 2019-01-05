@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="oak.shef.ac.uk.week6.CameraActivity">
+    tools:context="uk.ac.shef.oak.week6.CameraActivity">
 
     <item
         android:id="@+id/app_bar_search"

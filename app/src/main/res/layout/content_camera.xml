@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="oak.shef.ac.uk.cgxassignment.MyView"
+    tools:context="uk.ac.shef.oak.com6510.MyView"
     tools:showIn="@layout/activity_main">
 
     <android.support.v7.widget.RecyclerView
