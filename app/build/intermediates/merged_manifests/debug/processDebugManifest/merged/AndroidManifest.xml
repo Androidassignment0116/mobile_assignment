@@ -38,23 +38,25 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="oak.shef.ac.uk.livedata.MyView" >
+        <activity android:name="oak.shef.ac.uk.cgxassignment.MyView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="oak.shef.ac.uk.livedata.ShowPicDetail" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.ShowPicDetail" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="oak.shef.ac.uk.livedata.MapsActivity"
+            android:name="oak.shef.ac.uk.cgxassignment.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="oak.shef.ac.uk.livedata.Edit" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.Edit" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.Search" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.SearchResults" />
 
         <provider
             android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider"

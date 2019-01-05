@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ~ Copyright (c) 2018. This code has been developed by Fabio Ciravegna, The University of Sheffield. All rights reserved. No part of this code can be used without the explicit written permission by the author -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="oak.shef.ac.uk.livedata">
+    package="oak.shef.ac.uk.cgxassignment">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-
-
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -22,24 +20,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MyView">
+        <activity android:name="oak.shef.ac.uk.cgxassignment.MyView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowPicDetail" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.ShowPicDetail" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="oak.shef.ac.uk.cgxassignment.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Edit"/>
+        <activity android:name="oak.shef.ac.uk.cgxassignment.Edit" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.Search" />
+        <activity android:name="oak.shef.ac.uk.cgxassignment.SearchResults"></activity>
     </application>
 
 </manifest>
