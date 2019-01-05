@@ -81,10 +81,6 @@ public class MyView extends AppCompatActivity {
             return true;
         }
 
-        if (id == R.id.app_bar_camera) {
-            EasyImage.openCamera(getActivity(), 0);
-            return true;
-        }
 
         if (id == R.id.app_bar_gallery) {
             EasyImage.openGallery(getActivity(), 0);
@@ -376,6 +372,10 @@ public class MyView extends AppCompatActivity {
     }
 
 
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mFusedLocationClient.removeLocationUpdates(mLocationCallback);
+    }
 }
 

@@ -1129,7 +1129,6 @@ id adjust_width
 id alertTitle
 id all
 id always
-id app_bar_camera
 id app_bar_gallery
 id app_bar_map
 id app_bar_search
