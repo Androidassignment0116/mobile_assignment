@@ -1314,7 +1314,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1384,7 +1383,6 @@ layout abc_tooltip
 layout activity_main
 layout activity_maps
 layout activity_search_results
-layout activity_show_pic_detail_search
 layout content_camera
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

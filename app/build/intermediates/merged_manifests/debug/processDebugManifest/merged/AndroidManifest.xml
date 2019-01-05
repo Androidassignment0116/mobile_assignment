@@ -49,7 +49,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="uk.ac.shef.oak.com6510.ShowPicDetail" />
+        <activity
+            android:name="uk.ac.shef.oak.com6510.ShowPicDetail"
+            android:parentActivityName="uk.ac.shef.oak.com6510.MyView" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -59,9 +61,15 @@
             android:name="uk.ac.shef.oak.com6510.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name="uk.ac.shef.oak.com6510.Edit" />
-        <activity android:name="uk.ac.shef.oak.com6510.Search" />
-        <activity android:name="uk.ac.shef.oak.com6510.SearchResults" />
-        <activity android:name="uk.ac.shef.oak.com6510.ShowPicDetailSearch" />
+        <activity
+            android:name="uk.ac.shef.oak.com6510.Search"
+            android:parentActivityName="uk.ac.shef.oak.com6510.MyView" />
+        <activity
+            android:name="uk.ac.shef.oak.com6510.SearchResults"
+            android:parentActivityName="uk.ac.shef.oak.com6510.Search" />
+        <activity
+            android:name="uk.ac.shef.oak.com6510.ShowPicDetailSearch"
+            android:parentActivityName="uk.ac.shef.oak.com6510.SearchResults" />
 
         <provider
             android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider"

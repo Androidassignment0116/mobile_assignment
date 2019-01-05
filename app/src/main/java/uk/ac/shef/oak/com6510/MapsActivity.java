@@ -37,6 +37,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LocationRequest mLocationRequest;
     private HashMap<String,Marker> hashMapMarker = new HashMap<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,8 +106,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Marker marker = mMap.addMarker(new MarkerOptions().position(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude())).title("Me"));
             hashMapMarker.put(mLastUpdateTime, marker);
             oldTime = mLastUpdateTime;}
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude()),14.0f));
-
+//            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude()),14.0f));
+//            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude())));
         }
 
     };
@@ -163,14 +164,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        mMap.setMinZoomPreference(6.0f);
+        mMap.setMaxZoomPreference(14.0f);
         // Add a marker in Sydney and move the camera
         List<PicinfoData> temp = PicAdapter.getItems();
         for(PicinfoData p : temp ){
             LatLng ll = new LatLng(p.getLatitude(),p.getLongitude());
             mMap.addMarker(new MarkerOptions().position(ll).title(p.getTitle()));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ll,6f));
         }
         startLocationUpdates();
+
 
     }
 }

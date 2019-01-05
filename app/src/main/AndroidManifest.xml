@@ -31,7 +31,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowPicDetail" />
+        <activity
+            android:parentActivityName=".MyView"
+            android:name=".ShowPicDetail" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -40,10 +42,17 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Edit" />
-        <activity android:name=".Search" />
-        <activity android:name=".SearchResults" />
-        <activity android:name=".ShowPicDetailSearch"></activity>
+        <activity
+            android:name=".Edit" />
+        <activity
+            android:parentActivityName=".MyView"
+            android:name=".Search" />
+        <activity
+            android:parentActivityName=".Search"
+            android:name=".SearchResults" />
+        <activity
+            android:parentActivityName=".SearchResults"
+            android:name=".ShowPicDetailSearch"></activity>
     </application>
 
 </manifest>
