@@ -110,6 +110,7 @@ public class ShowPicDetail extends AppCompatActivity {
                             }
                         }
                     });
+                mButtonMenu.performClick();
 
                     mButtonEdit.setOnClickListener(new View.OnClickListener() {
                         @Override
