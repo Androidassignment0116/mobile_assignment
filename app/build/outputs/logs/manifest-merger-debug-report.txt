@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\cd920fd6a728c80cc7179f82d7c8c59e\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\815a9b7cf453915bebe6d034b952bb35\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5ff8a82c91f2ed0c74db91fb66670cf8\AndroidManifest.xml:17:1-22:12
@@ -50,20 +50,20 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lenovo\.
 MERGED from [com.android.support:print:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5bfc80de728f9fefc14558a71533354a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\93e6139d681e521c37bbb44432703a22\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\timber-4.4.0.aar\362e529b0c60be5bcfc2df5b88a178d3\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-59:12
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:1-61:12
 		INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:2:11-69
@@ -88,7 +88,7 @@ ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:11:5
 	android:name
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:11:22-86
 application
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:5-57:19
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:20:5-59:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\cd920fd6a728c80cc7179f82d7c8c59e\AndroidManifest.xml:11:5-21:19
 MERGED from [com.github.jkwiecien:EasyImage:2.0.3] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\EasyImage-2.0.3.aar\cd920fd6a728c80cc7179f82d7c8c59e\AndroidManifest.xml:11:5-21:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\815a9b7cf453915bebe6d034b952bb35\AndroidManifest.xml:22:5-20
@@ -148,11 +148,11 @@ ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:31:1
 	android:name
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:31:27-74
 activity#uk.ac.shef.oak.com6510.ShowPicDetail
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:34:9-36:45
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:34:9-36:52
 	android:parentActivityName
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:36:13-49
 	android:name
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:36:13-42
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:35:13-42
 meta-data#com.google.android.geo.API_KEY
 ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:38:9-40:55
 	android:value
@@ -166,29 +166,35 @@ ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:42:9
 	android:name
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:43:13-41
 activity#uk.ac.shef.oak.com6510.Edit
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:9-46:36
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:9-42
 	android:name
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:46:13-33
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:45:19-39
 activity#uk.ac.shef.oak.com6510.Search
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:47:9-49:38
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:46:9-48:52
 	android:parentActivityName
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:49:13-35
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:47:13-35
 activity#uk.ac.shef.oak.com6510.SearchResults
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:50:9-53:45
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:49:9-52:52
 	android:parentActivityName
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:52:13-49
 	android:launchMode
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:53:13-43
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:51:13-43
 	android:name
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:52:13-42
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:50:13-42
 activity#uk.ac.shef.oak.com6510.ShowPicDetailSearch
-ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:54:9-56:60
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:53:9-55:59
 	android:parentActivityName
 		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:55:13-56
 	android:name
-		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:56:13-48
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:54:13-48
+activity#uk.ac.shef.oak.com6510.MapMarkerDetail
+ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:56:9-58:47
+	android:parentActivityName
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:57:13-55
+	android:name
+		ADDED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml:58:13-44
 uses-sdk
 INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android\aa\mobile_assignment\app\src\main\AndroidManifest.xml

@@ -2,9 +2,11 @@ package uk.ac.shef.oak.com6510;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.location.Location;
+import android.provider.ContactsContract;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -25,13 +27,14 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
 import uk.ac.shef.oak.com6510.database.PicinfoData;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
     private static final int ACCESS_FINE_LOCATION = 123;
@@ -40,7 +43,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private HashMap<String,Marker> hashMapMarker = new HashMap<>();
     private Button mbtnBack;
     private Button mbtnMe;
-
+    private Marker mm;
+    private List<Marker> listmarker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +182,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mFusedLocationClient.removeLocationUpdates(mLocationCallback);
     }
 
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -193,18 +198,30 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.setMinZoomPreference(1.0f);
         mMap.setMaxZoomPreference(14.0f);
+        mMap.setOnMarkerClickListener(this);
+        listmarker = new ArrayList<>();
         // Add a marker in Sydney and move the camera
         List<PicinfoData> temp = PicAdapter.getItems();
-        for(PicinfoData p : temp ){
+        for( int i = 0; i<temp.size();i++ ){
+            PicinfoData p = temp.get(i);
             LatLng ll = new LatLng(p.getLatitude(),p.getLongitude());
-            MarkerOptions m = new MarkerOptions().position(ll).title(p.getTitle());
-            Marker mm =  mMap.addMarker(m);
-
-
+            MarkerOptions m = new MarkerOptions().position(ll).title(p.getTitle()).snippet(p.getDescription());
+            mm =  mMap.addMarker(m);
+            listmarker.add(mm);
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ll,1f));
         }
         startLocationUpdates();
     }
 
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        for (int i = 0; i<listmarker.size();i++){
+        if (marker.equals(listmarker.get(i))){
 
+            Intent intent = new Intent(MapsActivity.this,MapMarkerDetail.class);
+            intent.putExtra("position",i);
+            startActivity(intent);
+        }}
+        return false;
+    }
 }

@@ -71,6 +71,9 @@
         <activity
             android:name="uk.ac.shef.oak.com6510.ShowPicDetailSearch"
             android:parentActivityName="uk.ac.shef.oak.com6510.SearchResults" />
+        <activity
+            android:name="uk.ac.shef.oak.com6510.MapMarkerDetail"
+            android:parentActivityName="uk.ac.shef.oak.com6510.MapsActivity" />
 
         <provider
             android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider"
