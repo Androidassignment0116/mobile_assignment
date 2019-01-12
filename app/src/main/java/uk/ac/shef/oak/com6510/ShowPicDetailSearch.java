@@ -96,6 +96,7 @@ public class ShowPicDetailSearch extends AppCompatActivity {
 
 
 
+
                 mButtonMenu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -110,6 +111,7 @@ public class ShowPicDetailSearch extends AppCompatActivity {
                         }
                     }
                 });
+                mButtonMenu.performClick();
 
                 mButtonEdit.setOnClickListener(new View.OnClickListener() {
                     @Override

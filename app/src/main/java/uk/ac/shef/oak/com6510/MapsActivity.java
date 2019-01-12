@@ -8,6 +8,8 @@ import android.location.Location;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -36,12 +38,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationRequest mLocationRequest;
     private HashMap<String,Marker> hashMapMarker = new HashMap<>();
+    private Button mbtnBack;
+    private Button mbtnMe;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        mbtnBack = findViewById(R.id.button_back);
+        mbtnMe = findViewById(R.id.button_myposition);
+
+        mbtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        mbtnMe.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Location loc = mCurrentLocation;
+                if (loc != null) {
+                    LatLng latLang = new LatLng(loc.getLatitude(), loc
+                            .getLongitude());
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latLang));
+                }
+            }
+        });
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -164,17 +190,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.setMinZoomPreference(6.0f);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.setMinZoomPreference(1.0f);
         mMap.setMaxZoomPreference(14.0f);
         // Add a marker in Sydney and move the camera
         List<PicinfoData> temp = PicAdapter.getItems();
         for(PicinfoData p : temp ){
             LatLng ll = new LatLng(p.getLatitude(),p.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(ll).title(p.getTitle()));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ll,6f));
+            MarkerOptions m = new MarkerOptions().position(ll).title(p.getTitle());
+            Marker mm =  mMap.addMarker(m);
+
+
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ll,1f));
         }
         startLocationUpdates();
-
-
     }
+
+
 }

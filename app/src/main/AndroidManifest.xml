@@ -49,7 +49,8 @@
             android:name=".Search" />
         <activity
             android:parentActivityName=".Search"
-            android:name=".SearchResults" />
+            android:name=".SearchResults"
+            android:launchMode="singleTop"/>
         <activity
             android:parentActivityName=".SearchResults"
             android:name=".ShowPicDetailSearch"></activity>

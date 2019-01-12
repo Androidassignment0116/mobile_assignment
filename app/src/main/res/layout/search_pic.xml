@@ -76,23 +76,24 @@
 
                 ></EditText>
 
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="150dp"
+                android:text="search"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                />
+
 
 
 
         </LinearLayout>
 
 
-        <Button
-            android:id="@+id/btn_search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginEnd="150dp"
-            android:text="search"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            />
 
 
     </RelativeLayout>

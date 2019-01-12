@@ -1142,6 +1142,8 @@ id btn_cancel
 id btn_save
 id btn_search
 id buttonPanel
+id button_back
+id button_myposition
 id cancel_action
 id center
 id center_horizontal
@@ -1277,7 +1279,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id show_date
 id smallLabel
 id snackbar_action
 id snackbar_text

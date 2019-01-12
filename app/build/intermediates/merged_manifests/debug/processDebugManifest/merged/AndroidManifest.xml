@@ -66,6 +66,7 @@
             android:parentActivityName="uk.ac.shef.oak.com6510.MyView" />
         <activity
             android:name="uk.ac.shef.oak.com6510.SearchResults"
+            android:launchMode="singleTop"
             android:parentActivityName="uk.ac.shef.oak.com6510.Search" />
         <activity
             android:name="uk.ac.shef.oak.com6510.ShowPicDetailSearch"

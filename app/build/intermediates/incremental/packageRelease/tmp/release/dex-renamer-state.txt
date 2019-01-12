@@ -1,4 +1,0 @@
-#Sat Jan 05 23:39:27 GMT 2019
-base.0=G\:\\aa\\mobile_assignment\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex
