@@ -11,7 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uk.ac.shef.oak.com6510.database.PicinfoData;
-
+/**
+ * Invoke searchtheimage method in view model. Show the result.
+ *
+ * @author Mengjie Gao
+ * @creed: assignment
+ * @date 2019/1/16 15:12
+ * @return
+ */
 public class SearchResults extends AppCompatActivity {
     private ResultAdapter mResultAdapter;
     private MyViewModel myViewModelresult;

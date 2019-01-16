@@ -80,7 +80,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Should we show an explanation?
+
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
 
@@ -106,6 +106,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, null /* Looper */);
     }
 
+    /**
+     * When activity resume keep track on the user's location.
+     * @param
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 14:14
+     * @return void
+     */
     @Override
     protected void onResume() {
         super.onResume();
@@ -120,6 +128,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location mCurrentLocation;
     private String mLastUpdateTime;
     private String oldTime = null;
+    /**
+     * get location callback information. Especially the current location.
+     * @param null
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 14:14
+     * @return
+     */
     LocationCallback mLocationCallback = new LocationCallback() {
         @Override
         public void onLocationResult(LocationResult locationResult) {
@@ -136,8 +152,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Marker marker = mMap.addMarker(new MarkerOptions().position(new LatLng(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude())).title("Me"));
             hashMapMarker.put(mLastUpdateTime, marker);
             oldTime = mLastUpdateTime;}
-//            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude()),14.0f));
-//            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude())));
         }
 
     };
@@ -170,12 +184,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    /**
+     * When mapsActivity on pause, stop track the current location.
+     * @param
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 14:15
+     * @return void
+     */
     @Override
     protected void onPause() {
         super.onPause();
         mFusedLocationClient.removeLocationUpdates(mLocationCallback);
     }
-
+    /**
+     * When mapsActivity on destroy, stop track the current location.
+     * @param
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 14:15
+     * @return void
+     */
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -213,6 +242,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         startLocationUpdates();
     }
 
+    /**
+     * Set marker click listener, when the marker be clicked, take the position information to the MapMarkerDetail Activity.
+     * @param marker
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 14:17
+     * @return boolean
+     */
     @Override
     public boolean onMarkerClick(Marker marker) {
         for (int i = 0; i<listmarker.size();i++){

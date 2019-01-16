@@ -13,7 +13,7 @@ android {
         debug {
             keyAlias 'com4510'
             keyPassword 'com4510iscool'
-            storeFile file('D:/Android/aa/mobile_assignment/keyStore.jks')
+            storeFile file('../keyStore.jks')
             storePassword 'com4510iscool'
         }
     }

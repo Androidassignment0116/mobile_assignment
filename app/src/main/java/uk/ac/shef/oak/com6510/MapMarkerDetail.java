@@ -43,7 +43,14 @@ public class MapMarkerDetail extends AppCompatActivity {
     private Animation outAnimation;
     private Animation leftInAnimation;
     private Animation menuInAnimation;
-
+/**
+ * after click on a marker in the MapsActivity, take the information of the picture to this MapMarkerDetail activity
+ * @param savedInstanceState
+ * @author cgx
+ * @creed: assignment
+ * @date 2019/1/16 13:55
+ * @return void
+ */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         myViewModeldetail = ViewModelProviders.of(this).get(MyViewModel.class);
@@ -84,6 +91,14 @@ public class MapMarkerDetail extends AppCompatActivity {
                 }
 
                 myViewModeldetail.getthePic(temp).observe(this, new Observer<PicinfoData>() {
+                    /**
+                     * when user change the information of the picture change here
+                     * @param picinfoData
+                     * @author cgx
+                     * @creed: assignment
+                     * @date 2019/1/16 14:04
+                     * @return void
+                     */
                     @Override
                     public void onChanged(@Nullable PicinfoData picinfoData) {
                         if (picinfoData != null){
@@ -97,6 +112,14 @@ public class MapMarkerDetail extends AppCompatActivity {
 
 
                 mButtonMenu.setOnClickListener(new View.OnClickListener() {
+                    /**
+                     * Menu button. Click and show details
+                     * @param v
+                     * @author cgx
+                     * @creed: assignment
+                     * @date 2019/1/16 14:05
+                     * @return void
+                     */
                     @Override
                     public void onClick(View v) {
                         if (menu.getVisibility() == View.VISIBLE) {
@@ -113,6 +136,14 @@ public class MapMarkerDetail extends AppCompatActivity {
                 mButtonMenu.performClick();
 
                 mButtonEdit.setOnClickListener(new View.OnClickListener() {
+                    /**
+                     * Edit button. Click and take the old information to Edit Activity.
+                     * @param v
+                     * @author cgx
+                     * @creed: assignment
+                     * @date 2019/1/16 14:09
+                     * @return void
+                     */
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MapMarkerDetail.this, Edit.class);
@@ -127,6 +158,14 @@ public class MapMarkerDetail extends AppCompatActivity {
                 });
                 final int finalPos = pos;
                 mButtonDelete.setOnClickListener(new View.OnClickListener() {
+                    /**
+                     * delete button. delete this picture from database.
+                     * @param v
+                     * @author cgx
+                     * @creed: assignment
+                     * @date 2019/1/16 14:13
+                     * @return void
+                     */
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MapMarkerDetail.this, MyView.class);

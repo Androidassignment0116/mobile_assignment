@@ -69,6 +69,14 @@ public class MyView extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * The Option Menu.
+     * @param item
+     * @author Yiwei Xu
+     * @creed: assignment
+     * @date 2019/1/16 14:30
+     * @return boolean
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -95,7 +103,15 @@ public class MyView extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+/**
+ * set icons in menu
+ * @param menu
+	* @param flag
+ * @author Yiwei Xu
+ * @creed: assignment
+ * @date 2019/1/16 14:31
+ * @return void
+ */
     private void setIconsVisible(Menu menu, boolean flag) {
 
         if(menu != null) {
@@ -277,13 +293,31 @@ public class MyView extends AppCompatActivity {
 
         }
     }
-
+/**
+ * Handle the result. And If the picture is picked from camera, record the location.
+ * @param requestCode
+	* @param resultCode
+	* @param data
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:33
+ * @return void
+ */
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-
+/**
+ * We use EasyImage library to help us handle activity Result.
+ * @param requestCode
+	* @param resultCode
+	* @param data
+ * @author cgx
+ * @creed: assignment
+ * @date 2019/1/16 14:35
+ * @return void
+ */
         EasyImage.handleActivityResult(requestCode, resultCode, data, this, new DefaultCallback() {
 
             @Override

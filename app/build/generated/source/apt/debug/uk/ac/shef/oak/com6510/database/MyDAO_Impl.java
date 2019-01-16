@@ -100,17 +100,6 @@ public class MyDAO_Impl implements MyDAO {
   }
 
   @Override
-  public void insertAll(PicinfoData... picinfoData) {
-    __db.beginTransaction();
-    try {
-      __insertionAdapterOfPicinfoData.insert(picinfoData);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
-  }
-
-  @Override
   public void insert(PicinfoData picinfoData) {
     __db.beginTransaction();
     try {
@@ -126,17 +115,6 @@ public class MyDAO_Impl implements MyDAO {
     __db.beginTransaction();
     try {
       __deletionAdapterOfPicinfoData.handle(picinfoData);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
-  }
-
-  @Override
-  public void deleteAll(PicinfoData... picinfoData) {
-    __db.beginTransaction();
-    try {
-      __deletionAdapterOfPicinfoData.handleMultiple(picinfoData);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -191,45 +169,6 @@ public class MyDAO_Impl implements MyDAO {
       __db.endTransaction();
       __preparedStmtOfUpdatedescription.release(_stmt);
     }
-  }
-
-  @Override
-  public LiveData<List<String>> getallimage() {
-    final String _sql = "SELECT path FROM picinfo_database";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    return new ComputableLiveData<List<String>>() {
-      private Observer _observer;
-
-      @Override
-      protected List<String> compute() {
-        if (_observer == null) {
-          _observer = new Observer("picinfo_database") {
-            @Override
-            public void onInvalidated(@NonNull Set<String> tables) {
-              invalidate();
-            }
-          };
-          __db.getInvalidationTracker().addWeakObserver(_observer);
-        }
-        final Cursor _cursor = __db.query(_statement);
-        try {
-          final List<String> _result = new ArrayList<String>(_cursor.getCount());
-          while(_cursor.moveToNext()) {
-            final String _item;
-            _item = _cursor.getString(0);
-            _result.add(_item);
-          }
-          return _result;
-        } finally {
-          _cursor.close();
-        }
-      }
-
-      @Override
-      protected void finalize() {
-        _statement.release();
-      }
-    }.getLiveData();
   }
 
   @Override
@@ -299,71 +238,6 @@ public class MyDAO_Impl implements MyDAO {
         _statement.release();
       }
     }.getLiveData();
-  }
-
-  @Override
-  public int howManyElements() {
-    final String _sql = "SELECT COUNT(*) FROM picinfo_database";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    final Cursor _cursor = __db.query(_statement);
-    try {
-      final int _result;
-      if(_cursor.moveToFirst()) {
-        _result = _cursor.getInt(0);
-      } else {
-        _result = 0;
-      }
-      return _result;
-    } finally {
-      _cursor.close();
-      _statement.release();
-    }
-  }
-
-  @Override
-  public List<String> getalldatetime() {
-    final String _sql = "SELECT datetime FROM picinfo_database";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    final Cursor _cursor = __db.query(_statement);
-    try {
-      final List<String> _result = new ArrayList<String>(_cursor.getCount());
-      while(_cursor.moveToNext()) {
-        final String _item;
-        _item = _cursor.getString(0);
-        _result.add(_item);
-      }
-      return _result;
-    } finally {
-      _cursor.close();
-      _statement.release();
-    }
-  }
-
-  @Override
-  public boolean checkexitspath(String path) {
-    final String _sql = "SELECT * FROM picinfo_database WHERE path = ?";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
-    int _argIndex = 1;
-    if (path == null) {
-      _statement.bindNull(_argIndex);
-    } else {
-      _statement.bindString(_argIndex, path);
-    }
-    final Cursor _cursor = __db.query(_statement);
-    try {
-      final boolean _result;
-      if(_cursor.moveToFirst()) {
-        final int _tmp;
-        _tmp = _cursor.getInt(0);
-        _result = _tmp != 0;
-      } else {
-        _result = false;
-      }
-      return _result;
-    } finally {
-      _cursor.close();
-      _statement.release();
-    }
   }
 
   @Override

@@ -5,6 +5,15 @@ package uk.ac.shef.oak.com6510.database;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
+
+/**
+ * build entity PicinfoData, and generate getters and setters.
+ * @param
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 13:50
+ * @return
+ */
 @Entity(tableName = "picinfo_database")
 public class PicinfoData {
     @PrimaryKey(autoGenerate = true)

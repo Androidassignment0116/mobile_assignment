@@ -83,6 +83,14 @@ public class ShowPicDetail extends AppCompatActivity {
                     textDate.setText(time);
                 }
 
+                /**
+                 * Keep track on the picture information. If user edit, update immediately
+                 * @param savedInstanceState
+                 * @author Gang Chen
+                 * @creed: assignment
+                 * @date 2019/1/16 15:15
+                 * @return void
+                 */
                 myViewModeldetail.getthePic(temp).observe(this, new Observer<PicinfoData>() {
                     @Override
                     public void onChanged(@Nullable PicinfoData picinfoData) {
@@ -94,7 +102,14 @@ public class ShowPicDetail extends AppCompatActivity {
                 });
 
 
-
+/**
+ * set menu button. Click and show the menu(detail of the picture). Click again to hide the detail.
+ * @param savedInstanceState
+ * @author Yiwei Xu
+ * @creed: assignment
+ * @date 2019/1/16 15:17
+ * @return void
+ */
 
                     mButtonMenu.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -135,7 +150,13 @@ public class ShowPicDetail extends AppCompatActivity {
                         }
                     });
 
-
+/**
+ * Using Google Static Maps API.
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 15:19
+ * @return void
+ */
                 String path = "https://maps.googleapis.com/maps/api/staticmap?markers=" + latitude + "," + longitude + "&zoom=17&size=400x250&key=AIzaSyDyTz8n8hZG9xTLw6Ffgve6faqfdwZVDwQ";
                 imageViewmap.setImageURL(path);
                 Log.i("url", "URL: " + path);

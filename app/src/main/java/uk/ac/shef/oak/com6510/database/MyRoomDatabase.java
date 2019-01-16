@@ -14,6 +14,15 @@ public abstract class MyRoomDatabase extends RoomDatabase {
     // marking the instance as volatile to ensure atomic access to the variable
     private static volatile MyRoomDatabase INSTANCE;
 
+/**
+ * check if there is a database exits, if no database, build one and named picinfo_database.
+ * @param context
+  * @return uk.ac.shef.oak.com6510.database.MyRoomDatabase
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 13:46
+ */
+
     public static MyRoomDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
             synchronized (MyRoomDatabase.class) {
@@ -31,12 +40,19 @@ public abstract class MyRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
+
     /**
      * Override the onOpen method to populate the database.
      * For this sample, we clear the database every time it is created or opened.
      *
      * If you want to populate the database only when the database is created for the 1st time,
      * override RoomDatabase.Callback()#onCreate
+     * @param null
+      * @return
+     * @author Gang Chen
+     * @creed: assignment
+     * @date 2019/1/16 13:46
+     * @return
      */
     private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override

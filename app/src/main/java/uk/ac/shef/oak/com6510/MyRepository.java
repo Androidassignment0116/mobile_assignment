@@ -22,7 +22,14 @@ import uk.ac.shef.oak.com6510.database.MyDAO;
 import uk.ac.shef.oak.com6510.database.MyRoomDatabase;
 import uk.ac.shef.oak.com6510.database.PicinfoData;
 
-
+/**
+ * insert and update methods in repository.
+ * @param
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:36
+ * @return
+ */
 class MyRepository extends ViewModel {
     private final MyDAO mDBDao;
 
@@ -50,13 +57,6 @@ class MyRepository extends ViewModel {
         new updateDescriptionAsyncTask(mDBDao).execute(description,datetime);
     }
 
-    public void getallimagesfromphone(List<PicinfoData> files){
-        for (PicinfoData p:files){
-            p.getPath();
-        }
-
-    }
-
 
 
     public void deletePicData(PicinfoData picinfoData){
@@ -66,7 +66,16 @@ class MyRepository extends ViewModel {
     public LiveData<PicinfoData> getthepic(String path){
        return mDBDao.getthepic(path);
     }
+/**
+ * if the picture was took by the camera than insert to database with current location.
+ * @param p the path passed from Myview activity
+	* @param currentLocation  passed from Myview activity
 
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:37
+ * @return void
+ */
     public void insertwithcoordinate(String p, Location currentLocation){
         String title= "default";
         String description= "default";
@@ -81,7 +90,15 @@ class MyRepository extends ViewModel {
 
         new insertAsyncTask(mDBDao).execute(new PicinfoData(title,description,path,datetime,latitude,longitude));
     }
-
+/**
+ * if the picture was picked from gallery, then check if it already exits in database. If not exits, insert it. If it exits, do update.
+ * Get information of pictures by using ExifInterface.
+ * @param p
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:43
+ * @return void
+ */
     public void updateorinsert(String p){
         String title= "default";
         String description= "default";
@@ -171,7 +188,14 @@ class MyRepository extends ViewModel {
 
     };
 
-
+/**
+ * The insert Async Task. If the picture already exits do not insert.
+ * @param
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:48
+ * @return
+ */
 
     private static class insertAsyncTask extends AsyncTask<PicinfoData, Void, Void> {
         private MyDAO mAsyncTaskDao;
@@ -190,7 +214,14 @@ class MyRepository extends ViewModel {
             return null;
         }
     }
+/**
+ * Update title async task. Do update only the picture exits.
 
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:49
+ * @return
+ */
     private static class updateTitleAsyncTask extends AsyncTask<String,Void,Void>{
         private MyDAO mAsyncTaskDao;
         updateTitleAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
@@ -201,7 +232,14 @@ class MyRepository extends ViewModel {
             return null;
         }
     }
+    /**
+     * Update description async task. Do update only the picture exits.
 
+     * @author Gang Chen
+     * @creed: assignment
+     * @date 2019/1/16 14:49
+     * @return
+     */
     private static class updateDescriptionAsyncTask extends AsyncTask<String, Void, Void>{
         private MyDAO mAsyncTaskDao;
         updateDescriptionAsyncTask(MyDAO dao){mAsyncTaskDao = dao;}
@@ -212,7 +250,15 @@ class MyRepository extends ViewModel {
             return null;
         }
     }
+/**
+ *
+ * Delete async task
 
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:50
+ * @return
+ */
     private static class deleteAsyncTask extends AsyncTask<PicinfoData, Void, Void>{
 
         private MyDAO mAsyncTaskDao;
@@ -225,7 +271,15 @@ class MyRepository extends ViewModel {
             return null;
         }
     }
+/**
+ *
+ * search async task
 
+ * @author Gang Chen
+ * @creed: assignment
+ * @date 2019/1/16 14:51
+ * @return List<Picinfodata>
+ */
     private static class searchAsyncTask extends AsyncTask<String, Void, List<PicinfoData>>{
         private MyDAO mAsyncTaskDao;
         searchAsyncTask(MyDAO dao) {
@@ -239,53 +293,3 @@ class MyRepository extends ViewModel {
         }
     }
 }
-//        for (File file:files
-//                ) {
-//                String filePath =file.getPath();
-//                Bitmap bitmap = BitmapFactory.decodeFile(filePath);
-//                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-//                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-//                byte[] byteArray = stream.toByteArray();
-//                bitmap.recycle();
-//                String time = "default";
-//                String Latitude = "0";
-//                String Longitude = "0";
-//                String title = "default title";
-//                String description = "default description";
-//                String latitude_Ref = "N";
-//                String longitude_Ref = "E";
-//                Float latitude =0.0f, longitude=0.0f;
-//                try {
-//                ExifInterface exifInterface = new ExifInterface(filePath);
-//                Latitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
-//                latitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
-//                Longitude = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE);
-//                longitude_Ref = exifInterface.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
-//                time = exifInterface.getAttribute(ExifInterface.TAG_DATETIME);
-//                } catch (IOException e) {
-//                e.printStackTrace();
-//                }
-//                if((Latitude !=null)
-//                && (latitude_Ref !=null)
-//                && (Longitude != null)
-//                && (longitude_Ref !=null))
-//                {
-//
-//                if(latitude_Ref.equals("N")){
-//                latitude = convertToDegree(Latitude);
-//                }
-//                else{
-//                latitude = 0 - convertToDegree(Latitude);
-//                }
-//
-//                if(longitude_Ref.equals("E")){
-//                longitude = convertToDegree(Longitude);
-//                }
-//                else{
-//                longitude = 0 - convertToDegree(Longitude);
-//                }
-//
-//                }
-////            new insertAsyncTask(mDBDao).execute(new PicinfoData(title, description, byteArray, time, latitude, longitude));
-//
-//                }

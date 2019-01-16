@@ -14,6 +14,14 @@ public class Search extends AppCompatActivity {
     private Button mBtnSearch;
     private MyViewModel myViewModelsearch;
 
+    /**
+     * set click listener on search button . Pass all information to SearResults activity.
+     * @param savedInstanceState
+     * @author Mengjie Gao
+     * @creed: assignment
+     * @date 2019/1/16 15:11
+     * @return void
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
