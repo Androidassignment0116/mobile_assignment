@@ -24,15 +24,7 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
 
     public PicAdapter(){};
 
-/**
- *
- * @param viewGroup
-	* @param i the position of the picture in adapter.
- * @author Yiwei Xu
- * @creed: assignment
- * @date 2019/1/16 15:03
- * @return uk.ac.shef.oak.com6510.PicAdapter.PicHolder
- */
+
     @NonNull
     @Override
     public PicAdapter.PicHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -40,15 +32,7 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
         context = viewGroup.getContext();
         return new PicHolder(v);
     }
-/**
- * set item click listener on every picture and pass the position to showPicDetail activity.
- * @param picHolder
-	* @param i the position of the picture in adapter
- * @author Yiwei Xu
- * @creed: assignment
- * @date 2019/1/16 15:04
- * @return void
- */
+
     @Override
     public void onBindViewHolder(@NonNull PicAdapter.PicHolder picHolder, final int i) {
         Bitmap currentPic = bitmaps.get(i);
@@ -68,14 +52,7 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
         return bitmaps.size();
     }
 
-    /**
-     * set picture in adapter
-     * @param pic passed from MyView activity
-     * @author Yiwei Xu
-     * @creed: assignment
-     * @date 2019/1/16 15:07
-     * @return void
-     */
+
     public void setBitmaps(List<PicinfoData> pic)
     {
 
@@ -102,14 +79,7 @@ public class PicAdapter extends RecyclerView.Adapter<PicAdapter.PicHolder> {
         }
     }
 
-    /**
-     *Return all picture information to every detail activity
-     * @param
-     * @author Yiwei Xu
-     * @creed: assignment
-     * @date 2019/1/16 15:08
-     * @return java.util.List<uk.ac.shef.oak.com6510.database.PicinfoData>
-     */
+
     public static List<PicinfoData> getItems() {
         return allinfo;
     }

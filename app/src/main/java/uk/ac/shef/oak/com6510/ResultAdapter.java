@@ -16,15 +16,7 @@ import java.util.List;
 
 import uk.ac.shef.oak.com6510.database.PicinfoData;
 
-/**
- * Structure is same as PicAdapter
- *
 
- * @author cgx
- * @creed: assignment
- * @date 2019/1/16 15:09
- * @return
- */
 public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.PicHolder> {
     private static List<Bitmap> bitmaps = new ArrayList<>();
     private static Context context;

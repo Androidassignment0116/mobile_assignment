@@ -5,14 +5,7 @@ import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
-/**
- * check if the mobile phone has camera.
- * @param
- * @author Gang Chen
- * @creed: assignment
- * @date 2019/1/16 13:51
- * @return
- */
+
 public class checkCamera {
     public static boolean checkCamera(Context context){
         PackageManager pm = context.getPackageManager();

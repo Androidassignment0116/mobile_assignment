@@ -20,14 +20,7 @@ import android.widget.TextView;
 
 import uk.ac.shef.oak.com6510.database.PicinfoData;
 
-/**
- * Structure is the same as ShowPicDetail activity.
 
- * @author cgx
- * @creed: assignment
- * @date 2019/1/16 15:21
- * @return
- */
 public class ShowPicDetailSearch extends AppCompatActivity {
     private MyViewModel myViewModeldetail;
     private byte[] byteArray;

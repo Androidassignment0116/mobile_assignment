@@ -50,14 +50,7 @@ public class Edit extends AppCompatActivity {
 
             mButtonSave.setOnClickListener(new View.OnClickListener() {
                 @Override
-                /**
-                 * set button edit function: pass the information in every edit area to view model, and invoke update methods.
-                 * @param v
-                 * @author cgx
-                 * @creed: assignment
-                 * @date 2019/1/16 14:08
-                 * @return void
-                 */
+
                 public void onClick(View v) {
                     title = mEditTextTitle.getText().toString();
                     description = mEditTextDes.getText().toString();

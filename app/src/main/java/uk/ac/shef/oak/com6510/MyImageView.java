@@ -14,14 +14,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * To show network picture in application should create a new Image view, I call it MyImageView. it can help the application to show Static Maps API result in ShowPicDetail Activity.
- * @param
- * @author cgx
- * @creed: assignment
- * @date 2019/1/16 14:19
- * @return
- */
+
 @SuppressLint("AppCompatCustomView")
 public class MyImageView extends ImageView{
     public static final int GET_DATA_SUCCESS = 1;
