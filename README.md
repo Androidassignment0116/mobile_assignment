@@ -1,4 +1,3 @@
-# live_data_example
-An elementary implementation of the Model View View Model pattern with live data in Android
-
-For the students of the University of Sheffield - see slides
+#Android project
+This is a photo gallery. User can use this app to take photoes and save them.
+Every picture will show their location on google maps in maps acitvity.
